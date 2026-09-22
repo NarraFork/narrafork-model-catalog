@@ -1,0 +1,25 @@
+{
+  "name": "@narrafork/model-catalog",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./schema": "./schema/catalog.schema.json",
+    "./catalog": "./dist/catalog.json",
+    "./manifest": "./dist/manifest.json"
+  },
+  "scripts": {
+    "validate": "bun scripts/validate.ts",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit",
+    "build": "bun scripts/build.ts",
+    "generate:schema": "bun scripts/schema.ts",
+    "generate:fixtures": "bun scripts/fixtures.ts",
+    "check": "bun run typecheck && bun run validate && bun run build && bun test"
+  },
+  "devDependencies": {
+    "@types/bun": "1.4.2",
+    "typescript": "5.9.3"
+  }
+}

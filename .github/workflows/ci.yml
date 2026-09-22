@@ -1,0 +1,33 @@
+name: Validate catalog
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.4.2
+      - run: bun install --frozen-lockfile
+      - run: bun run check
+      - name: Check tracked generated artifacts
+        run: git diff --exit-code -- schema/catalog.schema.json fixtures/resolution.json dist
+      - name: Check deterministic build
+        run: |
+          sha256sum dist/catalog.json dist/manifest.json > /tmp/catalog-before.sha256
+          bun run build
+          sha256sum --check /tmp/catalog-before.sha256
+      - uses: actions/upload-artifact@v4
+        with:
+          name: validated-catalog
+          path: |
+            dist/catalog.json
+            dist/manifest.json
+            dist/sha256sum.txt
+            schema/catalog.schema.json
+            fixtures/resolution.json

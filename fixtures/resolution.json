@@ -1,0 +1,6416 @@
+[
+  {
+    "name": "exact-base",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ],
+              "volatileSuffixes": true
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "synthetic"
+      }
+    },
+    "expected": {
+      "schemaVersion": 1,
+      "catalogVersion": "fixture-v1",
+      "localRevision": 0,
+      "modelId": "synthetic",
+      "matchedVia": "exact",
+      "metadata": {
+        "limits": {
+          "contextWindow": 1000,
+          "maxOutputTokens": 100
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "nativeSearch": {
+          "supported": true
+        },
+        "reasoning": {
+          "levels": [
+            "low",
+            "high"
+          ],
+          "defaultLevel": "low"
+        },
+        "referencePricing": {
+          "currency": "USD",
+          "unit": "perMillionTokens",
+          "input": "2",
+          "output": "5",
+          "cacheRead": "0.2"
+        }
+      },
+      "provenance": {
+        "limits.contextWindow": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "limits.maxOutputTokens": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "modalities.input": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "modalities.output": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "nativeSearch.supported": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "reasoning.levels": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "reasoning.defaultLevel": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.currency": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.unit": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.input": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.output": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.cacheRead": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        }
+      }
+    }
+  },
+  {
+    "name": "exact-alias",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ],
+              "volatileSuffixes": true
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "alias"
+      }
+    },
+    "expected": {
+      "schemaVersion": 1,
+      "catalogVersion": "fixture-v1",
+      "localRevision": 0,
+      "modelId": "synthetic",
+      "matchedVia": "alias",
+      "metadata": {
+        "limits": {
+          "contextWindow": 1000,
+          "maxOutputTokens": 100
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "nativeSearch": {
+          "supported": true
+        },
+        "reasoning": {
+          "levels": [
+            "low",
+            "high"
+          ],
+          "defaultLevel": "low"
+        },
+        "referencePricing": {
+          "currency": "USD",
+          "unit": "perMillionTokens",
+          "input": "2",
+          "output": "5",
+          "cacheRead": "0.2"
+        }
+      },
+      "provenance": {
+        "limits.contextWindow": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "limits.maxOutputTokens": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "modalities.input": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "modalities.output": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "nativeSearch.supported": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "reasoning.levels": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "reasoning.defaultLevel": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.currency": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.unit": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.input": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.output": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.cacheRead": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        }
+      }
+    }
+  },
+  {
+    "name": "continuous-declared-date-suffix",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ],
+              "volatileSuffixes": true
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "synthetic-2026-09-20-20260921-latest"
+      }
+    },
+    "expected": {
+      "schemaVersion": 1,
+      "catalogVersion": "fixture-v1",
+      "localRevision": 0,
+      "modelId": "synthetic",
+      "matchedVia": "suffix",
+      "metadata": {
+        "limits": {
+          "contextWindow": 1000,
+          "maxOutputTokens": 100
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "nativeSearch": {
+          "supported": true
+        },
+        "reasoning": {
+          "levels": [
+            "low",
+            "high"
+          ],
+          "defaultLevel": "low"
+        },
+        "referencePricing": {
+          "currency": "USD",
+          "unit": "perMillionTokens",
+          "input": "2",
+          "output": "5",
+          "cacheRead": "0.2"
+        }
+      },
+      "provenance": {
+        "limits.contextWindow": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "limits.maxOutputTokens": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "modalities.input": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "modalities.output": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "nativeSearch.supported": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "reasoning.levels": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "reasoning.defaultLevel": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.currency": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.unit": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.input": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.output": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.cacheRead": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        }
+      }
+    }
+  },
+  {
+    "name": "six-digit-declared-date-suffix",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ],
+              "volatileSuffixes": true
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "synthetic-260921"
+      }
+    },
+    "expected": {
+      "schemaVersion": 1,
+      "catalogVersion": "fixture-v1",
+      "localRevision": 0,
+      "modelId": "synthetic",
+      "matchedVia": "suffix",
+      "metadata": {
+        "limits": {
+          "contextWindow": 1000,
+          "maxOutputTokens": 100
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "nativeSearch": {
+          "supported": true
+        },
+        "reasoning": {
+          "levels": [
+            "low",
+            "high"
+          ],
+          "defaultLevel": "low"
+        },
+        "referencePricing": {
+          "currency": "USD",
+          "unit": "perMillionTokens",
+          "input": "2",
+          "output": "5",
+          "cacheRead": "0.2"
+        }
+      },
+      "provenance": {
+        "limits.contextWindow": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "limits.maxOutputTokens": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "modalities.input": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "modalities.output": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "nativeSearch.supported": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "reasoning.levels": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "reasoning.defaultLevel": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.currency": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.unit": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.input": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.output": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.cacheRead": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        }
+      }
+    }
+  },
+  {
+    "name": "scope-and-opaque-colon",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ],
+              "volatileSuffixes": true
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "wire:model",
+        "providerKey": "edge"
+      }
+    },
+    "expected": {
+      "schemaVersion": 1,
+      "catalogVersion": "fixture-v1",
+      "localRevision": 0,
+      "modelId": "synthetic",
+      "matchedVia": "exact",
+      "metadata": {
+        "limits": {
+          "contextWindow": 800,
+          "maxOutputTokens": 100
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "nativeSearch": {
+          "supported": true
+        },
+        "reasoning": {
+          "levels": [
+            "low",
+            "high"
+          ],
+          "defaultLevel": "low"
+        },
+        "referencePricing": {
+          "currency": "USD",
+          "unit": "perMillionTokens",
+          "input": "1",
+          "output": "5",
+          "cacheRead": "0.2"
+        }
+      },
+      "provenance": {
+        "limits.contextWindow": {
+          "layer": "preset-variant",
+          "id": "synthetic@edge",
+          "catalogVersion": "fixture-v1"
+        },
+        "limits.maxOutputTokens": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "modalities.input": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "modalities.output": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "nativeSearch.supported": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "reasoning.levels": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "reasoning.defaultLevel": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.currency": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.unit": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.input": {
+          "layer": "preset-variant",
+          "id": "synthetic@edge",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.output": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.cacheRead": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        }
+      },
+      "variantId": "synthetic@edge"
+    }
+  },
+  {
+    "name": "scope-prioritizes-variant-alias",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ],
+              "volatileSuffixes": true
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "alias",
+        "providerKey": "edge"
+      }
+    },
+    "expected": {
+      "schemaVersion": 1,
+      "catalogVersion": "fixture-v1",
+      "localRevision": 0,
+      "modelId": "synthetic",
+      "matchedVia": "alias",
+      "metadata": {
+        "limits": {
+          "contextWindow": 800,
+          "maxOutputTokens": 100
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "nativeSearch": {
+          "supported": true
+        },
+        "reasoning": {
+          "levels": [
+            "low",
+            "high"
+          ],
+          "defaultLevel": "low"
+        },
+        "referencePricing": {
+          "currency": "USD",
+          "unit": "perMillionTokens",
+          "input": "1",
+          "output": "5",
+          "cacheRead": "0.2"
+        }
+      },
+      "provenance": {
+        "limits.contextWindow": {
+          "layer": "preset-variant",
+          "id": "synthetic@edge",
+          "catalogVersion": "fixture-v1"
+        },
+        "limits.maxOutputTokens": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "modalities.input": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "modalities.output": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "nativeSearch.supported": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "reasoning.levels": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "reasoning.defaultLevel": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.currency": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.unit": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.input": {
+          "layer": "preset-variant",
+          "id": "synthetic@edge",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.output": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.cacheRead": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        }
+      },
+      "variantId": "synthetic@edge"
+    }
+  },
+  {
+    "name": "colon-not-stripped",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ],
+              "volatileSuffixes": true
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "provider:synthetic"
+      }
+    },
+    "expected": {
+      "schemaVersion": 1,
+      "catalogVersion": "fixture-v1",
+      "localRevision": 0,
+      "matchedVia": "none",
+      "metadata": {},
+      "provenance": {}
+    }
+  },
+  {
+    "name": "wrong-scope-does-not-select-variant",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ],
+              "volatileSuffixes": true
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "wire:model",
+        "providerKey": "other"
+      }
+    },
+    "expected": {
+      "schemaVersion": 1,
+      "catalogVersion": "fixture-v1",
+      "localRevision": 0,
+      "matchedVia": "none",
+      "metadata": {},
+      "provenance": {}
+    }
+  },
+  {
+    "name": "prefix-does-not-borrow-price",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ],
+              "volatileSuffixes": true
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "synthetic-thinking"
+      }
+    },
+    "expected": {
+      "schemaVersion": 1,
+      "catalogVersion": "fixture-v1",
+      "localRevision": 0,
+      "modelId": "synthetic",
+      "matchedVia": "prefix",
+      "metadata": {
+        "limits": {
+          "contextWindow": 1000,
+          "maxOutputTokens": 100
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "nativeSearch": {
+          "supported": true
+        },
+        "reasoning": {
+          "levels": [
+            "low",
+            "high"
+          ],
+          "defaultLevel": "low"
+        }
+      },
+      "provenance": {
+        "limits.contextWindow": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "limits.maxOutputTokens": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "modalities.input": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "modalities.output": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "nativeSearch.supported": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "reasoning.levels": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "reasoning.defaultLevel": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        }
+      }
+    }
+  },
+  {
+    "name": "longest-prefix-no-unrelated-fallback",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ],
+              "volatileSuffixes": true
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "synthetic-mini-fast"
+      }
+    },
+    "expected": {
+      "schemaVersion": 1,
+      "catalogVersion": "fixture-v1",
+      "localRevision": 0,
+      "modelId": "synthetic-mini",
+      "matchedVia": "prefix",
+      "metadata": {
+        "limits": {
+          "contextWindow": 200
+        }
+      },
+      "provenance": {
+        "limits.contextWindow": {
+          "layer": "preset-model",
+          "id": "synthetic-mini",
+          "catalogVersion": "fixture-v1"
+        }
+      }
+    }
+  },
+  {
+    "name": "semantic-suffix-is-not-stripped",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "volatileSuffixes": true
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "synthetic-thinking"
+      }
+    },
+    "expected": {
+      "schemaVersion": 1,
+      "catalogVersion": "fixture-v1",
+      "localRevision": 0,
+      "matchedVia": "none",
+      "metadata": {},
+      "provenance": {}
+    }
+  },
+  {
+    "name": "dates-require-opt-in",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {},
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "synthetic-20260921"
+      }
+    },
+    "expected": {
+      "schemaVersion": 1,
+      "catalogVersion": "fixture-v1",
+      "localRevision": 0,
+      "matchedVia": "none",
+      "metadata": {},
+      "provenance": {}
+    }
+  },
+  {
+    "name": "invalid-month-not-date",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "volatileSuffixes": true
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "synthetic-20269999"
+      }
+    },
+    "expected": {
+      "schemaVersion": 1,
+      "catalogVersion": "fixture-v1",
+      "localRevision": 0,
+      "matchedVia": "none",
+      "metadata": {},
+      "provenance": {}
+    }
+  },
+  {
+    "name": "explicit-prefix-field-price-permission",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ],
+              "volatileSuffixes": true,
+              "fields": [
+                "limits",
+                "referencePricing.input"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "synthetic-fast"
+      }
+    },
+    "expected": {
+      "schemaVersion": 1,
+      "catalogVersion": "fixture-v1",
+      "localRevision": 0,
+      "modelId": "synthetic",
+      "matchedVia": "prefix",
+      "metadata": {
+        "limits": {
+          "contextWindow": 1000,
+          "maxOutputTokens": 100
+        },
+        "referencePricing": {
+          "input": "2"
+        }
+      },
+      "provenance": {
+        "limits.contextWindow": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "limits.maxOutputTokens": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.input": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        }
+      }
+    }
+  },
+  {
+    "name": "explicit-identity-beats-weak-rules",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ],
+              "volatileSuffixes": true
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "unrelated",
+        "modelId": "synthetic"
+      }
+    },
+    "expected": {
+      "schemaVersion": 1,
+      "catalogVersion": "fixture-v1",
+      "localRevision": 0,
+      "modelId": "synthetic",
+      "matchedVia": "exact",
+      "metadata": {
+        "limits": {
+          "contextWindow": 1000,
+          "maxOutputTokens": 100
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "nativeSearch": {
+          "supported": true
+        },
+        "reasoning": {
+          "levels": [
+            "low",
+            "high"
+          ],
+          "defaultLevel": "low"
+        },
+        "referencePricing": {
+          "currency": "USD",
+          "unit": "perMillionTokens",
+          "input": "2",
+          "output": "5",
+          "cacheRead": "0.2"
+        }
+      },
+      "provenance": {
+        "limits.contextWindow": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "limits.maxOutputTokens": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "modalities.input": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "modalities.output": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "nativeSearch.supported": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "reasoning.levels": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "reasoning.defaultLevel": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.currency": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.unit": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.input": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.output": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.cacheRead": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        }
+      }
+    }
+  },
+  {
+    "name": "explicit-variant-identity",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ],
+              "volatileSuffixes": true
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "unrelated",
+        "variantId": "synthetic@edge",
+        "providerKey": "edge"
+      }
+    },
+    "expected": {
+      "schemaVersion": 1,
+      "catalogVersion": "fixture-v1",
+      "localRevision": 0,
+      "modelId": "synthetic",
+      "matchedVia": "exact",
+      "metadata": {
+        "limits": {
+          "contextWindow": 800,
+          "maxOutputTokens": 100
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "nativeSearch": {
+          "supported": true
+        },
+        "reasoning": {
+          "levels": [
+            "low",
+            "high"
+          ],
+          "defaultLevel": "low"
+        },
+        "referencePricing": {
+          "currency": "USD",
+          "unit": "perMillionTokens",
+          "input": "1",
+          "output": "5",
+          "cacheRead": "0.2"
+        }
+      },
+      "provenance": {
+        "limits.contextWindow": {
+          "layer": "preset-variant",
+          "id": "synthetic@edge",
+          "catalogVersion": "fixture-v1"
+        },
+        "limits.maxOutputTokens": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "modalities.input": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "modalities.output": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "nativeSearch.supported": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "reasoning.levels": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "reasoning.defaultLevel": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.currency": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.unit": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.input": {
+          "layer": "preset-variant",
+          "id": "synthetic@edge",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.output": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.cacheRead": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        }
+      },
+      "variantId": "synthetic@edge"
+    }
+  },
+  {
+    "name": "explicit-variant-wrong-scope",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ],
+              "volatileSuffixes": true
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "wire:model",
+        "variantId": "synthetic@edge",
+        "providerKey": "other"
+      }
+    },
+    "expectedError": "Variant provider scope mismatch"
+  },
+  {
+    "name": "explicit-false-empty-null-zero",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ],
+              "volatileSuffixes": true
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "synthetic"
+      },
+      "local": {
+        "revision": 8,
+        "overrides": [
+          {
+            "target": "model",
+            "targetId": "synthetic",
+            "metadata": {
+              "limits": {
+                "contextWindow": 700,
+                "maxOutputTokens": null
+              },
+              "nativeSearch": {
+                "supported": false
+              },
+              "modalities": {
+                "input": [],
+                "output": null
+              },
+              "reasoning": {
+                "levels": [],
+                "defaultLevel": null
+              },
+              "referencePricing": {
+                "input": "0",
+                "output": null
+              }
+            }
+          }
+        ]
+      }
+    },
+    "expected": {
+      "schemaVersion": 1,
+      "catalogVersion": "fixture-v1",
+      "localRevision": 8,
+      "modelId": "synthetic",
+      "matchedVia": "exact",
+      "metadata": {
+        "limits": {
+          "contextWindow": 700,
+          "maxOutputTokens": null
+        },
+        "modalities": {
+          "input": [],
+          "output": null
+        },
+        "nativeSearch": {
+          "supported": false
+        },
+        "reasoning": {
+          "levels": [],
+          "defaultLevel": null
+        },
+        "referencePricing": {
+          "currency": "USD",
+          "unit": "perMillionTokens",
+          "input": "0",
+          "output": null,
+          "cacheRead": "0.2"
+        }
+      },
+      "provenance": {
+        "limits.contextWindow": {
+          "layer": "local-model",
+          "id": "synthetic",
+          "explicit": true
+        },
+        "limits.maxOutputTokens": {
+          "layer": "local-model",
+          "id": "synthetic",
+          "explicit": true
+        },
+        "modalities.input": {
+          "layer": "local-model",
+          "id": "synthetic",
+          "explicit": true
+        },
+        "modalities.output": {
+          "layer": "local-model",
+          "id": "synthetic",
+          "explicit": true
+        },
+        "nativeSearch.supported": {
+          "layer": "local-model",
+          "id": "synthetic",
+          "explicit": true
+        },
+        "reasoning.levels": {
+          "layer": "local-model",
+          "id": "synthetic",
+          "explicit": true
+        },
+        "reasoning.defaultLevel": {
+          "layer": "local-model",
+          "id": "synthetic",
+          "explicit": true
+        },
+        "referencePricing.currency": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.unit": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.input": {
+          "layer": "local-model",
+          "id": "synthetic",
+          "explicit": true
+        },
+        "referencePricing.output": {
+          "layer": "local-model",
+          "id": "synthetic",
+          "explicit": true
+        },
+        "referencePricing.cacheRead": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        }
+      }
+    }
+  },
+  {
+    "name": "complete-layer-precedence",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ],
+              "volatileSuffixes": true
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "wire:model",
+        "providerKey": "edge",
+        "providerId": "connection"
+      },
+      "defaults": {
+        "limits": {
+          "contextWindow": 1500
+        }
+      },
+      "discovered": {
+        "limits": {
+          "contextWindow": 900
+        }
+      },
+      "local": {
+        "revision": 4,
+        "bindings": [
+          {
+            "id": "binding",
+            "providerId": "connection",
+            "upstreamModelId": "wire:model",
+            "variantId": "synthetic@edge",
+            "overrides": {
+              "limits": {
+                "contextWindow": 400
+              }
+            }
+          }
+        ],
+        "overrides": [
+          {
+            "target": "model",
+            "targetId": "synthetic",
+            "metadata": {
+              "limits": {
+                "contextWindow": 600
+              }
+            }
+          },
+          {
+            "target": "variant",
+            "targetId": "synthetic@edge",
+            "metadata": {
+              "limits": {
+                "contextWindow": 500
+              }
+            }
+          },
+          {
+            "target": "binding",
+            "targetId": "binding",
+            "metadata": {
+              "limits": {
+                "contextWindow": 300
+              }
+            }
+          }
+        ]
+      }
+    },
+    "expected": {
+      "schemaVersion": 1,
+      "catalogVersion": "fixture-v1",
+      "localRevision": 4,
+      "modelId": "synthetic",
+      "matchedVia": "binding",
+      "metadata": {
+        "limits": {
+          "contextWindow": 300,
+          "maxOutputTokens": 100
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "nativeSearch": {
+          "supported": true
+        },
+        "reasoning": {
+          "levels": [
+            "low",
+            "high"
+          ],
+          "defaultLevel": "low"
+        },
+        "referencePricing": {
+          "currency": "USD",
+          "unit": "perMillionTokens",
+          "input": "1",
+          "output": "5",
+          "cacheRead": "0.2"
+        }
+      },
+      "provenance": {
+        "limits.contextWindow": {
+          "layer": "local-binding",
+          "id": "binding",
+          "explicit": true
+        },
+        "limits.maxOutputTokens": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "modalities.input": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "modalities.output": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "nativeSearch.supported": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "reasoning.levels": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "reasoning.defaultLevel": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.currency": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.unit": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.input": {
+          "layer": "preset-variant",
+          "id": "synthetic@edge",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.output": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.cacheRead": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        }
+      },
+      "variantId": "synthetic@edge",
+      "bindingId": "binding"
+    }
+  },
+  {
+    "name": "base-override-applies-to-variant",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ],
+              "volatileSuffixes": true
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "wire:model",
+        "providerKey": "edge"
+      },
+      "local": {
+        "revision": 1,
+        "overrides": [
+          {
+            "target": "model",
+            "targetId": "synthetic",
+            "metadata": {
+              "referencePricing": {
+                "input": "0"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "expected": {
+      "schemaVersion": 1,
+      "catalogVersion": "fixture-v1",
+      "localRevision": 1,
+      "modelId": "synthetic",
+      "matchedVia": "exact",
+      "metadata": {
+        "limits": {
+          "contextWindow": 800,
+          "maxOutputTokens": 100
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "nativeSearch": {
+          "supported": true
+        },
+        "reasoning": {
+          "levels": [
+            "low",
+            "high"
+          ],
+          "defaultLevel": "low"
+        },
+        "referencePricing": {
+          "currency": "USD",
+          "unit": "perMillionTokens",
+          "input": "0",
+          "output": "5",
+          "cacheRead": "0.2"
+        }
+      },
+      "provenance": {
+        "limits.contextWindow": {
+          "layer": "preset-variant",
+          "id": "synthetic@edge",
+          "catalogVersion": "fixture-v1"
+        },
+        "limits.maxOutputTokens": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "modalities.input": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "modalities.output": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "nativeSearch.supported": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "reasoning.levels": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "reasoning.defaultLevel": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.currency": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.unit": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.input": {
+          "layer": "local-model",
+          "id": "synthetic",
+          "explicit": true
+        },
+        "referencePricing.output": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.cacheRead": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        }
+      },
+      "variantId": "synthetic@edge"
+    }
+  },
+  {
+    "name": "discovery-beats-preset",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ],
+              "volatileSuffixes": true
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "synthetic"
+      },
+      "discovered": {
+        "nativeSearch": {
+          "supported": false
+        }
+      }
+    },
+    "expected": {
+      "schemaVersion": 1,
+      "catalogVersion": "fixture-v1",
+      "localRevision": 0,
+      "modelId": "synthetic",
+      "matchedVia": "exact",
+      "metadata": {
+        "limits": {
+          "contextWindow": 1000,
+          "maxOutputTokens": 100
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "nativeSearch": {
+          "supported": false
+        },
+        "reasoning": {
+          "levels": [
+            "low",
+            "high"
+          ],
+          "defaultLevel": "low"
+        },
+        "referencePricing": {
+          "currency": "USD",
+          "unit": "perMillionTokens",
+          "input": "2",
+          "output": "5",
+          "cacheRead": "0.2"
+        }
+      },
+      "provenance": {
+        "limits.contextWindow": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "limits.maxOutputTokens": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "modalities.input": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "modalities.output": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "nativeSearch.supported": {
+          "layer": "discovered"
+        },
+        "reasoning.levels": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "reasoning.defaultLevel": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.currency": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.unit": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.input": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.output": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.cacheRead": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        }
+      }
+    }
+  },
+  {
+    "name": "unknown-preserves-defaults",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ],
+              "volatileSuffixes": true
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "unknown"
+      },
+      "defaults": {
+        "limits": {
+          "contextWindow": 128
+        }
+      }
+    },
+    "expected": {
+      "schemaVersion": 1,
+      "catalogVersion": "fixture-v1",
+      "localRevision": 0,
+      "matchedVia": "none",
+      "metadata": {
+        "limits": {
+          "contextWindow": 128
+        }
+      },
+      "provenance": {
+        "limits.contextWindow": {
+          "layer": "default"
+        }
+      }
+    }
+  },
+  {
+    "name": "hidden-preset",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ],
+              "volatileSuffixes": true
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "synthetic"
+      },
+      "local": {
+        "revision": 1,
+        "hiddenModelIds": [
+          "synthetic"
+        ]
+      }
+    },
+    "expected": {
+      "schemaVersion": 1,
+      "catalogVersion": "fixture-v1",
+      "localRevision": 1,
+      "matchedVia": "none",
+      "metadata": {},
+      "provenance": {}
+    }
+  },
+  {
+    "name": "restore-is-empty-tombstones",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ],
+              "volatileSuffixes": true
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "synthetic"
+      },
+      "local": {
+        "revision": 2,
+        "hiddenModelIds": []
+      }
+    },
+    "expected": {
+      "schemaVersion": 1,
+      "catalogVersion": "fixture-v1",
+      "localRevision": 2,
+      "modelId": "synthetic",
+      "matchedVia": "exact",
+      "metadata": {
+        "limits": {
+          "contextWindow": 1000,
+          "maxOutputTokens": 100
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "nativeSearch": {
+          "supported": true
+        },
+        "reasoning": {
+          "levels": [
+            "low",
+            "high"
+          ],
+          "defaultLevel": "low"
+        },
+        "referencePricing": {
+          "currency": "USD",
+          "unit": "perMillionTokens",
+          "input": "2",
+          "output": "5",
+          "cacheRead": "0.2"
+        }
+      },
+      "provenance": {
+        "limits.contextWindow": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "limits.maxOutputTokens": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "modalities.input": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "modalities.output": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "nativeSearch.supported": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "reasoning.levels": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "reasoning.defaultLevel": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.currency": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.unit": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.input": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.output": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.cacheRead": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        }
+      }
+    }
+  },
+  {
+    "name": "exact-id-beats-alias",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ],
+              "volatileSuffixes": true
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          },
+          {
+            "id": "alias",
+            "metadata": {
+              "nativeSearch": {
+                "supported": false
+              }
+            }
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "alias"
+      }
+    },
+    "expected": {
+      "schemaVersion": 1,
+      "catalogVersion": "fixture-v1",
+      "localRevision": 0,
+      "modelId": "alias",
+      "matchedVia": "exact",
+      "metadata": {
+        "nativeSearch": {
+          "supported": false
+        }
+      },
+      "provenance": {
+        "nativeSearch.supported": {
+          "layer": "preset-model",
+          "id": "alias",
+          "catalogVersion": "fixture-v1"
+        }
+      }
+    }
+  },
+  {
+    "name": "duplicate-alias-rejected",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ],
+              "volatileSuffixes": true
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          },
+          {
+            "id": "second",
+            "matches": {
+              "aliases": [
+                "alias"
+              ]
+            },
+            "metadata": {}
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "alias"
+      }
+    },
+    "expectedError": "Ambiguous alias alias in scope "
+  },
+  {
+    "name": "duplicate-prefix-rejected",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ],
+              "volatileSuffixes": true
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          },
+          {
+            "id": "second",
+            "matches": {
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {}
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "synthetic-fast"
+      }
+    },
+    "expectedError": "Ambiguous prefix synthetic- in scope "
+  },
+  {
+    "name": "binding-conflict-rejected",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ],
+              "volatileSuffixes": true
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "synthetic"
+      },
+      "local": {
+        "revision": 1,
+        "bindings": [
+          {
+            "id": "a",
+            "upstreamModelId": "synthetic"
+          },
+          {
+            "id": "b",
+            "upstreamModelId": "synthetic"
+          }
+        ]
+      }
+    },
+    "expectedError": "Ambiguous binding"
+  },
+  {
+    "name": "merged-limits-revalidated",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ],
+              "volatileSuffixes": true
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "synthetic"
+      },
+      "discovered": {
+        "limits": {
+          "contextWindow": 50
+        }
+      }
+    },
+    "expectedError": "maxOutputTokens exceeds contextWindow"
+  },
+  {
+    "name": "merged-default-level-revalidated",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ],
+              "volatileSuffixes": true
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "synthetic"
+      },
+      "discovered": {
+        "reasoning": {
+          "levels": [
+            "high"
+          ]
+        }
+      }
+    },
+    "expectedError": "defaultLevel is not in levels"
+  },
+  {
+    "name": "same-priority-suffix-conflict",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ],
+              "volatileSuffixes": true
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          },
+          {
+            "id": "synthetic-preview",
+            "matches": {
+              "volatileSuffixes": true
+            },
+            "metadata": {}
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "synthetic-preview-20260921"
+      }
+    },
+    "expectedError": "Ambiguous suffix match for synthetic-preview-20260921"
+  },
+  {
+    "name": "long-context-pricing-not-flattened",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ],
+              "volatileSuffixes": true
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          },
+          {
+            "id": "tiered",
+            "metadata": {
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "0",
+                "longContext": {
+                  "thresholdTokens": 500,
+                  "basis": "promptTokens",
+                  "mode": "marginal",
+                  "input": "1.25",
+                  "output": null,
+                  "cacheRead": "0"
+                }
+              }
+            }
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "tiered"
+      }
+    },
+    "expected": {
+      "schemaVersion": 1,
+      "catalogVersion": "fixture-v1",
+      "localRevision": 0,
+      "modelId": "tiered",
+      "matchedVia": "exact",
+      "metadata": {
+        "referencePricing": {
+          "currency": "USD",
+          "unit": "perMillionTokens",
+          "input": "0",
+          "longContext": {
+            "thresholdTokens": 500,
+            "basis": "promptTokens",
+            "mode": "marginal",
+            "input": "1.25",
+            "output": null,
+            "cacheRead": "0"
+          }
+        }
+      },
+      "provenance": {
+        "referencePricing.currency": {
+          "layer": "preset-model",
+          "id": "tiered",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.unit": {
+          "layer": "preset-model",
+          "id": "tiered",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.input": {
+          "layer": "preset-model",
+          "id": "tiered",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.longContext.thresholdTokens": {
+          "layer": "preset-model",
+          "id": "tiered",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.longContext.basis": {
+          "layer": "preset-model",
+          "id": "tiered",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.longContext.mode": {
+          "layer": "preset-model",
+          "id": "tiered",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.longContext.input": {
+          "layer": "preset-model",
+          "id": "tiered",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.longContext.output": {
+          "layer": "preset-model",
+          "id": "tiered",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.longContext.cacheRead": {
+          "layer": "preset-model",
+          "id": "tiered",
+          "catalogVersion": "fixture-v1"
+        }
+      }
+    }
+  },
+  {
+    "name": "local-name-only-keeps-preset-leaves",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ],
+              "volatileSuffixes": true
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "synthetic"
+      },
+      "local": {
+        "revision": 3,
+        "models": [
+          {
+            "id": "synthetic",
+            "name": "Renamed",
+            "metadata": {}
+          }
+        ]
+      }
+    },
+    "expected": {
+      "schemaVersion": 1,
+      "catalogVersion": "fixture-v1",
+      "localRevision": 3,
+      "modelId": "synthetic",
+      "matchedVia": "exact",
+      "metadata": {
+        "limits": {
+          "contextWindow": 1000,
+          "maxOutputTokens": 100
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "nativeSearch": {
+          "supported": true
+        },
+        "reasoning": {
+          "levels": [
+            "low",
+            "high"
+          ],
+          "defaultLevel": "low"
+        },
+        "referencePricing": {
+          "currency": "USD",
+          "unit": "perMillionTokens",
+          "input": "2",
+          "output": "5",
+          "cacheRead": "0.2"
+        }
+      },
+      "provenance": {
+        "limits.contextWindow": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "limits.maxOutputTokens": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "modalities.input": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "modalities.output": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "nativeSearch.supported": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "reasoning.levels": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "reasoning.defaultLevel": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.currency": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.unit": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.input": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.output": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.cacheRead": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        }
+      }
+    }
+  },
+  {
+    "name": "local-variant-name-only-keeps-preset-leaves",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ],
+              "volatileSuffixes": true
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "wire:model",
+        "providerKey": "edge"
+      },
+      "local": {
+        "revision": 3,
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "name": "Renamed",
+            "metadata": {}
+          }
+        ]
+      }
+    },
+    "expected": {
+      "schemaVersion": 1,
+      "catalogVersion": "fixture-v1",
+      "localRevision": 3,
+      "modelId": "synthetic",
+      "matchedVia": "exact",
+      "metadata": {
+        "limits": {
+          "contextWindow": 800,
+          "maxOutputTokens": 100
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "nativeSearch": {
+          "supported": true
+        },
+        "reasoning": {
+          "levels": [
+            "low",
+            "high"
+          ],
+          "defaultLevel": "low"
+        },
+        "referencePricing": {
+          "currency": "USD",
+          "unit": "perMillionTokens",
+          "input": "1",
+          "output": "5",
+          "cacheRead": "0.2"
+        }
+      },
+      "provenance": {
+        "limits.contextWindow": {
+          "layer": "preset-variant",
+          "id": "synthetic@edge",
+          "catalogVersion": "fixture-v1"
+        },
+        "limits.maxOutputTokens": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "modalities.input": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "modalities.output": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "nativeSearch.supported": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "reasoning.levels": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "reasoning.defaultLevel": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.currency": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.unit": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.input": {
+          "layer": "preset-variant",
+          "id": "synthetic@edge",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.output": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.cacheRead": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        }
+      },
+      "variantId": "synthetic@edge"
+    }
+  },
+  {
+    "name": "hidden-explicit-identity-is-unknown",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ],
+              "volatileSuffixes": true
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "synthetic",
+        "modelId": "synthetic"
+      },
+      "local": {
+        "revision": 1,
+        "hiddenModelIds": [
+          "synthetic"
+        ]
+      }
+    },
+    "expected": {
+      "schemaVersion": 1,
+      "catalogVersion": "fixture-v1",
+      "localRevision": 1,
+      "matchedVia": "none",
+      "metadata": {},
+      "provenance": {}
+    }
+  },
+  {
+    "name": "hidden-binding-keeps-binding-override",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ],
+              "volatileSuffixes": true
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "wire:model",
+        "providerKey": "edge"
+      },
+      "local": {
+        "revision": 2,
+        "hiddenVariantIds": [
+          "synthetic@edge"
+        ],
+        "bindings": [
+          {
+            "id": "binding",
+            "upstreamModelId": "wire:model",
+            "variantId": "synthetic@edge",
+            "overrides": {
+              "nativeSearch": {
+                "supported": false
+              }
+            }
+          }
+        ]
+      }
+    },
+    "expected": {
+      "schemaVersion": 1,
+      "catalogVersion": "fixture-v1",
+      "localRevision": 2,
+      "matchedVia": "binding",
+      "metadata": {
+        "nativeSearch": {
+          "supported": false
+        }
+      },
+      "provenance": {
+        "nativeSearch.supported": {
+          "layer": "local-binding",
+          "id": "binding",
+          "explicit": true
+        }
+      },
+      "bindingId": "binding"
+    }
+  },
+  {
+    "name": "prefix-does-not-borrow-local-model-prices",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ],
+              "volatileSuffixes": true
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "synthetic-thinking"
+      },
+      "local": {
+        "revision": 2,
+        "overrides": [
+          {
+            "target": "model",
+            "targetId": "synthetic",
+            "metadata": {
+              "referencePricing": {
+                "input": "0"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "expected": {
+      "schemaVersion": 1,
+      "catalogVersion": "fixture-v1",
+      "localRevision": 2,
+      "modelId": "synthetic",
+      "matchedVia": "prefix",
+      "metadata": {
+        "limits": {
+          "contextWindow": 1000,
+          "maxOutputTokens": 100
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "nativeSearch": {
+          "supported": true
+        },
+        "reasoning": {
+          "levels": [
+            "low",
+            "high"
+          ],
+          "defaultLevel": "low"
+        }
+      },
+      "provenance": {
+        "limits.contextWindow": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "limits.maxOutputTokens": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "modalities.input": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "modalities.output": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "nativeSearch.supported": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "reasoning.levels": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "reasoning.defaultLevel": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        }
+      }
+    }
+  },
+  {
+    "name": "binding-price-is-explicit-not-prefix-borrowing",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ],
+              "volatileSuffixes": true
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "synthetic-thinking"
+      },
+      "local": {
+        "revision": 2,
+        "bindings": [
+          {
+            "id": "explicit-price",
+            "upstreamModelId": "synthetic-thinking",
+            "overrides": {
+              "referencePricing": {
+                "input": "0"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "expected": {
+      "schemaVersion": 1,
+      "catalogVersion": "fixture-v1",
+      "localRevision": 2,
+      "modelId": "synthetic",
+      "matchedVia": "binding",
+      "metadata": {
+        "limits": {
+          "contextWindow": 1000,
+          "maxOutputTokens": 100
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "nativeSearch": {
+          "supported": true
+        },
+        "reasoning": {
+          "levels": [
+            "low",
+            "high"
+          ],
+          "defaultLevel": "low"
+        },
+        "referencePricing": {
+          "input": "0"
+        }
+      },
+      "provenance": {
+        "limits.contextWindow": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "limits.maxOutputTokens": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "modalities.input": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "modalities.output": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "nativeSearch.supported": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "reasoning.levels": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "reasoning.defaultLevel": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.input": {
+          "layer": "local-binding",
+          "id": "explicit-price",
+          "explicit": true
+        }
+      },
+      "bindingId": "explicit-price"
+    }
+  },
+  {
+    "name": "hidden-stronger-prefix-does-not-resurrect-via-base-prefix",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ],
+              "volatileSuffixes": true
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "synthetic-mini-fast"
+      },
+      "local": {
+        "revision": 1,
+        "hiddenModelIds": [
+          "synthetic-mini"
+        ]
+      }
+    },
+    "expected": {
+      "schemaVersion": 1,
+      "catalogVersion": "fixture-v1",
+      "localRevision": 1,
+      "matchedVia": "none",
+      "metadata": {},
+      "provenance": {}
+    }
+  },
+  {
+    "name": "hidden-scoped-variant-does-not-resurrect-via-global-alias",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ],
+              "volatileSuffixes": true
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "alias",
+        "providerKey": "edge"
+      },
+      "local": {
+        "revision": 1,
+        "hiddenVariantIds": [
+          "synthetic@edge"
+        ]
+      }
+    },
+    "expected": {
+      "schemaVersion": 1,
+      "catalogVersion": "fixture-v1",
+      "localRevision": 1,
+      "matchedVia": "none",
+      "metadata": {},
+      "provenance": {}
+    }
+  },
+  {
+    "name": "specific-binding-dominates-ambiguous-weaker-bindings",
+    "input": {
+      "catalog": {
+        "schemaVersion": 1,
+        "catalogVersion": "fixture-v1",
+        "publishedAt": "2026-09-22T00:00:00Z",
+        "models": [
+          {
+            "id": "synthetic",
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ],
+              "volatileSuffixes": true
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 1000,
+                "maxOutputTokens": 100
+              },
+              "modalities": {
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "output": [
+                  "text"
+                ]
+              },
+              "nativeSearch": {
+                "supported": true
+              },
+              "reasoning": {
+                "levels": [
+                  "low",
+                  "high"
+                ],
+                "defaultLevel": "low"
+              },
+              "referencePricing": {
+                "currency": "USD",
+                "unit": "perMillionTokens",
+                "input": "2",
+                "output": "5",
+                "cacheRead": "0.2"
+              }
+            }
+          },
+          {
+            "id": "synthetic-mini",
+            "matches": {
+              "prefixes": [
+                "synthetic-mini-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 200
+              }
+            }
+          }
+        ],
+        "variants": [
+          {
+            "id": "synthetic@edge",
+            "modelId": "synthetic",
+            "providerKey": "edge",
+            "upstreamModelIds": [
+              "wire:model"
+            ],
+            "matches": {
+              "aliases": [
+                "alias"
+              ],
+              "prefixes": [
+                "synthetic-"
+              ]
+            },
+            "metadata": {
+              "limits": {
+                "contextWindow": 800
+              },
+              "referencePricing": {
+                "input": "1"
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "upstreamModelId": "synthetic",
+        "providerId": "p",
+        "channelId": "c"
+      },
+      "local": {
+        "revision": 1,
+        "bindings": [
+          {
+            "id": "a",
+            "upstreamModelId": "synthetic",
+            "providerId": "p"
+          },
+          {
+            "id": "b",
+            "upstreamModelId": "synthetic",
+            "channelId": "c"
+          },
+          {
+            "id": "c",
+            "upstreamModelId": "synthetic",
+            "providerId": "p",
+            "channelId": "c"
+          }
+        ]
+      }
+    },
+    "expected": {
+      "schemaVersion": 1,
+      "catalogVersion": "fixture-v1",
+      "localRevision": 1,
+      "modelId": "synthetic",
+      "matchedVia": "binding",
+      "metadata": {
+        "limits": {
+          "contextWindow": 1000,
+          "maxOutputTokens": 100
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "nativeSearch": {
+          "supported": true
+        },
+        "reasoning": {
+          "levels": [
+            "low",
+            "high"
+          ],
+          "defaultLevel": "low"
+        },
+        "referencePricing": {
+          "currency": "USD",
+          "unit": "perMillionTokens",
+          "input": "2",
+          "output": "5",
+          "cacheRead": "0.2"
+        }
+      },
+      "provenance": {
+        "limits.contextWindow": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "limits.maxOutputTokens": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "modalities.input": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "modalities.output": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "nativeSearch.supported": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "reasoning.levels": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "reasoning.defaultLevel": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.currency": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.unit": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.input": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.output": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        },
+        "referencePricing.cacheRead": {
+          "layer": "preset-model",
+          "id": "synthetic",
+          "catalogVersion": "fixture-v1"
+        }
+      },
+      "bindingId": "c"
+    }
+  }
+]

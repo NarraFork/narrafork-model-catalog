@@ -1,0 +1,1741 @@
+[
+  {
+    "id": "auto-smart@cursor",
+    "modelId": "auto-smart",
+    "providerKey": "cursor",
+    "upstreamModelIds": [
+      "auto-smart"
+    ],
+    "name": "Cursor Auto",
+    "matches": {},
+    "metadata": {},
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "claude-fable-5@cursor",
+    "modelId": "claude-fable-5",
+    "providerKey": "cursor",
+    "upstreamModelIds": [
+      "claude-fable-5"
+    ],
+    "name": "Cursor Fable 5",
+    "matches": {},
+    "metadata": {},
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "claude-haiku-4-5@cursor",
+    "modelId": "claude-haiku-4-5",
+    "providerKey": "cursor",
+    "upstreamModelIds": [
+      "claude-haiku-4-5"
+    ],
+    "name": "Claude Haiku 4.5",
+    "matches": {
+      "aliases": [
+        "claude-haiku-4.5"
+      ]
+    },
+    "metadata": {
+      "referencePricing": {
+        "currency": "USD",
+        "unit": "perMillionTokens",
+        "input": "1",
+        "output": "5",
+        "cacheRead": "0.1",
+        "cacheWrite": "1.25"
+      }
+    },
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "claude-opus-4-5@cursor",
+    "modelId": "claude-opus-4-5",
+    "providerKey": "cursor",
+    "upstreamModelIds": [
+      "claude-opus-4-5"
+    ],
+    "name": "Claude Opus 4.5",
+    "matches": {
+      "aliases": [
+        "claude-opus-4.5"
+      ]
+    },
+    "metadata": {
+      "referencePricing": {
+        "currency": "USD",
+        "unit": "perMillionTokens",
+        "input": "5",
+        "output": "25",
+        "cacheRead": "0.5",
+        "cacheWrite": "6.25"
+      }
+    },
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "claude-opus-4-6-thinking@antigravity",
+    "modelId": "claude-opus-4-6-thinking",
+    "providerKey": "antigravity",
+    "upstreamModelIds": [
+      "claude-opus-4-6-thinking"
+    ],
+    "name": "Claude Opus 4.6 Thinking",
+    "matches": {},
+    "metadata": {
+      "referencePricing": {
+        "currency": "USD",
+        "unit": "perMillionTokens",
+        "input": "5",
+        "output": "25",
+        "cacheRead": "0.5",
+        "cacheWrite": "6.25"
+      },
+      "limits": {
+        "contextWindow": 1000000
+      }
+    },
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      },
+      {
+        "label": "NarraFork builtin declared prefix compatibility from claude-opus-4-6; legacy behavior materialized, not a vendor specification",
+        "fields": [
+          "limits.contextWindow"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "claude-opus-4-6@cursor",
+    "modelId": "claude-opus-4-6",
+    "providerKey": "cursor",
+    "upstreamModelIds": [
+      "claude-opus-4-6"
+    ],
+    "name": "Claude Opus 4.6",
+    "matches": {
+      "aliases": [
+        "claude-opus-4.6"
+      ]
+    },
+    "metadata": {
+      "referencePricing": {
+        "currency": "USD",
+        "unit": "perMillionTokens",
+        "input": "5",
+        "output": "25",
+        "cacheRead": "0.5",
+        "cacheWrite": "6.25"
+      }
+    },
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "claude-opus-4-7@cursor",
+    "modelId": "claude-opus-4-7",
+    "providerKey": "cursor",
+    "upstreamModelIds": [
+      "claude-opus-4-7"
+    ],
+    "name": "Claude Opus 4.7",
+    "matches": {
+      "aliases": [
+        "claude-opus-4.7"
+      ]
+    },
+    "metadata": {
+      "referencePricing": {
+        "currency": "USD",
+        "unit": "perMillionTokens",
+        "input": "5",
+        "output": "25",
+        "cacheRead": "0.5",
+        "cacheWrite": "6.25"
+      }
+    },
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "claude-opus-4-8@cursor",
+    "modelId": "claude-opus-4-8",
+    "providerKey": "cursor",
+    "upstreamModelIds": [
+      "claude-opus-4-8"
+    ],
+    "name": "Claude Opus 4.8",
+    "matches": {
+      "aliases": [
+        "claude-opus-4.8"
+      ]
+    },
+    "metadata": {
+      "referencePricing": {
+        "currency": "USD",
+        "unit": "perMillionTokens",
+        "input": "5",
+        "output": "25",
+        "cacheRead": "0.5",
+        "cacheWrite": "6.25"
+      }
+    },
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "claude-opus-5@cursor",
+    "modelId": "claude-opus-5",
+    "providerKey": "cursor",
+    "upstreamModelIds": [
+      "claude-opus-5"
+    ],
+    "name": "Cursor Opus 5",
+    "matches": {},
+    "metadata": {},
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "claude-sonnet-4-5@cursor",
+    "modelId": "claude-sonnet-4-5",
+    "providerKey": "cursor",
+    "upstreamModelIds": [
+      "claude-sonnet-4-5"
+    ],
+    "name": "Claude Sonnet 4.5",
+    "matches": {
+      "aliases": [
+        "claude-sonnet-4.5"
+      ]
+    },
+    "metadata": {
+      "referencePricing": {
+        "currency": "USD",
+        "unit": "perMillionTokens",
+        "input": "3",
+        "output": "15",
+        "cacheRead": "0.3",
+        "cacheWrite": "3.75"
+      }
+    },
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "claude-sonnet-4-6@antigravity",
+    "modelId": "claude-sonnet-4-6",
+    "providerKey": "antigravity",
+    "upstreamModelIds": [
+      "claude-sonnet-4-6"
+    ],
+    "name": "Claude Sonnet 4.6",
+    "matches": {
+      "aliases": [
+        "claude-sonnet-4.6"
+      ]
+    },
+    "metadata": {
+      "referencePricing": {
+        "currency": "USD",
+        "unit": "perMillionTokens",
+        "input": "3",
+        "output": "15",
+        "cacheRead": "0.3",
+        "cacheWrite": "3.75"
+      }
+    },
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "claude-sonnet-4-6@cursor",
+    "modelId": "claude-sonnet-4-6",
+    "providerKey": "cursor",
+    "upstreamModelIds": [
+      "claude-sonnet-4-6"
+    ],
+    "name": "Claude Sonnet 4.6",
+    "matches": {
+      "aliases": [
+        "claude-sonnet-4.6"
+      ]
+    },
+    "metadata": {
+      "referencePricing": {
+        "currency": "USD",
+        "unit": "perMillionTokens",
+        "input": "3",
+        "output": "15",
+        "cacheRead": "0.3",
+        "cacheWrite": "3.75"
+      }
+    },
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "claude-sonnet-4@cursor",
+    "modelId": "claude-sonnet-4",
+    "providerKey": "cursor",
+    "upstreamModelIds": [
+      "claude-sonnet-4"
+    ],
+    "name": "Cursor Sonnet 4",
+    "matches": {},
+    "metadata": {},
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "claude-sonnet-5@cursor",
+    "modelId": "claude-sonnet-5",
+    "providerKey": "cursor",
+    "upstreamModelIds": [
+      "claude-sonnet-5"
+    ],
+    "name": "Cursor Sonnet 5",
+    "matches": {},
+    "metadata": {},
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "composer-2.5@cursor",
+    "modelId": "composer-2.5",
+    "providerKey": "cursor",
+    "upstreamModelIds": [
+      "composer-2.5"
+    ],
+    "name": "Cursor Composer 2.5",
+    "matches": {},
+    "metadata": {},
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gemini-2.5-flash-lite@antigravity",
+    "modelId": "gemini-2.5-flash-lite",
+    "providerKey": "antigravity",
+    "upstreamModelIds": [
+      "gemini-2.5-flash-lite"
+    ],
+    "name": "Gemini 2.5 Flash Lite",
+    "matches": {},
+    "metadata": {},
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gemini-2.5-flash-thinking@antigravity",
+    "modelId": "gemini-2.5-flash-thinking",
+    "providerKey": "antigravity",
+    "upstreamModelIds": [
+      "gemini-2.5-flash-thinking"
+    ],
+    "name": "Gemini 2.5 Flash Thinking",
+    "matches": {},
+    "metadata": {},
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gemini-2.5-flash@antigravity",
+    "modelId": "gemini-2.5-flash",
+    "providerKey": "antigravity",
+    "upstreamModelIds": [
+      "gemini-2.5-flash"
+    ],
+    "name": "Cursor Gemini 2.5 Flash",
+    "matches": {},
+    "metadata": {},
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gemini-2.5-flash@cursor",
+    "modelId": "gemini-2.5-flash",
+    "providerKey": "cursor",
+    "upstreamModelIds": [
+      "gemini-2.5-flash"
+    ],
+    "name": "Cursor Gemini 2.5 Flash",
+    "matches": {},
+    "metadata": {},
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gemini-3-flash@antigravity",
+    "modelId": "gemini-3-flash",
+    "providerKey": "antigravity",
+    "upstreamModelIds": [
+      "gemini-3-flash"
+    ],
+    "name": "Gemini 3 Flash",
+    "matches": {},
+    "metadata": {
+      "referencePricing": {
+        "currency": "USD",
+        "unit": "perMillionTokens",
+        "input": "0.5",
+        "output": "3",
+        "cacheRead": "0.05"
+      }
+    },
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gemini-3-flash@cursor",
+    "modelId": "gemini-3-flash",
+    "providerKey": "cursor",
+    "upstreamModelIds": [
+      "gemini-3-flash"
+    ],
+    "name": "Gemini 3 Flash",
+    "matches": {},
+    "metadata": {
+      "referencePricing": {
+        "currency": "USD",
+        "unit": "perMillionTokens",
+        "input": "0.5",
+        "output": "3",
+        "cacheRead": "0.05"
+      }
+    },
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gemini-3.1-flash-image@antigravity",
+    "modelId": "gemini-3.1-flash-image",
+    "providerKey": "antigravity",
+    "upstreamModelIds": [
+      "gemini-3.1-flash-image"
+    ],
+    "name": "Gemini 3.1 Flash Image",
+    "matches": {},
+    "metadata": {},
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gemini-3.1-flash-lite@antigravity",
+    "modelId": "gemini-3.1-flash-lite",
+    "providerKey": "antigravity",
+    "upstreamModelIds": [
+      "gemini-3.1-flash-lite"
+    ],
+    "name": "Gemini 3.1 Flash Lite",
+    "matches": {},
+    "metadata": {},
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gemini-3.1-pro-high@antigravity",
+    "modelId": "gemini-3.1-pro-high",
+    "providerKey": "antigravity",
+    "upstreamModelIds": [
+      "gemini-3.1-pro-high"
+    ],
+    "name": "Gemini 3.1 Pro High",
+    "matches": {},
+    "metadata": {
+      "referencePricing": {
+        "currency": "USD",
+        "unit": "perMillionTokens",
+        "input": "2",
+        "output": "12",
+        "cacheRead": "0.2",
+        "longContext": {
+          "thresholdTokens": 200000,
+          "basis": "promptTokens",
+          "mode": "full",
+          "input": "4",
+          "output": "18",
+          "cacheRead": "0.4"
+        }
+      }
+    },
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gemini-3.1-pro-low@antigravity",
+    "modelId": "gemini-3.1-pro-low",
+    "providerKey": "antigravity",
+    "upstreamModelIds": [
+      "gemini-3.1-pro-low"
+    ],
+    "name": "Gemini 3.1 Pro Low",
+    "matches": {},
+    "metadata": {
+      "referencePricing": {
+        "currency": "USD",
+        "unit": "perMillionTokens",
+        "input": "2",
+        "output": "12",
+        "cacheRead": "0.2",
+        "longContext": {
+          "thresholdTokens": 200000,
+          "basis": "promptTokens",
+          "mode": "full",
+          "input": "4",
+          "output": "18",
+          "cacheRead": "0.4"
+        }
+      }
+    },
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gemini-3.1-pro@cursor",
+    "modelId": "gemini-3.1-pro",
+    "providerKey": "cursor",
+    "upstreamModelIds": [
+      "gemini-3.1-pro"
+    ],
+    "name": "Cursor Gemini 3.1 Pro",
+    "matches": {},
+    "metadata": {},
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gemini-3.5-flash-lite@antigravity",
+    "modelId": "gemini-3.5-flash-lite",
+    "providerKey": "antigravity",
+    "upstreamModelIds": [
+      "gemini-3.5-flash-lite"
+    ],
+    "name": "Gemini 3.5 Flash Lite",
+    "matches": {},
+    "metadata": {},
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gemini-3.5-flash@cursor",
+    "modelId": "gemini-3.5-flash",
+    "providerKey": "cursor",
+    "upstreamModelIds": [
+      "gemini-3.5-flash"
+    ],
+    "name": "Cursor Gemini 3.5 Flash",
+    "matches": {},
+    "metadata": {},
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gemini-3.6-flash-high@antigravity",
+    "modelId": "gemini-3.6-flash-high",
+    "providerKey": "antigravity",
+    "upstreamModelIds": [
+      "gemini-3.6-flash-high"
+    ],
+    "name": "Gemini 3.6 Flash High",
+    "matches": {},
+    "metadata": {
+      "referencePricing": {
+        "currency": "USD",
+        "unit": "perMillionTokens",
+        "input": "1.5",
+        "output": "7.5",
+        "cacheRead": "0.15"
+      }
+    },
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gemini-3.6-flash-low@antigravity",
+    "modelId": "gemini-3.6-flash-low",
+    "providerKey": "antigravity",
+    "upstreamModelIds": [
+      "gemini-3.6-flash-low"
+    ],
+    "name": "Gemini 3.6 Flash Low",
+    "matches": {},
+    "metadata": {
+      "referencePricing": {
+        "currency": "USD",
+        "unit": "perMillionTokens",
+        "input": "1.5",
+        "output": "7.5",
+        "cacheRead": "0.15"
+      }
+    },
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gemini-3.6-flash-medium@antigravity",
+    "modelId": "gemini-3.6-flash-medium",
+    "providerKey": "antigravity",
+    "upstreamModelIds": [
+      "gemini-3.6-flash-medium"
+    ],
+    "name": "Gemini 3.6 Flash Medium",
+    "matches": {},
+    "metadata": {
+      "referencePricing": {
+        "currency": "USD",
+        "unit": "perMillionTokens",
+        "input": "1.5",
+        "output": "7.5",
+        "cacheRead": "0.15"
+      }
+    },
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gemini-3.6-flash@cursor",
+    "modelId": "gemini-3.6-flash",
+    "providerKey": "cursor",
+    "upstreamModelIds": [
+      "gemini-3.6-flash"
+    ],
+    "name": "Cursor Gemini 3.6 Flash",
+    "matches": {},
+    "metadata": {},
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gemini-3.7-flash-high@antigravity",
+    "modelId": "gemini-3.7-flash-high",
+    "providerKey": "antigravity",
+    "upstreamModelIds": [
+      "gemini-3.7-flash-high"
+    ],
+    "name": "Gemini 3.7 Flash High",
+    "matches": {},
+    "metadata": {},
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gemini-3.7-flash-low@antigravity",
+    "modelId": "gemini-3.7-flash-low",
+    "providerKey": "antigravity",
+    "upstreamModelIds": [
+      "gemini-3.7-flash-low"
+    ],
+    "name": "Gemini 3.7 Flash Low",
+    "matches": {},
+    "metadata": {},
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gemini-3.7-flash-medium@antigravity",
+    "modelId": "gemini-3.7-flash-medium",
+    "providerKey": "antigravity",
+    "upstreamModelIds": [
+      "gemini-3.7-flash-medium"
+    ],
+    "name": "Gemini 3.7 Flash Medium",
+    "matches": {},
+    "metadata": {},
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gemini-3.7-flash@cursor",
+    "modelId": "gemini-3.7-flash",
+    "providerKey": "cursor",
+    "upstreamModelIds": [
+      "gemini-3.7-flash"
+    ],
+    "name": "Gemini 3.7 Flash",
+    "matches": {},
+    "metadata": {},
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gemini-3.8-flash-high@antigravity",
+    "modelId": "gemini-3.8-flash-high",
+    "providerKey": "antigravity",
+    "upstreamModelIds": [
+      "gemini-3.8-flash-high"
+    ],
+    "name": "Gemini 3.8 Flash High",
+    "matches": {},
+    "metadata": {},
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gemini-3.8-flash-low@antigravity",
+    "modelId": "gemini-3.8-flash-low",
+    "providerKey": "antigravity",
+    "upstreamModelIds": [
+      "gemini-3.8-flash-low"
+    ],
+    "name": "Gemini 3.8 Flash Low",
+    "matches": {},
+    "metadata": {},
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gemini-3.8-flash-medium@antigravity",
+    "modelId": "gemini-3.8-flash-medium",
+    "providerKey": "antigravity",
+    "upstreamModelIds": [
+      "gemini-3.8-flash-medium"
+    ],
+    "name": "Gemini 3.8 Flash Medium",
+    "matches": {},
+    "metadata": {},
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "glm-5.2@cursor",
+    "modelId": "glm-5.2",
+    "providerKey": "cursor",
+    "upstreamModelIds": [
+      "glm-5.2"
+    ],
+    "name": "Cursor GLM 5.2",
+    "matches": {},
+    "metadata": {},
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gpt-5-mini@cursor",
+    "modelId": "gpt-5-mini",
+    "providerKey": "cursor",
+    "upstreamModelIds": [
+      "gpt-5-mini"
+    ],
+    "name": "Cursor GPT-5 Mini",
+    "matches": {},
+    "metadata": {},
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gpt-5.1@cursor",
+    "modelId": "gpt-5.1",
+    "providerKey": "cursor",
+    "upstreamModelIds": [
+      "gpt-5.1"
+    ],
+    "name": "Cursor GPT-5.1",
+    "matches": {},
+    "metadata": {},
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gpt-5.2@cursor",
+    "modelId": "gpt-5.2",
+    "providerKey": "cursor",
+    "upstreamModelIds": [
+      "gpt-5.2"
+    ],
+    "name": "GPT-5.2",
+    "matches": {},
+    "metadata": {
+      "referencePricing": {
+        "currency": "USD",
+        "unit": "perMillionTokens",
+        "input": "1.75",
+        "output": "14",
+        "cacheRead": "0.175"
+      }
+    },
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gpt-5.3-codex@cursor",
+    "modelId": "gpt-5.3-codex",
+    "providerKey": "cursor",
+    "upstreamModelIds": [
+      "gpt-5.3-codex"
+    ],
+    "name": "GPT-5.3 Codex",
+    "matches": {},
+    "metadata": {
+      "referencePricing": {
+        "currency": "USD",
+        "unit": "perMillionTokens",
+        "input": "1.75",
+        "output": "14",
+        "cacheRead": "0.175"
+      }
+    },
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gpt-5.4-mini@codex",
+    "modelId": "gpt-5.4-mini",
+    "providerKey": "codex",
+    "upstreamModelIds": [
+      "gpt-5.4-mini"
+    ],
+    "name": "GPT-5.4 Mini",
+    "matches": {},
+    "metadata": {
+      "reasoning": {
+        "levels": [
+          "low",
+          "medium",
+          "high",
+          "xhigh"
+        ]
+      },
+      "referencePricing": {
+        "currency": "USD",
+        "unit": "perMillionTokens",
+        "input": "0.75",
+        "output": "4.5",
+        "cacheRead": "0.075"
+      }
+    },
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gpt-5.4-mini@cursor",
+    "modelId": "gpt-5.4-mini",
+    "providerKey": "cursor",
+    "upstreamModelIds": [
+      "gpt-5.4-mini"
+    ],
+    "name": "GPT-5.4 Mini",
+    "matches": {},
+    "metadata": {
+      "reasoning": {
+        "levels": [
+          "low",
+          "medium",
+          "high",
+          "xhigh"
+        ]
+      },
+      "referencePricing": {
+        "currency": "USD",
+        "unit": "perMillionTokens",
+        "input": "0.75",
+        "output": "4.5",
+        "cacheRead": "0.075"
+      }
+    },
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gpt-5.4@codex",
+    "modelId": "gpt-5.4",
+    "providerKey": "codex",
+    "upstreamModelIds": [
+      "gpt-5.4"
+    ],
+    "name": "GPT-5.4",
+    "matches": {},
+    "metadata": {
+      "reasoning": {
+        "levels": [
+          "low",
+          "medium",
+          "high",
+          "xhigh"
+        ]
+      },
+      "referencePricing": {
+        "currency": "USD",
+        "unit": "perMillionTokens",
+        "input": "2.5",
+        "output": "15",
+        "cacheRead": "0.25"
+      }
+    },
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gpt-5.4@cursor",
+    "modelId": "gpt-5.4",
+    "providerKey": "cursor",
+    "upstreamModelIds": [
+      "gpt-5.4"
+    ],
+    "name": "GPT-5.4",
+    "matches": {},
+    "metadata": {
+      "reasoning": {
+        "levels": [
+          "low",
+          "medium",
+          "high",
+          "xhigh"
+        ]
+      },
+      "referencePricing": {
+        "currency": "USD",
+        "unit": "perMillionTokens",
+        "input": "2.5",
+        "output": "15",
+        "cacheRead": "0.25"
+      }
+    },
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gpt-5.5@codex",
+    "modelId": "gpt-5.5",
+    "providerKey": "codex",
+    "upstreamModelIds": [
+      "gpt-5.5"
+    ],
+    "name": "GPT-5.5",
+    "matches": {},
+    "metadata": {
+      "reasoning": {
+        "levels": [
+          "low",
+          "medium",
+          "high",
+          "xhigh"
+        ]
+      },
+      "referencePricing": {
+        "currency": "USD",
+        "unit": "perMillionTokens",
+        "input": "5",
+        "output": "30",
+        "cacheRead": "0.5"
+      }
+    },
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gpt-5.5@cursor",
+    "modelId": "gpt-5.5",
+    "providerKey": "cursor",
+    "upstreamModelIds": [
+      "gpt-5.5"
+    ],
+    "name": "GPT-5.5",
+    "matches": {},
+    "metadata": {
+      "reasoning": {
+        "levels": [
+          "low",
+          "medium",
+          "high",
+          "xhigh"
+        ]
+      },
+      "referencePricing": {
+        "currency": "USD",
+        "unit": "perMillionTokens",
+        "input": "5",
+        "output": "30",
+        "cacheRead": "0.5"
+      }
+    },
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gpt-5.6-luna@codex",
+    "modelId": "gpt-5.6-luna",
+    "providerKey": "codex",
+    "upstreamModelIds": [
+      "gpt-5.6-luna"
+    ],
+    "name": "GPT-5.6 Luna",
+    "matches": {},
+    "metadata": {
+      "limits": {
+        "contextWindow": 272000
+      },
+      "reasoning": {
+        "levels": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ]
+      },
+      "referencePricing": {
+        "currency": "USD",
+        "unit": "perMillionTokens",
+        "input": "1",
+        "output": "6",
+        "cacheRead": "0.1",
+        "cacheWrite": "1.25",
+        "longContext": {
+          "thresholdTokens": 272000,
+          "basis": "promptTokens",
+          "mode": "full",
+          "input": "2",
+          "output": "9",
+          "cacheRead": "0.2",
+          "cacheWrite": "2.5"
+        }
+      }
+    },
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gpt-5.6-luna@cursor",
+    "modelId": "gpt-5.6-luna",
+    "providerKey": "cursor",
+    "upstreamModelIds": [
+      "gpt-5.6-luna"
+    ],
+    "name": "GPT-5.6 Luna",
+    "matches": {},
+    "metadata": {
+      "limits": {
+        "contextWindow": 272000
+      },
+      "reasoning": {
+        "levels": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ]
+      },
+      "referencePricing": {
+        "currency": "USD",
+        "unit": "perMillionTokens",
+        "input": "1",
+        "output": "6",
+        "cacheRead": "0.1",
+        "cacheWrite": "1.25",
+        "longContext": {
+          "thresholdTokens": 272000,
+          "basis": "promptTokens",
+          "mode": "full",
+          "input": "2",
+          "output": "9",
+          "cacheRead": "0.2",
+          "cacheWrite": "2.5"
+        }
+      }
+    },
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gpt-5.6-sol@codex",
+    "modelId": "gpt-5.6-sol",
+    "providerKey": "codex",
+    "upstreamModelIds": [
+      "gpt-5.6-sol"
+    ],
+    "name": "GPT-5.6 Sol",
+    "matches": {
+      "aliases": [
+        "gpt-5.6"
+      ]
+    },
+    "metadata": {
+      "limits": {
+        "contextWindow": 1000000
+      },
+      "reasoning": {
+        "levels": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ]
+      },
+      "referencePricing": {
+        "currency": "USD",
+        "unit": "perMillionTokens",
+        "input": "5",
+        "output": "30",
+        "cacheRead": "0.5",
+        "cacheWrite": "6.25",
+        "longContext": {
+          "thresholdTokens": 272000,
+          "basis": "promptTokens",
+          "mode": "full",
+          "input": "10",
+          "output": "45",
+          "cacheRead": "1",
+          "cacheWrite": "12.5"
+        }
+      }
+    },
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gpt-5.6-sol@cursor",
+    "modelId": "gpt-5.6-sol",
+    "providerKey": "cursor",
+    "upstreamModelIds": [
+      "gpt-5.6-sol"
+    ],
+    "name": "GPT-5.6 Sol",
+    "matches": {
+      "aliases": [
+        "gpt-5.6"
+      ]
+    },
+    "metadata": {
+      "limits": {
+        "contextWindow": 1000000
+      },
+      "reasoning": {
+        "levels": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ]
+      },
+      "referencePricing": {
+        "currency": "USD",
+        "unit": "perMillionTokens",
+        "input": "5",
+        "output": "30",
+        "cacheRead": "0.5",
+        "cacheWrite": "6.25",
+        "longContext": {
+          "thresholdTokens": 272000,
+          "basis": "promptTokens",
+          "mode": "full",
+          "input": "10",
+          "output": "45",
+          "cacheRead": "1",
+          "cacheWrite": "12.5"
+        }
+      }
+    },
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gpt-5.6-terra@codex",
+    "modelId": "gpt-5.6-terra",
+    "providerKey": "codex",
+    "upstreamModelIds": [
+      "gpt-5.6-terra"
+    ],
+    "name": "GPT-5.6 Terra",
+    "matches": {},
+    "metadata": {
+      "limits": {
+        "contextWindow": 272000
+      },
+      "reasoning": {
+        "levels": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ]
+      },
+      "referencePricing": {
+        "currency": "USD",
+        "unit": "perMillionTokens",
+        "input": "2.5",
+        "output": "15",
+        "cacheRead": "0.25",
+        "cacheWrite": "3.125",
+        "longContext": {
+          "thresholdTokens": 272000,
+          "basis": "promptTokens",
+          "mode": "full",
+          "input": "5",
+          "output": "22.5",
+          "cacheRead": "0.5",
+          "cacheWrite": "6.25"
+        }
+      }
+    },
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gpt-5.6-terra@cursor",
+    "modelId": "gpt-5.6-terra",
+    "providerKey": "cursor",
+    "upstreamModelIds": [
+      "gpt-5.6-terra"
+    ],
+    "name": "GPT-5.6 Terra",
+    "matches": {},
+    "metadata": {
+      "limits": {
+        "contextWindow": 272000
+      },
+      "reasoning": {
+        "levels": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ]
+      },
+      "referencePricing": {
+        "currency": "USD",
+        "unit": "perMillionTokens",
+        "input": "2.5",
+        "output": "15",
+        "cacheRead": "0.25",
+        "cacheWrite": "3.125",
+        "longContext": {
+          "thresholdTokens": 272000,
+          "basis": "promptTokens",
+          "mode": "full",
+          "input": "5",
+          "output": "22.5",
+          "cacheRead": "0.5",
+          "cacheWrite": "6.25"
+        }
+      }
+    },
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gpt-6-astra@codex",
+    "modelId": "gpt-6-astra",
+    "providerKey": "codex",
+    "upstreamModelIds": [
+      "gpt-6-astra"
+    ],
+    "name": "GPT-6 Astra",
+    "matches": {
+      "prefixes": [
+        "gpt-6-astra"
+      ]
+    },
+    "metadata": {
+      "limits": {
+        "contextWindow": 1050000
+      },
+      "reasoning": {
+        "levels": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ]
+      },
+      "referencePricing": {
+        "currency": "USD",
+        "unit": "perMillionTokens",
+        "input": "10",
+        "output": "50",
+        "cacheRead": "1",
+        "cacheWrite": "12.5"
+      }
+    },
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "gpt-oss-120b-medium@antigravity",
+    "modelId": "gpt-oss-120b-medium",
+    "providerKey": "antigravity",
+    "upstreamModelIds": [
+      "gpt-oss-120b-medium"
+    ],
+    "name": "GPT-OSS 120B Medium",
+    "matches": {},
+    "metadata": {
+      "referencePricing": {
+        "currency": "USD",
+        "unit": "perMillionTokens",
+        "input": "0.15",
+        "output": "0.6"
+      }
+    },
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "grok-4.5@cursor",
+    "modelId": "grok-4.5",
+    "providerKey": "cursor",
+    "upstreamModelIds": [
+      "grok-4.5"
+    ],
+    "name": "Grok 4.5",
+    "matches": {
+      "aliases": [
+        "grok",
+        "grok-latest",
+        "grok-4.5-latest"
+      ]
+    },
+    "metadata": {
+      "referencePricing": {
+        "currency": "USD",
+        "unit": "perMillionTokens",
+        "input": "2",
+        "output": "6",
+        "cacheRead": "0.5"
+      }
+    },
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "grok-4.6@cursor",
+    "modelId": "grok-4.6",
+    "providerKey": "cursor",
+    "upstreamModelIds": [
+      "grok-4.6"
+    ],
+    "name": "Cursor Grok 4.6",
+    "matches": {},
+    "metadata": {
+      "referencePricing": {
+        "currency": "USD",
+        "unit": "perMillionTokens",
+        "input": "2",
+        "output": "6",
+        "cacheRead": "0.5"
+      }
+    },
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "grok-4.6@grok",
+    "modelId": "grok-4.6",
+    "providerKey": "grok",
+    "upstreamModelIds": [
+      "grok-4.6"
+    ],
+    "name": "Cursor Grok 4.6",
+    "matches": {},
+    "metadata": {
+      "referencePricing": {
+        "currency": "USD",
+        "unit": "perMillionTokens",
+        "input": "2",
+        "output": "6",
+        "cacheRead": "0.5"
+      }
+    },
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "grok-4.6@grokbot",
+    "modelId": "grok-4.6",
+    "providerKey": "grokbot",
+    "upstreamModelIds": [
+      "grok-4.6"
+    ],
+    "name": "Cursor Grok 4.6",
+    "matches": {},
+    "metadata": {
+      "referencePricing": {
+        "currency": "USD",
+        "unit": "perMillionTokens",
+        "input": "2",
+        "output": "6",
+        "cacheRead": "0.5"
+      }
+    },
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "grok-4.7@cursor",
+    "modelId": "grok-4.7",
+    "providerKey": "cursor",
+    "upstreamModelIds": [
+      "grok-4.7"
+    ],
+    "name": "Grok 4.7",
+    "matches": {
+      "aliases": [
+        "grok-4.7-latest"
+      ]
+    },
+    "metadata": {
+      "referencePricing": {
+        "currency": "USD",
+        "unit": "perMillionTokens",
+        "input": "2",
+        "output": "6",
+        "cacheRead": "0.5"
+      }
+    },
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "grok-4.7@grok",
+    "modelId": "grok-4.7",
+    "providerKey": "grok",
+    "upstreamModelIds": [
+      "grok-4.7"
+    ],
+    "name": "Grok 4.7",
+    "matches": {
+      "aliases": [
+        "grok-4.7-latest"
+      ]
+    },
+    "metadata": {
+      "referencePricing": {
+        "currency": "USD",
+        "unit": "perMillionTokens",
+        "input": "2",
+        "output": "6",
+        "cacheRead": "0.5"
+      }
+    },
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "grok-4.7@grokbot",
+    "modelId": "grok-4.7",
+    "providerKey": "grokbot",
+    "upstreamModelIds": [
+      "grok-4.7"
+    ],
+    "name": "Grok 4.7",
+    "matches": {
+      "aliases": [
+        "grok-4.7-latest"
+      ]
+    },
+    "metadata": {
+      "referencePricing": {
+        "currency": "USD",
+        "unit": "perMillionTokens",
+        "input": "2",
+        "output": "6",
+        "cacheRead": "0.5"
+      }
+    },
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "kimi-k2.7-code@cursor",
+    "modelId": "kimi-k2.7-code",
+    "providerKey": "cursor",
+    "upstreamModelIds": [
+      "kimi-k2.7-code"
+    ],
+    "name": "Cursor Kimi K2.7 Code",
+    "matches": {},
+    "metadata": {},
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  },
+  {
+    "id": "kimi-k3@cursor",
+    "modelId": "kimi-k3",
+    "providerKey": "cursor",
+    "upstreamModelIds": [
+      "kimi-k3"
+    ],
+    "name": "Cursor Kimi K3",
+    "matches": {},
+    "metadata": {},
+    "status": "legacy-unverified",
+    "sources": [
+      {
+        "label": "NUG isolated empty-database migrations f106b96a43b35f54b1080a8a0c2e86a7fc3282d9; export sha256:2109566b33d1ad751c6d4856a2397395281d59e8aa2d9325ead8395d523ee01d; legacy defaults, not independently verified"
+      }
+    ]
+  }
+]
