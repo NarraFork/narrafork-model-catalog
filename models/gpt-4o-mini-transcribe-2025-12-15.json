@@ -1,0 +1,25 @@
+{
+  "id": "gpt-4o-mini-transcribe-2025-12-15",
+  "name": "gpt-4o-mini-transcribe-2025-12-15",
+  "status": "verified",
+  "sources": [
+    {
+      "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [gpt-4o-mini-transcribe-2025-12-15] @ e2cfaa46e79241f34e52bf4781f7710cd511c5d2",
+      "url": "https://github.com/Wei-Shaw/sub2api/blob/e2cfaa46e79241f34e52bf4781f7710cd511c5d2/backend/resources/model-pricing/model_prices_and_context_window.json#L3450",
+      "verifiedAt": "2026-09-22T07:33:33Z"
+    }
+  ],
+  "metadata": {
+    "input_cost_per_audio_token": 1.25e-06,
+    "input_cost_per_token": 1.25e-06,
+    "litellm_provider": "openai",
+    "max_input_tokens": 16000,
+    "max_output_tokens": 2000,
+    "mode": "audio_transcription",
+    "output_cost_per_token": 5e-06,
+    "supported_endpoints": [
+      "/v1/audio/transcriptions"
+    ]
+  },
+  "variants": []
+}

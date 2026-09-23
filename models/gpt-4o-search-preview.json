@@ -1,0 +1,39 @@
+{
+  "id": "gpt-4o-search-preview",
+  "name": "gpt-4o-search-preview",
+  "status": "verified",
+  "sources": [
+    {
+      "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [gpt-4o-search-preview] @ e2cfaa46e79241f34e52bf4781f7710cd511c5d2",
+      "url": "https://github.com/Wei-Shaw/sub2api/blob/e2cfaa46e79241f34e52bf4781f7710cd511c5d2/backend/resources/model-pricing/model_prices_and_context_window.json#L3570",
+      "verifiedAt": "2026-09-22T07:33:33Z"
+    }
+  ],
+  "metadata": {
+    "cache_read_input_token_cost": 1.25e-06,
+    "input_cost_per_token": 2.5e-06,
+    "input_cost_per_token_batches": 1.25e-06,
+    "litellm_provider": "openai",
+    "max_input_tokens": 128000,
+    "max_output_tokens": 16384,
+    "max_tokens": 16384,
+    "mode": "chat",
+    "output_cost_per_token": 1e-05,
+    "output_cost_per_token_batches": 5e-06,
+    "search_context_cost_per_query": {
+      "search_context_size_high": 0.05,
+      "search_context_size_low": 0.03,
+      "search_context_size_medium": 0.035
+    },
+    "supports_function_calling": true,
+    "supports_parallel_function_calling": true,
+    "supports_pdf_input": true,
+    "supports_prompt_caching": true,
+    "supports_response_schema": true,
+    "supports_system_messages": true,
+    "supports_tool_choice": true,
+    "supports_vision": true,
+    "supports_web_search": true
+  },
+  "variants": []
+}

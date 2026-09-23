@@ -1,0 +1,19 @@
+{
+  "id": "composer-2.5",
+  "name": "Composer 2.5",
+  "family": "cursor",
+  "status": "unverified",
+  "metadata": {},
+  "variants": [
+    {
+      "id": "composer-2.5@cursor",
+      "name": "Cursor Composer 2.5",
+      "providerKey": "cursor",
+      "upstreamModelIds": [
+        "composer-2.5"
+      ],
+      "metadata": {},
+      "status": "unverified"
+    }
+  ]
+}

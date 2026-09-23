@@ -1,0 +1,19 @@
+{
+  "id": "kimi-k2.7-code",
+  "name": "Kimi K2.7 Code",
+  "family": "kimi",
+  "status": "unverified",
+  "metadata": {},
+  "variants": [
+    {
+      "id": "kimi-k2.7-code@cursor",
+      "name": "Cursor Kimi K2.7 Code",
+      "providerKey": "cursor",
+      "upstreamModelIds": [
+        "kimi-k2.7-code"
+      ],
+      "metadata": {},
+      "status": "unverified"
+    }
+  ]
+}

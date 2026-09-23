@@ -1,0 +1,80 @@
+{
+  "id": "gemini-3.6-flash",
+  "name": "Gemini 3.6 Flash",
+  "family": "gemini",
+  "status": "verified",
+  "matches": {
+    "aliases": [
+      "gemini-3.6-flash-high",
+      "gemini-3.6-flash-low",
+      "gemini-3.6-flash-medium",
+      "gemini-3.6-flash-tiered"
+    ]
+  },
+  "sources": [
+    {
+      "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [gemini-3.6-flash] @ e2cfaa46e79241f34e52bf4781f7710cd511c5d2",
+      "url": "https://github.com/Wei-Shaw/sub2api/blob/e2cfaa46e79241f34e52bf4781f7710cd511c5d2/backend/resources/model-pricing/model_prices_and_context_window.json#L2355",
+      "verifiedAt": "2026-09-22T07:33:33Z"
+    }
+  ],
+  "metadata": {
+    "cache_read_input_token_cost": 1.5e-07,
+    "cache_read_input_token_cost_priority": 2.7e-07,
+    "input_cost_per_token": 1.5e-06,
+    "input_cost_per_token_priority": 2.7e-06,
+    "litellm_provider": "vertex_ai-language-models",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 65536,
+    "max_tokens": 65536,
+    "mode": "chat",
+    "output_cost_per_token": 7.5e-06,
+    "output_cost_per_token_priority": 1.35e-05,
+    "source": "https://ai.google.dev/gemini-api/docs/latest-model",
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_service_tier": true
+  },
+  "variants": [
+    {
+      "id": "gemini-3.6-flash-high@antigravity",
+      "name": "Gemini 3.6 Flash High",
+      "providerKey": "antigravity",
+      "upstreamModelIds": [
+        "gemini-3.6-flash-high"
+      ],
+      "metadata": {},
+      "status": "unverified"
+    },
+    {
+      "id": "gemini-3.6-flash-low@antigravity",
+      "name": "Gemini 3.6 Flash Low",
+      "providerKey": "antigravity",
+      "upstreamModelIds": [
+        "gemini-3.6-flash-low"
+      ],
+      "metadata": {},
+      "status": "unverified"
+    },
+    {
+      "id": "gemini-3.6-flash-medium@antigravity",
+      "name": "Gemini 3.6 Flash Medium",
+      "providerKey": "antigravity",
+      "upstreamModelIds": [
+        "gemini-3.6-flash-medium"
+      ],
+      "metadata": {},
+      "status": "unverified"
+    },
+    {
+      "id": "gemini-3.6-flash@cursor",
+      "name": "Cursor Gemini 3.6 Flash",
+      "providerKey": "cursor",
+      "upstreamModelIds": [
+        "gemini-3.6-flash"
+      ],
+      "metadata": {},
+      "status": "unverified"
+    }
+  ]
+}

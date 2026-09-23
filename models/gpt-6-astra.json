@@ -1,0 +1,44 @@
+{
+  "id": "gpt-6-astra",
+  "name": "GPT-6 Astra",
+  "family": "gpt",
+  "status": "unverified",
+  "matches": {
+    "prefixes": [
+      "gpt-6-astra"
+    ],
+    "volatileSuffixes": true
+  },
+  "metadata": {
+    "max_input_tokens": 1050000,
+    "max_output_tokens": 128000,
+    "reasoning_effort_levels": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
+    "input_cost_per_token": 1e-05,
+    "output_cost_per_token": 5e-05,
+    "cache_read_input_token_cost": 1e-06,
+    "cache_creation_input_token_cost": 1.25e-05
+  },
+  "variants": [
+    {
+      "id": "gpt-6-astra@codex",
+      "name": "GPT-6 Astra",
+      "providerKey": "codex",
+      "upstreamModelIds": [
+        "gpt-6-astra"
+      ],
+      "matches": {
+        "prefixes": [
+          "gpt-6-astra"
+        ]
+      },
+      "metadata": {},
+      "status": "unverified"
+    }
+  ]
+}

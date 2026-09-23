@@ -1,0 +1,16 @@
+{
+  "id": "claude-mythos-preview",
+  "name": "Claude Mythos Preview",
+  "family": "claude",
+  "status": "unverified",
+  "matches": {
+    "prefixes": [
+      "claude-mythos-preview"
+    ],
+    "volatileSuffixes": true
+  },
+  "metadata": {
+    "max_input_tokens": 1000000
+  },
+  "variants": []
+}

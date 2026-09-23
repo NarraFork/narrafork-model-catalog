@@ -1,0 +1,27 @@
+{
+  "id": "claude-fable-5",
+  "name": "Claude Fable 5",
+  "family": "claude",
+  "status": "unverified",
+  "matches": {
+    "prefixes": [
+      "claude-fable-5"
+    ],
+    "volatileSuffixes": true
+  },
+  "metadata": {
+    "max_input_tokens": 1000000
+  },
+  "variants": [
+    {
+      "id": "claude-fable-5@cursor",
+      "name": "Cursor Fable 5",
+      "providerKey": "cursor",
+      "upstreamModelIds": [
+        "claude-fable-5"
+      ],
+      "metadata": {},
+      "status": "unverified"
+    }
+  ]
+}

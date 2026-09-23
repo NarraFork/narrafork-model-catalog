@@ -1,0 +1,63 @@
+{
+  "id": "grok-4.7",
+  "name": "Grok 4.7",
+  "family": "grok",
+  "status": "unverified",
+  "matches": {
+    "aliases": [
+      "grok-4.7-latest"
+    ]
+  },
+  "metadata": {
+    "input_cost_per_token": 2e-06,
+    "output_cost_per_token": 6e-06,
+    "cache_read_input_token_cost": 5e-07
+  },
+  "variants": [
+    {
+      "id": "grok-4.7@cursor",
+      "name": "Grok 4.7",
+      "providerKey": "cursor",
+      "upstreamModelIds": [
+        "grok-4.7"
+      ],
+      "matches": {
+        "aliases": [
+          "grok-4.7-latest"
+        ]
+      },
+      "metadata": {},
+      "status": "unverified"
+    },
+    {
+      "id": "grok-4.7@grok",
+      "name": "Grok 4.7",
+      "providerKey": "grok",
+      "upstreamModelIds": [
+        "grok-4.7"
+      ],
+      "matches": {
+        "aliases": [
+          "grok-4.7-latest"
+        ]
+      },
+      "metadata": {},
+      "status": "unverified"
+    },
+    {
+      "id": "grok-4.7@grokbot",
+      "name": "Grok 4.7",
+      "providerKey": "grokbot",
+      "upstreamModelIds": [
+        "grok-4.7"
+      ],
+      "matches": {
+        "aliases": [
+          "grok-4.7-latest"
+        ]
+      },
+      "metadata": {},
+      "status": "unverified"
+    }
+  ]
+}

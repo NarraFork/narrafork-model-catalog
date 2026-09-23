@@ -1,0 +1,44 @@
+{
+  "id": "o3-pro",
+  "name": "o3-pro",
+  "status": "verified",
+  "sources": [
+    {
+      "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [o3-pro] @ e2cfaa46e79241f34e52bf4781f7710cd511c5d2",
+      "url": "https://github.com/Wei-Shaw/sub2api/blob/e2cfaa46e79241f34e52bf4781f7710cd511c5d2/backend/resources/model-pricing/model_prices_and_context_window.json#L6152",
+      "verifiedAt": "2026-09-22T07:33:33Z"
+    }
+  ],
+  "metadata": {
+    "input_cost_per_token": 2e-05,
+    "input_cost_per_token_batches": 1e-05,
+    "litellm_provider": "openai",
+    "max_input_tokens": 200000,
+    "max_output_tokens": 100000,
+    "max_tokens": 100000,
+    "mode": "responses",
+    "output_cost_per_token": 8e-05,
+    "output_cost_per_token_batches": 4e-05,
+    "supported_endpoints": [
+      "/v1/responses",
+      "/v1/batch"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_function_calling": true,
+    "supports_parallel_function_calling": false,
+    "supports_pdf_input": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supports_vision": true,
+    "supports_web_search": true
+  },
+  "variants": []
+}

@@ -1,0 +1,11 @@
+{
+  "id": "minimax-m3",
+  "name": "MiniMax M3",
+  "family": "minimax",
+  "status": "unverified",
+  "metadata": {
+    "input_cost_per_token": 3e-07,
+    "output_cost_per_token": 1.2e-06
+  },
+  "variants": []
+}

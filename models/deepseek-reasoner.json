@@ -1,0 +1,16 @@
+{
+  "id": "deepseek-reasoner",
+  "name": "DeepSeek Reasoner",
+  "family": "deepseek",
+  "status": "unverified",
+  "matches": {
+    "prefixes": [
+      "deepseek-reasoner"
+    ],
+    "volatileSuffixes": true
+  },
+  "metadata": {
+    "max_input_tokens": 64000
+  },
+  "variants": []
+}

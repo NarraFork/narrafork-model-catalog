@@ -1,0 +1,16 @@
+{
+  "id": "minimax-m2",
+  "name": "MiniMax M2",
+  "family": "minimax",
+  "status": "unverified",
+  "matches": {
+    "aliases": [
+      "minimax-m2-her"
+    ]
+  },
+  "metadata": {
+    "input_cost_per_token": 1.5e-07,
+    "output_cost_per_token": 1.15e-06
+  },
+  "variants": []
+}

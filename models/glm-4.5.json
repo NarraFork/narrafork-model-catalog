@@ -1,0 +1,17 @@
+{
+  "id": "glm-4.5",
+  "name": "GLM-4.5",
+  "family": "glm",
+  "status": "unverified",
+  "matches": {
+    "aliases": [
+      "glm-4-5"
+    ]
+  },
+  "metadata": {
+    "input_cost_per_token": 6e-07,
+    "output_cost_per_token": 2.2e-06,
+    "cache_read_input_token_cost": 1.1e-07
+  },
+  "variants": []
+}

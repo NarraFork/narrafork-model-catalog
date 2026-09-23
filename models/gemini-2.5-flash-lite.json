@@ -1,0 +1,76 @@
+{
+  "id": "gemini-2.5-flash-lite",
+  "name": "Gemini 2.5 Flash Lite",
+  "family": "gemini",
+  "status": "verified",
+  "sources": [
+    {
+      "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [gemini-2.5-flash-lite] @ e2cfaa46e79241f34e52bf4781f7710cd511c5d2",
+      "url": "https://github.com/Wei-Shaw/sub2api/blob/e2cfaa46e79241f34e52bf4781f7710cd511c5d2/backend/resources/model-pricing/model_prices_and_context_window.json#L1132",
+      "verifiedAt": "2026-09-22T07:33:33Z"
+    }
+  ],
+  "metadata": {
+    "cache_read_input_token_cost": 1e-08,
+    "input_cost_per_audio_token": 3e-07,
+    "input_cost_per_token": 1e-07,
+    "litellm_provider": "vertex_ai-language-models",
+    "max_audio_length_hours": 8.4,
+    "max_audio_per_prompt": 1,
+    "max_images_per_prompt": 3000,
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 65535,
+    "max_pdf_size_mb": 30,
+    "max_tokens": 65535,
+    "max_video_length": 1,
+    "max_videos_per_prompt": 10,
+    "mode": "chat",
+    "output_cost_per_reasoning_token": 4e-07,
+    "output_cost_per_token": 4e-07,
+    "search_context_cost_per_query": {
+      "search_context_size_high": 0.035,
+      "search_context_size_low": 0.035,
+      "search_context_size_medium": 0.035
+    },
+    "source": "https://ai.google.dev/gemini-api/docs/models#gemini-2.5-flash-preview",
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/v1/completions",
+      "/v1/batch"
+    ],
+    "supported_modalities": [
+      "text",
+      "image",
+      "audio",
+      "video"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_audio_output": false,
+    "supports_function_calling": true,
+    "supports_parallel_function_calling": true,
+    "supports_pdf_input": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_service_tier": true,
+    "supports_system_messages": true,
+    "supports_tool_choice": true,
+    "supports_url_context": true,
+    "supports_vision": true,
+    "supports_web_search": true
+  },
+  "variants": [
+    {
+      "id": "gemini-2.5-flash-lite@antigravity",
+      "name": "Gemini 2.5 Flash Lite",
+      "providerKey": "antigravity",
+      "upstreamModelIds": [
+        "gemini-2.5-flash-lite"
+      ],
+      "metadata": {},
+      "status": "unverified"
+    }
+  ]
+}

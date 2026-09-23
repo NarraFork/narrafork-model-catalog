@@ -1,0 +1,27 @@
+{
+  "id": "claude-sonnet-5",
+  "name": "Claude Sonnet 5",
+  "family": "claude",
+  "status": "unverified",
+  "matches": {
+    "prefixes": [
+      "claude-sonnet-5"
+    ],
+    "volatileSuffixes": true
+  },
+  "metadata": {
+    "max_input_tokens": 1000000
+  },
+  "variants": [
+    {
+      "id": "claude-sonnet-5@cursor",
+      "name": "Cursor Sonnet 5",
+      "providerKey": "cursor",
+      "upstreamModelIds": [
+        "claude-sonnet-5"
+      ],
+      "metadata": {},
+      "status": "unverified"
+    }
+  ]
+}

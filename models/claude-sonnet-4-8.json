@@ -1,0 +1,20 @@
+{
+  "id": "claude-sonnet-4-8",
+  "name": "Claude Sonnet 4.8",
+  "family": "claude",
+  "status": "unverified",
+  "matches": {
+    "aliases": [
+      "claude-sonnet-4.8"
+    ],
+    "prefixes": [
+      "claude-sonnet-4-8",
+      "claude-sonnet-4.8"
+    ],
+    "volatileSuffixes": true
+  },
+  "metadata": {
+    "max_input_tokens": 1000000
+  },
+  "variants": []
+}

@@ -1,0 +1,49 @@
+{
+  "id": "gemini-robotics-er-1.5-preview",
+  "name": "gemini-robotics-er-1.5-preview",
+  "status": "verified",
+  "sources": [
+    {
+      "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [gemini-robotics-er-1.5-preview] @ e2cfaa46e79241f34e52bf4781f7710cd511c5d2",
+      "url": "https://github.com/Wei-Shaw/sub2api/blob/e2cfaa46e79241f34e52bf4781f7710cd511c5d2/backend/resources/model-pricing/model_prices_and_context_window.json#L2680",
+      "verifiedAt": "2026-09-22T07:33:33Z"
+    }
+  ],
+  "metadata": {
+    "cache_read_input_token_cost": 0,
+    "input_cost_per_audio_token": 1e-06,
+    "input_cost_per_token": 3e-07,
+    "litellm_provider": "vertex_ai-language-models",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 65535,
+    "max_tokens": 65535,
+    "mode": "chat",
+    "output_cost_per_reasoning_token": 2.5e-06,
+    "output_cost_per_token": 2.5e-06,
+    "source": "https://ai.google.dev/gemini-api/docs/models#gemini-robotics-er-1-5-preview",
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/v1/completions"
+    ],
+    "supported_modalities": [
+      "text",
+      "image",
+      "video",
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_audio_output": false,
+    "supports_function_calling": true,
+    "supports_parallel_function_calling": true,
+    "supports_prompt_caching": false,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_system_messages": true,
+    "supports_tool_choice": true,
+    "supports_url_context": true,
+    "supports_vision": true
+  },
+  "variants": []
+}

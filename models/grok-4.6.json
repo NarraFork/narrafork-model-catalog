@@ -1,0 +1,43 @@
+{
+  "id": "grok-4.6",
+  "name": "Grok 4.6",
+  "family": "grok",
+  "status": "unverified",
+  "metadata": {
+    "input_cost_per_token": 2e-06,
+    "output_cost_per_token": 6e-06,
+    "cache_read_input_token_cost": 5e-07
+  },
+  "variants": [
+    {
+      "id": "grok-4.6@cursor",
+      "name": "Cursor Grok 4.6",
+      "providerKey": "cursor",
+      "upstreamModelIds": [
+        "grok-4.6"
+      ],
+      "metadata": {},
+      "status": "unverified"
+    },
+    {
+      "id": "grok-4.6@grok",
+      "name": "Cursor Grok 4.6",
+      "providerKey": "grok",
+      "upstreamModelIds": [
+        "grok-4.6"
+      ],
+      "metadata": {},
+      "status": "unverified"
+    },
+    {
+      "id": "grok-4.6@grokbot",
+      "name": "Cursor Grok 4.6",
+      "providerKey": "grokbot",
+      "upstreamModelIds": [
+        "grok-4.6"
+      ],
+      "metadata": {},
+      "status": "unverified"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "gemini-embedding-001",
+  "name": "gemini-embedding-001",
+  "status": "verified",
+  "sources": [
+    {
+      "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [gemini-embedding-001] @ e2cfaa46e79241f34e52bf4781f7710cd511c5d2",
+      "url": "https://github.com/Wei-Shaw/sub2api/blob/e2cfaa46e79241f34e52bf4781f7710cd511c5d2/backend/resources/model-pricing/model_prices_and_context_window.json#L2372",
+      "verifiedAt": "2026-09-22T07:33:33Z"
+    }
+  ],
+  "metadata": {
+    "input_cost_per_token": 1.5e-07,
+    "litellm_provider": "vertex_ai-embedding-models",
+    "max_input_tokens": 2048,
+    "max_tokens": 2048,
+    "mode": "embedding",
+    "output_cost_per_token": 0,
+    "output_vector_size": 3072,
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/models"
+  },
+  "variants": []
+}

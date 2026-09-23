@@ -1,0 +1,21 @@
+{
+  "id": "grok-build-0.1",
+  "name": "Grok Build 0.1",
+  "family": "grok",
+  "status": "unverified",
+  "matches": {
+    "aliases": [
+      "grok-build",
+      "grok-build-latest",
+      "grok-composer",
+      "grok-composer-2.5-fast",
+      "composer-2.5"
+    ]
+  },
+  "metadata": {
+    "input_cost_per_token": 1e-06,
+    "output_cost_per_token": 2e-06,
+    "cache_read_input_token_cost": 2e-07
+  },
+  "variants": []
+}

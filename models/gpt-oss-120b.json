@@ -1,0 +1,27 @@
+{
+  "id": "gpt-oss-120b",
+  "name": "GPT-OSS 120B",
+  "family": "gpt",
+  "status": "unverified",
+  "matches": {
+    "aliases": [
+      "gpt-oss-120b-medium"
+    ]
+  },
+  "metadata": {},
+  "variants": [
+    {
+      "id": "gpt-oss-120b-medium@antigravity",
+      "name": "GPT-OSS 120B Medium",
+      "providerKey": "antigravity",
+      "upstreamModelIds": [
+        "gpt-oss-120b-medium"
+      ],
+      "metadata": {
+        "input_cost_per_token": 1.5e-07,
+        "output_cost_per_token": 6e-07
+      },
+      "status": "unverified"
+    }
+  ]
+}

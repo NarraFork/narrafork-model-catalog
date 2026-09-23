@@ -1,0 +1,19 @@
+{
+  "id": "glm-5.2",
+  "name": "GLM 5.2",
+  "family": "glm",
+  "status": "unverified",
+  "metadata": {},
+  "variants": [
+    {
+      "id": "glm-5.2@cursor",
+      "name": "Cursor GLM 5.2",
+      "providerKey": "cursor",
+      "upstreamModelIds": [
+        "glm-5.2"
+      ],
+      "metadata": {},
+      "status": "unverified"
+    }
+  ]
+}

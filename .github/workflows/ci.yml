@@ -1,4 +1,4 @@
-name: Validate catalog
+name: Validate model data
 on:
   pull_request:
   push:
@@ -10,24 +10,79 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: oven-sh/setup-bun@v2
-        with:
-          bun-version: 1.4.2
-      - run: bun install --frozen-lockfile
-      - run: bun run check
-      - name: Check tracked generated artifacts
-        run: git diff --exit-code -- schema/catalog.schema.json fixtures/resolution.json dist
-      - name: Check deterministic build
+      - name: Check one model per file and nested variants
         run: |
-          sha256sum dist/catalog.json dist/manifest.json > /tmp/catalog-before.sha256
-          bun run build
-          sha256sum --check /tmp/catalog-before.sha256
-      - uses: actions/upload-artifact@v4
-        with:
-          name: validated-catalog
-          path: |
-            dist/catalog.json
-            dist/manifest.json
-            dist/sha256sum.txt
-            schema/catalog.schema.json
-            fixtures/resolution.json
+          python3 - <<'PY'
+          import json, math, pathlib, re
+          files = sorted(pathlib.Path('models').glob('*.json'))
+          assert files, 'models/ must not be empty'
+          assert not list(pathlib.Path('.').glob('*.json')), 'No root-level JSON bundles or configuration'
+          variants = set()
+          matches = {}
+          def strings(value, nonempty=False):
+              assert isinstance(value, list), 'Expected string array'
+              assert all(isinstance(x, str) and x.strip() for x in value), 'Expected nonempty strings'
+              assert len(value) == len(set(value)), 'Duplicate array entries'
+              assert not nonempty or value, 'Expected nonempty array'
+          def entry(value, scope=''):
+              assert isinstance(value, dict), 'Expected entry object'
+              for key in ('id', 'name'):
+                  assert isinstance(value.get(key), str) and value[key].strip(), key
+              assert value.get('status') in ('verified', 'unverified'), 'Invalid status'
+              if 'family' in value:
+                  assert isinstance(value['family'], str) and value['family'].strip(), 'Invalid family'
+              rules = value.get('matches', {})
+              assert isinstance(rules, dict), 'Invalid matches'
+              assert not set(rules) - {'ids', 'aliases', 'prefixes', 'volatileSuffixes'}, 'Unknown match field'
+              for key in ('ids', 'aliases', 'prefixes'):
+                  strings(rules.get(key, []))
+              if 'volatileSuffixes' in rules:
+                  assert type(rules['volatileSuffixes']) is bool, 'Invalid volatileSuffixes'
+              for kind, keys in (
+                  ('exact', [value['id']] + value.get('upstreamModelIds', []) + rules.get('ids', [])),
+                  ('alias', rules.get('aliases', [])),
+                  ('prefix', rules.get('prefixes', [])),
+              ):
+                  for key in keys:
+                      token = (scope, kind, key)
+                      assert token not in matches or matches[token] == value['id'], f'Ambiguous match: {token}'
+                      matches[token] = value['id']
+              sources = value.get('sources', [])
+              assert isinstance(sources, list), 'Invalid sources'
+              for source in sources:
+                  assert isinstance(source, dict), 'Invalid source'
+                  for key in ('label', 'url', 'verifiedAt'):
+                      assert isinstance(source.get(key), str) and source[key].strip(), f'Invalid source {key}'
+              assert value['status'] != 'verified' or sources, 'Verified entry requires sources'
+              metadata(value['metadata'])
+          def metadata(value):
+              assert isinstance(value, dict)
+              for key, item in value.items():
+                  if key in ('max_input_tokens', 'max_output_tokens', 'max_tokens'):
+                      assert item is None or (type(item) is int and item > 0), key
+                  if key.startswith(('input_cost_', 'output_cost_', 'cache_read_', 'cache_creation_')):
+                      assert item is None or (type(item) in (int, float) and math.isfinite(item) and item >= 0), key
+                  if key.startswith('supports_'):
+                      assert item is None or type(item) is bool, key
+              if 'reasoning_effort_levels' in value:
+                  strings(value['reasoning_effort_levels'], nonempty=True)
+                  assert all(x in ('none', 'minimal', 'low', 'medium', 'high', 'xhigh', 'max') for x in value['reasoning_effort_levels']), 'Invalid reasoning effort'
+              for key in ('supported_modalities', 'supported_output_modalities'):
+                  if key in value:
+                      assert value[key] is None or (isinstance(value[key], list) and all(x in ('text', 'image', 'audio', 'video') for x in value[key])), key
+          for path in files:
+              model = json.loads(path.read_text())
+              assert isinstance(model, dict) and model['id'] == path.stem, path
+              entry(model)
+              assert re.fullmatch(r'[a-z0-9][a-z0-9._-]*', model['id']), path
+              assert isinstance(model['variants'], list), path
+              for variant in model['variants']:
+                  assert isinstance(variant, dict), 'Expected variant object'
+                  assert 'modelId' not in variant, 'The containing file defines the parent model'
+                  assert isinstance(variant.get('providerKey'), str) and variant['providerKey'].strip(), 'Invalid providerKey'
+                  strings(variant.get('upstreamModelIds'), nonempty=True)
+                  entry(variant, variant['providerKey'])
+                  assert variant['id'] not in variants, variant['id']
+                  variants.add(variant['id'])
+          print(f'{len(files)} models, {len(variants)} nested variants')
+          PY

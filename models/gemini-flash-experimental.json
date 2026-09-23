@@ -1,0 +1,26 @@
+{
+  "id": "gemini-flash-experimental",
+  "name": "gemini-flash-experimental",
+  "status": "verified",
+  "sources": [
+    {
+      "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [gemini-flash-experimental] @ e2cfaa46e79241f34e52bf4781f7710cd511c5d2",
+      "url": "https://github.com/Wei-Shaw/sub2api/blob/e2cfaa46e79241f34e52bf4781f7710cd511c5d2/backend/resources/model-pricing/model_prices_and_context_window.json#L2463",
+      "verifiedAt": "2026-09-22T07:33:33Z"
+    }
+  ],
+  "metadata": {
+    "input_cost_per_character": 0,
+    "input_cost_per_token": 0,
+    "litellm_provider": "vertex_ai-language-models",
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 8192,
+    "max_tokens": 8192,
+    "mode": "embedding",
+    "output_cost_per_token": 0,
+    "output_vector_size": 3072,
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+    "uses_embed_content": true
+  },
+  "variants": []
+}

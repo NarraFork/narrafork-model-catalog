@@ -1,0 +1,57 @@
+{
+  "id": "gemini-3.7-flash",
+  "name": "Gemini 3.7 Flash",
+  "family": "gemini",
+  "status": "unverified",
+  "matches": {
+    "aliases": [
+      "gemini-3.7-flash-high",
+      "gemini-3.7-flash-low",
+      "gemini-3.7-flash-medium",
+      "gemini-3.7-flash-tiered"
+    ]
+  },
+  "metadata": {},
+  "variants": [
+    {
+      "id": "gemini-3.7-flash-high@antigravity",
+      "name": "Gemini 3.7 Flash High",
+      "providerKey": "antigravity",
+      "upstreamModelIds": [
+        "gemini-3.7-flash-high"
+      ],
+      "metadata": {},
+      "status": "unverified"
+    },
+    {
+      "id": "gemini-3.7-flash-low@antigravity",
+      "name": "Gemini 3.7 Flash Low",
+      "providerKey": "antigravity",
+      "upstreamModelIds": [
+        "gemini-3.7-flash-low"
+      ],
+      "metadata": {},
+      "status": "unverified"
+    },
+    {
+      "id": "gemini-3.7-flash-medium@antigravity",
+      "name": "Gemini 3.7 Flash Medium",
+      "providerKey": "antigravity",
+      "upstreamModelIds": [
+        "gemini-3.7-flash-medium"
+      ],
+      "metadata": {},
+      "status": "unverified"
+    },
+    {
+      "id": "gemini-3.7-flash@cursor",
+      "name": "Gemini 3.7 Flash",
+      "providerKey": "cursor",
+      "upstreamModelIds": [
+        "gemini-3.7-flash"
+      ],
+      "metadata": {},
+      "status": "unverified"
+    }
+  ]
+}

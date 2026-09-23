@@ -1,0 +1,31 @@
+{
+  "id": "gpt-4o-mini-tts-2025-03-20",
+  "name": "gpt-4o-mini-tts-2025-03-20",
+  "status": "verified",
+  "sources": [
+    {
+      "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [gpt-4o-mini-tts-2025-03-20] @ e2cfaa46e79241f34e52bf4781f7710cd511c5d2",
+      "url": "https://github.com/Wei-Shaw/sub2api/blob/e2cfaa46e79241f34e52bf4781f7710cd511c5d2/backend/resources/model-pricing/model_prices_and_context_window.json#L3480",
+      "verifiedAt": "2026-09-22T07:33:33Z"
+    }
+  ],
+  "metadata": {
+    "input_cost_per_token": 2.5e-06,
+    "litellm_provider": "openai",
+    "mode": "audio_speech",
+    "output_cost_per_audio_token": 1.2e-05,
+    "output_cost_per_second": 0.00025,
+    "output_cost_per_token": 1e-05,
+    "supported_endpoints": [
+      "/v1/audio/speech"
+    ],
+    "supported_modalities": [
+      "text",
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "audio"
+    ]
+  },
+  "variants": []
+}

@@ -1,0 +1,19 @@
+{
+  "id": "kimi-k3",
+  "name": "Kimi K3",
+  "family": "kimi",
+  "status": "unverified",
+  "metadata": {},
+  "variants": [
+    {
+      "id": "kimi-k3@cursor",
+      "name": "Cursor Kimi K3",
+      "providerKey": "cursor",
+      "upstreamModelIds": [
+        "kimi-k3"
+      ],
+      "metadata": {},
+      "status": "unverified"
+    }
+  ]
+}

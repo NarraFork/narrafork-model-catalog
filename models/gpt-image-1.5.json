@@ -1,0 +1,28 @@
+{
+  "id": "gpt-image-1.5",
+  "name": "gpt-image-1.5",
+  "status": "verified",
+  "sources": [
+    {
+      "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [gpt-image-1.5] @ e2cfaa46e79241f34e52bf4781f7710cd511c5d2",
+      "url": "https://github.com/Wei-Shaw/sub2api/blob/e2cfaa46e79241f34e52bf4781f7710cd511c5d2/backend/resources/model-pricing/model_prices_and_context_window.json#L5608",
+      "verifiedAt": "2026-09-22T07:33:33Z"
+    }
+  ],
+  "metadata": {
+    "cache_read_input_image_token_cost": 2e-06,
+    "cache_read_input_token_cost": 1.25e-06,
+    "input_cost_per_image_token": 8e-06,
+    "input_cost_per_token": 5e-06,
+    "litellm_provider": "openai",
+    "mode": "image_generation",
+    "output_cost_per_image_token": 3.2e-05,
+    "output_cost_per_token": 1e-05,
+    "supported_endpoints": [
+      "/v1/images/generations"
+    ],
+    "supports_pdf_input": true,
+    "supports_vision": true
+  },
+  "variants": []
+}

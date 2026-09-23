@@ -1,0 +1,19 @@
+{
+  "id": "claude-sonnet-4",
+  "name": "Sonnet 4",
+  "family": "claude",
+  "status": "unverified",
+  "metadata": {},
+  "variants": [
+    {
+      "id": "claude-sonnet-4@cursor",
+      "name": "Cursor Sonnet 4",
+      "providerKey": "cursor",
+      "upstreamModelIds": [
+        "claude-sonnet-4"
+      ],
+      "metadata": {},
+      "status": "unverified"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "deepseek-chat",
+  "name": "DeepSeek Chat",
+  "family": "deepseek",
+  "status": "unverified",
+  "matches": {
+    "prefixes": [
+      "deepseek-chat"
+    ],
+    "volatileSuffixes": true
+  },
+  "metadata": {
+    "max_input_tokens": 64000
+  },
+  "variants": []
+}

@@ -1,0 +1,47 @@
+{
+  "id": "gemini-3.8-flash",
+  "name": "Gemini 3.8 Flash High",
+  "family": "gemini",
+  "status": "unverified",
+  "matches": {
+    "aliases": [
+      "gemini-3.8-flash-high",
+      "gemini-3.8-flash-low",
+      "gemini-3.8-flash-medium",
+      "gemini-3.8-flash-tiered"
+    ]
+  },
+  "metadata": {},
+  "variants": [
+    {
+      "id": "gemini-3.8-flash-high@antigravity",
+      "name": "Gemini 3.8 Flash High",
+      "providerKey": "antigravity",
+      "upstreamModelIds": [
+        "gemini-3.8-flash-high"
+      ],
+      "metadata": {},
+      "status": "unverified"
+    },
+    {
+      "id": "gemini-3.8-flash-low@antigravity",
+      "name": "Gemini 3.8 Flash Low",
+      "providerKey": "antigravity",
+      "upstreamModelIds": [
+        "gemini-3.8-flash-low"
+      ],
+      "metadata": {},
+      "status": "unverified"
+    },
+    {
+      "id": "gemini-3.8-flash-medium@antigravity",
+      "name": "Gemini 3.8 Flash Medium",
+      "providerKey": "antigravity",
+      "upstreamModelIds": [
+        "gemini-3.8-flash-medium"
+      ],
+      "metadata": {},
+      "status": "unverified"
+    }
+  ]
+}

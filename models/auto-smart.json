@@ -1,0 +1,19 @@
+{
+  "id": "auto-smart",
+  "name": "Cursor Auto",
+  "family": "cursor",
+  "status": "unverified",
+  "metadata": {},
+  "variants": [
+    {
+      "id": "auto-smart@cursor",
+      "name": "Cursor Auto",
+      "providerKey": "cursor",
+      "upstreamModelIds": [
+        "auto-smart"
+      ],
+      "metadata": {},
+      "status": "unverified"
+    }
+  ]
+}
