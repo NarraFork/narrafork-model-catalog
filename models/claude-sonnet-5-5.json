@@ -1,0 +1,47 @@
+{
+  "id": "claude-sonnet-5-5",
+  "name": "Claude Sonnet 5.5",
+  "family": "claude",
+  "status": "verified",
+  "matches": {
+    "prefixes": [
+      "claude-sonnet-5-5"
+    ],
+    "volatileSuffixes": true
+  },
+  "sources": [
+    {
+      "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [claude-sonnet-5-5] @ 3040209f205472038c1ba745a1bedd2edd9053b1",
+      "url": "https://github.com/Wei-Shaw/sub2api/blob/3040209f205472038c1ba745a1bedd2edd9053b1/backend/resources/model-pricing/model_prices_and_context_window.json#L924",
+      "verifiedAt": "2026-10-02T12:21:34Z"
+    }
+  ],
+  "metadata": {
+    "cache_creation_input_token_cost": 2.5e-06,
+    "cache_creation_input_token_cost_above_1hr": 4e-06,
+    "cache_read_input_token_cost": 2e-07,
+    "input_cost_per_token": 2e-06,
+    "litellm_provider": "anthropic",
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 128000,
+    "max_tokens": 128000,
+    "mode": "chat",
+    "output_cost_per_token": 1e-05,
+    "source": "https://platform.claude.com/docs/en/models/sonnet-5-5/overview",
+    "supports_adaptive_thinking": true,
+    "supports_assistant_prefill": false,
+    "supports_computer_use": true,
+    "supports_function_calling": true,
+    "supports_max_reasoning_effort": true,
+    "supports_output_config": true,
+    "supports_pdf_input": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_sampling_params": false,
+    "supports_tool_choice": true,
+    "supports_vision": true,
+    "supports_xhigh_reasoning_effort": true
+  },
+  "variants": []
+}

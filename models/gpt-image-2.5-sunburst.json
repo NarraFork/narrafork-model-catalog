@@ -1,0 +1,36 @@
+{
+  "id": "gpt-image-2.5-sunburst",
+  "name": "GPT Image 2.5 Sunburst",
+  "family": "gpt",
+  "status": "verified",
+  "matches": {
+    "prefixes": [
+      "gpt-image-2.5-sunburst"
+    ],
+    "volatileSuffixes": true
+  },
+  "sources": [
+    {
+      "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [gpt-image-2.5-sunburst] @ 3040209f205472038c1ba745a1bedd2edd9053b1",
+      "url": "https://github.com/Wei-Shaw/sub2api/blob/3040209f205472038c1ba745a1bedd2edd9053b1/backend/resources/model-pricing/model_prices_and_context_window.json#L6623",
+      "verifiedAt": "2026-10-02T12:21:34Z"
+    }
+  ],
+  "metadata": {
+    "cache_read_input_image_token_cost": 2e-06,
+    "cache_read_input_token_cost": 1.25e-06,
+    "input_cost_per_image_token": 8e-06,
+    "input_cost_per_token": 5e-06,
+    "litellm_provider": "openai",
+    "mode": "image_generation",
+    "output_cost_per_image_token": 3e-05,
+    "output_cost_per_token": 0,
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits"
+    ],
+    "supports_prompt_caching": true,
+    "supports_vision": true
+  },
+  "variants": []
+}
