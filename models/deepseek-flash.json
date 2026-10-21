@@ -14,6 +14,18 @@
       "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [deepseek-flash] @ 3040209f205472038c1ba745a1bedd2edd9053b1",
       "url": "https://github.com/Wei-Shaw/sub2api/blob/3040209f205472038c1ba745a1bedd2edd9053b1/backend/resources/model-pricing/model_prices_and_context_window.json#L988",
       "verifiedAt": "2026-10-02T12:21:34Z"
+    },
+    {
+      "label": "DeepSeek Thinking Mode: native low/high/max, default high; none disables thinking",
+      "url": "https://api-docs.deepseek.com/guides/thinking_mode",
+      "fields": ["reasoning"],
+      "verifiedAt": "2026-10-21T02:30:58Z"
+    },
+    {
+      "label": "sub2api: distinct max retained for deepseek-flash and v4 families @ 8f2cbb53d9d1c40e1865b07ac460571f7d4c48de",
+      "url": "https://github.com/Wei-Shaw/sub2api/blob/8f2cbb53d9d1c40e1865b07ac460571f7d4c48de/backend/internal/service/openai_gateway_request_body.go#L2582-L2594",
+      "fields": ["reasoning.levels"],
+      "verifiedAt": "2026-10-21T02:30:58Z"
     }
   ],
   "metadata": {
@@ -34,6 +46,14 @@
     "supports_parallel_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
+    "reasoning_effort_levels": ["low", "high", "max"],
+    "default_reasoning_effort": "high",
+    "can_disable_reasoning": true,
+    "supports_none_reasoning_effort": true,
+    "supports_low_reasoning_effort": true,
+    "supports_max_reasoning_effort": true,
+    "supports_minimal_reasoning_effort": false,
+    "supports_xhigh_reasoning_effort": false,
     "supports_response_schema": true,
     "supports_system_messages": true,
     "supports_tool_choice": true,

@@ -1,0 +1,31 @@
+{
+  "id": "gemini-4-argon",
+  "name": "Gemini 4 Argon",
+  "family": "gemini",
+  "status": "verified",
+  "sources": [
+    {
+      "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [gemini-4-argon] @ 8f2cbb53d9d1c40e1865b07ac460571f7d4c48de",
+      "url": "https://github.com/Wei-Shaw/sub2api/blob/8f2cbb53d9d1c40e1865b07ac460571f7d4c48de/backend/resources/model-pricing/model_prices_and_context_window.json#L2669",
+      "verifiedAt": "2026-10-21T02:30:58Z"
+    }
+  ],
+  "metadata": {
+    "cache_read_input_token_cost": 1e-07,
+    "cache_read_input_token_cost_priority": 1.8e-07,
+    "input_cost_per_token": 2e-06,
+    "input_cost_per_token_priority": 3.6e-06,
+    "litellm_provider": "gemini",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 65536,
+    "max_tokens": 65536,
+    "mode": "chat",
+    "output_cost_per_token": 1e-05,
+    "output_cost_per_token_priority": 1.8e-05,
+    "source": "https://ai.google.dev/gemini-api/docs/pricing",
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_service_tier": true
+  },
+  "variants": []
+}
