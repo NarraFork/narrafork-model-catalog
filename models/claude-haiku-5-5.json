@@ -3,10 +3,29 @@
   "name": "Claude Haiku 5.5",
   "family": "claude",
   "status": "verified",
+  "notes": "Thinking can be disabled only with low, medium or high effort. In sub2api's Responses bridge, none maps to disabled thinking with low effort; xhigh/max require adaptive thinking.",
   "sources": [
     {
       "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [claude-haiku-5-5] @ 8f2cbb53d9d1c40e1865b07ac460571f7d4c48de",
       "url": "https://github.com/Wei-Shaw/sub2api/blob/8f2cbb53d9d1c40e1865b07ac460571f7d4c48de/backend/resources/model-pricing/model_prices_and_context_window.json#L384",
+      "verifiedAt": "2026-10-21T02:30:58Z"
+    },
+    {
+      "label": "sub2api: Haiku 5.5 accepts low/medium/high/xhigh/max @ 8f2cbb53d9d1c40e1865b07ac460571f7d4c48de",
+      "url": "https://github.com/Wei-Shaw/sub2api/blob/8f2cbb53d9d1c40e1865b07ac460571f7d4c48de/backend/internal/pkg/claude/effort_catalog.go#L8-L30",
+      "fields": ["reasoning.levels"],
+      "verifiedAt": "2026-10-21T02:30:58Z"
+    },
+    {
+      "label": "sub2api: Haiku 5.5 Responses default medium; none maps to disabled thinking with low effort @ 8f2cbb53d9d1c40e1865b07ac460571f7d4c48de",
+      "url": "https://github.com/Wei-Shaw/sub2api/blob/8f2cbb53d9d1c40e1865b07ac460571f7d4c48de/backend/internal/pkg/apicompat/anthropic_responses_test.go#L1943-L1957",
+      "fields": ["reasoning.defaultLevel", "reasoning.canDisable"],
+      "verifiedAt": "2026-10-21T02:30:58Z"
+    },
+    {
+      "label": "sub2api: Haiku 5.5 disabled thinking accepts low/medium/high and rejects xhigh/max @ 8f2cbb53d9d1c40e1865b07ac460571f7d4c48de",
+      "url": "https://github.com/Wei-Shaw/sub2api/blob/8f2cbb53d9d1c40e1865b07ac460571f7d4c48de/backend/internal/service/gateway_request_haiku55_test.go#L22-L29",
+      "fields": ["reasoning.canDisable"],
       "verifiedAt": "2026-10-21T02:30:58Z"
     }
   ],
@@ -36,6 +55,10 @@
     "supports_pdf_input": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
+    "reasoning_effort_levels": ["low", "medium", "high", "xhigh", "max"],
+    "default_reasoning_effort": "medium",
+    "can_disable_reasoning": true,
+    "supports_none_reasoning_effort": true,
     "supports_response_schema": true,
     "supports_sampling_params": false,
     "supports_tool_choice": true,
