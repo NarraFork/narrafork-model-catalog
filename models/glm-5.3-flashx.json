@@ -1,0 +1,49 @@
+{
+  "id": "glm-5.3-flashx",
+  "name": "GLM-5.3-FlashX",
+  "family": "glm",
+  "status": "verified",
+  "sources": [
+    {
+      "label": "Z.AI GLM-5.3-Flash/FlashX: text/image/video/file input, text output, 1M context (exact integer not stated); always-on reasoning, streaming, function calling and context caching; file input is not represented as a separate modality by this catalog",
+      "url": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+      "fields": ["id", "name", "supported_modalities", "supported_output_modalities", "supports_vision", "supports_reasoning", "can_disable_reasoning", "supports_native_streaming", "supports_function_calling", "supports_prompt_caching"],
+      "verifiedAt": "2026-10-24"
+    },
+    {
+      "label": "Z.AI Chat Completion OpenAPI: Vision request explicitly includes glm-5.3-flash and glm-5.3-flashx; max_tokens maximum 131072; reasoning_effort enum low/high/max with default max",
+      "url": "https://docs.z.ai/api-reference/llm/chat-completion",
+      "fields": ["max_output_tokens", "max_tokens", "reasoning_effort_levels", "default_reasoning_effort", "supports_none_reasoning_effort", "supports_low_reasoning_effort", "supports_max_reasoning_effort", "supports_minimal_reasoning_effort", "supports_xhigh_reasoning_effort"],
+      "verifiedAt": "2026-10-24"
+    },
+    {
+      "label": "Z.AI pricing: USD per 1M tokens, input $0.37 / cached input $0.075 / output $1.25; storage is only temporarily free and is not recorded as a permanent zero price",
+      "url": "https://docs.z.ai/guides/overview/pricing",
+      "fields": ["input_cost_per_token", "cache_read_input_token_cost", "output_cost_per_token"],
+      "verifiedAt": "2026-10-24"
+    }
+  ],
+  "metadata": {
+    "max_output_tokens": 131072,
+    "max_tokens": 131072,
+    "input_cost_per_token": 0.00000037,
+    "cache_read_input_token_cost": 0.000000075,
+    "output_cost_per_token": 0.00000125,
+    "supported_modalities": ["text", "image", "video"],
+    "supported_output_modalities": ["text"],
+    "supports_vision": true,
+    "supports_reasoning": true,
+    "reasoning_effort_levels": ["low", "high", "max"],
+    "default_reasoning_effort": "max",
+    "can_disable_reasoning": false,
+    "supports_none_reasoning_effort": false,
+    "supports_low_reasoning_effort": true,
+    "supports_max_reasoning_effort": true,
+    "supports_minimal_reasoning_effort": false,
+    "supports_xhigh_reasoning_effort": false,
+    "supports_function_calling": true,
+    "supports_native_streaming": true,
+    "supports_prompt_caching": true
+  },
+  "variants": []
+}

@@ -1,0 +1,47 @@
+{
+  "id": "glm-5.3",
+  "name": "GLM-5.3",
+  "family": "glm",
+  "status": "verified",
+  "sources": [
+    {
+      "label": "Zhipu GLM-5.3: text-only, 1M context (exact integer not stated); always-on reasoning with low/high/max, default max; streaming, function calling and context caching",
+      "url": "https://docs.bigmodel.cn/cn/guide/models/text/glm-5.3",
+      "fields": ["id", "name", "supported_modalities", "supports_reasoning", "reasoning_effort_levels", "default_reasoning_effort", "can_disable_reasoning", "supports_none_reasoning_effort", "supports_low_reasoning_effort", "supports_max_reasoning_effort", "supports_minimal_reasoning_effort", "supports_xhigh_reasoning_effort", "supports_native_streaming", "supports_function_calling", "supports_prompt_caching"],
+      "verifiedAt": "2026-10-24"
+    },
+    {
+      "label": "Z.AI Chat Completion OpenAPI: GLM-5.3 max_tokens maximum is 131072",
+      "url": "https://docs.z.ai/api-reference/llm/chat-completion",
+      "fields": ["max_output_tokens", "max_tokens"],
+      "verifiedAt": "2026-10-24"
+    },
+    {
+      "label": "Z.AI pricing: USD per 1M tokens, input $1.4 / cached input $0.26 / output $4.4; storage is only temporarily free and is not recorded as a permanent zero price",
+      "url": "https://docs.z.ai/guides/overview/pricing",
+      "fields": ["input_cost_per_token", "cache_read_input_token_cost", "output_cost_per_token"],
+      "verifiedAt": "2026-10-24"
+    }
+  ],
+  "metadata": {
+    "max_output_tokens": 131072,
+    "max_tokens": 131072,
+    "input_cost_per_token": 0.0000014,
+    "cache_read_input_token_cost": 0.00000026,
+    "output_cost_per_token": 0.0000044,
+    "supported_modalities": ["text"],
+    "supports_reasoning": true,
+    "reasoning_effort_levels": ["low", "high", "max"],
+    "default_reasoning_effort": "max",
+    "can_disable_reasoning": false,
+    "supports_none_reasoning_effort": false,
+    "supports_low_reasoning_effort": true,
+    "supports_max_reasoning_effort": true,
+    "supports_minimal_reasoning_effort": false,
+    "supports_xhigh_reasoning_effort": false,
+    "supports_function_calling": true,
+    "supports_native_streaming": true,
+    "supports_prompt_caching": true
+  },
+  "variants": []
+}

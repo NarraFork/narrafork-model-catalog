@@ -1,0 +1,27 @@
+{
+  "id": "grok-4.7-fast",
+  "name": "Grok 4.7 Fast",
+  "family": "grok",
+  "status": "verified",
+  "notes": "Rates and context limit verified against sub2api's pricing table, not a direct xAI API probe. Kept separate from Grok 4.7 because its rates differ. Output limit and reasoning controls are unconfirmed and omitted.",
+  "sources": [
+    {
+      "label": "sub2api pricing table: grok-4.7-fast @ 5c185c5c5d4f5e409e2139806e0964ae944e03e8",
+      "url": "https://github.com/Wei-Shaw/sub2api/blob/5c185c5c5d4f5e409e2139806e0964ae944e03e8/backend/resources/model-pricing/model_prices_and_context_window.json",
+      "verifiedAt": "2026-10-24"
+    }
+  ],
+  "metadata": {
+    "cache_read_input_token_cost": 1e-06,
+    "cache_read_input_token_cost_above_200k_tokens": 1.5e-06,
+    "input_cost_per_token": 4e-06,
+    "input_cost_per_token_above_200k_tokens": 6e-06,
+    "litellm_provider": "xai",
+    "max_input_tokens": 500000,
+    "mode": "chat",
+    "output_cost_per_token": 1.2e-05,
+    "output_cost_per_token_above_200k_tokens": 1.8e-05,
+    "supports_prompt_caching": true
+  },
+  "variants": []
+}
