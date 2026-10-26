@@ -4,6 +4,16 @@
   "family": "claude",
   "status": "verified",
   "notes": "Thinking can be disabled only with low, medium or high effort. In sub2api's Responses bridge, none maps to disabled thinking with low effort; xhigh/max require adaptive thinking.",
+  "matches": {
+    "aliases": [
+      "claude-haiku-5.5"
+    ],
+    "prefixes": [
+      "claude-haiku-5-5",
+      "claude-haiku-5.5"
+    ],
+    "volatileSuffixes": true
+  },
   "sources": [
     {
       "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [claude-haiku-5-5] @ 8f2cbb53d9d1c40e1865b07ac460571f7d4c48de",
