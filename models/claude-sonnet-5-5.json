@@ -15,14 +15,13 @@
     {
       "label": "Claude official pricing: USD per MTok base input 2 / 5m cache writes 2.50 / 1h cache writes 4 / cache hits 0.10 / output 10; supersedes older sub2api cache-read rate",
       "url": "https://platform.claude.com/docs/en/about-claude/pricing.md",
-      "fields": ["input_cost_per_token", "output_cost_per_token", "cache_read_input_token_cost", "cache_creation_input_token_cost", "cache_creation_input_token_cost_above_1hr"],
-      "verifiedAt": "2026-10-24"
+      "verifiedAt": "2026-10-24T00:00:00Z"
     },
     {
       "label": "Anthropic Sonnet 5.5 announcement: USD per MTok input 2 / output 10 / cache reads 0.10; Claude Platform defaults to high effort",
       "url": "https://www.anthropic.com/news/claude-sonnet-5-5",
-      "fields": ["input_cost_per_token", "output_cost_per_token", "cache_read_input_token_cost", "reasoning.defaultLevel"],
-      "verifiedAt": "2026-10-24"
+
+      "verifiedAt": "2026-10-24T00:00:00Z"
     },
     {
       "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [claude-sonnet-5-5] @ 3040209f205472038c1ba745a1bedd2edd9053b1",
@@ -32,14 +31,14 @@
     {
       "label": "sub2api: Sonnet 5.5 low/medium/high/xhigh/max effort and dotted-ID normalization @ 5c185c5c5d4f5e409e2139806e0964ae944e03e8",
       "url": "https://github.com/Wei-Shaw/sub2api/blob/5c185c5c5d4f5e409e2139806e0964ae944e03e8/backend/internal/pkg/claude/effort_catalog.go",
-      "fields": ["reasoning.levels", "matches.aliases"],
-      "verifiedAt": "2026-10-24"
+
+      "verifiedAt": "2026-10-24T00:00:00Z"
     },
     {
       "label": "sub2api: TestSonnet55ResponsesThinkingAndSampling defaults to high; none maps to between_tools with low effort, not disabled thinking",
       "url": "https://github.com/Wei-Shaw/sub2api/blob/5c185c5c5d4f5e409e2139806e0964ae944e03e8/backend/internal/pkg/apicompat/anthropic_responses_test.go#L1885-L1918",
-      "fields": ["reasoning.defaultLevel", "reasoning.canDisable"],
-      "verifiedAt": "2026-10-24"
+
+      "verifiedAt": "2026-10-24T00:00:00Z"
     }
   ],
   "metadata": {

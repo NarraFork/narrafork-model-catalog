@@ -13,7 +13,6 @@
     {
       "label": "OpenAI GPT-6.1 Terra announcement: API ID and Standard USD/MTok input 1 / cached input 0.05 / output 5",
       "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
-      "fields": ["id", "input_cost_per_token", "cache_read_input_token_cost", "output_cost_per_token"],
       "verifiedAt": "2026-10-27T00:37:54Z"
     }
   ],
@@ -43,7 +42,7 @@
     "supported_modalities": ["text", "image"],
     "supported_output_modalities": ["text"],
     "supports_reasoning": true,
-    "reasoning_effort_levels": ["none", "low", "medium", "high", "xhigh", "max"],
+    "reasoning_effort_levels": ["low", "medium", "high", "xhigh", "max"],
     "default_reasoning_effort": "medium",
     "can_disable_reasoning": true,
     "supports_none_reasoning_effort": true,

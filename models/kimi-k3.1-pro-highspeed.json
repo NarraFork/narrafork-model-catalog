@@ -11,13 +11,12 @@
     {
       "label": "Kimi K3.1 Pro quickstart: kimi-k3.1-pro-highspeed is the high-speed variant with the K3.1 Pro API contract",
       "url": "https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart",
-      "verifiedAt": "2026-10-24"
+      "verifiedAt": "2026-10-24T00:00:00Z"
     },
     {
       "label": "Kimi official pricing embedded DocTable: USD per MTok input 4 / output 20 / cached input 0.20 / 5m writes 4 / 1h writes 8; K3 context 1048576",
       "url": "https://platform.kimi.ai/docs/pricing/chat",
-      "fields": ["metadata.max_input_tokens", "input_cost_per_token", "output_cost_per_token", "cache_read_input_token_cost", "cache_creation_input_token_cost", "cache_creation_input_token_cost_above_1hr"],
-      "verifiedAt": "2026-10-24"
+      "verifiedAt": "2026-10-24T00:00:00Z"
     }
   ],
   "metadata": {
@@ -62,7 +61,7 @@
         {
           "label": "Kimi Code model table: k3.1-pro-highspeed, same K3.1 Pro capabilities with faster output and higher quota consumption",
           "url": "https://www.kimi.com/code/docs/en/kimi-code/models.html",
-          "verifiedAt": "2026-10-24"
+          "verifiedAt": "2026-10-24T00:00:00Z"
         }
       ],
       "metadata": {
