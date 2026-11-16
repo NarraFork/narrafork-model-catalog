@@ -13,7 +13,8 @@
         "claude-sonnet-4"
       ],
       "metadata": {},
-      "status": "unverified"
+      "status": "unverified",
+      "family": "claude"
     }
   ]
 }

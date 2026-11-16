@@ -1,12 +1,51 @@
 {
   "id": "gpt-3.5-turbo-16k",
   "name": "gpt-3.5-turbo-16k",
+  "family": "gpt",
   "status": "verified",
   "sources": [
     {
       "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [gpt-3.5-turbo-16k] @ e2cfaa46e79241f34e52bf4781f7710cd511c5d2",
       "url": "https://github.com/Wei-Shaw/sub2api/blob/e2cfaa46e79241f34e52bf4781f7710cd511c5d2/backend/resources/model-pricing/model_prices_and_context_window.json#L2758",
       "verifiedAt": "2026-09-22T07:33:33Z"
+    },
+    {
+      "label": "litellm aggregate directory [gpt-3.5-turbo-16k] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95; verifies only recorded aggregate fields, not official availability",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:21:44Z",
+      "fields": [
+        "id",
+        "metadata.deprecation_date",
+        "metadata.deprecation_source",
+        "metadata.fedramp_uplift_multiplier",
+        "metadata.input_cost_per_token",
+        "metadata.litellm_provider",
+        "metadata.max_input_tokens",
+        "metadata.max_output_tokens",
+        "metadata.mode",
+        "metadata.output_cost_per_token",
+        "metadata.supports_prompt_caching",
+        "metadata.supports_system_messages",
+        "metadata.supports_tool_choice"
+      ]
+    },
+    {
+      "label": "sub2api aggregate directory [gpt-3.5-turbo-16k] @ d70676756fd3a35b854d41aa46c07935bbef283f; verifies only recorded aggregate fields, not official availability",
+      "url": "https://github.com/Wei-Shaw/sub2api/blob/d70676756fd3a35b854d41aa46c07935bbef283f/backend/resources/model-pricing/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:21:44Z",
+      "fields": [
+        "id",
+        "metadata.input_cost_per_token",
+        "metadata.litellm_provider",
+        "metadata.max_input_tokens",
+        "metadata.max_output_tokens",
+        "metadata.max_tokens",
+        "metadata.mode",
+        "metadata.output_cost_per_token",
+        "metadata.supports_prompt_caching",
+        "metadata.supports_system_messages",
+        "metadata.supports_tool_choice"
+      ]
     }
   ],
   "metadata": {
@@ -19,7 +58,10 @@
     "output_cost_per_token": 4e-06,
     "supports_prompt_caching": true,
     "supports_system_messages": true,
-    "supports_tool_choice": true
+    "supports_tool_choice": true,
+    "deprecation_date": "2026-10-23",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
+    "fedramp_uplift_multiplier": 1.1
   },
   "variants": []
 }

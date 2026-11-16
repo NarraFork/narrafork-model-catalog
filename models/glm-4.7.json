@@ -1,0 +1,157 @@
+{
+  "id": "glm-4.7",
+  "name": "glm-4.7",
+  "family": "glm",
+  "status": "verified",
+  "metadata": {
+    "cache_read_input_token_cost": 1.1e-07,
+    "input_cost_per_token": 6e-07,
+    "output_cost_per_token": 2.2e-06,
+    "max_input_tokens": 200000,
+    "max_output_tokens": 128000,
+    "mode": "chat",
+    "supports_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_tool_choice": true,
+    "can_disable_reasoning": true,
+    "supports_none_reasoning_effort": true
+  },
+  "variants": [
+    {
+      "id": "glm-4.7@novita",
+      "name": "zai-org/glm-4.7",
+      "providerKey": "novita",
+      "upstreamModelIds": [
+        "zai-org/glm-4.7"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "mode": "chat",
+        "input_cost_per_token": 6e-07,
+        "output_cost_per_token": 2.2e-06,
+        "max_input_tokens": 204800,
+        "max_output_tokens": 131072,
+        "supports_function_calling": true,
+        "supports_parallel_function_calling": true,
+        "supports_tool_choice": true,
+        "supports_system_messages": true,
+        "supports_response_schema": true,
+        "cache_read_input_token_cost": 1.1e-07,
+        "input_cost_per_token_cache_hit": 1.1e-07,
+        "supports_reasoning": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [novita/zai-org/glm-4.7]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.cache_read_input_token_cost",
+            "metadata.input_cost_per_token",
+            "metadata.input_cost_per_token_cache_hit",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_parallel_function_calling",
+            "metadata.supports_reasoning",
+            "metadata.supports_response_schema",
+            "metadata.supports_system_messages",
+            "metadata.supports_tool_choice",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "glm-4.7@deepinfra",
+      "name": "zai-org/GLM-4.7",
+      "providerKey": "deepinfra",
+      "upstreamModelIds": [
+        "zai-org/GLM-4.7"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "max_output_tokens": 202752,
+        "max_input_tokens": 202752,
+        "input_cost_per_token": 4e-07,
+        "output_cost_per_token": 1.75e-06,
+        "cache_read_input_token_cost": 8e-08,
+        "supports_prompt_caching": true,
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_tool_choice": true,
+        "supports_response_schema": true,
+        "supports_reasoning": true,
+        "supports_vision": false
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [deepinfra/zai-org/GLM-4.7]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.cache_read_input_token_cost",
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_prompt_caching",
+            "metadata.supports_reasoning",
+            "metadata.supports_response_schema",
+            "metadata.supports_tool_choice",
+            "metadata.supports_vision",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    }
+  ],
+  "sources": [
+    {
+      "label": "LiteLLM pinned native-namespace record [zai/glm-4.7]; code evidence, not official API attestation",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "id",
+        "metadata.cache_read_input_token_cost",
+        "metadata.input_cost_per_token",
+        "metadata.max_input_tokens",
+        "metadata.max_output_tokens",
+        "metadata.mode",
+        "metadata.output_cost_per_token",
+        "metadata.supports_function_calling",
+        "metadata.supports_prompt_caching",
+        "metadata.supports_reasoning",
+        "metadata.supports_tool_choice"
+      ]
+    },
+    {
+      "label": "Z.AI official USD token pricing; temporary free cache storage is not a permanent zero cache-write rate",
+      "url": "https://docs.z.ai/guides/overview/pricing.md",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "metadata.cache_read_input_token_cost",
+        "metadata.input_cost_per_token",
+        "metadata.output_cost_per_token"
+      ]
+    },
+    {
+      "label": "Z.AI thinking mode: enabled by default, optional disable for pre-5.3 models",
+      "url": "https://docs.z.ai/guides/capabilities/thinking-mode.md",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "metadata.can_disable_reasoning",
+        "metadata.supports_none_reasoning_effort",
+        "metadata.supports_reasoning"
+      ]
+    }
+  ],
+  "notes": "Native-namespace metadata is recorded from pinned LiteLLM code; without an official source this does not establish a public official model or guarantee current availability."
+}

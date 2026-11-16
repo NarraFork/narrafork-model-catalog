@@ -1,0 +1,54 @@
+{
+  "id": "grok-voice-3.0",
+  "name": "Grok voice 3.0",
+  "family": "grok",
+  "status": "unverified",
+  "metadata": {
+    "input_cost_per_second": 0.001333333333333,
+    "input_cost_per_text_message": 0.004,
+    "litellm_provider": "xai",
+    "mode": "realtime",
+    "source": "https://docs.x.ai/developers/pricing",
+    "supported_endpoints": [
+      "/v1/realtime"
+    ],
+    "supported_modalities": [
+      "text",
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "text",
+      "audio"
+    ],
+    "supports_audio_input": true,
+    "supports_audio_output": true,
+    "supports_function_calling": true
+  },
+  "variants": [],
+  "sources": [
+    {
+      "label": "LiteLLM registry [xai/grok-voice-3.0] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95; aggregated metadata, not a direct xAI availability check",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:25:26Z",
+      "fields": [
+        "metadata.input_cost_per_second",
+        "metadata.input_cost_per_text_message",
+        "metadata.litellm_provider",
+        "metadata.mode",
+        "metadata.source",
+        "metadata.supported_endpoints",
+        "metadata.supported_modalities",
+        "metadata.supported_output_modalities",
+        "metadata.supports_audio_input",
+        "metadata.supports_audio_output",
+        "metadata.supports_function_calling"
+      ]
+    }
+  ],
+  "notes": "Native xAI metadata is from the pinned LiteLLM registry; direct xAI documentation was unavailable during this audit. Registry output limits are not independently confirmed. Provider-specific pricing and controls, where verified, are recorded in nested variants.",
+  "matches": {
+    "aliases": [
+      "grok-voice-latest"
+    ]
+  }
+}

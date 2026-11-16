@@ -19,6 +19,33 @@
       "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [claude-opus-4-6] @ e2cfaa46e79241f34e52bf4781f7710cd511c5d2",
       "url": "https://github.com/Wei-Shaw/sub2api/blob/e2cfaa46e79241f34e52bf4781f7710cd511c5d2/backend/resources/model-pricing/model_prices_and_context_window.json#L310",
       "verifiedAt": "2026-09-22T07:33:33Z"
+    },
+    {
+      "label": "LiteLLM aggregate registry: Anthropic-native [claude-opus-4-6] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:20:54Z",
+      "fields": [
+        "metadata.supports_web_search",
+        "metadata.supports_anthropic_compaction",
+        "metadata.cache_creation_input_token_cost_batches",
+        "metadata.cache_read_input_token_cost_batches",
+        "metadata.input_cost_per_token_batches",
+        "metadata.output_cost_per_token_batches",
+        "metadata.supports_legacy_thinking",
+        "metadata.supports_thinking_cache_preservation",
+        "metadata.supports_native_structured_output",
+        "metadata.supports_speed",
+        "metadata.prompt_cache_min_tokens",
+        "metadata.source"
+      ]
+    },
+    {
+      "label": "sub2api EffortLevelsForModel exact/prefix family dispatch; bridge-supported levels, not independently verified official API limits",
+      "url": "https://github.com/Wei-Shaw/sub2api/blob/d70676756fd3a35b854d41aa46c07935bbef283f/backend/internal/pkg/claude/effort_catalog.go",
+      "verifiedAt": "2026-11-16T09:20:54Z",
+      "fields": [
+        "metadata.reasoning_effort_levels"
+      ]
     }
   ],
   "metadata": {
@@ -54,7 +81,25 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_vision": true,
-    "tool_use_system_prompt_tokens": 346
+    "tool_use_system_prompt_tokens": 346,
+    "supports_web_search": true,
+    "supports_anthropic_compaction": true,
+    "cache_creation_input_token_cost_batches": 3.125e-06,
+    "cache_read_input_token_cost_batches": 2.5e-07,
+    "input_cost_per_token_batches": 2.5e-06,
+    "output_cost_per_token_batches": 1.25e-05,
+    "supports_legacy_thinking": true,
+    "supports_thinking_cache_preservation": true,
+    "supports_native_structured_output": true,
+    "supports_speed": true,
+    "prompt_cache_min_tokens": 4096,
+    "source": "https://platform.claude.com/docs/en/about-claude/pricing",
+    "reasoning_effort_levels": [
+      "low",
+      "medium",
+      "high",
+      "max"
+    ]
   },
   "variants": [
     {
@@ -105,8 +150,18 @@
           "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [claude-opus-4-6-thinking] @ e2cfaa46e79241f34e52bf4781f7710cd511c5d2",
           "url": "https://github.com/Wei-Shaw/sub2api/blob/e2cfaa46e79241f34e52bf4781f7710cd511c5d2/backend/resources/model-pricing/model_prices_and_context_window.json#L380",
           "verifiedAt": "2026-09-22T07:33:33Z"
+        },
+        {
+          "label": "sub2api unmerged PR #8778 Antigravity adapter whitelist/output spelling; availability unverified",
+          "url": "https://github.com/universonic/sub2api/blob/8783acd7b6725c8036098df243b16c0fbd25e71e/backend/internal/domain/constants.go#L112-L137",
+          "verifiedAt": "2026-11-16T09:20:54Z",
+          "fields": [
+            "upstreamModelIds"
+          ]
         }
-      ]
+      ],
+      "family": "claude",
+      "notes": "This spelling is present in an unmerged third-party adapter; it does not establish production availability, official effort levels, pricing or context limits."
     },
     {
       "id": "claude-opus-4-6@cursor",
@@ -121,7 +176,8 @@
         ]
       },
       "metadata": {},
-      "status": "unverified"
+      "status": "unverified",
+      "family": "claude"
     }
   ]
 }

@@ -7,6 +7,37 @@
       "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [gemini-embedding-2-preview] @ e2cfaa46e79241f34e52bf4781f7710cd511c5d2",
       "url": "https://github.com/Wei-Shaw/sub2api/blob/e2cfaa46e79241f34e52bf4781f7710cd511c5d2/backend/resources/model-pricing/model_prices_and_context_window.json#L2397",
       "verifiedAt": "2026-09-22T07:33:33Z"
+    },
+    {
+      "label": "LiteLLM aggregated model metadata (not official verification) [gemini/gemini-embedding-2-preview]",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:26:38Z",
+      "fields": [
+        "deprecation_date",
+        "deprecation_source",
+        "input_cost_per_audio_token",
+        "input_cost_per_audio_token_batches",
+        "input_cost_per_image_token",
+        "input_cost_per_image_token_batches",
+        "input_cost_per_token",
+        "input_cost_per_token_batches",
+        "input_cost_per_video_token",
+        "input_cost_per_video_token_batches",
+        "litellm_provider",
+        "max_input_tokens",
+        "mode",
+        "output_cost_per_token",
+        "output_vector_size",
+        "rpm",
+        "source",
+        "successor_model",
+        "supports_audio_input",
+        "supports_embedding_image_input",
+        "supports_multimodal",
+        "supports_vision",
+        "tpm"
+      ],
+      "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
     }
   ],
   "metadata": {
@@ -14,14 +45,154 @@
     "input_cost_per_image": 0.00012,
     "input_cost_per_token": 2e-07,
     "input_cost_per_video_per_second": 0.00079,
-    "litellm_provider": "vertex_ai-embedding-models",
+    "litellm_provider": "gemini",
     "max_input_tokens": 8192,
     "max_tokens": 8192,
     "mode": "embedding",
     "output_cost_per_token": 0,
     "output_vector_size": 3072,
-    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
-    "uses_embed_content": true
+    "source": "https://ai.google.dev/gemini-api/docs/pricing",
+    "uses_embed_content": true,
+    "deprecation_date": "2026-11-06",
+    "deprecation_source": "https://ai.google.dev/gemini-api/docs/deprecations",
+    "input_cost_per_audio_token": 6.5e-06,
+    "input_cost_per_audio_token_batches": 3.25e-06,
+    "input_cost_per_image_token": 4.5e-07,
+    "input_cost_per_image_token_batches": 2.25e-07,
+    "input_cost_per_token_batches": 1e-07,
+    "input_cost_per_video_token": 1.2e-05,
+    "input_cost_per_video_token_batches": 6e-06,
+    "rpm": 10000,
+    "successor_model": "gemini/gemini-embedding-2",
+    "supports_audio_input": true,
+    "supports_embedding_image_input": true,
+    "supports_multimodal": true,
+    "supports_vision": true,
+    "tpm": 10000000
   },
-  "variants": []
+  "variants": [
+    {
+      "id": "gemini-embedding-2-preview@vertex_ai",
+      "name": "gemini-embedding-2-preview (vertex_ai)",
+      "providerKey": "vertex_ai",
+      "upstreamModelIds": [
+        "gemini-embedding-2-preview"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "input_cost_per_audio_token": 6.5e-06,
+        "input_cost_per_audio_token_batches": 3.25e-06,
+        "input_cost_per_image_token": 4.5e-07,
+        "input_cost_per_image_token_batches": 2.25e-07,
+        "input_cost_per_token": 2e-07,
+        "input_cost_per_token_batches": 1e-07,
+        "input_cost_per_video_token": 1.2e-05,
+        "input_cost_per_video_token_batches": 6e-06,
+        "litellm_provider": "vertex_ai",
+        "max_input_tokens": 8192,
+        "mode": "embedding",
+        "output_cost_per_token": 0,
+        "output_vector_size": 3072,
+        "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+        "supports_embedding_image_input": true,
+        "supports_multimodal": true,
+        "uses_embed_content": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM aggregated model metadata (not official verification) [vertex_ai/gemini-embedding-2-preview]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:26:38Z",
+          "fields": [
+            "input_cost_per_audio_token",
+            "input_cost_per_audio_token_batches",
+            "input_cost_per_image_token",
+            "input_cost_per_image_token_batches",
+            "input_cost_per_token",
+            "input_cost_per_token_batches",
+            "input_cost_per_video_token",
+            "input_cost_per_video_token_batches",
+            "litellm_provider",
+            "max_input_tokens",
+            "mode",
+            "output_cost_per_token",
+            "output_vector_size",
+            "source",
+            "supports_embedding_image_input",
+            "supports_multimodal",
+            "uses_embed_content"
+          ],
+          "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
+        }
+      ]
+    },
+    {
+      "id": "gemini-embedding-2-preview@gemini",
+      "name": "gemini-embedding-2-preview (gemini)",
+      "providerKey": "gemini",
+      "upstreamModelIds": [
+        "gemini-embedding-2-preview"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "deprecation_date": "2026-11-06",
+        "deprecation_source": "https://ai.google.dev/gemini-api/docs/deprecations",
+        "input_cost_per_audio_token": 6.5e-06,
+        "input_cost_per_audio_token_batches": 3.25e-06,
+        "input_cost_per_image_token": 4.5e-07,
+        "input_cost_per_image_token_batches": 2.25e-07,
+        "input_cost_per_token": 2e-07,
+        "input_cost_per_token_batches": 1e-07,
+        "input_cost_per_video_token": 1.2e-05,
+        "input_cost_per_video_token_batches": 6e-06,
+        "litellm_provider": "gemini",
+        "max_input_tokens": 8192,
+        "mode": "embedding",
+        "output_cost_per_token": 0,
+        "output_vector_size": 3072,
+        "rpm": 10000,
+        "source": "https://ai.google.dev/gemini-api/docs/pricing",
+        "successor_model": "gemini/gemini-embedding-2",
+        "supports_audio_input": true,
+        "supports_embedding_image_input": true,
+        "supports_multimodal": true,
+        "supports_vision": true,
+        "tpm": 10000000
+      },
+      "sources": [
+        {
+          "label": "LiteLLM aggregated model metadata (not official verification) [gemini/gemini-embedding-2-preview]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:26:38Z",
+          "fields": [
+            "deprecation_date",
+            "deprecation_source",
+            "input_cost_per_audio_token",
+            "input_cost_per_audio_token_batches",
+            "input_cost_per_image_token",
+            "input_cost_per_image_token_batches",
+            "input_cost_per_token",
+            "input_cost_per_token_batches",
+            "input_cost_per_video_token",
+            "input_cost_per_video_token_batches",
+            "litellm_provider",
+            "max_input_tokens",
+            "mode",
+            "output_cost_per_token",
+            "output_vector_size",
+            "rpm",
+            "source",
+            "successor_model",
+            "supports_audio_input",
+            "supports_embedding_image_input",
+            "supports_multimodal",
+            "supports_vision",
+            "tpm"
+          ],
+          "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
+        }
+      ]
+    }
+  ],
+  "family": "gemini"
 }

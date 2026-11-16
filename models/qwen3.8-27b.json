@@ -1,0 +1,35 @@
+{
+  "id": "qwen3.8-27b",
+  "name": "qwen3.8-27b",
+  "family": "qwen",
+  "status": "verified",
+  "metadata": {
+    "supports_reasoning": true,
+    "can_disable_reasoning": true,
+    "supports_none_reasoning_effort": true
+  },
+  "variants": [],
+  "sources": [
+    {
+      "label": "Alibaba official open-model thinking directory: 27B hybrid, 2.4T thinking-only",
+      "url": "https://help.aliyun.com/zh/model-studio/deep-thinking",
+      "verifiedAt": "2026-11-16T09:27:56Z",
+      "fields": [
+        "metadata.supports_reasoning",
+        "metadata.can_disable_reasoning",
+        "metadata.supports_none_reasoning_effort"
+      ]
+    },
+    {
+      "label": "Alibaba official model-specific hybrid thinking list; enabled by default",
+      "url": "https://help.aliyun.com/zh/model-studio/deep-thinking",
+      "verifiedAt": "2026-11-16T09:27:56Z",
+      "fields": [
+        "metadata.supports_reasoning",
+        "metadata.can_disable_reasoning",
+        "metadata.supports_none_reasoning_effort"
+      ]
+    }
+  ],
+  "notes": "Official thinking-mode list states hybrid thinking enabled by default; no undocumented effort enum is inferred."
+}

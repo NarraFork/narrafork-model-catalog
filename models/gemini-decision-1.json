@@ -1,0 +1,151 @@
+{
+  "id": "gemini-decision-1",
+  "name": "Gemini Decision 1",
+  "family": "gemini",
+  "status": "unverified",
+  "sources": [
+    {
+      "label": "LiteLLM aggregated model metadata (not official verification) [gemini/gemini-decision-1]",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:26:38Z",
+      "fields": [
+        "input_cost_per_token",
+        "litellm_provider",
+        "max_input_tokens",
+        "mode",
+        "output_cost_per_token",
+        "rpm",
+        "source",
+        "supported_endpoints",
+        "supported_modalities",
+        "supports_audio_input",
+        "supports_audio_output",
+        "supports_computer_use",
+        "supports_function_calling",
+        "supports_parallel_function_calling",
+        "supports_pdf_input",
+        "supports_prompt_caching",
+        "supports_reasoning",
+        "supports_response_schema",
+        "supports_tool_choice",
+        "supports_url_context",
+        "supports_video_input",
+        "supports_vision",
+        "supports_web_search",
+        "tpm"
+      ],
+      "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
+    }
+  ],
+  "metadata": {
+    "input_cost_per_token": 1e-07,
+    "litellm_provider": "gemini",
+    "max_input_tokens": 262144,
+    "mode": "decisions",
+    "output_cost_per_token": 0.0,
+    "rpm": 1500,
+    "source": "https://ai.google.dev/gemini-api/docs/pricing",
+    "supported_endpoints": [
+      "/v1/decisions"
+    ],
+    "supported_modalities": [
+      "text",
+      "image",
+      "audio",
+      "video"
+    ],
+    "supports_audio_input": true,
+    "supports_audio_output": false,
+    "supports_computer_use": false,
+    "supports_function_calling": false,
+    "supports_parallel_function_calling": false,
+    "supports_pdf_input": true,
+    "supports_prompt_caching": false,
+    "supports_reasoning": false,
+    "supports_response_schema": false,
+    "supports_tool_choice": false,
+    "supports_url_context": false,
+    "supports_video_input": true,
+    "supports_vision": true,
+    "supports_web_search": false,
+    "tpm": 1000000
+  },
+  "variants": [
+    {
+      "id": "gemini-decision-1@gemini",
+      "name": "Gemini Decision 1 (gemini)",
+      "providerKey": "gemini",
+      "upstreamModelIds": [
+        "gemini-decision-1"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "input_cost_per_token": 1e-07,
+        "litellm_provider": "gemini",
+        "max_input_tokens": 262144,
+        "mode": "decisions",
+        "output_cost_per_token": 0.0,
+        "rpm": 1500,
+        "source": "https://ai.google.dev/gemini-api/docs/pricing",
+        "supported_endpoints": [
+          "/v1/decisions"
+        ],
+        "supported_modalities": [
+          "text",
+          "image",
+          "audio",
+          "video"
+        ],
+        "supports_audio_input": true,
+        "supports_audio_output": false,
+        "supports_computer_use": false,
+        "supports_function_calling": false,
+        "supports_parallel_function_calling": false,
+        "supports_pdf_input": true,
+        "supports_prompt_caching": false,
+        "supports_reasoning": false,
+        "supports_response_schema": false,
+        "supports_tool_choice": false,
+        "supports_url_context": false,
+        "supports_video_input": true,
+        "supports_vision": true,
+        "supports_web_search": false,
+        "tpm": 1000000
+      },
+      "sources": [
+        {
+          "label": "LiteLLM aggregated model metadata (not official verification) [gemini/gemini-decision-1]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:26:38Z",
+          "fields": [
+            "input_cost_per_token",
+            "litellm_provider",
+            "max_input_tokens",
+            "mode",
+            "output_cost_per_token",
+            "rpm",
+            "source",
+            "supported_endpoints",
+            "supported_modalities",
+            "supports_audio_input",
+            "supports_audio_output",
+            "supports_computer_use",
+            "supports_function_calling",
+            "supports_parallel_function_calling",
+            "supports_pdf_input",
+            "supports_prompt_caching",
+            "supports_reasoning",
+            "supports_response_schema",
+            "supports_tool_choice",
+            "supports_url_context",
+            "supports_video_input",
+            "supports_vision",
+            "supports_web_search",
+            "tpm"
+          ],
+          "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
+        }
+      ]
+    }
+  ]
+}

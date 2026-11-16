@@ -1,12 +1,76 @@
 {
   "id": "o4-mini-2025-04-16",
   "name": "o4-mini-2025-04-16",
+  "family": "o4",
   "status": "verified",
   "sources": [
     {
       "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [o4-mini-2025-04-16] @ e2cfaa46e79241f34e52bf4781f7710cd511c5d2",
       "url": "https://github.com/Wei-Shaw/sub2api/blob/e2cfaa46e79241f34e52bf4781f7710cd511c5d2/backend/resources/model-pricing/model_prices_and_context_window.json#L6240",
       "verifiedAt": "2026-09-22T07:33:33Z"
+    },
+    {
+      "label": "litellm aggregate directory [o4-mini-2025-04-16] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95; verifies only recorded aggregate fields, not official availability",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:21:44Z",
+      "fields": [
+        "id",
+        "metadata.cache_read_input_token_cost",
+        "metadata.cache_read_input_token_cost_flex",
+        "metadata.cache_read_input_token_cost_priority",
+        "metadata.deprecation_date",
+        "metadata.deprecation_source",
+        "metadata.fedramp_uplift_multiplier",
+        "metadata.input_cost_per_token",
+        "metadata.input_cost_per_token_batches",
+        "metadata.input_cost_per_token_flex",
+        "metadata.input_cost_per_token_priority",
+        "metadata.litellm_provider",
+        "metadata.max_input_tokens",
+        "metadata.max_output_tokens",
+        "metadata.mode",
+        "metadata.output_cost_per_token",
+        "metadata.output_cost_per_token_batches",
+        "metadata.output_cost_per_token_flex",
+        "metadata.output_cost_per_token_priority",
+        "metadata.search_context_cost_per_query",
+        "metadata.successor_model",
+        "metadata.supports_function_calling",
+        "metadata.supports_parallel_function_calling",
+        "metadata.supports_pdf_input",
+        "metadata.supports_prompt_caching",
+        "metadata.supports_reasoning",
+        "metadata.supports_response_schema",
+        "metadata.supports_tool_choice",
+        "metadata.supports_vision",
+        "metadata.supports_web_search"
+      ]
+    },
+    {
+      "label": "sub2api aggregate directory [o4-mini-2025-04-16] @ d70676756fd3a35b854d41aa46c07935bbef283f; verifies only recorded aggregate fields, not official availability",
+      "url": "https://github.com/Wei-Shaw/sub2api/blob/d70676756fd3a35b854d41aa46c07935bbef283f/backend/resources/model-pricing/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:21:44Z",
+      "fields": [
+        "id",
+        "metadata.cache_read_input_token_cost",
+        "metadata.input_cost_per_token",
+        "metadata.litellm_provider",
+        "metadata.max_input_tokens",
+        "metadata.max_output_tokens",
+        "metadata.max_tokens",
+        "metadata.mode",
+        "metadata.output_cost_per_token",
+        "metadata.supports_function_calling",
+        "metadata.supports_parallel_function_calling",
+        "metadata.supports_pdf_input",
+        "metadata.supports_prompt_caching",
+        "metadata.supports_reasoning",
+        "metadata.supports_response_schema",
+        "metadata.supports_service_tier",
+        "metadata.supports_tool_choice",
+        "metadata.supports_vision",
+        "metadata.supports_web_search"
+      ]
     }
   ],
   "metadata": {
@@ -27,7 +91,24 @@
     "supports_service_tier": true,
     "supports_tool_choice": true,
     "supports_vision": true,
-    "supports_web_search": true
+    "supports_web_search": true,
+    "cache_read_input_token_cost_flex": 1.38e-07,
+    "cache_read_input_token_cost_priority": 5e-07,
+    "deprecation_date": "2026-10-23",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
+    "successor_model": "gpt-5.6-terra",
+    "input_cost_per_token_batches": 5.5e-07,
+    "input_cost_per_token_flex": 5.5e-07,
+    "input_cost_per_token_priority": 2e-06,
+    "fedramp_uplift_multiplier": 1.1,
+    "output_cost_per_token_batches": 2.2e-06,
+    "output_cost_per_token_flex": 2.2e-06,
+    "output_cost_per_token_priority": 8e-06,
+    "search_context_cost_per_query": {
+      "search_context_size_high": 0.01,
+      "search_context_size_low": 0.01,
+      "search_context_size_medium": 0.01
+    }
   },
   "variants": []
 }

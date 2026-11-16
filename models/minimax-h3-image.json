@@ -1,0 +1,64 @@
+{
+  "id": "minimax-h3-image",
+  "name": "minimax-h3-image",
+  "family": "minimax",
+  "status": "verified",
+  "metadata": {
+    "mode": "image_generation",
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "image"
+    ],
+    "supports_native_streaming": true,
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits"
+    ]
+  },
+  "variants": [
+    {
+      "id": "minimax-h3-image@minimax:highspeed",
+      "name": "MiniMax-H3-Image-Highspeed",
+      "providerKey": "minimax",
+      "upstreamModelIds": [
+        "MiniMax-H3-Image-Highspeed"
+      ],
+      "status": "verified",
+      "metadata": {},
+      "sources": [
+        {
+          "label": "MiniMax official high-speed image variant: same parameters and limits",
+          "url": "https://platform.minimax.io/docs/guides/image-generation.md",
+          "verifiedAt": "2026-11-16T09:31:44Z",
+          "fields": [
+            "upstreamModelIds"
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "MiniMax official H3 generation family and multimodal input; pricing depends on resolution/media and is not flattened to per-token chat price",
+      "url": "https://platform.minimax.io/docs/pricing/overview.md",
+      "verifiedAt": "2026-11-16T09:27:56Z",
+      "fields": [
+        "metadata.mode",
+        "metadata.supported_modalities",
+        "metadata.supported_output_modalities"
+      ]
+    },
+    {
+      "label": "MiniMax official image endpoints and per-image SSE streaming; 1–16 edit reference images",
+      "url": "https://platform.minimax.io/docs/guides/image-generation.md",
+      "verifiedAt": "2026-11-16T09:31:44Z",
+      "fields": [
+        "metadata.supports_native_streaming",
+        "metadata.supported_endpoints"
+      ]
+    }
+  ]
+}

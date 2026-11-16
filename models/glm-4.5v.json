@@ -1,0 +1,98 @@
+{
+  "id": "glm-4.5v",
+  "name": "glm-4.5v",
+  "family": "glm",
+  "status": "verified",
+  "metadata": {
+    "input_cost_per_token": 6e-07,
+    "output_cost_per_token": 1.8000000000000001e-06,
+    "max_input_tokens": 128000,
+    "max_output_tokens": 32000,
+    "mode": "chat",
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_vision": true,
+    "cache_read_input_token_cost": 1.1e-07
+  },
+  "variants": [
+    {
+      "id": "glm-4.5v@novita",
+      "name": "zai-org/glm-4.5v",
+      "providerKey": "novita",
+      "upstreamModelIds": [
+        "zai-org/glm-4.5v"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "mode": "chat",
+        "input_cost_per_token": 6e-07,
+        "output_cost_per_token": 1.8e-06,
+        "max_input_tokens": 65536,
+        "max_output_tokens": 16384,
+        "supports_function_calling": true,
+        "supports_parallel_function_calling": true,
+        "supports_tool_choice": true,
+        "supports_vision": true,
+        "supports_system_messages": true,
+        "supports_response_schema": true,
+        "cache_read_input_token_cost": 1.1e-07,
+        "input_cost_per_token_cache_hit": 1.1e-07,
+        "supports_reasoning": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [novita/zai-org/glm-4.5v]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.cache_read_input_token_cost",
+            "metadata.input_cost_per_token",
+            "metadata.input_cost_per_token_cache_hit",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_parallel_function_calling",
+            "metadata.supports_reasoning",
+            "metadata.supports_response_schema",
+            "metadata.supports_system_messages",
+            "metadata.supports_tool_choice",
+            "metadata.supports_vision",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    }
+  ],
+  "sources": [
+    {
+      "label": "LiteLLM pinned native-namespace record [zai/glm-4.5v]; code evidence, not official API attestation",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "id",
+        "metadata.input_cost_per_token",
+        "metadata.max_input_tokens",
+        "metadata.max_output_tokens",
+        "metadata.mode",
+        "metadata.output_cost_per_token",
+        "metadata.supports_function_calling",
+        "metadata.supports_tool_choice",
+        "metadata.supports_vision"
+      ]
+    },
+    {
+      "label": "Z.AI official USD token pricing; temporary free cache storage is not a permanent zero cache-write rate",
+      "url": "https://docs.z.ai/guides/overview/pricing.md",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "metadata.cache_read_input_token_cost",
+        "metadata.input_cost_per_token",
+        "metadata.output_cost_per_token"
+      ]
+    }
+  ],
+  "notes": "Native-namespace metadata is recorded from pinned LiteLLM code; without an official source this does not establish a public official model or guarantee current availability."
+}

@@ -1,0 +1,313 @@
+{
+  "id": "qwen3.7-max",
+  "name": "qwen3.7-max",
+  "family": "qwen",
+  "status": "verified",
+  "metadata": {
+    "explicit_cache_read_input_token_cost": 2.5e-07,
+    "mode": "chat",
+    "supports_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supported_modalities": [
+      "text",
+      "image",
+      "video"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_vision": true,
+    "supports_video_input": true,
+    "can_disable_reasoning": true,
+    "supports_none_reasoning_effort": true
+  },
+  "variants": [
+    {
+      "id": "qwen3.7-max@qwen_ai_platform",
+      "name": "qwen3.7-max",
+      "providerKey": "qwen_ai_platform",
+      "upstreamModelIds": [
+        "qwen3.7-max"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "cache_creation_input_token_cost": 3.125e-06,
+        "cache_read_input_token_cost": 5e-07,
+        "explicit_cache_read_input_token_cost": 2.5e-07,
+        "input_cost_per_token": 2.5e-06,
+        "max_input_tokens": 991808,
+        "max_output_tokens": 65536,
+        "mode": "chat",
+        "output_cost_per_token": 7.5e-06,
+        "supports_function_calling": true,
+        "supports_prompt_caching": true,
+        "supports_reasoning": true,
+        "supports_response_schema": true,
+        "supports_tool_choice": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned Alibaba namespace regional/deployment record [qwen_ai_platform/qwen3.7-max]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.cache_creation_input_token_cost",
+            "metadata.cache_read_input_token_cost",
+            "metadata.explicit_cache_read_input_token_cost",
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_prompt_caching",
+            "metadata.supports_reasoning",
+            "metadata.supports_response_schema",
+            "metadata.supports_tool_choice",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Code evidence only; pricing currency/region may differ from official Beijing CNY. Does not override official model capabilities or establish current API availability."
+    },
+    {
+      "id": "qwen3.7-max@dashscope",
+      "name": "qwen3.7-max",
+      "providerKey": "dashscope",
+      "upstreamModelIds": [
+        "qwen3.7-max"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "cache_creation_input_token_cost": 3.125e-06,
+        "cache_read_input_token_cost": 5e-07,
+        "explicit_cache_read_input_token_cost": 2.5e-07,
+        "input_cost_per_token": 2.5e-06,
+        "max_input_tokens": 991808,
+        "max_output_tokens": 65536,
+        "mode": "chat",
+        "output_cost_per_token": 7.5e-06,
+        "supports_function_calling": true,
+        "supports_prompt_caching": true,
+        "supports_reasoning": true,
+        "supports_response_schema": true,
+        "supports_tool_choice": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [dashscope/qwen3.7-max]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.cache_creation_input_token_cost",
+            "metadata.cache_read_input_token_cost",
+            "metadata.explicit_cache_read_input_token_cost",
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_prompt_caching",
+            "metadata.supports_reasoning",
+            "metadata.supports_response_schema",
+            "metadata.supports_tool_choice",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "qwen3.7-max@qwencloud",
+      "name": "qwen3.7-max",
+      "providerKey": "qwencloud",
+      "upstreamModelIds": [
+        "qwen3.7-max"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "cache_creation_input_token_cost": 3.125e-06,
+        "cache_read_input_token_cost": 5e-07,
+        "explicit_cache_read_input_token_cost": 2.5e-07,
+        "input_cost_per_token": 2.5e-06,
+        "max_input_tokens": 991808,
+        "max_output_tokens": 65536,
+        "mode": "chat",
+        "output_cost_per_token": 7.5e-06,
+        "supports_function_calling": true,
+        "supports_prompt_caching": true,
+        "supports_reasoning": true,
+        "supports_response_schema": true,
+        "supports_tool_choice": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [qwencloud/qwen3.7-max]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.cache_creation_input_token_cost",
+            "metadata.cache_read_input_token_cost",
+            "metadata.explicit_cache_read_input_token_cost",
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_prompt_caching",
+            "metadata.supports_reasoning",
+            "metadata.supports_response_schema",
+            "metadata.supports_tool_choice",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "qwen3.7-max@novita",
+      "name": "qwen/qwen3.7-max",
+      "providerKey": "novita",
+      "upstreamModelIds": [
+        "qwen/qwen3.7-max"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "cache_read_input_token_cost": 2.5e-07,
+        "input_cost_per_token": 1.25e-06,
+        "max_input_tokens": 1000000,
+        "max_output_tokens": 65536,
+        "mode": "chat",
+        "output_cost_per_token": 3.75e-06,
+        "supports_function_calling": true,
+        "supports_prompt_caching": true,
+        "supports_reasoning": true,
+        "supports_response_schema": true,
+        "supports_tool_choice": true,
+        "supports_vision": false
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [novita/qwen/qwen3.7-max]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.cache_read_input_token_cost",
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_prompt_caching",
+            "metadata.supports_reasoning",
+            "metadata.supports_response_schema",
+            "metadata.supports_tool_choice",
+            "metadata.supports_vision",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "qwen3.7-max@deepinfra",
+      "name": "Qwen/Qwen3.7-Max",
+      "providerKey": "deepinfra",
+      "upstreamModelIds": [
+        "Qwen/Qwen3.7-Max"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "max_output_tokens": 256000,
+        "max_input_tokens": 256000,
+        "input_cost_per_token": 2.5e-06,
+        "output_cost_per_token": 7.5e-06,
+        "cache_read_input_token_cost": 5e-07,
+        "supports_prompt_caching": true,
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_tool_choice": true,
+        "supports_response_schema": true,
+        "supports_vision": false
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [deepinfra/Qwen/Qwen3.7-Max]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.cache_read_input_token_cost",
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_prompt_caching",
+            "metadata.supports_response_schema",
+            "metadata.supports_tool_choice",
+            "metadata.supports_vision",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    }
+  ],
+  "sources": [
+    {
+      "label": "LiteLLM pinned native-namespace record [qwen_ai_platform/qwen3.7-max]; code evidence, not official API attestation",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "id",
+        "metadata.explicit_cache_read_input_token_cost",
+        "metadata.mode",
+        "metadata.supports_function_calling",
+        "metadata.supports_prompt_caching",
+        "metadata.supports_reasoning",
+        "metadata.supports_response_schema",
+        "metadata.supports_tool_choice"
+      ]
+    },
+    {
+      "label": "Alibaba official full text-generation and visual-understanding directory",
+      "url": "https://help.aliyun.com/zh/model-studio/text-generation-model",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "id"
+      ]
+    },
+    {
+      "label": "Alibaba official model-specific capability rows; 1M shorthand not converted",
+      "url": "https://help.aliyun.com/zh/model-studio/text-generation-model",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "metadata.supported_modalities",
+        "metadata.supported_output_modalities",
+        "metadata.supports_function_calling",
+        "metadata.supports_reasoning",
+        "metadata.supports_response_schema",
+        "metadata.supports_video_input",
+        "metadata.supports_vision"
+      ]
+    },
+    {
+      "label": "Alibaba official model-specific hybrid thinking list; enabled by default",
+      "url": "https://help.aliyun.com/zh/model-studio/deep-thinking",
+      "verifiedAt": "2026-11-16T09:27:56Z",
+      "fields": [
+        "metadata.supports_reasoning",
+        "metadata.can_disable_reasoning",
+        "metadata.supports_none_reasoning_effort"
+      ]
+    }
+  ],
+  "notes": "Native-namespace metadata is recorded from pinned LiteLLM code; without an official source this does not establish a public official model or guarantee current availability. Official thinking-mode list states hybrid thinking enabled by default; no undocumented effort enum is inferred."
+}

@@ -1,0 +1,71 @@
+{
+  "id": "mimo-v2-flash",
+  "name": "mimo-v2-flash",
+  "family": "mimo",
+  "status": "verified",
+  "metadata": {
+    "deprecation_date": "2026-06-30"
+  },
+  "variants": [
+    {
+      "id": "mimo-v2-flash@novita",
+      "name": "xiaomimimo/mimo-v2-flash",
+      "providerKey": "novita",
+      "upstreamModelIds": [
+        "xiaomimimo/mimo-v2-flash"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "mode": "chat",
+        "input_cost_per_token": 1.1e-07,
+        "output_cost_per_token": 3.3e-07,
+        "max_input_tokens": 262144,
+        "max_output_tokens": 32000,
+        "supports_function_calling": true,
+        "supports_parallel_function_calling": true,
+        "supports_tool_choice": true,
+        "supports_system_messages": true,
+        "supports_response_schema": true,
+        "cache_read_input_token_cost": 2.4e-08,
+        "input_cost_per_token_cache_hit": 2.4e-08,
+        "supports_reasoning": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned external historical deployment [novita/xiaomimimo/mimo-v2-flash]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:33:42Z",
+          "fields": [
+            "upstreamModelIds",
+            "metadata.mode",
+            "metadata.input_cost_per_token",
+            "metadata.output_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.supports_function_calling",
+            "metadata.supports_parallel_function_calling",
+            "metadata.supports_tool_choice",
+            "metadata.supports_system_messages",
+            "metadata.supports_response_schema",
+            "metadata.cache_read_input_token_cost",
+            "metadata.input_cost_per_token_cache_hit",
+            "metadata.supports_reasoning"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped aggregate-code evidence; does not resurrect the retired native Xiaomi API model."
+    }
+  ],
+  "sources": [
+    {
+      "label": "MiMo official complete model-deprecation directory and dated retirement",
+      "url": "https://mimo.mi.com/static/docs/updates/deprecate.md",
+      "verifiedAt": "2026-11-16T09:33:42Z",
+      "fields": [
+        "id",
+        "metadata.deprecation_date"
+      ]
+    }
+  ],
+  "notes": "Historical model officially retired at 2026-06-30 00:00 UTC+8. Not an alias of the replacement model; current native availability/pricing is not implied. External deployments may remain available under their own limits and rates."
+}

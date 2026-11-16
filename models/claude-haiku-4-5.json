@@ -19,6 +19,20 @@
       "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [claude-haiku-4-5] @ e2cfaa46e79241f34e52bf4781f7710cd511c5d2",
       "url": "https://github.com/Wei-Shaw/sub2api/blob/e2cfaa46e79241f34e52bf4781f7710cd511c5d2/backend/resources/model-pricing/model_prices_and_context_window.json#L129",
       "verifiedAt": "2026-09-22T07:33:33Z"
+    },
+    {
+      "label": "LiteLLM aggregate registry: Anthropic-native [claude-haiku-4-5] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:20:54Z",
+      "fields": [
+        "metadata.cache_creation_input_token_cost_batches",
+        "metadata.cache_read_input_token_cost_batches",
+        "metadata.input_cost_per_token_batches",
+        "metadata.output_cost_per_token_batches",
+        "metadata.supports_native_structured_output",
+        "metadata.prompt_cache_min_tokens",
+        "metadata.source"
+      ]
     }
   ],
   "metadata": {
@@ -40,7 +54,14 @@
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "cache_creation_input_token_cost_batches": 6.25e-07,
+    "cache_read_input_token_cost_batches": 5e-08,
+    "input_cost_per_token_batches": 5e-07,
+    "output_cost_per_token_batches": 2.5e-06,
+    "supports_native_structured_output": true,
+    "prompt_cache_min_tokens": 4096,
+    "source": "https://platform.claude.com/docs/en/about-claude/pricing"
   },
   "variants": [
     {
@@ -56,7 +77,59 @@
         ]
       },
       "metadata": {},
-      "status": "unverified"
+      "status": "unverified",
+      "family": "claude"
+    },
+    {
+      "id": "claude-haiku-4.5@github-copilot",
+      "name": "claude-haiku-4.5",
+      "providerKey": "github-copilot",
+      "upstreamModelIds": [
+        "claude-haiku-4.5",
+        "github_copilot/claude-haiku-4.5"
+      ],
+      "family": "claude",
+      "status": "unverified",
+      "metadata": {
+        "cache_creation_input_token_cost": 1.25e-06,
+        "cache_read_input_token_cost": 1e-07,
+        "input_cost_per_token": 1e-06,
+        "litellm_provider": "github_copilot",
+        "max_input_tokens": 128000,
+        "max_output_tokens": 16000,
+        "mode": "chat",
+        "output_cost_per_token": 5e-06,
+        "supported_endpoints": [
+          "/v1/chat/completions"
+        ],
+        "supports_function_calling": true,
+        "supports_parallel_function_calling": true,
+        "supports_reasoning": true,
+        "supports_vision": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM aggregate deployment registry [github_copilot/claude-haiku-4.5] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:20:54Z",
+          "fields": [
+            "upstreamModelIds",
+            "metadata.cache_creation_input_token_cost",
+            "metadata.cache_read_input_token_cost",
+            "metadata.input_cost_per_token",
+            "metadata.litellm_provider",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supported_endpoints",
+            "metadata.supports_function_calling",
+            "metadata.supports_parallel_function_calling",
+            "metadata.supports_reasoning",
+            "metadata.supports_vision"
+          ]
+        }
+      ]
     }
   ]
 }

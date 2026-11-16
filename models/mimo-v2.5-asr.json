@@ -1,0 +1,38 @@
+{
+  "id": "mimo-v2.5-asr",
+  "name": "mimo-v2.5-asr",
+  "family": "mimo",
+  "status": "verified",
+  "metadata": {
+    "mode": "audio_transcription",
+    "supported_modalities": [
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "input_cost_per_second": 2.0555555555555555e-05
+  },
+  "variants": [],
+  "sources": [
+    {
+      "label": "MiMo official audio model directory; shorthand token limits not converted",
+      "url": "https://mimo.mi.com/static/docs/quick-start/summary/model.md",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "metadata.input_cost_per_second",
+        "metadata.mode",
+        "metadata.supported_modalities",
+        "metadata.supported_output_modalities"
+      ]
+    },
+    {
+      "label": "MiMo official ASR overseas $0.074/hour; TTS temporarily free, not permanent zero",
+      "url": "https://mimo.mi.com/static/docs/price/pay-as-you-go.md",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "metadata.input_cost_per_second"
+      ]
+    }
+  ]
+}

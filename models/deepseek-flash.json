@@ -16,52 +16,137 @@
   },
   "sources": [
     {
-      "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [deepseek-flash] @ 3040209f205472038c1ba745a1bedd2edd9053b1",
-      "url": "https://github.com/Wei-Shaw/sub2api/blob/3040209f205472038c1ba745a1bedd2edd9053b1/backend/resources/model-pricing/model_prices_and_context_window.json#L988",
-      "verifiedAt": "2026-10-02T12:21:34Z"
-    },
-    {
       "label": "DeepSeek Thinking Mode: native low/high/max, default high; none disables thinking",
       "url": "https://api-docs.deepseek.com/guides/thinking_mode",
-      "fields": ["reasoning"],
-      "verifiedAt": "2026-10-21T02:30:58Z"
-    },
-    {
-      "label": "sub2api: distinct max retained for deepseek-flash and v4 families @ 8f2cbb53d9d1c40e1865b07ac460571f7d4c48de",
-      "url": "https://github.com/Wei-Shaw/sub2api/blob/8f2cbb53d9d1c40e1865b07ac460571f7d4c48de/backend/internal/service/openai_gateway_request_body.go#L2582-L2594",
-      "fields": ["reasoning.levels"],
+      "fields": [
+        "reasoning"
+      ],
       "verifiedAt": "2026-10-21T02:30:58Z"
     },
     {
       "label": "DeepSeek Models & Pricing: deepseek-flash is DeepSeek-V4.1-Flash-1017",
       "url": "https://api-docs.deepseek.com/quick_start/pricing",
-      "verifiedAt": "2026-10-21T02:30:58Z"
+      "verifiedAt": "2026-10-21T02:30:58Z",
+      "fields": [
+        "metadata"
+      ]
     },
     {
-      "label": "sub2api: deepseek-v4.1-flash upstream identity regression test @ 8f2cbb53d9d1c40e1865b07ac460571f7d4c48de",
-      "url": "https://github.com/Wei-Shaw/sub2api/blob/8f2cbb53d9d1c40e1865b07ac460571f7d4c48de/backend/internal/service/openai_gateway_deepseek_chat_reasoning_test.go#L117-L121",
-      "verifiedAt": "2026-10-21T02:30:58Z"
+      "label": "LiteLLM pinned native-namespace record [deepseek/deepseek-flash]; code evidence, not official API attestation",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "id",
+        "metadata.max_input_tokens",
+        "metadata.max_output_tokens",
+        "metadata.mode",
+        "metadata.off_peak_pricing",
+        "metadata.supported_endpoints",
+        "metadata.supports_assistant_prefill",
+        "metadata.supports_function_calling",
+        "metadata.supports_native_streaming",
+        "metadata.supports_parallel_function_calling",
+        "metadata.supports_prompt_caching",
+        "metadata.supports_reasoning",
+        "metadata.supports_response_schema",
+        "metadata.supports_system_messages",
+        "metadata.supports_tool_choice",
+        "metadata.supports_vision"
+      ]
+    },
+    {
+      "label": "DeepSeek official current model capabilities and legacy routing; 1M context / 384K output; exact integer limits are separately retained from pinned LiteLLM",
+      "url": "https://api-docs.deepseek.com/quick_start/pricing",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "metadata.can_disable_reasoning",
+        "metadata.default_reasoning_effort",
+        "metadata.reasoning_effort_levels",
+        "metadata.supported_endpoints",
+        "metadata.supported_modalities",
+        "metadata.supported_output_modalities",
+        "metadata.supports_function_calling",
+        "metadata.supports_low_reasoning_effort",
+        "metadata.supports_max_reasoning_effort",
+        "metadata.supports_minimal_reasoning_effort",
+        "metadata.supports_native_streaming",
+        "metadata.supports_none_reasoning_effort",
+        "metadata.supports_prompt_caching",
+        "metadata.supports_reasoning",
+        "metadata.supports_vision",
+        "metadata.supports_xhigh_reasoning_effort"
+      ]
+    },
+    {
+      "label": "DeepSeek native effort low/high/max; high by default; thinking can be disabled; compatibility effort mappings are not native levels",
+      "url": "https://api-docs.deepseek.com/guides/thinking_mode",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "metadata.can_disable_reasoning",
+        "metadata.default_reasoning_effort",
+        "metadata.reasoning_effort_levels",
+        "metadata.supports_none_reasoning_effort"
+      ]
+    },
+    {
+      "label": "Pinned sub2api model record [deepseek-flash]",
+      "url": "https://github.com/Wei-Shaw/sub2api/blob/d70676756fd3a35b854d41aa46c07935bbef283f/backend/resources/model-pricing/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "metadata.litellm_provider",
+        "metadata.max_input_tokens",
+        "metadata.max_output_tokens",
+        "metadata.max_tokens",
+        "metadata.mode",
+        "metadata.source",
+        "metadata.supported_endpoints",
+        "metadata.supports_function_calling",
+        "metadata.supports_native_streaming",
+        "metadata.supports_parallel_function_calling",
+        "metadata.supports_prompt_caching",
+        "metadata.supports_reasoning",
+        "metadata.supports_response_schema",
+        "metadata.supports_system_messages",
+        "metadata.supports_tool_choice",
+        "metadata.supports_vision"
+      ]
+    },
+    {
+      "label": "DeepSeek official conditional USD peak/off-peak rates; no universal rate asserted",
+      "url": "https://api-docs.deepseek.com/quick_start/pricing",
+      "verifiedAt": "2026-11-16T09:27:56Z",
+      "fields": [
+        "metadata.input_cost_per_token_off_peak",
+        "metadata.output_cost_per_token_off_peak",
+        "metadata.cache_read_input_token_cost_off_peak",
+        "metadata.input_cost_per_token_peak",
+        "metadata.output_cost_per_token_peak",
+        "metadata.cache_read_input_token_cost_peak"
+      ]
     }
   ],
   "metadata": {
-    "cache_read_input_token_cost": 3e-09,
-    "input_cost_per_token": 1.5e-07,
     "litellm_provider": "deepseek",
     "max_input_tokens": 1048576,
     "max_output_tokens": 393216,
     "max_tokens": 393216,
     "mode": "chat",
-    "output_cost_per_token": 6e-07,
     "source": "https://api-docs.deepseek.com/quick_start/pricing",
     "supported_endpoints": [
-      "/v1/chat/completions"
+      "/v1/chat/completions",
+      "/v1/responses",
+      "/v1/messages"
     ],
     "supports_function_calling": true,
     "supports_native_streaming": true,
     "supports_parallel_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
-    "reasoning_effort_levels": ["low", "high", "max"],
+    "reasoning_effort_levels": [
+      "low",
+      "high",
+      "max"
+    ],
     "default_reasoning_effort": "high",
     "can_disable_reasoning": true,
     "supports_none_reasoning_effort": true,
@@ -72,7 +157,50 @@
     "supports_response_schema": true,
     "supports_system_messages": true,
     "supports_tool_choice": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "off_peak_pricing": {
+      "cache_read_input_token_cost": 3e-09,
+      "input_cost_per_token": 1.5e-07,
+      "output_cost_per_token": 6e-07,
+      "windows": [
+        {
+          "hours_utc": [
+            "00:00-01:00",
+            "04:00-06:00",
+            "10:00-00:00"
+          ],
+          "weekdays": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "hours_utc": "00:00-00:00",
+          "weekdays": [
+            6,
+            7
+          ]
+        }
+      ]
+    },
+    "supports_assistant_prefill": true,
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "input_cost_per_token_off_peak": 1.5e-07,
+    "output_cost_per_token_off_peak": 6e-07,
+    "cache_read_input_token_cost_off_peak": 3e-09,
+    "input_cost_per_token_peak": 3e-07,
+    "output_cost_per_token_peak": 1.2e-06,
+    "cache_read_input_token_cost_peak": 6e-09
   },
-  "variants": []
+  "variants": [],
+  "notes": "Token prices vary by UTC peak/off-peak schedule; conditional prices are *_peak / *_off_peak fields, not a universal native rate. Official shorthand context/output limits are not independently converted to integers. Peak: 01:00–04:00 and 06:00–10:00 UTC Monday–Friday excluding Chinese public holidays; all other hours off-peak. Conditional rates use *_peak / *_off_peak metadata, not distinct model routes."
 }

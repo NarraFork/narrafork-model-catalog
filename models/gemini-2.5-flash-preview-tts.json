@@ -7,17 +7,159 @@
       "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [gemini-2.5-flash-preview-tts] @ e2cfaa46e79241f34e52bf4781f7710cd511c5d2",
       "url": "https://github.com/Wei-Shaw/sub2api/blob/e2cfaa46e79241f34e52bf4781f7710cd511c5d2/backend/resources/model-pricing/model_prices_and_context_window.json#L1406",
       "verifiedAt": "2026-09-22T07:33:33Z"
+    },
+    {
+      "label": "LiteLLM aggregated model metadata (not official verification) [gemini/gemini-2.5-flash-preview-tts]",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:26:38Z",
+      "fields": [
+        "deprecation_date",
+        "deprecation_source",
+        "input_cost_per_token",
+        "input_cost_per_token_batches",
+        "litellm_provider",
+        "max_input_tokens",
+        "max_output_tokens",
+        "mode",
+        "output_cost_per_audio_token",
+        "output_cost_per_token",
+        "output_cost_per_token_batches",
+        "rpm",
+        "source",
+        "successor_model",
+        "supported_endpoints",
+        "supports_audio_input",
+        "supports_function_calling",
+        "supports_response_schema",
+        "supports_web_search",
+        "tpm"
+      ],
+      "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
     }
   ],
   "metadata": {
-    "input_cost_per_token": 3e-07,
+    "input_cost_per_token": 5e-07,
     "litellm_provider": "gemini",
     "mode": "audio_speech",
-    "output_cost_per_token": 2.5e-06,
-    "source": "https://ai.google.dev/pricing",
+    "output_cost_per_token": 1e-05,
+    "source": "https://ai.google.dev/gemini-api/docs/pricing",
     "supported_endpoints": [
       "/v1/audio/speech"
-    ]
+    ],
+    "deprecation_date": "2026-12-18",
+    "deprecation_source": "https://ai.google.dev/gemini-api/docs/deprecations",
+    "successor_model": "gemini/gemini-3.8-flash-tts",
+    "input_cost_per_token_batches": 2.5e-07,
+    "max_input_tokens": 8192,
+    "max_output_tokens": 16384,
+    "output_cost_per_audio_token": 1e-05,
+    "output_cost_per_token_batches": 5e-06,
+    "tpm": 4000000,
+    "rpm": 10,
+    "supports_audio_input": false,
+    "supports_function_calling": false,
+    "supports_response_schema": false,
+    "supports_web_search": false
   },
-  "variants": []
+  "variants": [
+    {
+      "id": "gemini-2.5-flash-preview-tts@gemini",
+      "name": "gemini-2.5-flash-preview-tts (gemini)",
+      "providerKey": "gemini",
+      "upstreamModelIds": [
+        "gemini-2.5-flash-preview-tts"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "deprecation_date": "2026-12-18",
+        "deprecation_source": "https://ai.google.dev/gemini-api/docs/deprecations",
+        "successor_model": "gemini/gemini-3.8-flash-tts",
+        "input_cost_per_token": 5e-07,
+        "input_cost_per_token_batches": 2.5e-07,
+        "litellm_provider": "gemini",
+        "max_input_tokens": 8192,
+        "max_output_tokens": 16384,
+        "mode": "audio_speech",
+        "output_cost_per_audio_token": 1e-05,
+        "output_cost_per_token": 1e-05,
+        "output_cost_per_token_batches": 5e-06,
+        "source": "https://ai.google.dev/gemini-api/docs/pricing",
+        "supported_endpoints": [
+          "/v1/audio/speech"
+        ],
+        "tpm": 4000000,
+        "rpm": 10,
+        "supports_audio_input": false,
+        "supports_function_calling": false,
+        "supports_response_schema": false,
+        "supports_web_search": false
+      },
+      "sources": [
+        {
+          "label": "LiteLLM aggregated model metadata (not official verification) [gemini/gemini-2.5-flash-preview-tts]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:26:38Z",
+          "fields": [
+            "deprecation_date",
+            "deprecation_source",
+            "input_cost_per_token",
+            "input_cost_per_token_batches",
+            "litellm_provider",
+            "max_input_tokens",
+            "max_output_tokens",
+            "mode",
+            "output_cost_per_audio_token",
+            "output_cost_per_token",
+            "output_cost_per_token_batches",
+            "rpm",
+            "source",
+            "successor_model",
+            "supported_endpoints",
+            "supports_audio_input",
+            "supports_function_calling",
+            "supports_response_schema",
+            "supports_web_search",
+            "tpm"
+          ],
+          "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
+        }
+      ]
+    },
+    {
+      "id": "gemini-2.5-flash-preview-tts@vertex_ai",
+      "name": "gemini-2.5-flash-preview-tts (vertex_ai)",
+      "providerKey": "vertex_ai",
+      "upstreamModelIds": [
+        "gemini-2.5-flash-preview-tts"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "input_cost_per_token": 5e-07,
+        "input_cost_per_token_batches": 2.5e-07,
+        "litellm_provider": "vertex_ai",
+        "mode": "audio_speech",
+        "output_cost_per_audio_token": 1e-05,
+        "output_cost_per_token": 1e-05,
+        "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing"
+      },
+      "sources": [
+        {
+          "label": "LiteLLM aggregated model metadata (not official verification) [vertex_ai/gemini-2.5-flash-preview-tts]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:26:38Z",
+          "fields": [
+            "input_cost_per_token",
+            "input_cost_per_token_batches",
+            "litellm_provider",
+            "mode",
+            "output_cost_per_audio_token",
+            "output_cost_per_token",
+            "source"
+          ],
+          "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
+        }
+      ]
+    }
+  ],
+  "family": "gemini"
 }

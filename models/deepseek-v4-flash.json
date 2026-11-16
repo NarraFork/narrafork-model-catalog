@@ -3,50 +3,157 @@
   "name": "DeepSeek V4 Flash",
   "family": "deepseek",
   "status": "verified",
-  "notes": "Legacy model name accepted by the official DeepSeek API and served by deepseek-flash. Retired deepseek-chat/deepseek-reasoner are separate historical identities, not aliases of this card.",
+  "notes": "Legacy model name accepted by the official DeepSeek API and served by deepseek-flash. Retired deepseek-chat/deepseek-reasoner are separate historical identities, not aliases of this card. Token prices vary by UTC peak/off-peak schedule; conditional prices are *_peak / *_off_peak fields, not a universal native rate. Official shorthand context/output limits are not independently converted to integers. Peak: 01:00–04:00 and 06:00–10:00 UTC Monday–Friday excluding Chinese public holidays; all other hours off-peak. Conditional rates use *_peak / *_off_peak metadata, not distinct model routes.",
   "sources": [
-    {
-      "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [deepseek-v4-flash] @ 3040209f205472038c1ba745a1bedd2edd9053b1",
-      "url": "https://github.com/Wei-Shaw/sub2api/blob/3040209f205472038c1ba745a1bedd2edd9053b1/backend/resources/model-pricing/model_prices_and_context_window.json#L1011",
-      "verifiedAt": "2026-10-02T12:21:34Z"
-    },
     {
       "label": "DeepSeek Thinking Mode: native low/high/max, default high; none disables thinking",
       "url": "https://api-docs.deepseek.com/guides/thinking_mode",
-      "fields": ["reasoning"],
+      "fields": [
+        "reasoning"
+      ],
       "verifiedAt": "2026-10-21T02:30:58Z"
     },
     {
       "label": "DeepSeek Models & Pricing: legacy deepseek-v4-flash and vision-exp names served by deepseek-flash",
       "url": "https://api-docs.deepseek.com/quick_start/pricing",
-      "verifiedAt": "2026-10-21T02:30:58Z"
+      "verifiedAt": "2026-10-21T02:30:58Z",
+      "fields": [
+        "metadata"
+      ]
     },
     {
-      "label": "sub2api: distinct max retained for deepseek-flash and v4 families @ 8f2cbb53d9d1c40e1865b07ac460571f7d4c48de",
-      "url": "https://github.com/Wei-Shaw/sub2api/blob/8f2cbb53d9d1c40e1865b07ac460571f7d4c48de/backend/internal/service/openai_gateway_request_body.go#L2582-L2594",
-      "fields": ["reasoning.levels"],
-      "verifiedAt": "2026-10-21T02:30:58Z"
+      "label": "LiteLLM pinned native-namespace record [qwen_ai_platform/deepseek-v4-flash]; code evidence, not official API attestation",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "id",
+        "metadata.max_input_tokens",
+        "metadata.max_output_tokens",
+        "metadata.mode",
+        "metadata.supports_function_calling",
+        "metadata.supports_prompt_caching",
+        "metadata.supports_reasoning",
+        "metadata.supports_response_schema",
+        "metadata.supports_tool_choice"
+      ]
+    },
+    {
+      "label": "LiteLLM pinned native-namespace record [deepseek/deepseek-v4-flash]; code evidence, not official API attestation",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "id",
+        "metadata.max_input_tokens",
+        "metadata.max_output_tokens",
+        "metadata.mode",
+        "metadata.off_peak_pricing",
+        "metadata.supported_endpoints",
+        "metadata.supports_assistant_prefill",
+        "metadata.supports_function_calling",
+        "metadata.supports_native_streaming",
+        "metadata.supports_parallel_function_calling",
+        "metadata.supports_prompt_caching",
+        "metadata.supports_reasoning",
+        "metadata.supports_response_schema",
+        "metadata.supports_system_messages",
+        "metadata.supports_tool_choice",
+        "metadata.supports_vision",
+        "metadata.token_count_framing",
+        "metadata.token_count_tool_framing"
+      ]
+    },
+    {
+      "label": "DeepSeek official current model capabilities and legacy routing; 1M context / 384K output; exact integer limits are separately retained from pinned LiteLLM",
+      "url": "https://api-docs.deepseek.com/quick_start/pricing",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "metadata.can_disable_reasoning",
+        "metadata.default_reasoning_effort",
+        "metadata.reasoning_effort_levels",
+        "metadata.supported_endpoints",
+        "metadata.supported_modalities",
+        "metadata.supported_output_modalities",
+        "metadata.supports_function_calling",
+        "metadata.supports_low_reasoning_effort",
+        "metadata.supports_max_reasoning_effort",
+        "metadata.supports_minimal_reasoning_effort",
+        "metadata.supports_native_streaming",
+        "metadata.supports_none_reasoning_effort",
+        "metadata.supports_prompt_caching",
+        "metadata.supports_reasoning",
+        "metadata.supports_vision",
+        "metadata.supports_xhigh_reasoning_effort"
+      ]
+    },
+    {
+      "label": "DeepSeek native effort low/high/max; high by default; thinking can be disabled; compatibility effort mappings are not native levels",
+      "url": "https://api-docs.deepseek.com/guides/thinking_mode",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "metadata.can_disable_reasoning",
+        "metadata.default_reasoning_effort",
+        "metadata.reasoning_effort_levels",
+        "metadata.supports_none_reasoning_effort"
+      ]
+    },
+    {
+      "label": "Pinned sub2api model record [deepseek-v4-flash]",
+      "url": "https://github.com/Wei-Shaw/sub2api/blob/d70676756fd3a35b854d41aa46c07935bbef283f/backend/resources/model-pricing/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "metadata.litellm_provider",
+        "metadata.max_input_tokens",
+        "metadata.max_output_tokens",
+        "metadata.max_tokens",
+        "metadata.mode",
+        "metadata.source",
+        "metadata.supported_endpoints",
+        "metadata.supports_function_calling",
+        "metadata.supports_native_streaming",
+        "metadata.supports_parallel_function_calling",
+        "metadata.supports_prompt_caching",
+        "metadata.supports_reasoning",
+        "metadata.supports_response_schema",
+        "metadata.supports_system_messages",
+        "metadata.supports_tool_choice"
+      ]
+    },
+    {
+      "label": "DeepSeek official conditional USD peak/off-peak rates; no universal rate asserted",
+      "url": "https://api-docs.deepseek.com/quick_start/pricing",
+      "verifiedAt": "2026-11-16T09:27:56Z",
+      "fields": [
+        "metadata.input_cost_per_token_off_peak",
+        "metadata.output_cost_per_token_off_peak",
+        "metadata.cache_read_input_token_cost_off_peak",
+        "metadata.input_cost_per_token_peak",
+        "metadata.output_cost_per_token_peak",
+        "metadata.cache_read_input_token_cost_peak"
+      ]
     }
   ],
   "metadata": {
-    "cache_read_input_token_cost": 3e-09,
-    "input_cost_per_token": 1.5e-07,
     "litellm_provider": "deepseek",
     "max_input_tokens": 1048576,
     "max_output_tokens": 393216,
     "max_tokens": 393216,
     "mode": "chat",
-    "output_cost_per_token": 6e-07,
     "source": "https://api-docs.deepseek.com/quick_start/pricing",
     "supported_endpoints": [
-      "/v1/chat/completions"
+      "/v1/chat/completions",
+      "/v1/responses",
+      "/v1/messages"
     ],
     "supports_function_calling": true,
     "supports_native_streaming": true,
     "supports_parallel_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
-    "reasoning_effort_levels": ["low", "high", "max"],
+    "reasoning_effort_levels": [
+      "low",
+      "high",
+      "max"
+    ],
     "default_reasoning_effort": "high",
     "can_disable_reasoning": true,
     "supports_none_reasoning_effort": true,
@@ -56,7 +163,557 @@
     "supports_xhigh_reasoning_effort": false,
     "supports_response_schema": true,
     "supports_system_messages": true,
-    "supports_tool_choice": true
+    "supports_tool_choice": true,
+    "off_peak_pricing": {
+      "cache_read_input_token_cost": 3e-09,
+      "input_cost_per_token": 1.5e-07,
+      "output_cost_per_token": 6e-07,
+      "windows": [
+        {
+          "hours_utc": [
+            "00:00-01:00",
+            "04:00-06:00",
+            "10:00-00:00"
+          ],
+          "weekdays": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "hours_utc": "00:00-00:00",
+          "weekdays": [
+            6,
+            7
+          ]
+        }
+      ]
+    },
+    "supports_assistant_prefill": true,
+    "supports_vision": true,
+    "token_count_framing": 23,
+    "token_count_tool_framing": 12,
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "input_cost_per_token_off_peak": 1.5e-07,
+    "output_cost_per_token_off_peak": 6e-07,
+    "cache_read_input_token_cost_off_peak": 3e-09,
+    "input_cost_per_token_peak": 3e-07,
+    "output_cost_per_token_peak": 1.2e-06,
+    "cache_read_input_token_cost_peak": 6e-09
   },
-  "variants": []
+  "variants": [
+    {
+      "id": "deepseek-v4-flash@dashscope",
+      "name": "deepseek-v4-flash",
+      "providerKey": "dashscope",
+      "upstreamModelIds": [
+        "deepseek-v4-flash"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "cache_read_input_token_cost": 4e-08,
+        "input_cost_per_token": 2e-07,
+        "max_input_tokens": 1000000,
+        "max_output_tokens": 393216,
+        "mode": "chat",
+        "output_cost_per_token": 4e-07,
+        "supports_function_calling": true,
+        "supports_prompt_caching": true,
+        "supports_reasoning": true,
+        "supports_response_schema": true,
+        "supports_tool_choice": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [dashscope/deepseek-v4-flash]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.cache_read_input_token_cost",
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_prompt_caching",
+            "metadata.supports_reasoning",
+            "metadata.supports_response_schema",
+            "metadata.supports_tool_choice",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "deepseek-v4-flash@qwencloud",
+      "name": "deepseek-v4-flash",
+      "providerKey": "qwencloud",
+      "upstreamModelIds": [
+        "deepseek-v4-flash"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "cache_read_input_token_cost": 4e-08,
+        "input_cost_per_token": 2e-07,
+        "max_input_tokens": 1000000,
+        "max_output_tokens": 393216,
+        "mode": "chat",
+        "output_cost_per_token": 4e-07,
+        "supports_function_calling": true,
+        "supports_prompt_caching": true,
+        "supports_reasoning": true,
+        "supports_response_schema": true,
+        "supports_tool_choice": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [qwencloud/deepseek-v4-flash]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.cache_read_input_token_cost",
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_prompt_caching",
+            "metadata.supports_reasoning",
+            "metadata.supports_response_schema",
+            "metadata.supports_tool_choice",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "deepseek-v4-flash@streamlake",
+      "name": "deepseek-v4-flash",
+      "providerKey": "streamlake",
+      "upstreamModelIds": [
+        "deepseek-v4-flash"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "cache_read_input_token_cost": 2.8e-08,
+        "input_cost_per_token": 1.4e-07,
+        "max_input_tokens": 1048576,
+        "max_output_tokens": 384000,
+        "mode": "chat",
+        "output_cost_per_token": 2.8e-07,
+        "supports_function_calling": true,
+        "supports_reasoning": true,
+        "supports_prompt_caching": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [streamlake/deepseek-v4-flash]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.cache_read_input_token_cost",
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_prompt_caching",
+            "metadata.supports_reasoning",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "deepseek-v4-flash@tencent",
+      "name": "deepseek-v4-flash",
+      "providerKey": "tencent",
+      "upstreamModelIds": [
+        "deepseek-v4-flash"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "cache_creation_input_token_cost": 0.0,
+        "cache_read_input_token_cost": 2.8e-09,
+        "input_cost_per_token": 1.4e-07,
+        "input_cost_per_token_cache_hit": 2.8e-09,
+        "max_input_tokens": 1000000,
+        "max_output_tokens": 384000,
+        "mode": "chat",
+        "output_cost_per_token": 2.8e-07,
+        "supported_endpoints": [
+          "/v1/chat/completions"
+        ],
+        "supports_assistant_prefill": true,
+        "supports_function_calling": true,
+        "supports_native_streaming": true,
+        "supports_parallel_function_calling": true,
+        "supports_prompt_caching": true,
+        "supports_response_schema": true,
+        "supports_system_messages": true,
+        "supports_tool_choice": true,
+        "supports_reasoning": true,
+        "supports_vision": false
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [tencent/deepseek-v4-flash]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.cache_creation_input_token_cost",
+            "metadata.cache_read_input_token_cost",
+            "metadata.input_cost_per_token",
+            "metadata.input_cost_per_token_cache_hit",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supported_endpoints",
+            "metadata.supports_assistant_prefill",
+            "metadata.supports_function_calling",
+            "metadata.supports_native_streaming",
+            "metadata.supports_parallel_function_calling",
+            "metadata.supports_prompt_caching",
+            "metadata.supports_reasoning",
+            "metadata.supports_response_schema",
+            "metadata.supports_system_messages",
+            "metadata.supports_tool_choice",
+            "metadata.supports_vision",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "deepseek-v4-flash@novita",
+      "name": "deepseek/deepseek-v4-flash",
+      "providerKey": "novita",
+      "upstreamModelIds": [
+        "deepseek/deepseek-v4-flash"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "cache_read_input_token_cost": 2.8e-08,
+        "input_cost_per_token": 1.4e-07,
+        "max_input_tokens": 1048576,
+        "max_output_tokens": 393216,
+        "mode": "chat",
+        "output_cost_per_token": 2.8e-07,
+        "supports_function_calling": true,
+        "supports_prompt_caching": true,
+        "supports_reasoning": true,
+        "supports_response_schema": true,
+        "supports_tool_choice": true,
+        "supports_vision": false
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [novita/deepseek/deepseek-v4-flash]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.cache_read_input_token_cost",
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_prompt_caching",
+            "metadata.supports_reasoning",
+            "metadata.supports_response_schema",
+            "metadata.supports_tool_choice",
+            "metadata.supports_vision",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "deepseek-v4-flash@deepinfra",
+      "name": "deepseek-ai/DeepSeek-V4-Flash",
+      "providerKey": "deepinfra",
+      "upstreamModelIds": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "max_output_tokens": 1048576,
+        "max_input_tokens": 1048576,
+        "input_cost_per_token": 9e-08,
+        "output_cost_per_token": 1.8e-07,
+        "cache_read_input_token_cost": 1.8e-08,
+        "supports_prompt_caching": true,
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_tool_choice": true,
+        "supports_response_schema": true,
+        "supports_reasoning": true,
+        "supports_vision": false
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [deepinfra/deepseek-ai/DeepSeek-V4-Flash]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.cache_read_input_token_cost",
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_prompt_caching",
+            "metadata.supports_reasoning",
+            "metadata.supports_response_schema",
+            "metadata.supports_tool_choice",
+            "metadata.supports_vision",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "deepseek-v4-flash@dashscope:deepseek-v4-flash-0731",
+      "name": "deepseek-v4-flash-0731",
+      "providerKey": "dashscope",
+      "upstreamModelIds": [
+        "deepseek-v4-flash-0731"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "cache_read_input_token_cost": 4e-08,
+        "input_cost_per_token": 2e-07,
+        "max_input_tokens": 1000000,
+        "max_output_tokens": 393216,
+        "mode": "chat",
+        "output_cost_per_token": 4e-07,
+        "supports_function_calling": true,
+        "supports_prompt_caching": true,
+        "supports_reasoning": true,
+        "supports_response_schema": true,
+        "supports_tool_choice": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [dashscope/deepseek-v4-flash-0731]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.cache_read_input_token_cost",
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_prompt_caching",
+            "metadata.supports_reasoning",
+            "metadata.supports_response_schema",
+            "metadata.supports_tool_choice",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "deepseek-v4-flash@qwencloud:deepseek-v4-flash-0731",
+      "name": "deepseek-v4-flash-0731",
+      "providerKey": "qwencloud",
+      "upstreamModelIds": [
+        "deepseek-v4-flash-0731"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "cache_read_input_token_cost": 4e-08,
+        "input_cost_per_token": 2e-07,
+        "max_input_tokens": 1000000,
+        "max_output_tokens": 393216,
+        "mode": "chat",
+        "output_cost_per_token": 4e-07,
+        "supports_function_calling": true,
+        "supports_prompt_caching": true,
+        "supports_reasoning": true,
+        "supports_response_schema": true,
+        "supports_tool_choice": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [qwencloud/deepseek-v4-flash-0731]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.cache_read_input_token_cost",
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_prompt_caching",
+            "metadata.supports_reasoning",
+            "metadata.supports_response_schema",
+            "metadata.supports_tool_choice",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "deepseek-v4-flash@streamlake:deepseek-v4-flash-0731",
+      "name": "deepseek-v4-flash-0731",
+      "providerKey": "streamlake",
+      "upstreamModelIds": [
+        "deepseek-v4-flash-0731"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "cache_read_input_token_cost": 1.4e-08,
+        "input_cost_per_token": 4.4e-07,
+        "max_input_tokens": 1048576,
+        "max_output_tokens": 384000,
+        "mode": "chat",
+        "output_cost_per_token": 1.32e-06,
+        "supports_function_calling": true,
+        "supports_reasoning": true,
+        "supports_response_schema": true,
+        "supports_prompt_caching": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [streamlake/deepseek-v4-flash-0731]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.cache_read_input_token_cost",
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_prompt_caching",
+            "metadata.supports_reasoning",
+            "metadata.supports_response_schema",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "deepseek-v4-flash@novita:deepseek-v4-flash-0731",
+      "name": "deepseek/deepseek-v4-flash-0731",
+      "providerKey": "novita",
+      "upstreamModelIds": [
+        "deepseek/deepseek-v4-flash-0731"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "cache_read_input_token_cost": 2.8e-08,
+        "input_cost_per_token": 4.4e-07,
+        "max_input_tokens": 1048576,
+        "max_output_tokens": 393216,
+        "mode": "chat",
+        "output_cost_per_token": 1.32e-06,
+        "supports_function_calling": true,
+        "supports_prompt_caching": true,
+        "supports_reasoning": true,
+        "supports_response_schema": true,
+        "supports_tool_choice": true,
+        "supports_vision": false
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [novita/deepseek/deepseek-v4-flash-0731]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.cache_read_input_token_cost",
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_prompt_caching",
+            "metadata.supports_reasoning",
+            "metadata.supports_response_schema",
+            "metadata.supports_tool_choice",
+            "metadata.supports_vision",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "deepseek-v4-flash@deepinfra:deepseek-v4-flash-0731",
+      "name": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "providerKey": "deepinfra",
+      "upstreamModelIds": [
+        "deepseek-ai/DeepSeek-V4-Flash-0731"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "max_output_tokens": 1048576,
+        "max_input_tokens": 1048576,
+        "input_cost_per_token": 6e-08,
+        "output_cost_per_token": 1.8e-07,
+        "cache_read_input_token_cost": 1.5e-08,
+        "supports_prompt_caching": true,
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_tool_choice": true,
+        "supports_response_schema": true,
+        "supports_reasoning": true,
+        "supports_vision": false
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [deepinfra/deepseek-ai/DeepSeek-V4-Flash-0731]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.cache_read_input_token_cost",
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_prompt_caching",
+            "metadata.supports_reasoning",
+            "metadata.supports_response_schema",
+            "metadata.supports_tool_choice",
+            "metadata.supports_vision",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    }
+  ]
 }

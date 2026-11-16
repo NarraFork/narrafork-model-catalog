@@ -7,33 +7,70 @@
       "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [gemini-2.5-pro-preview-tts] @ e2cfaa46e79241f34e52bf4781f7710cd511c5d2",
       "url": "https://github.com/Wei-Shaw/sub2api/blob/e2cfaa46e79241f34e52bf4781f7710cd511c5d2/backend/resources/model-pricing/model_prices_and_context_window.json#L1468",
       "verifiedAt": "2026-09-22T07:33:33Z"
+    },
+    {
+      "label": "LiteLLM aggregated model metadata (not official verification) [gemini/gemini-2.5-pro-preview-tts]",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:26:38Z",
+      "fields": [
+        "cache_read_input_token_cost",
+        "deprecation_date",
+        "deprecation_source",
+        "input_cost_per_audio_token",
+        "input_cost_per_token",
+        "input_cost_per_token_batches",
+        "litellm_provider",
+        "max_input_tokens",
+        "max_output_tokens",
+        "mode",
+        "output_cost_per_audio_token",
+        "output_cost_per_token",
+        "output_cost_per_token_batches",
+        "rpm",
+        "search_context_cost_per_query",
+        "source",
+        "successor_model",
+        "supported_modalities",
+        "supported_output_modalities",
+        "supports_audio_input",
+        "supports_audio_output",
+        "supports_function_calling",
+        "supports_prompt_caching",
+        "supports_response_schema",
+        "supports_system_messages",
+        "supports_tool_choice",
+        "supports_vision",
+        "supports_web_search",
+        "tpm"
+      ],
+      "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
     }
   ],
   "metadata": {
     "cache_read_input_token_cost": 1.25e-07,
     "cache_read_input_token_cost_above_200k_tokens": 2.5e-07,
     "input_cost_per_audio_token": 7e-07,
-    "input_cost_per_token": 1.25e-06,
+    "input_cost_per_token": 1e-06,
     "input_cost_per_token_above_200k_tokens": 2.5e-06,
-    "litellm_provider": "vertex_ai-language-models",
+    "litellm_provider": "gemini",
     "max_audio_length_hours": 8.4,
     "max_audio_per_prompt": 1,
     "max_images_per_prompt": 3000,
-    "max_input_tokens": 1048576,
-    "max_output_tokens": 65535,
+    "max_input_tokens": 8192,
+    "max_output_tokens": 16384,
     "max_pdf_size_mb": 30,
     "max_tokens": 65535,
     "max_video_length": 1,
     "max_videos_per_prompt": 10,
     "mode": "chat",
-    "output_cost_per_token": 1e-05,
+    "output_cost_per_token": 2e-05,
     "output_cost_per_token_above_200k_tokens": 1.5e-05,
     "search_context_cost_per_query": {
-      "search_context_size_high": 0.035,
       "search_context_size_low": 0.035,
-      "search_context_size_medium": 0.035
+      "search_context_size_medium": 0.035,
+      "search_context_size_high": 0.035
     },
-    "source": "https://ai.google.dev/gemini-api/docs/pricing#gemini-2.5-pro-preview",
+    "source": "https://ai.google.dev/gemini-api/docs/pricing",
     "supported_modalities": [
       "text"
     ],
@@ -41,14 +78,112 @@
       "audio"
     ],
     "supports_audio_output": false,
-    "supports_function_calling": true,
+    "supports_function_calling": false,
     "supports_parallel_function_calling": true,
     "supports_prompt_caching": true,
-    "supports_response_schema": true,
+    "supports_response_schema": false,
     "supports_system_messages": true,
     "supports_tool_choice": true,
-    "supports_vision": true,
-    "supports_web_search": true
+    "supports_vision": false,
+    "supports_web_search": false,
+    "deprecation_date": "2026-12-18",
+    "deprecation_source": "https://ai.google.dev/gemini-api/docs/deprecations",
+    "successor_model": "gemini/gemini-3.8-flash-tts",
+    "input_cost_per_token_batches": 5e-07,
+    "output_cost_per_audio_token": 2e-05,
+    "output_cost_per_token_batches": 1e-05,
+    "rpm": 10000,
+    "tpm": 10000000,
+    "supports_audio_input": false
   },
-  "variants": []
+  "variants": [
+    {
+      "id": "gemini-2.5-pro-preview-tts@gemini",
+      "name": "gemini-2.5-pro-preview-tts (gemini)",
+      "providerKey": "gemini",
+      "upstreamModelIds": [
+        "gemini-2.5-pro-preview-tts"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "cache_read_input_token_cost": 1.25e-07,
+        "deprecation_date": "2026-12-18",
+        "deprecation_source": "https://ai.google.dev/gemini-api/docs/deprecations",
+        "successor_model": "gemini/gemini-3.8-flash-tts",
+        "input_cost_per_audio_token": 7e-07,
+        "input_cost_per_token": 1e-06,
+        "input_cost_per_token_batches": 5e-07,
+        "litellm_provider": "gemini",
+        "max_input_tokens": 8192,
+        "max_output_tokens": 16384,
+        "mode": "chat",
+        "output_cost_per_audio_token": 2e-05,
+        "output_cost_per_token": 2e-05,
+        "output_cost_per_token_batches": 1e-05,
+        "rpm": 10000,
+        "source": "https://ai.google.dev/gemini-api/docs/pricing",
+        "supported_modalities": [
+          "text"
+        ],
+        "supported_output_modalities": [
+          "audio"
+        ],
+        "supports_audio_output": false,
+        "supports_function_calling": false,
+        "supports_prompt_caching": true,
+        "supports_response_schema": false,
+        "supports_system_messages": true,
+        "supports_tool_choice": true,
+        "supports_vision": false,
+        "supports_web_search": false,
+        "tpm": 10000000,
+        "search_context_cost_per_query": {
+          "search_context_size_low": 0.035,
+          "search_context_size_medium": 0.035,
+          "search_context_size_high": 0.035
+        },
+        "supports_audio_input": false
+      },
+      "sources": [
+        {
+          "label": "LiteLLM aggregated model metadata (not official verification) [gemini/gemini-2.5-pro-preview-tts]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:26:38Z",
+          "fields": [
+            "cache_read_input_token_cost",
+            "deprecation_date",
+            "deprecation_source",
+            "input_cost_per_audio_token",
+            "input_cost_per_token",
+            "input_cost_per_token_batches",
+            "litellm_provider",
+            "max_input_tokens",
+            "max_output_tokens",
+            "mode",
+            "output_cost_per_audio_token",
+            "output_cost_per_token",
+            "output_cost_per_token_batches",
+            "rpm",
+            "search_context_cost_per_query",
+            "source",
+            "successor_model",
+            "supported_modalities",
+            "supported_output_modalities",
+            "supports_audio_input",
+            "supports_audio_output",
+            "supports_function_calling",
+            "supports_prompt_caching",
+            "supports_response_schema",
+            "supports_system_messages",
+            "supports_tool_choice",
+            "supports_vision",
+            "supports_web_search",
+            "tpm"
+          ],
+          "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
+        }
+      ]
+    }
+  ],
+  "family": "gemini"
 }

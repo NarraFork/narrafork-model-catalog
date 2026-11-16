@@ -1,0 +1,72 @@
+{
+  "id": "grok-4.20-non-reasoning",
+  "name": "Grok 4.20 non reasoning",
+  "family": "grok",
+  "status": "unverified",
+  "metadata": {
+    "cache_read_input_token_cost": 2e-07,
+    "cache_read_input_token_cost_batches": 1.6e-07,
+    "input_cost_per_token": 1.25e-06,
+    "input_cost_per_token_batches": 1e-06,
+    "litellm_provider": "xai",
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 1000000,
+    "mode": "chat",
+    "output_cost_per_token": 2.5e-06,
+    "output_cost_per_token_batches": 2e-06,
+    "source": "https://api.x.ai/v1/language-models",
+    "supports_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_tool_choice": true,
+    "supports_vision": true,
+    "supports_web_search": true,
+    "input_cost_per_token_above_200k_tokens": 2.5e-06,
+    "input_cost_per_token_above_200k_tokens_batches": 2e-06,
+    "output_cost_per_token_above_200k_tokens": 5e-06,
+    "output_cost_per_token_above_200k_tokens_batches": 4e-06,
+    "cache_read_input_token_cost_above_200k_tokens": 4e-07,
+    "cache_read_input_token_cost_above_200k_tokens_batches": 3.2e-07,
+    "input_cost_per_image_token": 1.25e-06,
+    "supports_response_schema": true
+  },
+  "variants": [],
+  "sources": [
+    {
+      "label": "LiteLLM registry [xai/grok-4.20-non-reasoning] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95; aggregated metadata, not a direct xAI availability check",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:25:26Z",
+      "fields": [
+        "metadata.cache_read_input_token_cost",
+        "metadata.cache_read_input_token_cost_batches",
+        "metadata.input_cost_per_token",
+        "metadata.input_cost_per_token_batches",
+        "metadata.litellm_provider",
+        "metadata.max_input_tokens",
+        "metadata.max_output_tokens",
+        "metadata.mode",
+        "metadata.output_cost_per_token",
+        "metadata.output_cost_per_token_batches",
+        "metadata.source",
+        "metadata.supports_function_calling",
+        "metadata.supports_prompt_caching",
+        "metadata.supports_tool_choice",
+        "metadata.supports_vision",
+        "metadata.supports_web_search",
+        "metadata.input_cost_per_token_above_200k_tokens",
+        "metadata.input_cost_per_token_above_200k_tokens_batches",
+        "metadata.output_cost_per_token_above_200k_tokens",
+        "metadata.output_cost_per_token_above_200k_tokens_batches",
+        "metadata.cache_read_input_token_cost_above_200k_tokens",
+        "metadata.cache_read_input_token_cost_above_200k_tokens_batches",
+        "metadata.input_cost_per_image_token",
+        "metadata.supports_response_schema"
+      ]
+    }
+  ],
+  "notes": "Native xAI metadata is from the pinned LiteLLM registry; direct xAI documentation was unavailable during this audit. Registry output limits are not independently confirmed. Provider-specific pricing and controls, where verified, are recorded in nested variants.",
+  "matches": {
+    "aliases": [
+      "grok-4.20-non-reasoning-latest"
+    ]
+  }
+}

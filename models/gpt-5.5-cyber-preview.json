@@ -1,0 +1,38 @@
+{
+  "id": "gpt-5.5-cyber-preview",
+  "name": "GPT-5.5-cyber-preview",
+  "family": "gpt",
+  "status": "unverified",
+  "metadata": {
+    "cache_read_input_token_cost": 1.25e-06,
+    "deprecation_date": "2027-02-01",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
+    "input_cost_per_token": 1.25e-05,
+    "litellm_provider": "openai",
+    "mode": "chat",
+    "output_cost_per_token": 7.5e-05,
+    "fedramp_uplift_multiplier": 1.1,
+    "supports_reasoning": true
+  },
+  "variants": [],
+  "notes": "Reported by an aggregate directory; official API availability and listed specifications have not been independently confirmed.",
+  "sources": [
+    {
+      "label": "litellm aggregate directory [gpt-5.5-cyber-preview] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95; verifies only recorded aggregate fields, not official availability",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:21:44Z",
+      "fields": [
+        "id",
+        "metadata.cache_read_input_token_cost",
+        "metadata.deprecation_date",
+        "metadata.deprecation_source",
+        "metadata.fedramp_uplift_multiplier",
+        "metadata.input_cost_per_token",
+        "metadata.litellm_provider",
+        "metadata.mode",
+        "metadata.output_cost_per_token",
+        "metadata.supports_reasoning"
+      ]
+    }
+  ]
+}

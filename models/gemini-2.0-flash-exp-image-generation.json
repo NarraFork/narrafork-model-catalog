@@ -7,6 +7,27 @@
       "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [gemini-2.0-flash-exp-image-generation] @ e2cfaa46e79241f34e52bf4781f7710cd511c5d2",
       "url": "https://github.com/Wei-Shaw/sub2api/blob/e2cfaa46e79241f34e52bf4781f7710cd511c5d2/backend/resources/model-pricing/model_prices_and_context_window.json#L903",
       "verifiedAt": "2026-09-22T07:33:33Z"
+    },
+    {
+      "label": "sub2api aggregated model metadata (not official verification) [gemini-2.0-flash-exp-image-generation]",
+      "url": "https://github.com/Wei-Shaw/sub2api/blob/d70676756fd3a35b854d41aa46c07935bbef283f/backend/resources/model-pricing/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:26:38Z",
+      "fields": [
+        "input_cost_per_token",
+        "litellm_provider",
+        "max_images_per_prompt",
+        "max_input_tokens",
+        "max_output_tokens",
+        "max_tokens",
+        "mode",
+        "output_cost_per_image",
+        "output_cost_per_token",
+        "source",
+        "supported_modalities",
+        "supported_output_modalities",
+        "supports_vision"
+      ],
+      "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
     }
   ],
   "metadata": {
@@ -30,5 +51,6 @@
     ],
     "supports_vision": true
   },
-  "variants": []
+  "variants": [],
+  "family": "gemini"
 }

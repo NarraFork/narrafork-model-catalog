@@ -3,7 +3,7 @@
   "name": "Grok 4.7 Fast",
   "family": "grok",
   "status": "verified",
-  "notes": "Rates and context limit verified against sub2api's pricing table, not a direct xAI API probe. Kept separate from Grok 4.7 because its rates differ. Output limit and reasoning controls are unconfirmed and omitted.",
+  "notes": "Gateway identity and base metadata are from sub2api, not a direct xAI API probe. Cursor Fast pricing has a 256k input threshold and is explicitly provider-scoped below; the legacy gateway 200k threshold is not asserted as Cursor pricing. Output limits remain unconfirmed.",
   "sources": [
     {
       "label": "sub2api pricing table: grok-4.7-fast @ 5c185c5c5d4f5e409e2139806e0964ae944e03e8",
@@ -23,5 +23,44 @@
     "output_cost_per_token_above_200k_tokens": 1.8e-05,
     "supports_prompt_caching": true
   },
-  "variants": []
+  "variants": [
+    {
+      "id": "grok-4.7-fast@cursor",
+      "name": "Cursor Grok 4.7 Fast",
+      "providerKey": "cursor",
+      "upstreamModelIds": [
+        "grok-4.7-fast"
+      ],
+      "status": "unverified",
+      "notes": "Cursor documents this as a speed tier, not a separate native xAI API model. Input above 256k uses 3x the standard-speed rate; maximum context is 500k.",
+      "metadata": {
+        "input_cost_per_token": 4e-06,
+        "cache_read_input_token_cost": 1e-06,
+        "output_cost_per_token": 1.2e-05,
+        "context_window": 500000,
+        "long_context_input_token_threshold": 256000,
+        "input_cost_per_token_above_256k_tokens": 6e-06,
+        "cache_read_input_token_cost_above_256k_tokens": 1.5e-06,
+        "output_cost_per_token_above_256k_tokens": 1.8e-05,
+        "supports_reasoning": true,
+        "reasoning_effort_levels": [
+          "low",
+          "medium",
+          "high",
+          "xhigh"
+        ],
+        "default_reasoning_effort": "high"
+      },
+      "sources": [
+        {
+          "label": "Cursor official Grok 4.7: Fast speed tier, effort controls, pricing and 256k long-context threshold",
+          "url": "https://cursor.com/docs/models/grok-4-7",
+          "verifiedAt": "2026-11-16T09:25:26Z",
+          "fields": [
+            "metadata"
+          ]
+        }
+      ]
+    }
+  ]
 }

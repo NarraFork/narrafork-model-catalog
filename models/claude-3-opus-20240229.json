@@ -29,5 +29,6 @@
     "supports_vision": true,
     "tool_use_system_prompt_tokens": 395
   },
-  "variants": []
+  "variants": [],
+  "family": "claude"
 }

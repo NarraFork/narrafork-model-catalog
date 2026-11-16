@@ -1,0 +1,51 @@
+{
+  "id": "veo-3.1-generate-preview",
+  "name": "Veo 3.1 Generate Preview",
+  "family": "veo",
+  "status": "unverified",
+  "sources": [],
+  "metadata": {},
+  "variants": [
+    {
+      "id": "veo-3.1-generate-preview@vertex_ai",
+      "name": "Veo 3.1 Generate Preview (vertex_ai)",
+      "providerKey": "vertex_ai",
+      "upstreamModelIds": [
+        "veo-3.1-generate-preview"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "litellm_provider": "vertex_ai-video-models",
+        "max_input_tokens": 1024,
+        "mode": "video_generation",
+        "output_cost_per_second": 0.4,
+        "output_cost_per_second_4k": 0.6,
+        "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+        "supported_modalities": [
+          "text"
+        ],
+        "supported_output_modalities": [
+          "video"
+        ]
+      },
+      "sources": [
+        {
+          "label": "LiteLLM aggregated model metadata (not official verification) [vertex_ai/veo-3.1-generate-preview]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:26:38Z",
+          "fields": [
+            "litellm_provider",
+            "max_input_tokens",
+            "mode",
+            "output_cost_per_second",
+            "output_cost_per_second_4k",
+            "source",
+            "supported_modalities",
+            "supported_output_modalities"
+          ],
+          "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
+        }
+      ]
+    }
+  ]
+}

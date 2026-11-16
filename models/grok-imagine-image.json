@@ -1,0 +1,40 @@
+{
+  "id": "grok-imagine-image",
+  "name": "Grok imagine image",
+  "family": "grok",
+  "status": "unverified",
+  "metadata": {
+    "input_cost_per_image": 0.02,
+    "litellm_provider": "xai",
+    "mode": "image_generation",
+    "source": "https://docs.x.ai/docs/models",
+    "supported_endpoints": [
+      "/v1/images/generations"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "image"
+    ]
+  },
+  "variants": [],
+  "sources": [
+    {
+      "label": "LiteLLM registry [xai/grok-imagine-image] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95; aggregated metadata, not a direct xAI availability check",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:25:26Z",
+      "fields": [
+        "metadata.input_cost_per_image",
+        "metadata.litellm_provider",
+        "metadata.mode",
+        "metadata.source",
+        "metadata.supported_endpoints",
+        "metadata.supported_modalities",
+        "metadata.supported_output_modalities"
+      ]
+    }
+  ],
+  "notes": "Native xAI metadata is from the pinned LiteLLM registry; direct xAI documentation was unavailable during this audit. Registry output limits are not independently confirmed. Provider-specific pricing and controls, where verified, are recorded in nested variants."
+}

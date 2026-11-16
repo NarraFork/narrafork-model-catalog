@@ -1,12 +1,49 @@
 {
   "id": "gpt-4o-mini-transcribe-2025-03-20",
   "name": "gpt-4o-mini-transcribe-2025-03-20",
+  "family": "gpt",
   "status": "verified",
   "sources": [
     {
       "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [gpt-4o-mini-transcribe-2025-03-20] @ e2cfaa46e79241f34e52bf4781f7710cd511c5d2",
       "url": "https://github.com/Wei-Shaw/sub2api/blob/e2cfaa46e79241f34e52bf4781f7710cd511c5d2/backend/resources/model-pricing/model_prices_and_context_window.json#L3438",
       "verifiedAt": "2026-09-22T07:33:33Z"
+    },
+    {
+      "label": "litellm aggregate directory [gpt-4o-mini-transcribe-2025-03-20] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95; verifies only recorded aggregate fields, not official availability",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:21:44Z",
+      "fields": [
+        "id",
+        "metadata.deprecation_date",
+        "metadata.deprecation_source",
+        "metadata.input_cost_per_audio_token",
+        "metadata.input_cost_per_second",
+        "metadata.input_cost_per_token",
+        "metadata.litellm_provider",
+        "metadata.max_input_tokens",
+        "metadata.max_output_tokens",
+        "metadata.mode",
+        "metadata.output_cost_per_token",
+        "metadata.successor_model",
+        "metadata.supported_endpoints"
+      ]
+    },
+    {
+      "label": "sub2api aggregate directory [gpt-4o-mini-transcribe-2025-03-20] @ d70676756fd3a35b854d41aa46c07935bbef283f; verifies only recorded aggregate fields, not official availability",
+      "url": "https://github.com/Wei-Shaw/sub2api/blob/d70676756fd3a35b854d41aa46c07935bbef283f/backend/resources/model-pricing/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:21:44Z",
+      "fields": [
+        "id",
+        "metadata.input_cost_per_audio_token",
+        "metadata.input_cost_per_token",
+        "metadata.litellm_provider",
+        "metadata.max_input_tokens",
+        "metadata.max_output_tokens",
+        "metadata.mode",
+        "metadata.output_cost_per_token",
+        "metadata.supported_endpoints"
+      ]
     }
   ],
   "metadata": {
@@ -19,7 +56,11 @@
     "output_cost_per_token": 5e-06,
     "supported_endpoints": [
       "/v1/audio/transcriptions"
-    ]
+    ],
+    "deprecation_date": "2027-01-20",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
+    "successor_model": "gpt-4o-mini-transcribe-2025-12-15",
+    "input_cost_per_second": 5e-05
   },
   "variants": []
 }

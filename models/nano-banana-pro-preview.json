@@ -1,0 +1,187 @@
+{
+  "id": "nano-banana-pro-preview",
+  "name": "Nano Banana Pro Preview",
+  "family": "nano-banana",
+  "status": "unverified",
+  "sources": [
+    {
+      "label": "LiteLLM aggregated model metadata (not official verification) [gemini/nano-banana-pro-preview]",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:26:38Z",
+      "fields": [
+        "input_cost_per_image",
+        "input_cost_per_token",
+        "input_cost_per_token_batches",
+        "input_cost_per_token_flex",
+        "input_cost_per_token_priority",
+        "litellm_provider",
+        "max_input_tokens",
+        "max_output_tokens",
+        "mode",
+        "output_cost_per_image",
+        "output_cost_per_image_token",
+        "output_cost_per_token",
+        "output_cost_per_token_batches",
+        "output_cost_per_token_flex",
+        "output_cost_per_token_priority",
+        "rpm",
+        "search_context_cost_per_query",
+        "source",
+        "supported_endpoints",
+        "supported_modalities",
+        "supported_output_modalities",
+        "supports_function_calling",
+        "supports_prompt_caching",
+        "supports_reasoning",
+        "supports_response_schema",
+        "supports_system_messages",
+        "supports_vision",
+        "supports_web_search",
+        "tpm",
+        "web_search_billing_unit"
+      ],
+      "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
+    }
+  ],
+  "metadata": {
+    "input_cost_per_image": 0.0011,
+    "input_cost_per_token": 2e-06,
+    "input_cost_per_token_batches": 1e-06,
+    "input_cost_per_token_flex": 1e-06,
+    "input_cost_per_token_priority": 3.6e-06,
+    "litellm_provider": "gemini",
+    "max_input_tokens": 131072,
+    "max_output_tokens": 32768,
+    "mode": "image_generation",
+    "output_cost_per_image": 0.134,
+    "output_cost_per_image_token": 0.00012,
+    "output_cost_per_token": 1.2e-05,
+    "rpm": 1000,
+    "tpm": 4000000,
+    "output_cost_per_token_batches": 6e-06,
+    "output_cost_per_token_flex": 6e-06,
+    "output_cost_per_token_priority": 2.16e-05,
+    "source": "https://ai.google.dev/gemini-api/docs/pricing",
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/v1/images/edits"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "text",
+      "image"
+    ],
+    "supports_function_calling": false,
+    "supports_prompt_caching": true,
+    "supports_reasoning": false,
+    "supports_response_schema": true,
+    "supports_system_messages": true,
+    "supports_vision": true,
+    "supports_web_search": true,
+    "search_context_cost_per_query": {
+      "search_context_size_low": 0.014,
+      "search_context_size_medium": 0.014,
+      "search_context_size_high": 0.014
+    },
+    "web_search_billing_unit": "per_query"
+  },
+  "variants": [
+    {
+      "id": "nano-banana-pro-preview@gemini",
+      "name": "Nano Banana Pro Preview (gemini)",
+      "providerKey": "gemini",
+      "upstreamModelIds": [
+        "nano-banana-pro-preview"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "input_cost_per_image": 0.0011,
+        "input_cost_per_token": 2e-06,
+        "input_cost_per_token_batches": 1e-06,
+        "input_cost_per_token_flex": 1e-06,
+        "input_cost_per_token_priority": 3.6e-06,
+        "litellm_provider": "gemini",
+        "max_input_tokens": 131072,
+        "max_output_tokens": 32768,
+        "mode": "image_generation",
+        "output_cost_per_image": 0.134,
+        "output_cost_per_image_token": 0.00012,
+        "output_cost_per_token": 1.2e-05,
+        "rpm": 1000,
+        "tpm": 4000000,
+        "output_cost_per_token_batches": 6e-06,
+        "output_cost_per_token_flex": 6e-06,
+        "output_cost_per_token_priority": 2.16e-05,
+        "source": "https://ai.google.dev/gemini-api/docs/pricing",
+        "supported_endpoints": [
+          "/v1/chat/completions",
+          "/v1/images/edits"
+        ],
+        "supported_modalities": [
+          "text",
+          "image"
+        ],
+        "supported_output_modalities": [
+          "text",
+          "image"
+        ],
+        "supports_function_calling": false,
+        "supports_prompt_caching": true,
+        "supports_reasoning": false,
+        "supports_response_schema": true,
+        "supports_system_messages": true,
+        "supports_vision": true,
+        "supports_web_search": true,
+        "search_context_cost_per_query": {
+          "search_context_size_low": 0.014,
+          "search_context_size_medium": 0.014,
+          "search_context_size_high": 0.014
+        },
+        "web_search_billing_unit": "per_query"
+      },
+      "sources": [
+        {
+          "label": "LiteLLM aggregated model metadata (not official verification) [gemini/nano-banana-pro-preview]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:26:38Z",
+          "fields": [
+            "input_cost_per_image",
+            "input_cost_per_token",
+            "input_cost_per_token_batches",
+            "input_cost_per_token_flex",
+            "input_cost_per_token_priority",
+            "litellm_provider",
+            "max_input_tokens",
+            "max_output_tokens",
+            "mode",
+            "output_cost_per_image",
+            "output_cost_per_image_token",
+            "output_cost_per_token",
+            "output_cost_per_token_batches",
+            "output_cost_per_token_flex",
+            "output_cost_per_token_priority",
+            "rpm",
+            "search_context_cost_per_query",
+            "source",
+            "supported_endpoints",
+            "supported_modalities",
+            "supported_output_modalities",
+            "supports_function_calling",
+            "supports_prompt_caching",
+            "supports_reasoning",
+            "supports_response_schema",
+            "supports_system_messages",
+            "supports_vision",
+            "supports_web_search",
+            "tpm",
+            "web_search_billing_unit"
+          ],
+          "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
+        }
+      ]
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "id": "claude-fable-5",
   "name": "Claude Fable 5",
   "family": "claude",
-  "status": "unverified",
+  "status": "verified",
   "matches": {
     "prefixes": [
       "claude-fable-5"
@@ -10,7 +10,55 @@
     "volatileSuffixes": true
   },
   "metadata": {
-    "max_input_tokens": 1000000
+    "max_input_tokens": 1000000,
+    "supports_web_search": true,
+    "supports_anthropic_compaction": true,
+    "cache_creation_input_token_cost": 1.25e-05,
+    "cache_creation_input_token_cost_above_1hr": 2e-05,
+    "cache_creation_input_token_cost_batches": 6.25e-06,
+    "cache_read_input_token_cost": 1e-06,
+    "cache_read_input_token_cost_batches": 5e-07,
+    "input_cost_per_token": 1e-05,
+    "input_cost_per_token_batches": 5e-06,
+    "litellm_provider": "anthropic",
+    "max_output_tokens": 128000,
+    "mode": "chat",
+    "output_cost_per_token": 5e-05,
+    "output_cost_per_token_batches": 2.5e-05,
+    "search_context_cost_per_query": {
+      "search_context_size_high": 0.01,
+      "search_context_size_low": 0.01,
+      "search_context_size_medium": 0.01
+    },
+    "supports_adaptive_thinking": true,
+    "thinking_always_on": true,
+    "supports_mid_conversation_system": true,
+    "supports_assistant_prefill": false,
+    "supports_computer_use": true,
+    "supports_function_calling": true,
+    "supports_pdf_input": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_sampling_params": false,
+    "supports_tool_choice": true,
+    "supports_vision": true,
+    "supports_xhigh_reasoning_effort": true,
+    "supports_max_reasoning_effort": true,
+    "provider_specific_entry": {
+      "us": 1.1
+    },
+    "supports_output_config": true,
+    "prompt_cache_min_tokens": 512,
+    "supports_native_structured_output": true,
+    "source": "https://platform.claude.com/docs/en/about-claude/pricing",
+    "reasoning_effort_levels": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ]
   },
   "variants": [
     {
@@ -21,7 +69,152 @@
         "claude-fable-5"
       ],
       "metadata": {},
-      "status": "unverified"
+      "status": "unverified",
+      "family": "claude"
+    },
+    {
+      "id": "claude-fable-5@github-copilot",
+      "name": "claude-fable-5",
+      "providerKey": "github-copilot",
+      "upstreamModelIds": [
+        "claude-fable-5",
+        "github_copilot/claude-fable-5"
+      ],
+      "family": "claude",
+      "status": "unverified",
+      "metadata": {
+        "cache_creation_input_token_cost": 1.25e-05,
+        "cache_read_input_token_cost": 1e-06,
+        "input_cost_per_token": 1e-05,
+        "litellm_provider": "github_copilot",
+        "max_input_tokens": 200000,
+        "max_output_tokens": 64000,
+        "mode": "chat",
+        "output_cost_per_token": 5e-05,
+        "source": "https://raw.githubusercontent.com/github/docs/main/data/tables/copilot/models-and-pricing.yml",
+        "supported_endpoints": [
+          "/v1/chat/completions",
+          "/v1/messages"
+        ],
+        "supports_adaptive_thinking": true,
+        "supports_function_calling": true,
+        "supports_parallel_function_calling": true,
+        "supports_reasoning": true,
+        "supports_response_schema": true,
+        "supports_vision": true,
+        "thinking_always_on": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM aggregate deployment registry [github_copilot/claude-fable-5] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:20:54Z",
+          "fields": [
+            "upstreamModelIds",
+            "metadata.cache_creation_input_token_cost",
+            "metadata.cache_read_input_token_cost",
+            "metadata.input_cost_per_token",
+            "metadata.litellm_provider",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.source",
+            "metadata.supported_endpoints",
+            "metadata.supports_adaptive_thinking",
+            "metadata.supports_function_calling",
+            "metadata.supports_parallel_function_calling",
+            "metadata.supports_reasoning",
+            "metadata.supports_response_schema",
+            "metadata.supports_vision",
+            "metadata.thinking_always_on"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "claude-fable-5@antigravity",
+      "name": "claude-fable-5",
+      "providerKey": "antigravity",
+      "upstreamModelIds": [
+        "claude-fable-5"
+      ],
+      "family": "claude",
+      "status": "unverified",
+      "metadata": {},
+      "sources": [
+        {
+          "label": "sub2api unmerged PR #8778 Antigravity adapter whitelist/output spelling; availability unverified",
+          "url": "https://github.com/universonic/sub2api/blob/8783acd7b6725c8036098df243b16c0fbd25e71e/backend/internal/domain/constants.go#L112-L137",
+          "verifiedAt": "2026-11-16T09:20:54Z",
+          "fields": [
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "This spelling is present in an unmerged third-party adapter; it does not establish production availability, official effort levels, pricing or context limits."
+    }
+  ],
+  "sources": [
+    {
+      "label": "LiteLLM aggregate registry: Anthropic-native [claude-fable-5] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:20:54Z",
+      "fields": [
+        "metadata.supports_web_search",
+        "metadata.supports_anthropic_compaction",
+        "metadata.cache_creation_input_token_cost",
+        "metadata.cache_creation_input_token_cost_above_1hr",
+        "metadata.cache_creation_input_token_cost_batches",
+        "metadata.cache_read_input_token_cost",
+        "metadata.cache_read_input_token_cost_batches",
+        "metadata.input_cost_per_token",
+        "metadata.input_cost_per_token_batches",
+        "metadata.litellm_provider",
+        "metadata.max_output_tokens",
+        "metadata.mode",
+        "metadata.output_cost_per_token",
+        "metadata.output_cost_per_token_batches",
+        "metadata.search_context_cost_per_query",
+        "metadata.supports_adaptive_thinking",
+        "metadata.thinking_always_on",
+        "metadata.supports_mid_conversation_system",
+        "metadata.supports_assistant_prefill",
+        "metadata.supports_computer_use",
+        "metadata.supports_function_calling",
+        "metadata.supports_pdf_input",
+        "metadata.supports_prompt_caching",
+        "metadata.supports_reasoning",
+        "metadata.supports_response_schema",
+        "metadata.supports_sampling_params",
+        "metadata.supports_tool_choice",
+        "metadata.supports_vision",
+        "metadata.supports_xhigh_reasoning_effort",
+        "metadata.supports_max_reasoning_effort",
+        "metadata.provider_specific_entry",
+        "metadata.supports_output_config",
+        "metadata.prompt_cache_min_tokens",
+        "metadata.supports_native_structured_output",
+        "metadata.source"
+      ]
+    },
+    {
+      "label": "sub2api EffortLevelsForModel exact/prefix family dispatch; bridge-supported levels, not independently verified official API limits",
+      "url": "https://github.com/Wei-Shaw/sub2api/blob/d70676756fd3a35b854d41aa46c07935bbef283f/backend/internal/pkg/claude/effort_catalog.go",
+      "verifiedAt": "2026-11-16T09:20:54Z",
+      "fields": [
+        "metadata.reasoning_effort_levels"
+      ]
+    },
+    {
+      "label": "Anthropic official fable product page: model identity and explicitly stated standard USD token rates; other fields remain attributed to aggregate sources",
+      "url": "https://www.anthropic.com/claude/fable",
+      "verifiedAt": "2026-11-16T09:20:54Z",
+      "fields": [
+        "id",
+        "name",
+        "status"
+      ]
     }
   ]
 }

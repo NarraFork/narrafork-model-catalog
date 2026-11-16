@@ -7,12 +7,42 @@
       "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [gemini-2.5-computer-use-preview-10-2025] @ e2cfaa46e79241f34e52bf4781f7710cd511c5d2",
       "url": "https://github.com/Wei-Shaw/sub2api/blob/e2cfaa46e79241f34e52bf4781f7710cd511c5d2/backend/resources/model-pricing/model_prices_and_context_window.json#L1006",
       "verifiedAt": "2026-09-22T07:33:33Z"
+    },
+    {
+      "label": "LiteLLM aggregated model metadata (not official verification) [gemini/gemini-2.5-computer-use-preview-10-2025]",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:26:38Z",
+      "fields": [
+        "deprecation_date",
+        "deprecation_source",
+        "input_cost_per_token",
+        "input_cost_per_token_above_200k_tokens",
+        "litellm_provider",
+        "max_input_tokens",
+        "max_output_tokens",
+        "mode",
+        "output_cost_per_token",
+        "output_cost_per_token_above_200k_tokens",
+        "rpm",
+        "source",
+        "successor_model",
+        "supported_endpoints",
+        "supported_modalities",
+        "supported_output_modalities",
+        "supports_computer_use",
+        "supports_function_calling",
+        "supports_system_messages",
+        "supports_tool_choice",
+        "supports_vision",
+        "tpm"
+      ],
+      "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
     }
   ],
   "metadata": {
     "input_cost_per_token": 1.25e-06,
     "input_cost_per_token_above_200k_tokens": 2.5e-06,
-    "litellm_provider": "vertex_ai-language-models",
+    "litellm_provider": "gemini",
     "max_images_per_prompt": 3000,
     "max_input_tokens": 128000,
     "max_output_tokens": 64000,
@@ -20,7 +50,7 @@
     "mode": "chat",
     "output_cost_per_token": 1e-05,
     "output_cost_per_token_above_200k_tokens": 1.5e-05,
-    "source": "https://cloud.google.com/vertex-ai/generative-ai/docs/computer-use",
+    "source": "https://ai.google.dev/gemini-api/docs/pricing",
     "supported_modalities": [
       "text",
       "image"
@@ -32,7 +62,91 @@
     "supports_function_calling": true,
     "supports_system_messages": true,
     "supports_tool_choice": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "deprecation_date": "2026-07-28",
+    "deprecation_source": "https://ai.google.dev/gemini-api/docs/deprecations",
+    "successor_model": "gemini/gemini-3.8-flash",
+    "rpm": 2000,
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/v1/completions"
+    ],
+    "tpm": 800000
   },
-  "variants": []
+  "variants": [
+    {
+      "id": "gemini-2.5-computer-use-preview-10-2025@gemini",
+      "name": "gemini-2.5-computer-use-preview-10-2025 (gemini)",
+      "providerKey": "gemini",
+      "upstreamModelIds": [
+        "gemini-2.5-computer-use-preview-10-2025"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "deprecation_date": "2026-07-28",
+        "deprecation_source": "https://ai.google.dev/gemini-api/docs/deprecations",
+        "successor_model": "gemini/gemini-3.8-flash",
+        "input_cost_per_token": 1.25e-06,
+        "input_cost_per_token_above_200k_tokens": 2.5e-06,
+        "litellm_provider": "gemini",
+        "max_input_tokens": 128000,
+        "max_output_tokens": 64000,
+        "mode": "chat",
+        "output_cost_per_token": 1e-05,
+        "output_cost_per_token_above_200k_tokens": 1.5e-05,
+        "rpm": 2000,
+        "source": "https://ai.google.dev/gemini-api/docs/pricing",
+        "supported_endpoints": [
+          "/v1/chat/completions",
+          "/v1/completions"
+        ],
+        "supported_modalities": [
+          "text",
+          "image"
+        ],
+        "supported_output_modalities": [
+          "text"
+        ],
+        "supports_computer_use": true,
+        "supports_function_calling": true,
+        "supports_system_messages": true,
+        "supports_tool_choice": true,
+        "supports_vision": true,
+        "tpm": 800000
+      },
+      "sources": [
+        {
+          "label": "LiteLLM aggregated model metadata (not official verification) [gemini/gemini-2.5-computer-use-preview-10-2025]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:26:38Z",
+          "fields": [
+            "deprecation_date",
+            "deprecation_source",
+            "input_cost_per_token",
+            "input_cost_per_token_above_200k_tokens",
+            "litellm_provider",
+            "max_input_tokens",
+            "max_output_tokens",
+            "mode",
+            "output_cost_per_token",
+            "output_cost_per_token_above_200k_tokens",
+            "rpm",
+            "source",
+            "successor_model",
+            "supported_endpoints",
+            "supported_modalities",
+            "supported_output_modalities",
+            "supports_computer_use",
+            "supports_function_calling",
+            "supports_system_messages",
+            "supports_tool_choice",
+            "supports_vision",
+            "tpm"
+          ],
+          "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
+        }
+      ]
+    }
+  ],
+  "family": "gemini"
 }

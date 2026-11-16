@@ -1,0 +1,223 @@
+{
+  "id": "qwen3-next-80b-a3b-thinking",
+  "name": "qwen3-next-80b-a3b-thinking",
+  "family": "qwen",
+  "status": "unverified",
+  "metadata": {
+    "mode": "chat",
+    "supports_function_calling": true,
+    "supports_reasoning": true,
+    "supports_tool_choice": true
+  },
+  "variants": [
+    {
+      "id": "qwen3-next-80b-a3b-thinking@qwen_ai_platform",
+      "name": "qwen3-next-80b-a3b-thinking",
+      "providerKey": "qwen_ai_platform",
+      "upstreamModelIds": [
+        "qwen3-next-80b-a3b-thinking"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "input_cost_per_token": 1.5e-07,
+        "max_input_tokens": 262144,
+        "max_output_tokens": 65536,
+        "mode": "chat",
+        "output_cost_per_token": 1.2e-06,
+        "supports_function_calling": true,
+        "supports_reasoning": true,
+        "supports_tool_choice": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned Alibaba namespace regional/deployment record [qwen_ai_platform/qwen3-next-80b-a3b-thinking]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_reasoning",
+            "metadata.supports_tool_choice",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Code evidence only; pricing currency/region may differ from official Beijing CNY. Does not override official model capabilities or establish current API availability."
+    },
+    {
+      "id": "qwen3-next-80b-a3b-thinking@dashscope",
+      "name": "qwen3-next-80b-a3b-thinking",
+      "providerKey": "dashscope",
+      "upstreamModelIds": [
+        "qwen3-next-80b-a3b-thinking"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "input_cost_per_token": 1.5e-07,
+        "max_input_tokens": 262144,
+        "max_output_tokens": 65536,
+        "mode": "chat",
+        "output_cost_per_token": 1.2e-06,
+        "supports_function_calling": true,
+        "supports_reasoning": true,
+        "supports_tool_choice": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [dashscope/qwen3-next-80b-a3b-thinking]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_reasoning",
+            "metadata.supports_tool_choice",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "qwen3-next-80b-a3b-thinking@qwencloud",
+      "name": "qwen3-next-80b-a3b-thinking",
+      "providerKey": "qwencloud",
+      "upstreamModelIds": [
+        "qwen3-next-80b-a3b-thinking"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "input_cost_per_token": 1.5e-07,
+        "max_input_tokens": 262144,
+        "max_output_tokens": 65536,
+        "mode": "chat",
+        "output_cost_per_token": 1.2e-06,
+        "supports_function_calling": true,
+        "supports_reasoning": true,
+        "supports_tool_choice": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [qwencloud/qwen3-next-80b-a3b-thinking]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_reasoning",
+            "metadata.supports_tool_choice",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "qwen3-next-80b-a3b-thinking@deepinfra",
+      "name": "Qwen/Qwen3-Next-80B-A3B-Thinking",
+      "providerKey": "deepinfra",
+      "upstreamModelIds": [
+        "Qwen/Qwen3-Next-80B-A3B-Thinking"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "max_input_tokens": 262144,
+        "max_output_tokens": 262144,
+        "input_cost_per_token": 1.4e-07,
+        "output_cost_per_token": 1.4e-06,
+        "mode": "chat",
+        "supports_tool_choice": true,
+        "supports_function_calling": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [deepinfra/Qwen/Qwen3-Next-80B-A3B-Thinking]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_tool_choice",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "qwen3-next-80b-a3b-thinking@novita",
+      "name": "qwen/qwen3-next-80b-a3b-thinking",
+      "providerKey": "novita",
+      "upstreamModelIds": [
+        "qwen/qwen3-next-80b-a3b-thinking"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "mode": "chat",
+        "input_cost_per_token": 1.5e-07,
+        "output_cost_per_token": 1.5e-06,
+        "max_input_tokens": 131072,
+        "max_output_tokens": 32768,
+        "supports_function_calling": true,
+        "supports_parallel_function_calling": true,
+        "supports_tool_choice": true,
+        "supports_system_messages": true,
+        "supports_response_schema": true,
+        "supports_reasoning": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [novita/qwen/qwen3-next-80b-a3b-thinking]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_parallel_function_calling",
+            "metadata.supports_reasoning",
+            "metadata.supports_response_schema",
+            "metadata.supports_system_messages",
+            "metadata.supports_tool_choice",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    }
+  ],
+  "sources": [
+    {
+      "label": "LiteLLM pinned native-namespace record [qwen_ai_platform/qwen3-next-80b-a3b-thinking]; code evidence, not official API attestation",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "id",
+        "metadata.mode",
+        "metadata.supports_function_calling",
+        "metadata.supports_reasoning",
+        "metadata.supports_tool_choice"
+      ]
+    }
+  ],
+  "notes": "Native-namespace metadata is recorded from pinned LiteLLM code; without an official source this does not establish a public official model or guarantee current availability. Only aggregate-code evidence was available for this identity/metadata in this audit; this is not a claim of official public release."
+}

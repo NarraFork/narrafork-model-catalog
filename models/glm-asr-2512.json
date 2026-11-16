@@ -1,0 +1,30 @@
+{
+  "id": "glm-asr-2512",
+  "name": "glm-asr-2512",
+  "family": "glm",
+  "status": "verified",
+  "metadata": {
+    "mode": "audio_transcription",
+    "supported_modalities": [
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "input_cost_per_token": 3e-08
+  },
+  "variants": [],
+  "sources": [
+    {
+      "label": "Z.AI official GLM-ASR-2512 USD $0.03/MTok (approximately $0.0024/minute)",
+      "url": "https://docs.z.ai/guides/overview/pricing",
+      "verifiedAt": "2026-11-16T09:27:56Z",
+      "fields": [
+        "metadata.mode",
+        "metadata.supported_modalities",
+        "metadata.supported_output_modalities",
+        "metadata.input_cost_per_token"
+      ]
+    }
+  ]
+}

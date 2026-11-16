@@ -1,0 +1,132 @@
+{
+  "id": "qwen4-max",
+  "name": "qwen4-max",
+  "family": "qwen",
+  "status": "verified",
+  "metadata": {
+    "supported_modalities": [
+      "text",
+      "image",
+      "video"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_vision": true,
+    "supports_video_input": true,
+    "supports_function_calling": true,
+    "supports_response_schema": true,
+    "supports_reasoning": true,
+    "max_input_tokens": 991808,
+    "max_output_tokens": 262144,
+    "max_tokens": 262144,
+    "supports_native_streaming": true,
+    "reasoning_effort_levels": [
+      "low",
+      "high",
+      "xhigh"
+    ],
+    "default_reasoning_effort": "high",
+    "can_disable_reasoning": true,
+    "supports_none_reasoning_effort": true,
+    "supports_low_reasoning_effort": true,
+    "supports_xhigh_reasoning_effort": true,
+    "supports_max_reasoning_effort": false,
+    "supports_minimal_reasoning_effort": false,
+    "supports_parallel_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_web_search": true,
+    "supports_batch": false,
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/v1/responses",
+      "/v1/messages"
+    ]
+  },
+  "variants": [
+    {
+      "id": "qwen4-max@dashscope:cn-beijing",
+      "name": "qwen4-max",
+      "providerKey": "dashscope",
+      "upstreamModelIds": [
+        "qwen4-max"
+      ],
+      "status": "verified",
+      "metadata": {
+        "pricing_currency": "CNY",
+        "input_cost_per_token": 1e-05,
+        "output_cost_per_token": 3e-05
+      },
+      "sources": [
+        {
+          "label": "Alibaba official Beijing CNY Qwen4-Max token rates",
+          "url": "https://help.aliyun.com/zh/model-studio/qwen4-max",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.input_cost_per_token",
+            "metadata.output_cost_per_token",
+            "metadata.pricing_currency",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Regional CNY per token; no currency conversion applied."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Alibaba official full text-generation and visual-understanding directory",
+      "url": "https://help.aliyun.com/zh/model-studio/text-generation-model",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "id"
+      ]
+    },
+    {
+      "label": "Alibaba official model-specific capability rows; 1M shorthand not converted",
+      "url": "https://help.aliyun.com/zh/model-studio/text-generation-model",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "metadata.supported_modalities",
+        "metadata.supported_output_modalities",
+        "metadata.supports_function_calling",
+        "metadata.supports_reasoning",
+        "metadata.supports_response_schema",
+        "metadata.supports_video_input",
+        "metadata.supports_vision"
+      ]
+    },
+    {
+      "label": "Alibaba official Qwen4-Max exact limits, modalities, API support and native reasoning low/high/xhigh (default high); max is a compatibility mapping",
+      "url": "https://help.aliyun.com/zh/model-studio/qwen4-max",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "metadata.can_disable_reasoning",
+        "metadata.default_reasoning_effort",
+        "metadata.max_input_tokens",
+        "metadata.max_output_tokens",
+        "metadata.max_tokens",
+        "metadata.reasoning_effort_levels",
+        "metadata.supported_endpoints",
+        "metadata.supported_modalities",
+        "metadata.supported_output_modalities",
+        "metadata.supports_batch",
+        "metadata.supports_function_calling",
+        "metadata.supports_low_reasoning_effort",
+        "metadata.supports_max_reasoning_effort",
+        "metadata.supports_minimal_reasoning_effort",
+        "metadata.supports_native_streaming",
+        "metadata.supports_none_reasoning_effort",
+        "metadata.supports_parallel_function_calling",
+        "metadata.supports_prompt_caching",
+        "metadata.supports_reasoning",
+        "metadata.supports_response_schema",
+        "metadata.supports_video_input",
+        "metadata.supports_vision",
+        "metadata.supports_web_search",
+        "metadata.supports_xhigh_reasoning_effort"
+      ]
+    }
+  ],
+  "notes": "Maximum completion 262144 includes thinking plus answer; non-thinking output max 131072. Maximum input 991808 non-thinking / 983616 thinking; total context 1000000. No USD price inferred from official regional CNY prices."
+}

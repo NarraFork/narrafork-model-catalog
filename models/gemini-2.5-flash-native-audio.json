@@ -1,0 +1,51 @@
+{
+  "id": "gemini-2.5-flash-native-audio",
+  "name": "Gemini 2.5 Flash Native Audio",
+  "family": "gemini",
+  "status": "unverified",
+  "sources": [],
+  "metadata": {},
+  "variants": [
+    {
+      "id": "gemini-2.5-flash-native-audio@vertex_ai",
+      "name": "Gemini 2.5 Flash Native Audio (vertex_ai)",
+      "providerKey": "vertex_ai",
+      "upstreamModelIds": [
+        "gemini-2.5-flash-native-audio"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "deprecation_date": "2026-12-13",
+        "input_cost_per_audio_token": 3e-06,
+        "input_cost_per_image_token": 3e-06,
+        "input_cost_per_token": 5e-07,
+        "input_cost_per_video_token": 3e-06,
+        "litellm_provider": "vertex_ai",
+        "mode": "realtime",
+        "output_cost_per_audio_token": 1.2e-05,
+        "output_cost_per_token": 2e-06,
+        "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing"
+      },
+      "sources": [
+        {
+          "label": "LiteLLM aggregated model metadata (not official verification) [vertex_ai/gemini-2.5-flash-native-audio]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:26:38Z",
+          "fields": [
+            "deprecation_date",
+            "input_cost_per_audio_token",
+            "input_cost_per_image_token",
+            "input_cost_per_token",
+            "input_cost_per_video_token",
+            "litellm_provider",
+            "mode",
+            "output_cost_per_audio_token",
+            "output_cost_per_token",
+            "source"
+          ],
+          "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
+        }
+      ]
+    }
+  ]
+}

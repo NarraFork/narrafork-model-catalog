@@ -1,0 +1,24 @@
+{
+  "id": "glm-4.6v-flashx",
+  "name": "glm-4.6v-flashx",
+  "family": "glm",
+  "status": "verified",
+  "metadata": {
+    "input_cost_per_token": 4e-08,
+    "output_cost_per_token": 4.0000000000000003e-07,
+    "cache_read_input_token_cost": 4e-09
+  },
+  "variants": [],
+  "sources": [
+    {
+      "label": "Z.AI official USD token pricing; temporary free cache storage is not a permanent zero cache-write rate",
+      "url": "https://docs.z.ai/guides/overview/pricing.md",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "metadata.cache_read_input_token_cost",
+        "metadata.input_cost_per_token",
+        "metadata.output_cost_per_token"
+      ]
+    }
+  ]
+}

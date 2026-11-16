@@ -1,0 +1,294 @@
+{
+  "id": "gemini-robotics-er-2-preview",
+  "name": "Gemini Robotics ER 2 Preview",
+  "family": "gemini",
+  "status": "unverified",
+  "sources": [
+    {
+      "label": "LiteLLM aggregated model metadata (not official verification) [gemini/gemini-robotics-er-2-preview]",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:26:38Z",
+      "fields": [
+        "cache_read_input_token_cost",
+        "cache_read_input_token_cost_batches",
+        "input_cost_per_audio_token",
+        "input_cost_per_token",
+        "input_cost_per_token_batches",
+        "litellm_provider",
+        "max_input_tokens",
+        "max_output_tokens",
+        "mode",
+        "output_cost_per_reasoning_token",
+        "output_cost_per_token",
+        "output_cost_per_token_batches",
+        "search_context_cost_per_query",
+        "source",
+        "supported_endpoints",
+        "supported_modalities",
+        "supported_output_modalities",
+        "supports_audio_input",
+        "supports_audio_output",
+        "supports_function_calling",
+        "supports_parallel_function_calling",
+        "supports_pdf_input",
+        "supports_prompt_caching",
+        "supports_reasoning",
+        "supports_response_schema",
+        "supports_system_messages",
+        "supports_tool_choice",
+        "supports_url_context",
+        "supports_video_input",
+        "supports_vision",
+        "supports_web_search",
+        "web_search_billing_unit"
+      ],
+      "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
+    }
+  ],
+  "metadata": {
+    "cache_read_input_token_cost": 1e-07,
+    "cache_read_input_token_cost_batches": 5e-08,
+    "input_cost_per_audio_token": 1e-06,
+    "input_cost_per_token": 1e-06,
+    "input_cost_per_token_batches": 5e-07,
+    "litellm_provider": "gemini",
+    "max_input_tokens": 131072,
+    "max_output_tokens": 65536,
+    "mode": "chat",
+    "output_cost_per_reasoning_token": 5e-06,
+    "output_cost_per_token": 5e-06,
+    "output_cost_per_token_batches": 2.5e-06,
+    "search_context_cost_per_query": {
+      "search_context_size_low": 0.014,
+      "search_context_size_medium": 0.014,
+      "search_context_size_high": 0.014
+    },
+    "source": "https://ai.google.dev/gemini-api/docs/pricing",
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/v1/completions",
+      "/v1/batch"
+    ],
+    "supported_modalities": [
+      "text",
+      "image",
+      "audio",
+      "video"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_audio_input": true,
+    "supports_audio_output": false,
+    "supports_function_calling": true,
+    "supports_parallel_function_calling": true,
+    "supports_pdf_input": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_system_messages": true,
+    "supports_tool_choice": true,
+    "supports_url_context": true,
+    "supports_video_input": true,
+    "supports_vision": true,
+    "supports_web_search": true,
+    "web_search_billing_unit": "per_query"
+  },
+  "variants": [
+    {
+      "id": "gemini-robotics-er-2-preview@gemini",
+      "name": "Gemini Robotics ER 2 Preview (gemini)",
+      "providerKey": "gemini",
+      "upstreamModelIds": [
+        "gemini-robotics-er-2-preview"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "cache_read_input_token_cost": 1e-07,
+        "cache_read_input_token_cost_batches": 5e-08,
+        "input_cost_per_audio_token": 1e-06,
+        "input_cost_per_token": 1e-06,
+        "input_cost_per_token_batches": 5e-07,
+        "litellm_provider": "gemini",
+        "max_input_tokens": 131072,
+        "max_output_tokens": 65536,
+        "mode": "chat",
+        "output_cost_per_reasoning_token": 5e-06,
+        "output_cost_per_token": 5e-06,
+        "output_cost_per_token_batches": 2.5e-06,
+        "search_context_cost_per_query": {
+          "search_context_size_low": 0.014,
+          "search_context_size_medium": 0.014,
+          "search_context_size_high": 0.014
+        },
+        "source": "https://ai.google.dev/gemini-api/docs/pricing",
+        "supported_endpoints": [
+          "/v1/chat/completions",
+          "/v1/completions",
+          "/v1/batch"
+        ],
+        "supported_modalities": [
+          "text",
+          "image",
+          "audio",
+          "video"
+        ],
+        "supported_output_modalities": [
+          "text"
+        ],
+        "supports_audio_input": true,
+        "supports_audio_output": false,
+        "supports_function_calling": true,
+        "supports_parallel_function_calling": true,
+        "supports_pdf_input": true,
+        "supports_prompt_caching": true,
+        "supports_reasoning": true,
+        "supports_response_schema": true,
+        "supports_system_messages": true,
+        "supports_tool_choice": true,
+        "supports_url_context": true,
+        "supports_video_input": true,
+        "supports_vision": true,
+        "supports_web_search": true,
+        "web_search_billing_unit": "per_query"
+      },
+      "sources": [
+        {
+          "label": "LiteLLM aggregated model metadata (not official verification) [gemini/gemini-robotics-er-2-preview]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:26:38Z",
+          "fields": [
+            "cache_read_input_token_cost",
+            "cache_read_input_token_cost_batches",
+            "input_cost_per_audio_token",
+            "input_cost_per_token",
+            "input_cost_per_token_batches",
+            "litellm_provider",
+            "max_input_tokens",
+            "max_output_tokens",
+            "mode",
+            "output_cost_per_reasoning_token",
+            "output_cost_per_token",
+            "output_cost_per_token_batches",
+            "search_context_cost_per_query",
+            "source",
+            "supported_endpoints",
+            "supported_modalities",
+            "supported_output_modalities",
+            "supports_audio_input",
+            "supports_audio_output",
+            "supports_function_calling",
+            "supports_parallel_function_calling",
+            "supports_pdf_input",
+            "supports_prompt_caching",
+            "supports_reasoning",
+            "supports_response_schema",
+            "supports_system_messages",
+            "supports_tool_choice",
+            "supports_url_context",
+            "supports_video_input",
+            "supports_vision",
+            "supports_web_search",
+            "web_search_billing_unit"
+          ],
+          "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
+        }
+      ]
+    },
+    {
+      "id": "gemini-robotics-er-2-preview@vertex_ai",
+      "name": "Gemini Robotics ER 2 Preview (vertex_ai)",
+      "providerKey": "vertex_ai",
+      "upstreamModelIds": [
+        "gemini-robotics-er-2-preview"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "cache_read_input_token_cost": 1e-07,
+        "input_cost_per_audio_token": 1e-06,
+        "input_cost_per_token": 1e-06,
+        "litellm_provider": "vertex_ai",
+        "max_input_tokens": 131072,
+        "max_output_tokens": 65536,
+        "mode": "chat",
+        "output_cost_per_reasoning_token": 5e-06,
+        "output_cost_per_token": 5e-06,
+        "search_context_cost_per_query": {
+          "search_context_size_low": 0.014,
+          "search_context_size_medium": 0.014,
+          "search_context_size_high": 0.014
+        },
+        "source": "https://ai.google.dev/gemini-api/docs/pricing",
+        "supported_endpoints": [
+          "/v1/chat/completions",
+          "/v1/completions"
+        ],
+        "supported_modalities": [
+          "text",
+          "image",
+          "audio",
+          "video"
+        ],
+        "supported_output_modalities": [
+          "text"
+        ],
+        "supports_audio_input": true,
+        "supports_audio_output": false,
+        "supports_computer_use": true,
+        "supports_function_calling": true,
+        "supports_parallel_function_calling": true,
+        "supports_pdf_input": true,
+        "supports_prompt_caching": true,
+        "supports_reasoning": true,
+        "supports_response_schema": true,
+        "supports_system_messages": true,
+        "supports_tool_choice": true,
+        "supports_url_context": true,
+        "supports_video_input": true,
+        "supports_vision": true,
+        "supports_web_search": true,
+        "web_search_billing_unit": "per_query"
+      },
+      "sources": [
+        {
+          "label": "LiteLLM aggregated model metadata (not official verification) [vertex_ai/gemini-robotics-er-2-preview]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:26:38Z",
+          "fields": [
+            "cache_read_input_token_cost",
+            "input_cost_per_audio_token",
+            "input_cost_per_token",
+            "litellm_provider",
+            "max_input_tokens",
+            "max_output_tokens",
+            "mode",
+            "output_cost_per_reasoning_token",
+            "output_cost_per_token",
+            "search_context_cost_per_query",
+            "source",
+            "supported_endpoints",
+            "supported_modalities",
+            "supported_output_modalities",
+            "supports_audio_input",
+            "supports_audio_output",
+            "supports_computer_use",
+            "supports_function_calling",
+            "supports_parallel_function_calling",
+            "supports_pdf_input",
+            "supports_prompt_caching",
+            "supports_reasoning",
+            "supports_response_schema",
+            "supports_system_messages",
+            "supports_tool_choice",
+            "supports_url_context",
+            "supports_video_input",
+            "supports_vision",
+            "supports_web_search",
+            "web_search_billing_unit"
+          ],
+          "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
+        }
+      ]
+    }
+  ]
+}

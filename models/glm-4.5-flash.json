@@ -1,0 +1,45 @@
+{
+  "id": "glm-4.5-flash",
+  "name": "glm-4.5-flash",
+  "family": "glm",
+  "status": "verified",
+  "metadata": {
+    "input_cost_per_token": 0.0,
+    "output_cost_per_token": 0.0,
+    "max_input_tokens": 128000,
+    "max_output_tokens": 32000,
+    "mode": "chat",
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "cache_read_input_token_cost": 0.0
+  },
+  "variants": [],
+  "sources": [
+    {
+      "label": "LiteLLM pinned native-namespace record [zai/glm-4.5-flash]; code evidence, not official API attestation",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "id",
+        "metadata.input_cost_per_token",
+        "metadata.max_input_tokens",
+        "metadata.max_output_tokens",
+        "metadata.mode",
+        "metadata.output_cost_per_token",
+        "metadata.supports_function_calling",
+        "metadata.supports_tool_choice"
+      ]
+    },
+    {
+      "label": "Z.AI official USD token pricing; temporary free cache storage is not a permanent zero cache-write rate",
+      "url": "https://docs.z.ai/guides/overview/pricing.md",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "metadata.cache_read_input_token_cost",
+        "metadata.input_cost_per_token",
+        "metadata.output_cost_per_token"
+      ]
+    }
+  ],
+  "notes": "Native-namespace metadata is recorded from pinned LiteLLM code; without an official source this does not establish a public official model or guarantee current availability."
+}

@@ -7,6 +7,30 @@
       "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [claude-opus-4-5-20251101] @ e2cfaa46e79241f34e52bf4781f7710cd511c5d2",
       "url": "https://github.com/Wei-Shaw/sub2api/blob/e2cfaa46e79241f34e52bf4781f7710cd511c5d2/backend/resources/model-pricing/model_prices_and_context_window.json#L282",
       "verifiedAt": "2026-09-22T07:33:33Z"
+    },
+    {
+      "label": "LiteLLM aggregate registry: Anthropic-native [claude-opus-4-5-20251101] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:20:54Z",
+      "fields": [
+        "metadata.supports_web_search",
+        "metadata.cache_creation_input_token_cost_batches",
+        "metadata.cache_read_input_token_cost_batches",
+        "metadata.input_cost_per_token_batches",
+        "metadata.output_cost_per_token_batches",
+        "metadata.supports_thinking_cache_preservation",
+        "metadata.supports_native_structured_output",
+        "metadata.supports_output_config",
+        "metadata.prompt_cache_min_tokens"
+      ]
+    },
+    {
+      "label": "sub2api EffortLevelsForModel exact/prefix family dispatch; bridge-supported levels, not independently verified official API limits",
+      "url": "https://github.com/Wei-Shaw/sub2api/blob/d70676756fd3a35b854d41aa46c07935bbef283f/backend/internal/pkg/claude/effort_catalog.go",
+      "verifiedAt": "2026-11-16T09:20:54Z",
+      "fields": [
+        "metadata.reasoning_effort_levels"
+      ]
     }
   ],
   "metadata": {
@@ -35,7 +59,22 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_vision": true,
-    "tool_use_system_prompt_tokens": 159
+    "tool_use_system_prompt_tokens": 159,
+    "supports_web_search": true,
+    "cache_creation_input_token_cost_batches": 3.125e-06,
+    "cache_read_input_token_cost_batches": 2.5e-07,
+    "input_cost_per_token_batches": 2.5e-06,
+    "output_cost_per_token_batches": 1.25e-05,
+    "supports_thinking_cache_preservation": true,
+    "supports_native_structured_output": true,
+    "supports_output_config": true,
+    "prompt_cache_min_tokens": 4096,
+    "reasoning_effort_levels": [
+      "low",
+      "medium",
+      "high"
+    ]
   },
-  "variants": []
+  "variants": [],
+  "family": "claude"
 }

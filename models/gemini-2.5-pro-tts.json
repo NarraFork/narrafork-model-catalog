@@ -1,0 +1,45 @@
+{
+  "id": "gemini-2.5-pro-tts",
+  "name": "Gemini 2.5 Pro TTS",
+  "family": "gemini",
+  "status": "unverified",
+  "sources": [],
+  "metadata": {},
+  "variants": [
+    {
+      "id": "gemini-2.5-pro-tts@vertex_ai",
+      "name": "Gemini 2.5 Pro TTS (vertex_ai)",
+      "providerKey": "vertex_ai",
+      "upstreamModelIds": [
+        "gemini-2.5-pro-tts"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "input_cost_per_token": 1e-06,
+        "input_cost_per_token_batches": 5e-07,
+        "litellm_provider": "vertex_ai",
+        "mode": "audio_speech",
+        "output_cost_per_audio_token": 2e-05,
+        "output_cost_per_token": 2e-05,
+        "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing"
+      },
+      "sources": [
+        {
+          "label": "LiteLLM aggregated model metadata (not official verification) [vertex_ai/gemini-2.5-pro-tts]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:26:38Z",
+          "fields": [
+            "input_cost_per_token",
+            "input_cost_per_token_batches",
+            "litellm_provider",
+            "mode",
+            "output_cost_per_audio_token",
+            "output_cost_per_token",
+            "source"
+          ],
+          "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
+        }
+      ]
+    }
+  ]
+}

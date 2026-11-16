@@ -1,0 +1,268 @@
+{
+  "id": "mimo-v2.6-flash",
+  "name": "mimo-v2.6-flash",
+  "family": "mimo",
+  "status": "verified",
+  "metadata": {
+    "cache_read_input_token_cost": 2.8e-09,
+    "input_cost_per_token": 1.4e-07,
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 131072,
+    "mode": "chat",
+    "output_cost_per_token": 2.8e-07,
+    "supported_endpoints": [
+      "/v1/chat/completions"
+    ],
+    "supports_audio_input": true,
+    "supports_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_system_messages": true,
+    "supports_tool_choice": true,
+    "supports_video_input": true,
+    "supports_vision": true,
+    "supported_modalities": [
+      "text",
+      "image",
+      "audio",
+      "video"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_native_streaming": true,
+    "can_disable_reasoning": true,
+    "supports_none_reasoning_effort": true,
+    "supports_web_search": true,
+    "supports_batch": true,
+    "max_tokens": 131072,
+    "input_cost_per_token_batches": 7e-08,
+    "output_cost_per_token_batches": 1.4e-07,
+    "cache_read_input_token_cost_batches": 1.4e-09
+  },
+  "variants": [
+    {
+      "id": "mimo-v2.6-flash@streamlake",
+      "name": "mimo-v2.6-flash",
+      "providerKey": "streamlake",
+      "upstreamModelIds": [
+        "mimo-v2.6-flash"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "cache_read_input_token_cost": 2.8e-09,
+        "input_cost_per_token": 1.4e-07,
+        "mode": "chat",
+        "output_cost_per_token": 2.8e-07,
+        "supports_vision": true,
+        "supports_prompt_caching": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [streamlake/mimo-v2.6-flash]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.cache_read_input_token_cost",
+            "metadata.input_cost_per_token",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supports_prompt_caching",
+            "metadata.supports_vision",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "mimo-v2.6-flash@deepinfra",
+      "name": "XiaomiMiMo/MiMo-V2.6-Flash",
+      "providerKey": "deepinfra",
+      "upstreamModelIds": [
+        "XiaomiMiMo/MiMo-V2.6-Flash"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "max_input_tokens": 1048576,
+        "input_cost_per_token": 1.4e-07,
+        "output_cost_per_token": 2.8e-07,
+        "cache_read_input_token_cost": 2.8e-09,
+        "supports_prompt_caching": true,
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_tool_choice": true,
+        "supports_response_schema": true,
+        "supports_reasoning": true,
+        "supports_vision": true,
+        "supports_video_input": true,
+        "supports_audio_input": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [deepinfra/XiaomiMiMo/MiMo-V2.6-Flash]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.cache_read_input_token_cost",
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supports_audio_input",
+            "metadata.supports_function_calling",
+            "metadata.supports_prompt_caching",
+            "metadata.supports_reasoning",
+            "metadata.supports_response_schema",
+            "metadata.supports_tool_choice",
+            "metadata.supports_video_input",
+            "metadata.supports_vision",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "mimo-v2.6-flash@opencode_go",
+      "name": "mimo-v2.6-flash",
+      "providerKey": "opencode_go",
+      "upstreamModelIds": [
+        "mimo-v2.6-flash"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "mode": "chat",
+        "supported_endpoints": [
+          "/v1/chat/completions"
+        ],
+        "input_cost_per_token": 1.4e-07,
+        "output_cost_per_token": 2.8e-07,
+        "cache_read_input_token_cost": 2.8e-09,
+        "max_output_tokens": 131072,
+        "max_input_tokens": 1048576,
+        "supports_function_calling": true,
+        "supports_reasoning": true,
+        "supports_vision": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [opencode_go/mimo-v2.6-flash]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.cache_read_input_token_cost",
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supported_endpoints",
+            "metadata.supports_function_calling",
+            "metadata.supports_reasoning",
+            "metadata.supports_vision",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    }
+  ],
+  "sources": [
+    {
+      "label": "LiteLLM pinned native-namespace record [xiaomi_mimo/mimo-v2.6-flash]; code evidence, not official API attestation",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "id",
+        "metadata.cache_read_input_token_cost",
+        "metadata.input_cost_per_token",
+        "metadata.max_input_tokens",
+        "metadata.max_output_tokens",
+        "metadata.mode",
+        "metadata.output_cost_per_token",
+        "metadata.supported_endpoints",
+        "metadata.supports_audio_input",
+        "metadata.supports_function_calling",
+        "metadata.supports_prompt_caching",
+        "metadata.supports_reasoning",
+        "metadata.supports_response_schema",
+        "metadata.supports_system_messages",
+        "metadata.supports_tool_choice",
+        "metadata.supports_video_input",
+        "metadata.supports_vision"
+      ]
+    },
+    {
+      "label": "MiMo official current model directory: full-modal understanding, streaming, tools, structured output, search; shorthand 1M/128K limits",
+      "url": "https://mimo.mi.com/static/docs/quick-start/summary/model.md",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "metadata.can_disable_reasoning",
+        "metadata.supported_modalities",
+        "metadata.supported_output_modalities",
+        "metadata.supports_audio_input",
+        "metadata.supports_batch",
+        "metadata.supports_function_calling",
+        "metadata.supports_native_streaming",
+        "metadata.supports_none_reasoning_effort",
+        "metadata.supports_prompt_caching",
+        "metadata.supports_reasoning",
+        "metadata.supports_response_schema",
+        "metadata.supports_video_input",
+        "metadata.supports_vision",
+        "metadata.supports_web_search"
+      ]
+    },
+    {
+      "label": "MiMo official multimodal audio input",
+      "url": "https://mimo.mi.com/static/docs/quick-start/usage-guide/multimodal-understanding/audio-understanding.md",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "metadata.supported_modalities",
+        "metadata.supports_audio_input"
+      ]
+    },
+    {
+      "label": "MiMo official thinking: enabled by default, can be disabled; no native effort levels documented",
+      "url": "https://mimo.mi.com/static/docs/quick-start/usage-guide/text-generation/deep-thinking.md",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "metadata.can_disable_reasoning",
+        "metadata.supports_none_reasoning_effort",
+        "metadata.supports_reasoning"
+      ]
+    },
+    {
+      "label": "MiMo official overseas USD pay-as-you-go pricing",
+      "url": "https://mimo.mi.com/static/docs/price/pay-as-you-go.md",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "metadata.cache_read_input_token_cost",
+        "metadata.input_cost_per_token",
+        "metadata.output_cost_per_token"
+      ]
+    },
+    {
+      "label": "MiMo official OpenAI Chat API schema max_completion_tokens range [1, 131072]",
+      "url": "https://mimo.mi.com/static/docs/api/chat/openai-api-post.md",
+      "verifiedAt": "2026-11-16T09:27:56Z",
+      "fields": [
+        "metadata.max_output_tokens",
+        "metadata.max_tokens"
+      ]
+    },
+    {
+      "label": "MiMo official overseas USD batch pricing",
+      "url": "https://mimo.mi.com/static/docs/price/pay-as-you-go.md",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "metadata.input_cost_per_token_batches",
+        "metadata.output_cost_per_token_batches",
+        "metadata.cache_read_input_token_cost_batches"
+      ]
+    }
+  ],
+  "notes": "Native-namespace metadata is recorded from pinned LiteLLM code; without an official source this does not establish a public official model or guarantee current availability. Official documentation moved from platform.xiaomimimo.com to mimo.mi.com. Thinking is enabled by default; no graded effort enum is asserted. Exact 1048576/131072 limits retained from pinned LiteLLM; official only states 1M/128K. USD rates are overseas; cache writes are only temporarily free and omitted."
+}

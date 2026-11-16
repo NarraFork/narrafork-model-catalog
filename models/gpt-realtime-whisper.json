@@ -1,0 +1,41 @@
+{
+  "id": "gpt-realtime-whisper",
+  "name": "GPT-realtime-whisper",
+  "family": "gpt",
+  "status": "unverified",
+  "metadata": {
+    "input_cost_per_second": 0.000283333333333,
+    "litellm_provider": "openai",
+    "mode": "audio_transcription",
+    "supported_endpoints": [
+      "/v1/realtime",
+      "/v1/realtime/transcription_sessions"
+    ],
+    "supported_modalities": [
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_audio_input": true
+  },
+  "variants": [],
+  "notes": "Reported by an aggregate directory; official API availability and listed specifications have not been independently confirmed.",
+  "sources": [
+    {
+      "label": "litellm aggregate directory [gpt-realtime-whisper] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95; verifies only recorded aggregate fields, not official availability",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:21:44Z",
+      "fields": [
+        "id",
+        "metadata.input_cost_per_second",
+        "metadata.litellm_provider",
+        "metadata.mode",
+        "metadata.supported_endpoints",
+        "metadata.supported_modalities",
+        "metadata.supported_output_modalities",
+        "metadata.supports_audio_input"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "gemini-gemma-2-9b-it",
+  "name": "Gemini Gemma 2 9B It",
+  "family": "gemini",
+  "status": "unverified",
+  "sources": [
+    {
+      "label": "LiteLLM aggregated model metadata (not official verification) [gemini/gemini-gemma-2-9b-it]",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:26:38Z",
+      "fields": [
+        "input_cost_per_token",
+        "litellm_provider",
+        "max_input_tokens",
+        "max_output_tokens",
+        "mode",
+        "output_cost_per_token",
+        "rpm",
+        "source",
+        "supports_function_calling",
+        "supports_tool_choice",
+        "supports_vision",
+        "tpm"
+      ],
+      "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
+    }
+  ],
+  "metadata": {
+    "input_cost_per_token": 3.5e-07,
+    "litellm_provider": "gemini",
+    "max_output_tokens": 8192,
+    "max_input_tokens": 8192,
+    "mode": "chat",
+    "output_cost_per_token": 1.05e-06,
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/models#foundation_models",
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_vision": true,
+    "tpm": 250000,
+    "rpm": 10
+  },
+  "variants": [
+    {
+      "id": "gemini-gemma-2-9b-it@gemini",
+      "name": "Gemini Gemma 2 9B It (gemini)",
+      "providerKey": "gemini",
+      "upstreamModelIds": [
+        "gemini-gemma-2-9b-it"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "input_cost_per_token": 3.5e-07,
+        "litellm_provider": "gemini",
+        "max_output_tokens": 8192,
+        "max_input_tokens": 8192,
+        "mode": "chat",
+        "output_cost_per_token": 1.05e-06,
+        "source": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/models#foundation_models",
+        "supports_function_calling": true,
+        "supports_tool_choice": true,
+        "supports_vision": true,
+        "tpm": 250000,
+        "rpm": 10
+      },
+      "sources": [
+        {
+          "label": "LiteLLM aggregated model metadata (not official verification) [gemini/gemini-gemma-2-9b-it]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:26:38Z",
+          "fields": [
+            "input_cost_per_token",
+            "litellm_provider",
+            "max_input_tokens",
+            "max_output_tokens",
+            "mode",
+            "output_cost_per_token",
+            "rpm",
+            "source",
+            "supports_function_calling",
+            "supports_tool_choice",
+            "supports_vision",
+            "tpm"
+          ],
+          "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
+        }
+      ]
+    }
+  ]
+}

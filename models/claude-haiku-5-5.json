@@ -6,7 +6,8 @@
   "notes": "Thinking can be disabled only with low, medium or high effort. In sub2api's Responses bridge, none maps to disabled thinking with low effort; xhigh/max require adaptive thinking.",
   "matches": {
     "aliases": [
-      "claude-haiku-5.5"
+      "claude-haiku-5.5",
+      "claude-haiku-latest"
     ],
     "prefixes": [
       "claude-haiku-5-5",
@@ -23,20 +24,51 @@
     {
       "label": "sub2api: Haiku 5.5 accepts low/medium/high/xhigh/max @ 8f2cbb53d9d1c40e1865b07ac460571f7d4c48de",
       "url": "https://github.com/Wei-Shaw/sub2api/blob/8f2cbb53d9d1c40e1865b07ac460571f7d4c48de/backend/internal/pkg/claude/effort_catalog.go#L8-L30",
-      "fields": ["reasoning.levels"],
+      "fields": [
+        "reasoning.levels"
+      ],
       "verifiedAt": "2026-10-21T02:30:58Z"
     },
     {
       "label": "sub2api: Haiku 5.5 Responses default medium; none maps to disabled thinking with low effort @ 8f2cbb53d9d1c40e1865b07ac460571f7d4c48de",
       "url": "https://github.com/Wei-Shaw/sub2api/blob/8f2cbb53d9d1c40e1865b07ac460571f7d4c48de/backend/internal/pkg/apicompat/anthropic_responses_test.go#L1943-L1957",
-      "fields": ["reasoning.defaultLevel", "reasoning.canDisable"],
+      "fields": [
+        "reasoning.defaultLevel",
+        "reasoning.canDisable"
+      ],
       "verifiedAt": "2026-10-21T02:30:58Z"
     },
     {
       "label": "sub2api: Haiku 5.5 disabled thinking accepts low/medium/high and rejects xhigh/max @ 8f2cbb53d9d1c40e1865b07ac460571f7d4c48de",
       "url": "https://github.com/Wei-Shaw/sub2api/blob/8f2cbb53d9d1c40e1865b07ac460571f7d4c48de/backend/internal/service/gateway_request_haiku55_test.go#L22-L29",
-      "fields": ["reasoning.canDisable"],
+      "fields": [
+        "reasoning.canDisable"
+      ],
       "verifiedAt": "2026-10-21T02:30:58Z"
+    },
+    {
+      "label": "LiteLLM aggregate registry: Anthropic-native [claude-haiku-5-5] and explicit claude-haiku-latest alias_of @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:20:54Z",
+      "fields": [
+        "matches.aliases",
+        "metadata.input_cost_per_token_above_100k_tokens_batches",
+        "metadata.output_cost_per_token_above_100k_tokens_batches",
+        "metadata.cache_creation_input_token_cost_above_100k_tokens_batches",
+        "metadata.cache_read_input_token_cost_above_100k_tokens_batches",
+        "metadata.supports_anthropic_compaction",
+        "metadata.cache_creation_input_token_cost_batches",
+        "metadata.cache_read_input_token_cost_batches",
+        "metadata.search_context_cost_per_query",
+        "metadata.thinking_on_by_default",
+        "metadata.supports_mid_conversation_system",
+        "metadata.supports_native_structured_output",
+        "metadata.provider_specific_entry",
+        "metadata.supports_forced_tool_use",
+        "metadata.thinking_always_on",
+        "metadata.prompt_cache_min_tokens",
+        "metadata.supports_web_search"
+      ]
     }
   ],
   "metadata": {
@@ -65,7 +97,13 @@
     "supports_pdf_input": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
-    "reasoning_effort_levels": ["low", "medium", "high", "xhigh", "max"],
+    "reasoning_effort_levels": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
     "default_reasoning_effort": "medium",
     "can_disable_reasoning": true,
     "supports_none_reasoning_effort": true,
@@ -75,7 +113,133 @@
     "supports_vision": true,
     "supports_xhigh_reasoning_effort": true,
     "input_cost_per_token_batches": 5e-08,
-    "output_cost_per_token_batches": 2.5e-07
+    "output_cost_per_token_batches": 2.5e-07,
+    "input_cost_per_token_above_100k_tokens_batches": 2.5e-07,
+    "output_cost_per_token_above_100k_tokens_batches": 1.25e-06,
+    "cache_creation_input_token_cost_above_100k_tokens_batches": 3.125e-07,
+    "cache_read_input_token_cost_above_100k_tokens_batches": 2.5e-08,
+    "supports_anthropic_compaction": true,
+    "cache_creation_input_token_cost_batches": 6.25e-08,
+    "cache_read_input_token_cost_batches": 5e-09,
+    "search_context_cost_per_query": {
+      "search_context_size_high": 0.01,
+      "search_context_size_low": 0.01,
+      "search_context_size_medium": 0.01
+    },
+    "thinking_on_by_default": true,
+    "supports_mid_conversation_system": true,
+    "supports_native_structured_output": true,
+    "provider_specific_entry": {
+      "us": 1.1
+    },
+    "supports_forced_tool_use": true,
+    "thinking_always_on": false,
+    "prompt_cache_min_tokens": 512,
+    "supports_web_search": true
   },
-  "variants": []
+  "variants": [
+    {
+      "id": "claude-haiku-5.5@github-copilot",
+      "name": "claude-haiku-5.5",
+      "providerKey": "github-copilot",
+      "upstreamModelIds": [
+        "claude-haiku-5.5",
+        "github_copilot/claude-haiku-5.5"
+      ],
+      "family": "claude",
+      "status": "unverified",
+      "metadata": {
+        "cache_creation_input_token_cost": 1.25e-07,
+        "cache_creation_input_token_cost_above_100k_tokens": 6.25e-07,
+        "cache_read_input_token_cost": 1e-08,
+        "cache_read_input_token_cost_above_100k_tokens": 5e-08,
+        "input_cost_per_token": 1e-07,
+        "input_cost_per_token_above_100k_tokens": 5e-07,
+        "litellm_provider": "github_copilot",
+        "max_input_tokens": 128000,
+        "max_output_tokens": 16000,
+        "mode": "chat",
+        "output_cost_per_token": 5e-07,
+        "output_cost_per_token_above_100k_tokens": 2.5e-06,
+        "source": "https://raw.githubusercontent.com/github/docs/main/data/tables/copilot/models-and-pricing.yml",
+        "supported_endpoints": [
+          "/v1/chat/completions",
+          "/v1/messages"
+        ],
+        "supports_adaptive_thinking": true,
+        "supports_function_calling": true,
+        "supports_parallel_function_calling": true,
+        "supports_reasoning": true,
+        "supports_response_schema": true,
+        "supports_vision": true,
+        "thinking_always_on": false
+      },
+      "sources": [
+        {
+          "label": "LiteLLM aggregate deployment registry [github_copilot/claude-haiku-5.5] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:20:54Z",
+          "fields": [
+            "upstreamModelIds",
+            "metadata.cache_creation_input_token_cost",
+            "metadata.cache_creation_input_token_cost_above_100k_tokens",
+            "metadata.cache_read_input_token_cost",
+            "metadata.cache_read_input_token_cost_above_100k_tokens",
+            "metadata.input_cost_per_token",
+            "metadata.input_cost_per_token_above_100k_tokens",
+            "metadata.litellm_provider",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.output_cost_per_token_above_100k_tokens",
+            "metadata.source",
+            "metadata.supported_endpoints",
+            "metadata.supports_adaptive_thinking",
+            "metadata.supports_function_calling",
+            "metadata.supports_parallel_function_calling",
+            "metadata.supports_reasoning",
+            "metadata.supports_response_schema",
+            "metadata.supports_vision",
+            "metadata.thinking_always_on"
+          ]
+        }
+      ],
+      "matches": {
+        "aliases": [
+          "claude-haiku-latest",
+          "github_copilot/claude-haiku-latest"
+        ]
+      }
+    },
+    {
+      "id": "claude-haiku-5-5@cursor",
+      "name": "Claude Haiku 5.5",
+      "providerKey": "cursor",
+      "upstreamModelIds": [
+        "claude-haiku-5-5"
+      ],
+      "family": "claude",
+      "status": "verified",
+      "metadata": {
+        "input_cost_per_token": 1e-07,
+        "output_cost_per_token": 5e-07,
+        "cache_read_input_token_cost": 1e-08,
+        "cache_creation_input_token_cost": 1.25e-07
+      },
+      "sources": [
+        {
+          "label": "Cursor official model pricing; base rates exclude team Cursor Token Rate and residency surcharge",
+          "url": "https://cursor.com/docs/models",
+          "verifiedAt": "2026-11-16T09:20:54Z",
+          "fields": [
+            "metadata.input_cost_per_token",
+            "metadata.output_cost_per_token",
+            "metadata.cache_read_input_token_cost",
+            "metadata.cache_creation_input_token_cost"
+          ]
+        }
+      ]
+    }
+  ]
 }

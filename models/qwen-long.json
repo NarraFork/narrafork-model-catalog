@@ -1,0 +1,32 @@
+{
+  "id": "qwen-long",
+  "name": "qwen-long",
+  "family": "qwen",
+  "status": "verified",
+  "metadata": {
+    "supports_reasoning": false,
+    "supports_function_calling": false,
+    "supports_response_schema": false
+  },
+  "variants": [],
+  "sources": [
+    {
+      "label": "Alibaba official full text-generation and visual-understanding directory",
+      "url": "https://help.aliyun.com/zh/model-studio/text-generation-model",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "id"
+      ]
+    },
+    {
+      "label": "Alibaba official domain-model capability matrix",
+      "url": "https://help.aliyun.com/zh/model-studio/text-generation-model",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "metadata.supports_function_calling",
+        "metadata.supports_reasoning",
+        "metadata.supports_response_schema"
+      ]
+    }
+  ]
+}

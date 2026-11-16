@@ -1,0 +1,49 @@
+{
+  "id": "gpt-transcribe",
+  "name": "GPT-transcribe",
+  "family": "gpt",
+  "status": "unverified",
+  "metadata": {
+    "input_cost_per_second": 7.5e-05,
+    "litellm_provider": "openai",
+    "mode": "audio_transcription",
+    "provider_specific_entry": {
+      "transcription_json_or_text_only": 1,
+      "transcription_usage_duration": 1
+    },
+    "supported_endpoints": [
+      "/v1/audio/transcriptions",
+      "/v1/realtime/transcription_sessions"
+    ],
+    "supported_modalities": [
+      "text",
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_audio_input": true,
+    "supports_native_streaming": true
+  },
+  "variants": [],
+  "notes": "Reported by an aggregate directory; official API availability and listed specifications have not been independently confirmed.",
+  "sources": [
+    {
+      "label": "litellm aggregate directory [gpt-transcribe] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95; verifies only recorded aggregate fields, not official availability",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:21:44Z",
+      "fields": [
+        "id",
+        "metadata.input_cost_per_second",
+        "metadata.litellm_provider",
+        "metadata.mode",
+        "metadata.provider_specific_entry",
+        "metadata.supported_endpoints",
+        "metadata.supported_modalities",
+        "metadata.supported_output_modalities",
+        "metadata.supports_audio_input",
+        "metadata.supports_native_streaming"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "id": "gemini-3.8-live",
+  "name": "Gemini 3.8 Live",
+  "family": "gemini",
+  "status": "unverified",
+  "sources": [
+    {
+      "label": "LiteLLM aggregated model metadata (not official verification) [gemini/gemini-3.8-live]",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:26:38Z",
+      "fields": [
+        "input_cost_per_audio_token",
+        "input_cost_per_image_token",
+        "input_cost_per_token",
+        "input_cost_per_video_token",
+        "litellm_provider",
+        "max_input_tokens",
+        "max_output_tokens",
+        "mode",
+        "output_cost_per_audio_token",
+        "output_cost_per_token",
+        "rpm",
+        "search_context_cost_per_query",
+        "source",
+        "supports_audio_input",
+        "supports_audio_output",
+        "supports_function_calling",
+        "supports_reasoning",
+        "supports_response_schema",
+        "supports_vision",
+        "supports_web_search",
+        "tpm"
+      ],
+      "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
+    }
+  ],
+  "metadata": {
+    "input_cost_per_audio_token": 3e-06,
+    "input_cost_per_image_token": 1e-06,
+    "input_cost_per_token": 7.5e-07,
+    "input_cost_per_video_token": 1e-06,
+    "litellm_provider": "gemini",
+    "max_input_tokens": 131072,
+    "max_output_tokens": 65536,
+    "mode": "realtime",
+    "output_cost_per_audio_token": 1.2e-05,
+    "output_cost_per_token": 4.5e-06,
+    "source": "https://ai.google.dev/gemini-api/docs/pricing",
+    "supports_audio_input": true,
+    "supports_audio_output": true,
+    "tpm": 250000,
+    "rpm": 10,
+    "search_context_cost_per_query": {
+      "search_context_size_low": 0.014,
+      "search_context_size_medium": 0.014,
+      "search_context_size_high": 0.014
+    },
+    "supports_function_calling": true,
+    "supports_response_schema": false,
+    "supports_vision": true,
+    "supports_web_search": true,
+    "supports_reasoning": true
+  },
+  "variants": [
+    {
+      "id": "gemini-3.8-live@vertex_ai",
+      "name": "Gemini 3.8 Live (vertex_ai)",
+      "providerKey": "vertex_ai",
+      "upstreamModelIds": [
+        "gemini-3.8-live"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "gemini_audio_only_live": true,
+        "input_cost_per_audio_token": 3e-06,
+        "input_cost_per_image_token": 1e-06,
+        "input_cost_per_token": 7.5e-07,
+        "input_cost_per_video_per_second": 3.3333333333333335e-05,
+        "input_cost_per_video_token": 1e-06,
+        "litellm_provider": "vertex_ai",
+        "max_input_tokens": 131072,
+        "max_output_tokens": 65536,
+        "mode": "realtime",
+        "output_cost_per_audio_token": 1.2e-05,
+        "output_cost_per_token": 4.5e-06,
+        "output_cost_per_video_token": 1e-06,
+        "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+        "supported_endpoints": [
+          "/vertex_ai/live",
+          "/v1/realtime"
+        ],
+        "supported_modalities": [
+          "text",
+          "image",
+          "audio",
+          "video"
+        ],
+        "supported_output_modalities": [
+          "text",
+          "audio"
+        ],
+        "supports_audio_input": true,
+        "supports_audio_output": true,
+        "supports_function_calling": true,
+        "supports_response_schema": false,
+        "supports_vision": true,
+        "supports_web_search": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM aggregated model metadata (not official verification) [vertex_ai/gemini-3.8-live]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:26:38Z",
+          "fields": [
+            "gemini_audio_only_live",
+            "input_cost_per_audio_token",
+            "input_cost_per_image_token",
+            "input_cost_per_token",
+            "input_cost_per_video_per_second",
+            "input_cost_per_video_token",
+            "litellm_provider",
+            "max_input_tokens",
+            "max_output_tokens",
+            "mode",
+            "output_cost_per_audio_token",
+            "output_cost_per_token",
+            "output_cost_per_video_token",
+            "source",
+            "supported_endpoints",
+            "supported_modalities",
+            "supported_output_modalities",
+            "supports_audio_input",
+            "supports_audio_output",
+            "supports_function_calling",
+            "supports_response_schema",
+            "supports_vision",
+            "supports_web_search"
+          ],
+          "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.8-live@gemini",
+      "name": "Gemini 3.8 Live (gemini)",
+      "providerKey": "gemini",
+      "upstreamModelIds": [
+        "gemini-3.8-live"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "input_cost_per_audio_token": 3e-06,
+        "input_cost_per_image_token": 1e-06,
+        "input_cost_per_token": 7.5e-07,
+        "input_cost_per_video_token": 1e-06,
+        "litellm_provider": "gemini",
+        "max_input_tokens": 131072,
+        "max_output_tokens": 65536,
+        "mode": "realtime",
+        "output_cost_per_audio_token": 1.2e-05,
+        "output_cost_per_token": 4.5e-06,
+        "source": "https://ai.google.dev/gemini-api/docs/pricing",
+        "supports_audio_input": true,
+        "supports_audio_output": true,
+        "tpm": 250000,
+        "rpm": 10,
+        "search_context_cost_per_query": {
+          "search_context_size_low": 0.014,
+          "search_context_size_medium": 0.014,
+          "search_context_size_high": 0.014
+        },
+        "supports_function_calling": true,
+        "supports_response_schema": false,
+        "supports_vision": true,
+        "supports_web_search": true,
+        "supports_reasoning": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM aggregated model metadata (not official verification) [gemini/gemini-3.8-live]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:26:38Z",
+          "fields": [
+            "input_cost_per_audio_token",
+            "input_cost_per_image_token",
+            "input_cost_per_token",
+            "input_cost_per_video_token",
+            "litellm_provider",
+            "max_input_tokens",
+            "max_output_tokens",
+            "mode",
+            "output_cost_per_audio_token",
+            "output_cost_per_token",
+            "rpm",
+            "search_context_cost_per_query",
+            "source",
+            "supports_audio_input",
+            "supports_audio_output",
+            "supports_function_calling",
+            "supports_reasoning",
+            "supports_response_schema",
+            "supports_vision",
+            "supports_web_search",
+            "tpm"
+          ],
+          "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
+        }
+      ]
+    }
+  ]
+}

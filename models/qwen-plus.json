@@ -1,0 +1,835 @@
+{
+  "id": "qwen-plus",
+  "name": "qwen-plus",
+  "family": "qwen",
+  "status": "verified",
+  "metadata": {
+    "mode": "chat",
+    "supports_function_calling": true,
+    "supports_reasoning": true,
+    "supports_tool_choice": true
+  },
+  "variants": [
+    {
+      "id": "qwen-plus@qwen_ai_platform",
+      "name": "qwen-plus",
+      "providerKey": "qwen_ai_platform",
+      "upstreamModelIds": [
+        "qwen-plus"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "input_cost_per_token": 4e-07,
+        "max_input_tokens": 129024,
+        "max_output_tokens": 16384,
+        "mode": "chat",
+        "output_cost_per_token": 1.2e-06,
+        "supports_function_calling": true,
+        "supports_reasoning": true,
+        "supports_tool_choice": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned Alibaba namespace regional/deployment record [qwen_ai_platform/qwen-plus]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_reasoning",
+            "metadata.supports_tool_choice",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Code evidence only; pricing currency/region may differ from official Beijing CNY. Does not override official model capabilities or establish current API availability."
+    },
+    {
+      "id": "qwen-plus@dashscope",
+      "name": "qwen-plus",
+      "providerKey": "dashscope",
+      "upstreamModelIds": [
+        "qwen-plus"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "input_cost_per_token": 4e-07,
+        "max_input_tokens": 129024,
+        "max_output_tokens": 16384,
+        "mode": "chat",
+        "output_cost_per_token": 1.2e-06,
+        "supports_function_calling": true,
+        "supports_reasoning": true,
+        "supports_tool_choice": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [dashscope/qwen-plus]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_reasoning",
+            "metadata.supports_tool_choice",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "qwen-plus@qwencloud",
+      "name": "qwen-plus",
+      "providerKey": "qwencloud",
+      "upstreamModelIds": [
+        "qwen-plus"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "input_cost_per_token": 4e-07,
+        "max_input_tokens": 129024,
+        "max_output_tokens": 16384,
+        "mode": "chat",
+        "output_cost_per_token": 1.2e-06,
+        "supports_function_calling": true,
+        "supports_reasoning": true,
+        "supports_tool_choice": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [qwencloud/qwen-plus]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_reasoning",
+            "metadata.supports_tool_choice",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "qwen-plus@qwen_ai_platform:qwen-plus-2025-04-28",
+      "name": "qwen-plus-2025-04-28",
+      "providerKey": "qwen_ai_platform",
+      "upstreamModelIds": [
+        "qwen-plus-2025-04-28"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "input_cost_per_token": 4e-07,
+        "max_input_tokens": 129024,
+        "max_output_tokens": 16384,
+        "mode": "chat",
+        "output_cost_per_reasoning_token": 4e-06,
+        "output_cost_per_token": 1.2e-06,
+        "supports_function_calling": true,
+        "supports_reasoning": true,
+        "supports_tool_choice": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned Alibaba namespace regional/deployment record [qwen_ai_platform/qwen-plus-2025-04-28]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_reasoning_token",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_reasoning",
+            "metadata.supports_tool_choice",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Code evidence only; pricing currency/region may differ from official Beijing CNY. Does not override official model capabilities or establish current API availability."
+    },
+    {
+      "id": "qwen-plus@dashscope:qwen-plus-2025-04-28",
+      "name": "qwen-plus-2025-04-28",
+      "providerKey": "dashscope",
+      "upstreamModelIds": [
+        "qwen-plus-2025-04-28"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "input_cost_per_token": 4e-07,
+        "max_input_tokens": 129024,
+        "max_output_tokens": 16384,
+        "mode": "chat",
+        "output_cost_per_reasoning_token": 4e-06,
+        "output_cost_per_token": 1.2e-06,
+        "supports_function_calling": true,
+        "supports_reasoning": true,
+        "supports_tool_choice": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [dashscope/qwen-plus-2025-04-28]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_reasoning_token",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_reasoning",
+            "metadata.supports_tool_choice",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "qwen-plus@qwencloud:qwen-plus-2025-04-28",
+      "name": "qwen-plus-2025-04-28",
+      "providerKey": "qwencloud",
+      "upstreamModelIds": [
+        "qwen-plus-2025-04-28"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "input_cost_per_token": 4e-07,
+        "max_input_tokens": 129024,
+        "max_output_tokens": 16384,
+        "mode": "chat",
+        "output_cost_per_reasoning_token": 4e-06,
+        "output_cost_per_token": 1.2e-06,
+        "supports_function_calling": true,
+        "supports_reasoning": true,
+        "supports_tool_choice": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [qwencloud/qwen-plus-2025-04-28]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_reasoning_token",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_reasoning",
+            "metadata.supports_tool_choice",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "qwen-plus@qwen_ai_platform:qwen-plus-2025-01-25",
+      "name": "qwen-plus-2025-01-25",
+      "providerKey": "qwen_ai_platform",
+      "upstreamModelIds": [
+        "qwen-plus-2025-01-25"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "input_cost_per_token": 4e-07,
+        "max_input_tokens": 129024,
+        "max_output_tokens": 8192,
+        "mode": "chat",
+        "output_cost_per_token": 1.2e-06,
+        "supports_function_calling": true,
+        "supports_reasoning": true,
+        "supports_tool_choice": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned Alibaba namespace regional/deployment record [qwen_ai_platform/qwen-plus-2025-01-25]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_reasoning",
+            "metadata.supports_tool_choice",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Code evidence only; pricing currency/region may differ from official Beijing CNY. Does not override official model capabilities or establish current API availability."
+    },
+    {
+      "id": "qwen-plus@dashscope:qwen-plus-2025-01-25",
+      "name": "qwen-plus-2025-01-25",
+      "providerKey": "dashscope",
+      "upstreamModelIds": [
+        "qwen-plus-2025-01-25"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "input_cost_per_token": 4e-07,
+        "max_input_tokens": 129024,
+        "max_output_tokens": 8192,
+        "mode": "chat",
+        "output_cost_per_token": 1.2e-06,
+        "supports_function_calling": true,
+        "supports_reasoning": true,
+        "supports_tool_choice": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [dashscope/qwen-plus-2025-01-25]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_reasoning",
+            "metadata.supports_tool_choice",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "qwen-plus@qwencloud:qwen-plus-2025-01-25",
+      "name": "qwen-plus-2025-01-25",
+      "providerKey": "qwencloud",
+      "upstreamModelIds": [
+        "qwen-plus-2025-01-25"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "input_cost_per_token": 4e-07,
+        "max_input_tokens": 129024,
+        "max_output_tokens": 8192,
+        "mode": "chat",
+        "output_cost_per_token": 1.2e-06,
+        "supports_function_calling": true,
+        "supports_reasoning": true,
+        "supports_tool_choice": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [qwencloud/qwen-plus-2025-01-25]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_reasoning",
+            "metadata.supports_tool_choice",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "qwen-plus@qwen_ai_platform:qwen-plus-2025-09-11",
+      "name": "qwen-plus-2025-09-11",
+      "providerKey": "qwen_ai_platform",
+      "upstreamModelIds": [
+        "qwen-plus-2025-09-11"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "max_input_tokens": 997952,
+        "max_output_tokens": 32768,
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_reasoning": true,
+        "supports_tool_choice": true,
+        "tiered_pricing": [
+          {
+            "input_cost_per_token": 4e-07,
+            "output_cost_per_reasoning_token": 4e-06,
+            "output_cost_per_token": 1.2e-06,
+            "range": [
+              0,
+              256000.0
+            ]
+          },
+          {
+            "input_cost_per_token": 1.2e-06,
+            "output_cost_per_reasoning_token": 1.2e-05,
+            "output_cost_per_token": 3.6e-06,
+            "range": [
+              256000.0,
+              1000000.0
+            ]
+          }
+        ]
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned Alibaba namespace regional/deployment record [qwen_ai_platform/qwen-plus-2025-09-11]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.supports_function_calling",
+            "metadata.supports_reasoning",
+            "metadata.supports_tool_choice",
+            "metadata.tiered_pricing",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Code evidence only; pricing currency/region may differ from official Beijing CNY. Does not override official model capabilities or establish current API availability."
+    },
+    {
+      "id": "qwen-plus@dashscope:qwen-plus-2025-09-11",
+      "name": "qwen-plus-2025-09-11",
+      "providerKey": "dashscope",
+      "upstreamModelIds": [
+        "qwen-plus-2025-09-11"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "max_input_tokens": 997952,
+        "max_output_tokens": 32768,
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_reasoning": true,
+        "supports_tool_choice": true,
+        "tiered_pricing": [
+          {
+            "input_cost_per_token": 4e-07,
+            "output_cost_per_reasoning_token": 4e-06,
+            "output_cost_per_token": 1.2e-06,
+            "range": [
+              0,
+              256000.0
+            ]
+          },
+          {
+            "input_cost_per_token": 1.2e-06,
+            "output_cost_per_reasoning_token": 1.2e-05,
+            "output_cost_per_token": 3.6e-06,
+            "range": [
+              256000.0,
+              1000000.0
+            ]
+          }
+        ]
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [dashscope/qwen-plus-2025-09-11]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.supports_function_calling",
+            "metadata.supports_reasoning",
+            "metadata.supports_tool_choice",
+            "metadata.tiered_pricing",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "qwen-plus@qwencloud:qwen-plus-2025-09-11",
+      "name": "qwen-plus-2025-09-11",
+      "providerKey": "qwencloud",
+      "upstreamModelIds": [
+        "qwen-plus-2025-09-11"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "max_input_tokens": 997952,
+        "max_output_tokens": 32768,
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_reasoning": true,
+        "supports_tool_choice": true,
+        "tiered_pricing": [
+          {
+            "input_cost_per_token": 4e-07,
+            "output_cost_per_reasoning_token": 4e-06,
+            "output_cost_per_token": 1.2e-06,
+            "range": [
+              0,
+              256000.0
+            ]
+          },
+          {
+            "input_cost_per_token": 1.2e-06,
+            "output_cost_per_reasoning_token": 1.2e-05,
+            "output_cost_per_token": 3.6e-06,
+            "range": [
+              256000.0,
+              1000000.0
+            ]
+          }
+        ]
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [qwencloud/qwen-plus-2025-09-11]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.supports_function_calling",
+            "metadata.supports_reasoning",
+            "metadata.supports_tool_choice",
+            "metadata.tiered_pricing",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "qwen-plus@qwen_ai_platform:qwen-plus-2025-07-14",
+      "name": "qwen-plus-2025-07-14",
+      "providerKey": "qwen_ai_platform",
+      "upstreamModelIds": [
+        "qwen-plus-2025-07-14"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "input_cost_per_token": 4e-07,
+        "max_input_tokens": 129024,
+        "max_output_tokens": 16384,
+        "mode": "chat",
+        "output_cost_per_reasoning_token": 4e-06,
+        "output_cost_per_token": 1.2e-06,
+        "supports_function_calling": true,
+        "supports_reasoning": true,
+        "supports_tool_choice": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned Alibaba namespace regional/deployment record [qwen_ai_platform/qwen-plus-2025-07-14]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_reasoning_token",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_reasoning",
+            "metadata.supports_tool_choice",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Code evidence only; pricing currency/region may differ from official Beijing CNY. Does not override official model capabilities or establish current API availability."
+    },
+    {
+      "id": "qwen-plus@dashscope:qwen-plus-2025-07-14",
+      "name": "qwen-plus-2025-07-14",
+      "providerKey": "dashscope",
+      "upstreamModelIds": [
+        "qwen-plus-2025-07-14"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "input_cost_per_token": 4e-07,
+        "max_input_tokens": 129024,
+        "max_output_tokens": 16384,
+        "mode": "chat",
+        "output_cost_per_reasoning_token": 4e-06,
+        "output_cost_per_token": 1.2e-06,
+        "supports_function_calling": true,
+        "supports_reasoning": true,
+        "supports_tool_choice": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [dashscope/qwen-plus-2025-07-14]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_reasoning_token",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_reasoning",
+            "metadata.supports_tool_choice",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "qwen-plus@qwencloud:qwen-plus-2025-07-14",
+      "name": "qwen-plus-2025-07-14",
+      "providerKey": "qwencloud",
+      "upstreamModelIds": [
+        "qwen-plus-2025-07-14"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "input_cost_per_token": 4e-07,
+        "max_input_tokens": 129024,
+        "max_output_tokens": 16384,
+        "mode": "chat",
+        "output_cost_per_reasoning_token": 4e-06,
+        "output_cost_per_token": 1.2e-06,
+        "supports_function_calling": true,
+        "supports_reasoning": true,
+        "supports_tool_choice": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [qwencloud/qwen-plus-2025-07-14]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_reasoning_token",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_reasoning",
+            "metadata.supports_tool_choice",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "qwen-plus@qwen_ai_platform:qwen-plus-2025-07-28",
+      "name": "qwen-plus-2025-07-28",
+      "providerKey": "qwen_ai_platform",
+      "upstreamModelIds": [
+        "qwen-plus-2025-07-28"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "max_input_tokens": 997952,
+        "max_output_tokens": 32768,
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_reasoning": true,
+        "supports_tool_choice": true,
+        "tiered_pricing": [
+          {
+            "input_cost_per_token": 4e-07,
+            "output_cost_per_reasoning_token": 4e-06,
+            "output_cost_per_token": 1.2e-06,
+            "range": [
+              0,
+              256000.0
+            ]
+          },
+          {
+            "input_cost_per_token": 1.2e-06,
+            "output_cost_per_reasoning_token": 1.2e-05,
+            "output_cost_per_token": 3.6e-06,
+            "range": [
+              256000.0,
+              1000000.0
+            ]
+          }
+        ]
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned Alibaba namespace regional/deployment record [qwen_ai_platform/qwen-plus-2025-07-28]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.supports_function_calling",
+            "metadata.supports_reasoning",
+            "metadata.supports_tool_choice",
+            "metadata.tiered_pricing",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Code evidence only; pricing currency/region may differ from official Beijing CNY. Does not override official model capabilities or establish current API availability."
+    },
+    {
+      "id": "qwen-plus@dashscope:qwen-plus-2025-07-28",
+      "name": "qwen-plus-2025-07-28",
+      "providerKey": "dashscope",
+      "upstreamModelIds": [
+        "qwen-plus-2025-07-28"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "max_input_tokens": 997952,
+        "max_output_tokens": 32768,
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_reasoning": true,
+        "supports_tool_choice": true,
+        "tiered_pricing": [
+          {
+            "input_cost_per_token": 4e-07,
+            "output_cost_per_reasoning_token": 4e-06,
+            "output_cost_per_token": 1.2e-06,
+            "range": [
+              0,
+              256000.0
+            ]
+          },
+          {
+            "input_cost_per_token": 1.2e-06,
+            "output_cost_per_reasoning_token": 1.2e-05,
+            "output_cost_per_token": 3.6e-06,
+            "range": [
+              256000.0,
+              1000000.0
+            ]
+          }
+        ]
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [dashscope/qwen-plus-2025-07-28]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.supports_function_calling",
+            "metadata.supports_reasoning",
+            "metadata.supports_tool_choice",
+            "metadata.tiered_pricing",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "qwen-plus@qwencloud:qwen-plus-2025-07-28",
+      "name": "qwen-plus-2025-07-28",
+      "providerKey": "qwencloud",
+      "upstreamModelIds": [
+        "qwen-plus-2025-07-28"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "max_input_tokens": 997952,
+        "max_output_tokens": 32768,
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_reasoning": true,
+        "supports_tool_choice": true,
+        "tiered_pricing": [
+          {
+            "input_cost_per_token": 4e-07,
+            "output_cost_per_reasoning_token": 4e-06,
+            "output_cost_per_token": 1.2e-06,
+            "range": [
+              0,
+              256000.0
+            ]
+          },
+          {
+            "input_cost_per_token": 1.2e-06,
+            "output_cost_per_reasoning_token": 1.2e-05,
+            "output_cost_per_token": 3.6e-06,
+            "range": [
+              256000.0,
+              1000000.0
+            ]
+          }
+        ]
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [qwencloud/qwen-plus-2025-07-28]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.supports_function_calling",
+            "metadata.supports_reasoning",
+            "metadata.supports_tool_choice",
+            "metadata.tiered_pricing",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    }
+  ],
+  "sources": [
+    {
+      "label": "LiteLLM pinned native-namespace record [qwen_ai_platform/qwen-plus]; code evidence, not official API attestation",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "id",
+        "metadata.mode",
+        "metadata.supports_function_calling",
+        "metadata.supports_reasoning",
+        "metadata.supports_tool_choice"
+      ]
+    },
+    {
+      "label": "Alibaba official full text-generation and visual-understanding directory",
+      "url": "https://help.aliyun.com/zh/model-studio/text-generation-model",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "id"
+      ]
+    }
+  ],
+  "notes": "Native-namespace metadata is recorded from pinned LiteLLM code; without an official source this does not establish a public official model or guarantee current availability."
+}

@@ -1,0 +1,52 @@
+{
+  "id": "gpt-oss-20b",
+  "name": "GPT-oss-20b",
+  "family": "gpt",
+  "status": "verified",
+  "metadata": {
+    "supported_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_reasoning": true,
+    "reasoning_effort_levels": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "supports_function_calling": true,
+    "supports_response_schema": true
+  },
+  "variants": [],
+  "notes": "Officially released open-weight model. Verification covers model identity, text modalities, reasoning efforts low/medium/high, function calling and structured outputs; it does not establish OpenAI-hosted API availability, API pricing or provider-specific limits. Official announcement says 128k context; exact integer token limit is not asserted without an exact machine-readable configuration. No inference-runtime example default is promoted into a model default.",
+  "sources": [
+    {
+      "label": "OpenAI gpt-oss release: open-weight identities, text training, reasoning low/medium/high, tools and structured outputs; not hosted API availability",
+      "url": "https://openai.com/index/introducing-gpt-oss/",
+      "verifiedAt": "2026-11-16T09:21:44Z",
+      "fields": [
+        "id",
+        "metadata.supported_modalities",
+        "metadata.supported_output_modalities",
+        "metadata.supports_reasoning",
+        "metadata.reasoning_effort_levels",
+        "metadata.supports_function_calling",
+        "metadata.supports_response_schema"
+      ]
+    },
+    {
+      "label": "OpenAI gpt-oss reference repository: configurable low/medium/high reasoning, function calling and Structured Outputs; runtime CLI defaults are not model defaults",
+      "url": "https://github.com/openai/gpt-oss/blob/main/README.md",
+      "verifiedAt": "2026-11-16T09:21:44Z",
+      "fields": [
+        "id",
+        "metadata.reasoning_effort_levels",
+        "metadata.supports_reasoning",
+        "metadata.supports_function_calling",
+        "metadata.supports_response_schema"
+      ]
+    }
+  ]
+}

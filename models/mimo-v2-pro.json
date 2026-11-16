@@ -1,0 +1,59 @@
+{
+  "id": "mimo-v2-pro",
+  "name": "mimo-v2-pro",
+  "family": "mimo",
+  "status": "verified",
+  "metadata": {
+    "deprecation_date": "2026-06-30"
+  },
+  "variants": [
+    {
+      "id": "mimo-v2-pro@aihubmix",
+      "name": "mimo-v2-pro",
+      "providerKey": "aihubmix",
+      "upstreamModelIds": [
+        "mimo-v2-pro"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "cache_read_input_token_cost": 2.2e-07,
+        "input_cost_per_token": 1.1e-06,
+        "max_input_tokens": 1000000,
+        "mode": "chat",
+        "output_cost_per_token": 3.3e-06,
+        "supports_prompt_caching": true,
+        "supports_web_search": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned external historical deployment [aihubmix/mimo-v2-pro]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:33:42Z",
+          "fields": [
+            "upstreamModelIds",
+            "metadata.cache_read_input_token_cost",
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supports_prompt_caching",
+            "metadata.supports_web_search"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped aggregate-code evidence; does not resurrect the retired native Xiaomi API model."
+    }
+  ],
+  "sources": [
+    {
+      "label": "MiMo official complete model-deprecation directory and dated retirement",
+      "url": "https://mimo.mi.com/static/docs/updates/deprecate.md",
+      "verifiedAt": "2026-11-16T09:33:42Z",
+      "fields": [
+        "id",
+        "metadata.deprecation_date"
+      ]
+    }
+  ],
+  "notes": "Historical model officially retired at 2026-06-30 00:00 UTC+8. Not an alias of the replacement model; current native availability/pricing is not implied. External deployments may remain available under their own limits and rates."
+}

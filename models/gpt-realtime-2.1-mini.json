@@ -1,0 +1,81 @@
+{
+  "id": "gpt-realtime-2.1-mini",
+  "name": "GPT-realtime-2.1-mini",
+  "family": "gpt",
+  "status": "unverified",
+  "metadata": {
+    "cache_creation_input_audio_token_cost": 3e-07,
+    "cache_read_input_audio_token_cost": 3e-07,
+    "cache_read_input_image_token_cost": 8e-08,
+    "cache_read_input_token_cost": 6e-08,
+    "input_cost_per_audio_token": 1e-05,
+    "input_cost_per_image_token": 8e-07,
+    "input_cost_per_token": 6e-07,
+    "litellm_provider": "openai",
+    "max_input_tokens": 128000,
+    "max_output_tokens": 32000,
+    "mode": "realtime",
+    "output_cost_per_audio_token": 2e-05,
+    "output_cost_per_token": 2.4e-06,
+    "regional_processing_uplift_multiplier_eu": 1.1,
+    "regional_processing_uplift_multiplier_us": 1.1,
+    "supported_endpoints": [
+      "/v1/realtime"
+    ],
+    "supported_modalities": [
+      "text",
+      "image",
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "text",
+      "audio"
+    ],
+    "supports_audio_input": true,
+    "supports_audio_output": true,
+    "supports_function_calling": true,
+    "supports_parallel_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_system_messages": true,
+    "supports_tool_choice": true
+  },
+  "variants": [],
+  "notes": "Reported by an aggregate directory; official API availability and listed specifications have not been independently confirmed.",
+  "sources": [
+    {
+      "label": "litellm aggregate directory [gpt-realtime-2.1-mini] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95; verifies only recorded aggregate fields, not official availability",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:21:44Z",
+      "fields": [
+        "id",
+        "metadata.cache_creation_input_audio_token_cost",
+        "metadata.cache_read_input_audio_token_cost",
+        "metadata.cache_read_input_image_token_cost",
+        "metadata.cache_read_input_token_cost",
+        "metadata.input_cost_per_audio_token",
+        "metadata.input_cost_per_image_token",
+        "metadata.input_cost_per_token",
+        "metadata.litellm_provider",
+        "metadata.max_input_tokens",
+        "metadata.max_output_tokens",
+        "metadata.mode",
+        "metadata.output_cost_per_audio_token",
+        "metadata.output_cost_per_token",
+        "metadata.regional_processing_uplift_multiplier_eu",
+        "metadata.regional_processing_uplift_multiplier_us",
+        "metadata.supported_endpoints",
+        "metadata.supported_modalities",
+        "metadata.supported_output_modalities",
+        "metadata.supports_audio_input",
+        "metadata.supports_audio_output",
+        "metadata.supports_function_calling",
+        "metadata.supports_parallel_function_calling",
+        "metadata.supports_prompt_caching",
+        "metadata.supports_reasoning",
+        "metadata.supports_system_messages",
+        "metadata.supports_tool_choice"
+      ]
+    }
+  ]
+}

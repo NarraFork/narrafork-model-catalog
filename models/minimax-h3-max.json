@@ -1,0 +1,63 @@
+{
+  "id": "minimax-h3-max",
+  "name": "minimax-h3-max",
+  "family": "minimax",
+  "status": "verified",
+  "metadata": {
+    "mode": "video_generation",
+    "output_cost_per_second": 0.08,
+    "output_cost_per_second_480p": 0.05,
+    "output_cost_per_second_768p": 0.08,
+    "input_cost_per_image": 0.074,
+    "provider_specific_entry": {
+      "minimax_free_input_images": 2
+    },
+    "supported_modalities": [
+      "text",
+      "image",
+      "audio",
+      "video"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ],
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "metadata": {
+      "comment": "V2 async task API, fast tier. Pay-as-you-go list price $0.05/s at 480P and $0.08/s at 768P; no 2K. Plus $0.074 per input image beyond the first 2. Audio input is free. Reference video input is rejected, since MiniMax bills its duration only after the create call."
+    }
+  },
+  "variants": [],
+  "sources": [
+    {
+      "label": "LiteLLM pinned native-namespace record [minimax/MiniMax-H3-Max]; code evidence, not official API attestation",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "id",
+        "metadata.input_cost_per_image",
+        "metadata.metadata",
+        "metadata.mode",
+        "metadata.output_cost_per_second",
+        "metadata.output_cost_per_second_480p",
+        "metadata.output_cost_per_second_768p",
+        "metadata.provider_specific_entry",
+        "metadata.supported_endpoints",
+        "metadata.supported_modalities",
+        "metadata.supported_output_modalities"
+      ]
+    },
+    {
+      "label": "MiniMax official H3 generation family and multimodal input; pricing depends on resolution/media and is not flattened to per-token chat price",
+      "url": "https://platform.minimax.io/docs/pricing/overview.md",
+      "verifiedAt": "2026-11-16T09:27:56Z",
+      "fields": [
+        "metadata.mode",
+        "metadata.supported_modalities",
+        "metadata.supported_output_modalities"
+      ]
+    }
+  ],
+  "notes": "Native-namespace metadata is recorded from pinned LiteLLM code; without an official source this does not establish a public official model or guarantee current availability."
+}

@@ -1,0 +1,221 @@
+{
+  "id": "gemini-omni-1.2-flash",
+  "name": "Gemini Omni 1.2 Flash",
+  "family": "gemini",
+  "status": "unverified",
+  "sources": [
+    {
+      "label": "LiteLLM aggregated model metadata (not official verification) [gemini/gemini-omni-1.2-flash]",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:26:38Z",
+      "fields": [
+        "input_cost_per_image_token",
+        "input_cost_per_token",
+        "input_cost_per_video_token",
+        "litellm_provider",
+        "max_input_tokens",
+        "max_output_tokens",
+        "mode",
+        "output_cost_per_reasoning_token",
+        "output_cost_per_token",
+        "output_cost_per_video_token",
+        "source",
+        "supported_endpoints",
+        "supported_modalities",
+        "supported_output_modalities",
+        "supports_audio_input",
+        "supports_audio_output",
+        "supports_reasoning",
+        "supports_system_messages",
+        "supports_video_input",
+        "supports_vision"
+      ],
+      "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
+    }
+  ],
+  "metadata": {
+    "input_cost_per_image_token": 1.5e-06,
+    "input_cost_per_token": 1.5e-06,
+    "input_cost_per_video_token": 1.5e-06,
+    "litellm_provider": "gemini",
+    "max_input_tokens": 131072,
+    "max_output_tokens": 65536,
+    "mode": "chat",
+    "output_cost_per_reasoning_token": 9e-06,
+    "output_cost_per_token": 9e-06,
+    "output_cost_per_video_token": 1.2e-05,
+    "source": "https://ai.google.dev/gemini-api/docs/pricing",
+    "supported_endpoints": [
+      "/v1beta/interactions"
+    ],
+    "supported_modalities": [
+      "text",
+      "image",
+      "video"
+    ],
+    "supported_output_modalities": [
+      "text",
+      "video",
+      "audio"
+    ],
+    "supports_audio_input": false,
+    "supports_audio_output": true,
+    "supports_reasoning": true,
+    "supports_system_messages": false,
+    "supports_video_input": true,
+    "supports_vision": true
+  },
+  "variants": [
+    {
+      "id": "gemini-omni-1.2-flash@vertex_ai",
+      "name": "Gemini Omni 1.2 Flash (vertex_ai)",
+      "providerKey": "vertex_ai",
+      "upstreamModelIds": [
+        "gemini-omni-1.2-flash"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "input_cost_per_token": 1.5e-06,
+        "litellm_provider": "vertex_ai",
+        "max_input_tokens": 131072,
+        "max_output_tokens": 260640,
+        "mode": "chat",
+        "output_cost_per_reasoning_token": 9e-06,
+        "output_cost_per_token": 9e-06,
+        "output_cost_per_video_token": 1.2e-05,
+        "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+        "supported_endpoints": [
+          "/v1beta/interactions"
+        ],
+        "supported_modalities": [
+          "text",
+          "image",
+          "video"
+        ],
+        "supported_output_modalities": [
+          "text",
+          "video"
+        ],
+        "supports_audio_input": false,
+        "supports_audio_output": false,
+        "supports_computer_use": false,
+        "supports_function_calling": false,
+        "supports_prompt_caching": false,
+        "supports_reasoning": true,
+        "supports_response_schema": false,
+        "supports_system_messages": false,
+        "supports_tool_choice": false,
+        "supports_url_context": false,
+        "supports_video_input": true,
+        "supports_vision": true,
+        "supports_web_search": false
+      },
+      "sources": [
+        {
+          "label": "LiteLLM aggregated model metadata (not official verification) [vertex_ai/gemini-omni-1.2-flash]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:26:38Z",
+          "fields": [
+            "input_cost_per_token",
+            "litellm_provider",
+            "max_input_tokens",
+            "max_output_tokens",
+            "mode",
+            "output_cost_per_reasoning_token",
+            "output_cost_per_token",
+            "output_cost_per_video_token",
+            "source",
+            "supported_endpoints",
+            "supported_modalities",
+            "supported_output_modalities",
+            "supports_audio_input",
+            "supports_audio_output",
+            "supports_computer_use",
+            "supports_function_calling",
+            "supports_prompt_caching",
+            "supports_reasoning",
+            "supports_response_schema",
+            "supports_system_messages",
+            "supports_tool_choice",
+            "supports_url_context",
+            "supports_video_input",
+            "supports_vision",
+            "supports_web_search"
+          ],
+          "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
+        }
+      ]
+    },
+    {
+      "id": "gemini-omni-1.2-flash@gemini",
+      "name": "Gemini Omni 1.2 Flash (gemini)",
+      "providerKey": "gemini",
+      "upstreamModelIds": [
+        "gemini-omni-1.2-flash"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "input_cost_per_image_token": 1.5e-06,
+        "input_cost_per_token": 1.5e-06,
+        "input_cost_per_video_token": 1.5e-06,
+        "litellm_provider": "gemini",
+        "max_input_tokens": 131072,
+        "max_output_tokens": 65536,
+        "mode": "chat",
+        "output_cost_per_reasoning_token": 9e-06,
+        "output_cost_per_token": 9e-06,
+        "output_cost_per_video_token": 1.2e-05,
+        "source": "https://ai.google.dev/gemini-api/docs/pricing",
+        "supported_endpoints": [
+          "/v1beta/interactions"
+        ],
+        "supported_modalities": [
+          "text",
+          "image",
+          "video"
+        ],
+        "supported_output_modalities": [
+          "text",
+          "video",
+          "audio"
+        ],
+        "supports_audio_input": false,
+        "supports_audio_output": true,
+        "supports_reasoning": true,
+        "supports_system_messages": false,
+        "supports_video_input": true,
+        "supports_vision": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM aggregated model metadata (not official verification) [gemini/gemini-omni-1.2-flash]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:26:38Z",
+          "fields": [
+            "input_cost_per_image_token",
+            "input_cost_per_token",
+            "input_cost_per_video_token",
+            "litellm_provider",
+            "max_input_tokens",
+            "max_output_tokens",
+            "mode",
+            "output_cost_per_reasoning_token",
+            "output_cost_per_token",
+            "output_cost_per_video_token",
+            "source",
+            "supported_endpoints",
+            "supported_modalities",
+            "supported_output_modalities",
+            "supports_audio_input",
+            "supports_audio_output",
+            "supports_reasoning",
+            "supports_system_messages",
+            "supports_video_input",
+            "supports_vision"
+          ],
+          "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
+        }
+      ]
+    }
+  ]
+}

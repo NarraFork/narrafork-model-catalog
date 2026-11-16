@@ -1,0 +1,77 @@
+{
+  "id": "qwen3.8-omni-flash-realtime",
+  "name": "qwen3.8-omni-flash-realtime",
+  "family": "qwen",
+  "status": "verified",
+  "metadata": {
+    "mode": "realtime",
+    "max_input_tokens": 196608,
+    "max_output_tokens": 65536,
+    "max_tokens": 65536,
+    "supported_modalities": [
+      "text",
+      "audio",
+      "video"
+    ],
+    "supported_output_modalities": [
+      "text",
+      "audio"
+    ],
+    "supports_audio_input": true,
+    "supports_video_input": true,
+    "supports_function_calling": true,
+    "supports_native_streaming": true
+  },
+  "variants": [
+    {
+      "id": "qwen3.8-omni-flash-realtime@dashscope:cn-beijing",
+      "name": "qwen3.8-omni-flash-realtime Beijing",
+      "providerKey": "dashscope",
+      "upstreamModelIds": [
+        "qwen3.8-omni-flash-realtime"
+      ],
+      "status": "verified",
+      "metadata": {
+        "pricing_currency": "CNY",
+        "input_cost_per_token": 1.5e-06,
+        "output_cost_per_token": 4.5e-06,
+        "input_cost_per_audio_token": 6e-06,
+        "output_cost_per_audio_token": 1.2e-05
+      },
+      "sources": [
+        {
+          "label": "Alibaba official Beijing CNY realtime text/vision and audio rates",
+          "url": "https://help.aliyun.com/zh/model-studio/qwen3-8-omni-flash-realtime",
+          "verifiedAt": "2026-11-16T09:31:44Z",
+          "fields": [
+            "metadata.input_cost_per_token",
+            "metadata.output_cost_per_token",
+            "metadata.input_cost_per_audio_token",
+            "metadata.output_cost_per_audio_token"
+          ]
+        }
+      ],
+      "notes": "CNY, not USD; text accompanying audio output is charged separately. Other region prices differ."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Alibaba official Qwen3.8 Omni Flash Realtime: exact aggregate input/output limits, streaming audio/video, text/audio output and function calling",
+      "url": "https://help.aliyun.com/zh/model-studio/qwen3-8-omni-flash-realtime",
+      "verifiedAt": "2026-11-16T09:31:44Z",
+      "fields": [
+        "metadata.mode",
+        "metadata.max_input_tokens",
+        "metadata.max_output_tokens",
+        "metadata.max_tokens",
+        "metadata.supported_modalities",
+        "metadata.supported_output_modalities",
+        "metadata.supports_audio_input",
+        "metadata.supports_video_input",
+        "metadata.supports_function_calling",
+        "metadata.supports_native_streaming"
+      ]
+    }
+  ],
+  "notes": "Realtime model supports WebSocket, WebRTC and AOQ; region-specific CNY prices are not inferred as universal USD rates. Media history has separate turn/duration truncation limits."
+}

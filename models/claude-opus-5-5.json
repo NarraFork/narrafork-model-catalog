@@ -2,16 +2,65 @@
   "id": "claude-opus-5-5",
   "name": "Claude Opus 5.5",
   "family": "claude",
-  "status": "unverified",
+  "status": "verified",
   "matches": {
-    "prefixes": ["claude-opus-5-5"],
+    "aliases": [
+      "claude-opus-latest"
+    ],
+    "prefixes": [
+      "claude-opus-5-5"
+    ],
     "volatileSuffixes": true
   },
-  "sources": [{
-    "label": "sub2api PR #7509 (unmerged): model-pricing [claude-opus-5-5] @ 64e1245f210ce0881dbc03a327374ab1f5695f05",
-    "url": "https://github.com/lyy0709/sub2api-upstream/blob/64e1245f210ce0881dbc03a327374ab1f5695f05/backend/resources/model-pricing/model_prices_and_context_window.json",
-    "verifiedAt": "2026-09-23T03:38:46Z"
-  }],
+  "sources": [
+    {
+      "label": "sub2api PR #7509 (unmerged): model-pricing [claude-opus-5-5] @ 64e1245f210ce0881dbc03a327374ab1f5695f05",
+      "url": "https://github.com/lyy0709/sub2api-upstream/blob/64e1245f210ce0881dbc03a327374ab1f5695f05/backend/resources/model-pricing/model_prices_and_context_window.json",
+      "verifiedAt": "2026-09-23T03:38:46Z"
+    },
+    {
+      "label": "LiteLLM aggregate registry: Anthropic-native [claude-opus-5-5] and explicit claude-opus-latest alias_of @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:20:54Z",
+      "fields": [
+        "matches.aliases",
+        "metadata.supports_web_search",
+        "metadata.supports_anthropic_compaction",
+        "metadata.cache_creation_input_token_cost_batches",
+        "metadata.cache_read_input_token_cost_batches",
+        "metadata.thinking_always_on",
+        "metadata.supports_mid_conversation_system",
+        "metadata.supports_forced_tool_use",
+        "metadata.supports_native_structured_output",
+        "metadata.supports_sampling_params",
+        "metadata.supports_speed",
+        "metadata.supports_fast_mode",
+        "metadata.prompt_cache_min_tokens",
+        "metadata.source"
+      ]
+    },
+    {
+      "label": "sub2api EffortLevelsForModel exact/prefix family dispatch; bridge-supported levels, not independently verified official API limits",
+      "url": "https://github.com/Wei-Shaw/sub2api/blob/d70676756fd3a35b854d41aa46c07935bbef283f/backend/internal/pkg/claude/effort_catalog.go",
+      "verifiedAt": "2026-11-16T09:20:54Z",
+      "fields": [
+        "metadata.reasoning_effort_levels"
+      ]
+    },
+    {
+      "label": "Anthropic official opus product page: model identity and explicitly stated standard USD token rates; other fields remain attributed to aggregate sources",
+      "url": "https://www.anthropic.com/claude/opus",
+      "verifiedAt": "2026-11-16T09:20:54Z",
+      "fields": [
+        "id",
+        "name",
+        "status",
+        "metadata.input_cost_per_token",
+        "metadata.output_cost_per_token",
+        "metadata.cache_read_input_token_cost"
+      ]
+    }
+  ],
   "metadata": {
     "cache_creation_input_token_cost": 5e-06,
     "cache_creation_input_token_cost_above_1hr": 8e-06,
@@ -23,7 +72,9 @@
     "max_tokens": 128000,
     "mode": "chat",
     "output_cost_per_token": 2e-05,
-    "provider_specific_entry": {"fast": 2.0},
+    "provider_specific_entry": {
+      "fast": 2.0
+    },
     "search_context_cost_per_query": {
       "search_context_size_high": 0.01,
       "search_context_size_low": 0.01,
@@ -48,7 +99,211 @@
     "cache_creation_input_token_cost_priority": 1e-05,
     "cache_read_input_token_cost_priority": 4e-07,
     "input_cost_per_token_batches": 2e-06,
-    "output_cost_per_token_batches": 1e-05
+    "output_cost_per_token_batches": 1e-05,
+    "supports_web_search": true,
+    "supports_anthropic_compaction": true,
+    "cache_creation_input_token_cost_batches": 2.5e-06,
+    "cache_read_input_token_cost_batches": 1e-07,
+    "thinking_always_on": true,
+    "supports_mid_conversation_system": true,
+    "supports_forced_tool_use": false,
+    "supports_native_structured_output": true,
+    "supports_sampling_params": false,
+    "supports_speed": true,
+    "supports_fast_mode": true,
+    "prompt_cache_min_tokens": 512,
+    "source": "https://platform.claude.com/docs/en/about-claude/pricing",
+    "reasoning_effort_levels": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ]
   },
-  "variants": []
+  "variants": [
+    {
+      "id": "claude-opus-5.5@github-copilot",
+      "name": "claude-opus-5.5",
+      "providerKey": "github-copilot",
+      "upstreamModelIds": [
+        "claude-opus-5.5",
+        "github_copilot/claude-opus-5.5"
+      ],
+      "family": "claude",
+      "status": "unverified",
+      "metadata": {
+        "cache_creation_input_token_cost": 5e-06,
+        "cache_read_input_token_cost": 2e-07,
+        "input_cost_per_token": 4e-06,
+        "litellm_provider": "github_copilot",
+        "max_input_tokens": 200000,
+        "max_output_tokens": 128000,
+        "mode": "chat",
+        "output_cost_per_token": 2e-05,
+        "source": "https://raw.githubusercontent.com/github/docs/main/data/tables/copilot/models-and-pricing.yml",
+        "supported_endpoints": [
+          "/v1/chat/completions",
+          "/v1/messages"
+        ],
+        "supports_adaptive_thinking": true,
+        "supports_function_calling": true,
+        "supports_parallel_function_calling": true,
+        "supports_reasoning": true,
+        "supports_response_schema": true,
+        "supports_vision": true,
+        "thinking_always_on": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM aggregate deployment registry [github_copilot/claude-opus-5.5] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:20:54Z",
+          "fields": [
+            "upstreamModelIds",
+            "metadata.cache_creation_input_token_cost",
+            "metadata.cache_read_input_token_cost",
+            "metadata.input_cost_per_token",
+            "metadata.litellm_provider",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.source",
+            "metadata.supported_endpoints",
+            "metadata.supports_adaptive_thinking",
+            "metadata.supports_function_calling",
+            "metadata.supports_parallel_function_calling",
+            "metadata.supports_reasoning",
+            "metadata.supports_response_schema",
+            "metadata.supports_vision",
+            "metadata.thinking_always_on"
+          ]
+        }
+      ],
+      "matches": {
+        "aliases": [
+          "claude-opus-latest",
+          "github_copilot/claude-opus-latest"
+        ]
+      }
+    },
+    {
+      "id": "claude-opus-5-5@cursor",
+      "name": "Claude Opus 5.5",
+      "providerKey": "cursor",
+      "upstreamModelIds": [
+        "claude-opus-5-5"
+      ],
+      "family": "claude",
+      "status": "verified",
+      "metadata": {
+        "input_cost_per_token": 4e-06,
+        "output_cost_per_token": 2e-05,
+        "cache_read_input_token_cost": 2e-07,
+        "cache_creation_input_token_cost": 5e-06
+      },
+      "sources": [
+        {
+          "label": "Cursor official model pricing; base rates exclude team Cursor Token Rate and residency surcharge",
+          "url": "https://cursor.com/docs/models",
+          "verifiedAt": "2026-11-16T09:20:54Z",
+          "fields": [
+            "metadata.input_cost_per_token",
+            "metadata.output_cost_per_token",
+            "metadata.cache_read_input_token_cost",
+            "metadata.cache_creation_input_token_cost"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "claude-opus-5-5@antigravity",
+      "name": "claude-opus-5-5",
+      "providerKey": "antigravity",
+      "upstreamModelIds": [
+        "claude-opus-5-5"
+      ],
+      "family": "claude",
+      "status": "unverified",
+      "metadata": {},
+      "sources": [
+        {
+          "label": "sub2api unmerged PR #8778 Antigravity adapter whitelist/output spelling; availability unverified",
+          "url": "https://github.com/universonic/sub2api/blob/8783acd7b6725c8036098df243b16c0fbd25e71e/backend/internal/domain/constants.go#L112-L137",
+          "verifiedAt": "2026-11-16T09:20:54Z",
+          "fields": [
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "This spelling is present in an unmerged third-party adapter; it does not establish production availability, official effort levels, pricing or context limits."
+    },
+    {
+      "id": "claude-opus-5-5-high@antigravity",
+      "name": "claude-opus-5-5-high",
+      "providerKey": "antigravity",
+      "upstreamModelIds": [
+        "claude-opus-5-5-high"
+      ],
+      "family": "claude",
+      "status": "unverified",
+      "metadata": {},
+      "sources": [
+        {
+          "label": "sub2api unmerged PR #8778 Antigravity adapter whitelist/output spelling; availability unverified",
+          "url": "https://github.com/universonic/sub2api/blob/8783acd7b6725c8036098df243b16c0fbd25e71e/backend/internal/domain/constants.go#L112-L137",
+          "verifiedAt": "2026-11-16T09:20:54Z",
+          "fields": [
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "This spelling is present in an unmerged third-party adapter; it does not establish production availability, official effort levels, pricing or context limits."
+    },
+    {
+      "id": "claude-opus-5-5-medium@antigravity",
+      "name": "claude-opus-5-5-medium",
+      "providerKey": "antigravity",
+      "upstreamModelIds": [
+        "claude-opus-5-5-medium"
+      ],
+      "family": "claude",
+      "status": "unverified",
+      "metadata": {},
+      "sources": [
+        {
+          "label": "sub2api unmerged PR #8778 Antigravity adapter whitelist/output spelling; availability unverified",
+          "url": "https://github.com/universonic/sub2api/blob/8783acd7b6725c8036098df243b16c0fbd25e71e/backend/internal/domain/constants.go#L112-L137",
+          "verifiedAt": "2026-11-16T09:20:54Z",
+          "fields": [
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "This spelling is present in an unmerged third-party adapter; it does not establish production availability, official effort levels, pricing or context limits."
+    },
+    {
+      "id": "claude-opus-5-5-low@antigravity",
+      "name": "claude-opus-5-5-low",
+      "providerKey": "antigravity",
+      "upstreamModelIds": [
+        "claude-opus-5-5-low"
+      ],
+      "family": "claude",
+      "status": "unverified",
+      "metadata": {},
+      "sources": [
+        {
+          "label": "sub2api unmerged PR #8778 Antigravity adapter whitelist/output spelling; availability unverified",
+          "url": "https://github.com/universonic/sub2api/blob/8783acd7b6725c8036098df243b16c0fbd25e71e/backend/internal/domain/constants.go#L112-L137",
+          "verifiedAt": "2026-11-16T09:20:54Z",
+          "fields": [
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "This spelling is present in an unmerged third-party adapter; it does not establish production availability, official effort levels, pricing or context limits."
+    }
+  ]
 }

@@ -2,9 +2,59 @@
   "id": "kimi-k2.7-code",
   "name": "Kimi K2.7 Code",
   "family": "kimi",
-  "status": "unverified",
-  "metadata": {},
+  "status": "verified",
+  "metadata": {
+    "cache_read_input_token_cost": 1.9e-07,
+    "input_cost_per_token": 9.499999999999999e-07,
+    "max_input_tokens": 262144,
+    "max_output_tokens": 16384,
+    "mode": "chat",
+    "output_cost_per_token": 4e-06,
+    "supports_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supports_vision": true,
+    "supports_video_input": true,
+    "can_disable_reasoning": false,
+    "supports_none_reasoning_effort": false,
+    "input_cost_per_token_batches": 5.699999999999999e-07,
+    "output_cost_per_token_batches": 2.4e-06,
+    "cache_read_input_token_cost_batches": 1.14e-07,
+    "supports_batch": true
+  },
   "variants": [
+    {
+      "id": "kimi-k2.7-code@moonshot:highspeed",
+      "name": "kimi-k2.7-code-highspeed",
+      "providerKey": "moonshot",
+      "upstreamModelIds": [
+        "kimi-k2.7-code-highspeed"
+      ],
+      "status": "verified",
+      "metadata": {
+        "input_cost_per_token": 1.9e-06,
+        "output_cost_per_token": 8e-06,
+        "cache_read_input_token_cost": 3.8e-07,
+        "max_input_tokens": 262144
+      },
+      "sources": [
+        {
+          "label": "Kimi official K2 highspeed USD pricing",
+          "url": "https://platform.kimi.ai/docs/pricing/chat",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.cache_read_input_token_cost",
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.output_cost_per_token",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Restricted legacy K2 access; planned retirement by end December 2026."
+    },
     {
       "id": "kimi-k2.7-code@cursor",
       "name": "Cursor Kimi K2.7 Code",
@@ -13,7 +63,479 @@
         "kimi-k2.7-code"
       ],
       "metadata": {},
-      "status": "unverified"
+      "status": "unverified",
+      "notes": "Existing unverified provider identity retained; no additional Cursor alias or pricing is inferred in this audit."
+    },
+    {
+      "id": "kimi-k2.7-code@dashscope",
+      "name": "kimi-k2.7-code",
+      "providerKey": "dashscope",
+      "upstreamModelIds": [
+        "kimi-k2.7-code"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "cache_read_input_token_cost": 1.9e-07,
+        "input_cost_per_token": 9.5e-07,
+        "max_input_tokens": 229376,
+        "max_output_tokens": 16384,
+        "mode": "chat",
+        "output_cost_per_token": 4e-06,
+        "supports_function_calling": true,
+        "supports_prompt_caching": true,
+        "supports_reasoning": true,
+        "supports_response_schema": true,
+        "supports_tool_choice": true,
+        "supports_vision": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [dashscope/kimi-k2.7-code]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.cache_read_input_token_cost",
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_prompt_caching",
+            "metadata.supports_reasoning",
+            "metadata.supports_response_schema",
+            "metadata.supports_tool_choice",
+            "metadata.supports_vision",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "kimi-k2.7-code@qwencloud",
+      "name": "kimi-k2.7-code",
+      "providerKey": "qwencloud",
+      "upstreamModelIds": [
+        "kimi-k2.7-code"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "cache_read_input_token_cost": 1.9e-07,
+        "input_cost_per_token": 9.5e-07,
+        "max_input_tokens": 229376,
+        "max_output_tokens": 16384,
+        "mode": "chat",
+        "output_cost_per_token": 4e-06,
+        "supports_function_calling": true,
+        "supports_prompt_caching": true,
+        "supports_reasoning": true,
+        "supports_response_schema": true,
+        "supports_tool_choice": true,
+        "supports_vision": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [qwencloud/kimi-k2.7-code]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.cache_read_input_token_cost",
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_prompt_caching",
+            "metadata.supports_reasoning",
+            "metadata.supports_response_schema",
+            "metadata.supports_tool_choice",
+            "metadata.supports_vision",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "kimi-k2.7-code@streamlake",
+      "name": "kimi-k2.7-code",
+      "providerKey": "streamlake",
+      "upstreamModelIds": [
+        "kimi-k2.7-code"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "cache_read_input_token_cost": 1.9e-07,
+        "input_cost_per_token": 9.5e-07,
+        "max_input_tokens": 262144,
+        "max_output_tokens": 32000,
+        "mode": "chat",
+        "output_cost_per_token": 4e-06,
+        "supports_function_calling": true,
+        "supports_reasoning": true,
+        "supports_vision": true,
+        "supports_prompt_caching": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [streamlake/kimi-k2.7-code]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.cache_read_input_token_cost",
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_prompt_caching",
+            "metadata.supports_reasoning",
+            "metadata.supports_vision",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "kimi-k2.7-code@tencent:highspeed",
+      "name": "kimi-k2.7-code-highspeed",
+      "providerKey": "tencent",
+      "upstreamModelIds": [
+        "kimi-k2.7-code-highspeed"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "cache_creation_input_token_cost": 0.0,
+        "cache_read_input_token_cost": 3.8e-07,
+        "input_cost_per_token": 1.9e-06,
+        "input_cost_per_token_cache_hit": 3.8e-07,
+        "max_input_tokens": 256000,
+        "max_output_tokens": 256000,
+        "mode": "chat",
+        "output_cost_per_token": 8e-06,
+        "supported_endpoints": [
+          "/v1/chat/completions"
+        ],
+        "supports_function_calling": true,
+        "supports_native_streaming": true,
+        "supports_prompt_caching": true,
+        "supports_reasoning": true,
+        "supports_response_schema": true,
+        "supports_system_messages": true,
+        "supports_tool_choice": true,
+        "supports_vision": false
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [tencent/kimi-k2.7-code-highspeed]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.cache_creation_input_token_cost",
+            "metadata.cache_read_input_token_cost",
+            "metadata.input_cost_per_token",
+            "metadata.input_cost_per_token_cache_hit",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supported_endpoints",
+            "metadata.supports_function_calling",
+            "metadata.supports_native_streaming",
+            "metadata.supports_prompt_caching",
+            "metadata.supports_reasoning",
+            "metadata.supports_response_schema",
+            "metadata.supports_system_messages",
+            "metadata.supports_tool_choice",
+            "metadata.supports_vision",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "kimi-k2.7-code@tencent",
+      "name": "kimi-k2.7-code",
+      "providerKey": "tencent",
+      "upstreamModelIds": [
+        "kimi-k2.7-code"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "cache_creation_input_token_cost": 0.0,
+        "cache_read_input_token_cost": 1.9e-07,
+        "input_cost_per_token": 9.5e-07,
+        "input_cost_per_token_cache_hit": 1.9e-07,
+        "max_input_tokens": 256000,
+        "max_output_tokens": 256000,
+        "mode": "chat",
+        "output_cost_per_token": 4e-06,
+        "supported_endpoints": [
+          "/v1/chat/completions"
+        ],
+        "supports_function_calling": true,
+        "supports_native_streaming": true,
+        "supports_prompt_caching": true,
+        "supports_reasoning": true,
+        "supports_response_schema": true,
+        "supports_system_messages": true,
+        "supports_tool_choice": true,
+        "supports_vision": false
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [tencent/kimi-k2.7-code]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.cache_creation_input_token_cost",
+            "metadata.cache_read_input_token_cost",
+            "metadata.input_cost_per_token",
+            "metadata.input_cost_per_token_cache_hit",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supported_endpoints",
+            "metadata.supports_function_calling",
+            "metadata.supports_native_streaming",
+            "metadata.supports_prompt_caching",
+            "metadata.supports_reasoning",
+            "metadata.supports_response_schema",
+            "metadata.supports_system_messages",
+            "metadata.supports_tool_choice",
+            "metadata.supports_vision",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "kimi-k2.7-code@novita",
+      "name": "moonshotai/kimi-k2.7-code",
+      "providerKey": "novita",
+      "upstreamModelIds": [
+        "moonshotai/kimi-k2.7-code"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "cache_read_input_token_cost": 1.9e-07,
+        "input_cost_per_token": 9.499999999999999e-07,
+        "max_input_tokens": 262144,
+        "max_output_tokens": 262144,
+        "mode": "chat",
+        "output_cost_per_token": 4e-06,
+        "supports_function_calling": true,
+        "supports_prompt_caching": true,
+        "supports_reasoning": true,
+        "supports_response_schema": true,
+        "supports_tool_choice": true,
+        "supports_vision": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [novita/moonshotai/kimi-k2.7-code]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.cache_read_input_token_cost",
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_prompt_caching",
+            "metadata.supports_reasoning",
+            "metadata.supports_response_schema",
+            "metadata.supports_tool_choice",
+            "metadata.supports_vision",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "kimi-k2.7-code@deepinfra",
+      "name": "moonshotai/Kimi-K2.7-Code",
+      "providerKey": "deepinfra",
+      "upstreamModelIds": [
+        "moonshotai/Kimi-K2.7-Code"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "max_output_tokens": 262144,
+        "max_input_tokens": 262144,
+        "input_cost_per_token": 6.8e-07,
+        "output_cost_per_token": 3.4e-06,
+        "cache_read_input_token_cost": 1.36e-07,
+        "supports_prompt_caching": true,
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_tool_choice": true,
+        "supports_response_schema": true,
+        "supports_reasoning": true,
+        "supports_vision": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [deepinfra/moonshotai/Kimi-K2.7-Code]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.cache_read_input_token_cost",
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_prompt_caching",
+            "metadata.supports_reasoning",
+            "metadata.supports_response_schema",
+            "metadata.supports_tool_choice",
+            "metadata.supports_vision",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "kimi-k2.7-code@opencode_go",
+      "name": "kimi-k2.7-code",
+      "providerKey": "opencode_go",
+      "upstreamModelIds": [
+        "kimi-k2.7-code"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "mode": "chat",
+        "supported_endpoints": [
+          "/v1/chat/completions"
+        ],
+        "input_cost_per_token": 9.499999999999999e-07,
+        "output_cost_per_token": 4e-06,
+        "cache_read_input_token_cost": 1.9e-07,
+        "max_output_tokens": 262144,
+        "max_input_tokens": 262144,
+        "supports_function_calling": true,
+        "supports_reasoning": true,
+        "supports_vision": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [opencode_go/kimi-k2.7-code]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.cache_read_input_token_cost",
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supported_endpoints",
+            "metadata.supports_function_calling",
+            "metadata.supports_reasoning",
+            "metadata.supports_vision",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
     }
-  ]
+  ],
+  "sources": [
+    {
+      "label": "LiteLLM pinned native-namespace record [qwen_ai_platform/kimi-k2.7-code]; code evidence, not official API attestation",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "id",
+        "metadata.cache_read_input_token_cost",
+        "metadata.input_cost_per_token",
+        "metadata.max_input_tokens",
+        "metadata.max_output_tokens",
+        "metadata.mode",
+        "metadata.output_cost_per_token",
+        "metadata.supports_function_calling",
+        "metadata.supports_prompt_caching",
+        "metadata.supports_reasoning",
+        "metadata.supports_response_schema",
+        "metadata.supports_tool_choice",
+        "metadata.supports_vision"
+      ]
+    },
+    {
+      "label": "LiteLLM pinned native-namespace record [moonshot/kimi-k2.7-code]; code evidence, not official API attestation",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "id",
+        "metadata.cache_read_input_token_cost",
+        "metadata.input_cost_per_token",
+        "metadata.max_input_tokens",
+        "metadata.max_output_tokens",
+        "metadata.mode",
+        "metadata.output_cost_per_token",
+        "metadata.supports_function_calling",
+        "metadata.supports_prompt_caching",
+        "metadata.supports_reasoning",
+        "metadata.supports_response_schema",
+        "metadata.supports_tool_choice",
+        "metadata.supports_video_input",
+        "metadata.supports_vision"
+      ]
+    },
+    {
+      "label": "Kimi official pricing embedded DocTable: USD input/output/cache read, TTL cache writes and exact context",
+      "url": "https://platform.kimi.ai/docs/pricing/chat",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "metadata.cache_read_input_token_cost",
+        "metadata.input_cost_per_token",
+        "metadata.max_input_tokens",
+        "metadata.output_cost_per_token"
+      ]
+    },
+    {
+      "label": "Kimi official legacy access/retirement schedule",
+      "url": "https://platform.kimi.ai/docs/models",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "id",
+        "notes"
+      ]
+    },
+    {
+      "label": "Alibaba primary model directory explicitly identifies Moonshot-deployed kimi/kimi-k2.7-code as thinking-only; does not infer graded effort levels",
+      "url": "https://help.aliyun.com/zh/model-studio/deep-thinking",
+      "verifiedAt": "2026-11-16T09:27:56Z",
+      "fields": [
+        "metadata.supports_reasoning",
+        "metadata.can_disable_reasoning",
+        "metadata.supports_none_reasoning_effort"
+      ]
+    },
+    {
+      "label": "Kimi official embedded batch-price table: exact USD input/output/cache-read and 5m/1h cache writes; K2.6 cached batch is explicitly $0.10/MTok",
+      "url": "https://platform.kimi.ai/docs/pricing/batch",
+      "verifiedAt": "2026-11-16T09:31:44Z",
+      "fields": [
+        "metadata.input_cost_per_token_batches",
+        "metadata.output_cost_per_token_batches",
+        "metadata.cache_read_input_token_cost_batches",
+        "metadata.supports_batch"
+      ]
+    }
+  ],
+  "notes": "Native-namespace metadata is recorded from pinned LiteLLM code; without an official source this does not establish a public official model or guarantee current availability. Official model list restricts K2 to pre-November-1 users; official pricing notice says October 31, 2026 for newly registered users. Planned retirement is end of December 2026; not already retired on audit date."
 }

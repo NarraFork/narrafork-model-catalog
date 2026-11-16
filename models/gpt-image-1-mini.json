@@ -1,12 +1,53 @@
 {
   "id": "gpt-image-1-mini",
   "name": "gpt-image-1-mini",
+  "family": "gpt",
   "status": "verified",
   "sources": [
     {
       "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [gpt-image-1-mini] @ e2cfaa46e79241f34e52bf4781f7710cd511c5d2",
       "url": "https://github.com/Wei-Shaw/sub2api/blob/e2cfaa46e79241f34e52bf4781f7710cd511c5d2/backend/resources/model-pricing/model_prices_and_context_window.json#L5595",
       "verifiedAt": "2026-09-22T07:33:33Z"
+    },
+    {
+      "label": "litellm aggregate directory [gpt-image-1-mini] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95; verifies only recorded aggregate fields, not official availability",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:21:44Z",
+      "fields": [
+        "id",
+        "metadata.cache_read_input_image_token_cost",
+        "metadata.cache_read_input_image_token_cost_batches",
+        "metadata.cache_read_input_token_cost",
+        "metadata.cache_read_input_token_cost_batches",
+        "metadata.deprecation_date",
+        "metadata.deprecation_source",
+        "metadata.input_cost_per_image_token",
+        "metadata.input_cost_per_image_token_batches",
+        "metadata.input_cost_per_token",
+        "metadata.input_cost_per_token_batches",
+        "metadata.litellm_provider",
+        "metadata.mode",
+        "metadata.output_cost_per_image_token",
+        "metadata.output_cost_per_image_token_batches",
+        "metadata.successor_model",
+        "metadata.supported_endpoints"
+      ]
+    },
+    {
+      "label": "sub2api aggregate directory [gpt-image-1-mini] @ d70676756fd3a35b854d41aa46c07935bbef283f; verifies only recorded aggregate fields, not official availability",
+      "url": "https://github.com/Wei-Shaw/sub2api/blob/d70676756fd3a35b854d41aa46c07935bbef283f/backend/resources/model-pricing/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:21:44Z",
+      "fields": [
+        "id",
+        "metadata.cache_read_input_image_token_cost",
+        "metadata.cache_read_input_token_cost",
+        "metadata.input_cost_per_image_token",
+        "metadata.input_cost_per_token",
+        "metadata.litellm_provider",
+        "metadata.mode",
+        "metadata.output_cost_per_image_token",
+        "metadata.supported_endpoints"
+      ]
     }
   ],
   "metadata": {
@@ -20,7 +61,15 @@
     "supported_endpoints": [
       "/v1/images/generations",
       "/v1/images/edits"
-    ]
+    ],
+    "cache_read_input_image_token_cost_batches": 1.3e-07,
+    "cache_read_input_token_cost_batches": 1e-07,
+    "deprecation_date": "2026-12-01",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
+    "successor_model": "gpt-image-2.6-sunburst",
+    "input_cost_per_image_token_batches": 1.25e-06,
+    "input_cost_per_token_batches": 1e-06,
+    "output_cost_per_image_token_batches": 4e-06
   },
   "variants": []
 }

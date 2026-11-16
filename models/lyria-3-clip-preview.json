@@ -1,0 +1,197 @@
+{
+  "id": "lyria-3-clip-preview",
+  "name": "Lyria 3 Clip Preview",
+  "family": "lyria",
+  "status": "unverified",
+  "sources": [
+    {
+      "label": "LiteLLM aggregated model metadata (not official verification) [gemini/lyria-3-clip-preview]",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:26:38Z",
+      "fields": [
+        "input_cost_per_token",
+        "litellm_provider",
+        "max_input_tokens",
+        "max_output_tokens",
+        "mode",
+        "output_cost_per_image",
+        "output_cost_per_token",
+        "source",
+        "supported_modalities",
+        "supported_output_modalities",
+        "supports_audio_input",
+        "supports_audio_output",
+        "supports_function_calling",
+        "supports_prompt_caching",
+        "supports_response_schema",
+        "supports_system_messages",
+        "supports_vision",
+        "supports_web_search"
+      ],
+      "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
+    }
+  ],
+  "metadata": {
+    "input_cost_per_token": 0,
+    "litellm_provider": "gemini",
+    "max_input_tokens": 131072,
+    "max_output_tokens": 8192,
+    "mode": "chat",
+    "output_cost_per_image": 0.04,
+    "output_cost_per_token": 0,
+    "source": "https://ai.google.dev/gemini-api/docs/pricing",
+    "supported_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "audio"
+    ],
+    "supports_audio_input": false,
+    "supports_audio_output": true,
+    "supports_function_calling": false,
+    "supports_prompt_caching": false,
+    "supports_response_schema": false,
+    "supports_system_messages": false,
+    "supports_vision": false,
+    "supports_web_search": false
+  },
+  "variants": [
+    {
+      "id": "lyria-3-clip-preview@gemini",
+      "name": "Lyria 3 Clip Preview (gemini)",
+      "providerKey": "gemini",
+      "upstreamModelIds": [
+        "lyria-3-clip-preview"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "input_cost_per_token": 0,
+        "litellm_provider": "gemini",
+        "max_input_tokens": 131072,
+        "max_output_tokens": 8192,
+        "mode": "chat",
+        "output_cost_per_image": 0.04,
+        "output_cost_per_token": 0,
+        "source": "https://ai.google.dev/gemini-api/docs/pricing",
+        "supported_modalities": [
+          "text"
+        ],
+        "supported_output_modalities": [
+          "audio"
+        ],
+        "supports_audio_input": false,
+        "supports_audio_output": true,
+        "supports_function_calling": false,
+        "supports_prompt_caching": false,
+        "supports_response_schema": false,
+        "supports_system_messages": false,
+        "supports_vision": false,
+        "supports_web_search": false
+      },
+      "sources": [
+        {
+          "label": "LiteLLM aggregated model metadata (not official verification) [gemini/lyria-3-clip-preview]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:26:38Z",
+          "fields": [
+            "input_cost_per_token",
+            "litellm_provider",
+            "max_input_tokens",
+            "max_output_tokens",
+            "mode",
+            "output_cost_per_image",
+            "output_cost_per_token",
+            "source",
+            "supported_modalities",
+            "supported_output_modalities",
+            "supports_audio_input",
+            "supports_audio_output",
+            "supports_function_calling",
+            "supports_prompt_caching",
+            "supports_response_schema",
+            "supports_system_messages",
+            "supports_vision",
+            "supports_web_search"
+          ],
+          "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
+        }
+      ]
+    },
+    {
+      "id": "lyria-3-clip-preview@vertex_ai",
+      "name": "Lyria 3 Clip Preview (vertex_ai)",
+      "providerKey": "vertex_ai",
+      "upstreamModelIds": [
+        "lyria-3-clip-preview"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "input_cost_per_token": 0,
+        "litellm_provider": "vertex_ai",
+        "max_input_tokens": 131072,
+        "max_output_tokens": 8192,
+        "mode": "audio_speech",
+        "output_cost_per_image": 0.04,
+        "output_cost_per_token": 0,
+        "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing#lyria",
+        "supported_audio_formats": [
+          "mp3"
+        ],
+        "supported_endpoints": [
+          "/v1beta/interactions",
+          "/v1/audio/speech"
+        ],
+        "supported_modalities": [
+          "text"
+        ],
+        "supported_output_modalities": [
+          "audio"
+        ],
+        "supported_regions": [
+          "global"
+        ],
+        "supports_audio_input": false,
+        "supports_audio_output": true,
+        "supports_function_calling": false,
+        "supports_prompt_caching": false,
+        "supports_response_schema": false,
+        "supports_system_messages": false,
+        "supports_vision": false,
+        "supports_web_search": false,
+        "vertex_ai_audio_api": "lyria_interactions"
+      },
+      "sources": [
+        {
+          "label": "LiteLLM aggregated model metadata (not official verification) [vertex_ai/lyria-3-clip-preview]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:26:38Z",
+          "fields": [
+            "input_cost_per_token",
+            "litellm_provider",
+            "max_input_tokens",
+            "max_output_tokens",
+            "mode",
+            "output_cost_per_image",
+            "output_cost_per_token",
+            "source",
+            "supported_audio_formats",
+            "supported_endpoints",
+            "supported_modalities",
+            "supported_output_modalities",
+            "supported_regions",
+            "supports_audio_input",
+            "supports_audio_output",
+            "supports_function_calling",
+            "supports_prompt_caching",
+            "supports_response_schema",
+            "supports_system_messages",
+            "supports_vision",
+            "supports_web_search",
+            "vertex_ai_audio_api"
+          ],
+          "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "id": "gpt-5.6-cyber",
+  "name": "GPT-5.6-cyber",
+  "family": "gpt",
+  "status": "unverified",
+  "metadata": {
+    "cache_creation_input_token_cost": 1.5625e-05,
+    "cache_creation_input_token_cost_above_12hr": 3.125e-05,
+    "cache_creation_input_token_cost_above_272k_tokens": 3.125e-05,
+    "cache_read_input_token_cost": 1.25e-06,
+    "cache_read_input_token_cost_above_272k_tokens": 2.5e-06,
+    "input_cost_per_token": 1.25e-05,
+    "input_cost_per_token_above_272k_tokens": 2.5e-05,
+    "litellm_provider": "openai",
+    "max_input_tokens": 272000,
+    "max_output_tokens": 128000,
+    "mode": "chat",
+    "output_cost_per_token": 7.5e-05,
+    "fedramp_uplift_multiplier": 1.1,
+    "output_cost_per_token_above_272k_tokens": 0.0001125,
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/v1/responses"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_function_calling": true,
+    "supports_native_streaming": true,
+    "supports_pdf_input": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_system_messages": true,
+    "supports_tool_choice": true,
+    "supports_vision": true,
+    "supports_web_search": true,
+    "supports_computer_use": true,
+    "supports_parallel_function_calling": true
+  },
+  "variants": [],
+  "notes": "Reported by an aggregate directory; official API availability and listed specifications have not been independently confirmed.",
+  "sources": [
+    {
+      "label": "litellm aggregate directory [gpt-5.6-cyber] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95; verifies only recorded aggregate fields, not official availability",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:21:44Z",
+      "fields": [
+        "id",
+        "metadata.cache_creation_input_token_cost",
+        "metadata.cache_creation_input_token_cost_above_12hr",
+        "metadata.cache_creation_input_token_cost_above_272k_tokens",
+        "metadata.cache_read_input_token_cost",
+        "metadata.cache_read_input_token_cost_above_272k_tokens",
+        "metadata.fedramp_uplift_multiplier",
+        "metadata.input_cost_per_token",
+        "metadata.input_cost_per_token_above_272k_tokens",
+        "metadata.litellm_provider",
+        "metadata.max_input_tokens",
+        "metadata.max_output_tokens",
+        "metadata.mode",
+        "metadata.output_cost_per_token",
+        "metadata.output_cost_per_token_above_272k_tokens",
+        "metadata.supported_endpoints",
+        "metadata.supported_modalities",
+        "metadata.supported_output_modalities",
+        "metadata.supports_computer_use",
+        "metadata.supports_function_calling",
+        "metadata.supports_native_streaming",
+        "metadata.supports_parallel_function_calling",
+        "metadata.supports_pdf_input",
+        "metadata.supports_prompt_caching",
+        "metadata.supports_reasoning",
+        "metadata.supports_response_schema",
+        "metadata.supports_system_messages",
+        "metadata.supports_tool_choice",
+        "metadata.supports_vision",
+        "metadata.supports_web_search"
+      ]
+    }
+  ]
+}

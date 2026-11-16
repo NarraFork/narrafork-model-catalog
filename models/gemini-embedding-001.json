@@ -7,17 +7,93 @@
       "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [gemini-embedding-001] @ e2cfaa46e79241f34e52bf4781f7710cd511c5d2",
       "url": "https://github.com/Wei-Shaw/sub2api/blob/e2cfaa46e79241f34e52bf4781f7710cd511c5d2/backend/resources/model-pricing/model_prices_and_context_window.json#L2372",
       "verifiedAt": "2026-09-22T07:33:33Z"
+    },
+    {
+      "label": "LiteLLM aggregated model metadata (not official verification) [gemini/gemini-embedding-001]",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:26:38Z",
+      "fields": [
+        "deprecation_date",
+        "deprecation_source",
+        "input_cost_per_token",
+        "input_cost_per_token_batches",
+        "litellm_provider",
+        "max_input_tokens",
+        "mode",
+        "output_cost_per_token",
+        "output_vector_size",
+        "rpm",
+        "source",
+        "successor_model",
+        "tpm"
+      ],
+      "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
     }
   ],
   "metadata": {
     "input_cost_per_token": 1.5e-07,
-    "litellm_provider": "vertex_ai-embedding-models",
+    "litellm_provider": "gemini",
     "max_input_tokens": 2048,
     "max_tokens": 2048,
     "mode": "embedding",
     "output_cost_per_token": 0,
     "output_vector_size": 3072,
-    "source": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/models"
+    "source": "https://ai.google.dev/gemini-api/docs/pricing",
+    "deprecation_date": "2028-05-14",
+    "deprecation_source": "https://ai.google.dev/gemini-api/docs/deprecations",
+    "successor_model": "gemini/gemini-embedding-2",
+    "rpm": 10000,
+    "tpm": 10000000,
+    "input_cost_per_token_batches": 7.5e-08
   },
-  "variants": []
+  "variants": [
+    {
+      "id": "gemini-embedding-001@gemini",
+      "name": "gemini-embedding-001 (gemini)",
+      "providerKey": "gemini",
+      "upstreamModelIds": [
+        "gemini-embedding-001"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "deprecation_date": "2028-05-14",
+        "deprecation_source": "https://ai.google.dev/gemini-api/docs/deprecations",
+        "successor_model": "gemini/gemini-embedding-2",
+        "input_cost_per_token": 1.5e-07,
+        "litellm_provider": "gemini",
+        "max_input_tokens": 2048,
+        "mode": "embedding",
+        "output_cost_per_token": 0,
+        "output_vector_size": 3072,
+        "rpm": 10000,
+        "source": "https://ai.google.dev/gemini-api/docs/pricing",
+        "tpm": 10000000,
+        "input_cost_per_token_batches": 7.5e-08
+      },
+      "sources": [
+        {
+          "label": "LiteLLM aggregated model metadata (not official verification) [gemini/gemini-embedding-001]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:26:38Z",
+          "fields": [
+            "deprecation_date",
+            "deprecation_source",
+            "input_cost_per_token",
+            "input_cost_per_token_batches",
+            "litellm_provider",
+            "max_input_tokens",
+            "mode",
+            "output_cost_per_token",
+            "output_vector_size",
+            "rpm",
+            "source",
+            "successor_model",
+            "tpm"
+          ],
+          "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
+        }
+      ]
+    }
+  ],
+  "family": "gemini"
 }

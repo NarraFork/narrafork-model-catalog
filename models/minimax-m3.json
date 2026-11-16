@@ -2,10 +2,382 @@
   "id": "minimax-m3",
   "name": "MiniMax M3",
   "family": "minimax",
-  "status": "unverified",
+  "status": "verified",
   "metadata": {
     "input_cost_per_token": 3e-07,
-    "output_cost_per_token": 1.2e-06
+    "output_cost_per_token": 1.2e-06,
+    "input_cost_per_token_above_512k_tokens": 6e-07,
+    "output_cost_per_token_above_512k_tokens": 2.4e-06,
+    "cache_read_input_token_cost": 6e-08,
+    "cache_read_input_token_cost_above_512k_tokens": 1.2e-07,
+    "mode": "chat",
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_system_messages": true,
+    "supports_vision": true,
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 524288,
+    "supported_modalities": [
+      "text",
+      "image",
+      "video"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_video_input": true,
+    "supports_native_streaming": true,
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/v1/messages",
+      "/v1/responses"
+    ],
+    "input_cost_per_token_priority": 4.5e-07,
+    "output_cost_per_token_priority": 1.8e-06,
+    "cache_read_input_token_cost_priority": 9e-08,
+    "input_cost_per_token_above_512k_tokens_priority": 9e-07,
+    "output_cost_per_token_above_512k_tokens_priority": 3.6e-06,
+    "cache_read_input_token_cost_above_512k_tokens_priority": 1.8e-07,
+    "max_tokens": 524288,
+    "supports_sampling_params": false,
+    "can_disable_reasoning": true,
+    "supports_none_reasoning_effort": true
   },
-  "variants": []
+  "variants": [
+    {
+      "id": "minimax-m3@streamlake",
+      "name": "minimax-m3",
+      "providerKey": "streamlake",
+      "upstreamModelIds": [
+        "minimax-m3"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "cache_read_input_token_cost": 1.2e-07,
+        "cache_read_input_token_cost_above_512k_tokens": 2.4e-07,
+        "input_cost_per_token": 6e-07,
+        "input_cost_per_token_above_512k_tokens": 1.2e-06,
+        "max_input_tokens": 1000000,
+        "max_output_tokens": 512000,
+        "mode": "chat",
+        "output_cost_per_token": 2.4e-06,
+        "output_cost_per_token_above_512k_tokens": 4.8e-06,
+        "supports_function_calling": true,
+        "supports_reasoning": true,
+        "supports_vision": true,
+        "supports_prompt_caching": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [streamlake/minimax-m3]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.cache_read_input_token_cost",
+            "metadata.cache_read_input_token_cost_above_512k_tokens",
+            "metadata.input_cost_per_token",
+            "metadata.input_cost_per_token_above_512k_tokens",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.output_cost_per_token_above_512k_tokens",
+            "metadata.supports_function_calling",
+            "metadata.supports_prompt_caching",
+            "metadata.supports_reasoning",
+            "metadata.supports_vision",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "minimax-m3@tencent",
+      "name": "minimax-m3",
+      "providerKey": "tencent",
+      "upstreamModelIds": [
+        "minimax-m3"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "cache_creation_input_token_cost": 0.0,
+        "cache_read_input_token_cost": 6e-08,
+        "input_cost_per_token": 3e-07,
+        "input_cost_per_token_cache_hit": 6e-08,
+        "max_input_tokens": 1000000,
+        "mode": "chat",
+        "output_cost_per_token": 1.2e-06,
+        "supported_endpoints": [
+          "/v1/chat/completions"
+        ],
+        "supports_adaptive_thinking": true,
+        "supports_function_calling": true,
+        "supports_native_streaming": true,
+        "supports_prompt_caching": true,
+        "supports_reasoning": true,
+        "supports_vision": false
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [tencent/minimax-m3]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.cache_creation_input_token_cost",
+            "metadata.cache_read_input_token_cost",
+            "metadata.input_cost_per_token",
+            "metadata.input_cost_per_token_cache_hit",
+            "metadata.max_input_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supported_endpoints",
+            "metadata.supports_adaptive_thinking",
+            "metadata.supports_function_calling",
+            "metadata.supports_native_streaming",
+            "metadata.supports_prompt_caching",
+            "metadata.supports_reasoning",
+            "metadata.supports_vision",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "minimax-m3@novita",
+      "name": "minimax/minimax-m3",
+      "providerKey": "novita",
+      "upstreamModelIds": [
+        "minimax/minimax-m3"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "cache_read_input_token_cost": 6e-08,
+        "input_cost_per_token": 3e-07,
+        "max_input_tokens": 1000000,
+        "max_output_tokens": 131072,
+        "mode": "chat",
+        "output_cost_per_token": 1.2e-06,
+        "supports_function_calling": true,
+        "supports_prompt_caching": true,
+        "supports_reasoning": true,
+        "supports_response_schema": true,
+        "supports_tool_choice": true,
+        "supports_vision": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [novita/minimax/minimax-m3]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.cache_read_input_token_cost",
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_prompt_caching",
+            "metadata.supports_reasoning",
+            "metadata.supports_response_schema",
+            "metadata.supports_tool_choice",
+            "metadata.supports_vision",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "minimax-m3@deepinfra",
+      "name": "MiniMaxAI/MiniMax-M3",
+      "providerKey": "deepinfra",
+      "upstreamModelIds": [
+        "MiniMaxAI/MiniMax-M3"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "max_output_tokens": 524288,
+        "max_input_tokens": 524288,
+        "input_cost_per_token": 2.8e-07,
+        "output_cost_per_token": 1.1e-06,
+        "cache_read_input_token_cost": 5.6e-08,
+        "supports_prompt_caching": true,
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_tool_choice": true,
+        "supports_response_schema": true,
+        "supports_reasoning": true,
+        "supports_vision": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [deepinfra/MiniMaxAI/MiniMax-M3]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.cache_read_input_token_cost",
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supports_function_calling",
+            "metadata.supports_prompt_caching",
+            "metadata.supports_reasoning",
+            "metadata.supports_response_schema",
+            "metadata.supports_tool_choice",
+            "metadata.supports_vision",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    },
+    {
+      "id": "minimax-m3@opencode_go",
+      "name": "minimax-m3",
+      "providerKey": "opencode_go",
+      "upstreamModelIds": [
+        "minimax-m3"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "mode": "chat",
+        "supported_endpoints": [
+          "/v1/messages"
+        ],
+        "input_cost_per_token": 3e-07,
+        "output_cost_per_token": 1.2e-06,
+        "cache_read_input_token_cost": 6e-08,
+        "max_output_tokens": 131072,
+        "max_input_tokens": 1000000,
+        "supports_function_calling": true,
+        "supports_reasoning": true,
+        "supports_vision": true
+      },
+      "sources": [
+        {
+          "label": "LiteLLM pinned provider deployment record [opencode_go/minimax-m3]",
+          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+          "verifiedAt": "2026-11-16T09:24:55Z",
+          "fields": [
+            "metadata.cache_read_input_token_cost",
+            "metadata.input_cost_per_token",
+            "metadata.max_input_tokens",
+            "metadata.max_output_tokens",
+            "metadata.mode",
+            "metadata.output_cost_per_token",
+            "metadata.supported_endpoints",
+            "metadata.supports_function_calling",
+            "metadata.supports_reasoning",
+            "metadata.supports_vision",
+            "upstreamModelIds"
+          ]
+        }
+      ],
+      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+    }
+  ],
+  "sources": [
+    {
+      "label": "LiteLLM pinned native-namespace record [minimax/MiniMax-M3]; code evidence, not official API attestation",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "id",
+        "metadata.cache_read_input_token_cost",
+        "metadata.cache_read_input_token_cost_above_512k_tokens",
+        "metadata.input_cost_per_token",
+        "metadata.input_cost_per_token_above_512k_tokens",
+        "metadata.max_input_tokens",
+        "metadata.max_output_tokens",
+        "metadata.mode",
+        "metadata.output_cost_per_token",
+        "metadata.output_cost_per_token_above_512k_tokens",
+        "metadata.supports_function_calling",
+        "metadata.supports_prompt_caching",
+        "metadata.supports_reasoning",
+        "metadata.supports_system_messages",
+        "metadata.supports_tool_choice",
+        "metadata.supports_vision"
+      ]
+    },
+    {
+      "label": "MiniMax official exact 1000000 context, multimodal inputs, streaming/tool use and M3.1 effort contract",
+      "url": "https://platform.minimax.io/docs/guides/text-generation.md",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "metadata.max_input_tokens",
+        "metadata.supported_endpoints",
+        "metadata.supported_modalities",
+        "metadata.supported_output_modalities",
+        "metadata.supports_function_calling",
+        "metadata.supports_native_streaming",
+        "metadata.supports_reasoning",
+        "metadata.supports_video_input",
+        "metadata.supports_vision"
+      ]
+    },
+    {
+      "label": "MiniMax official USD standard pay-as-you-go rates; M3 standard base tier <=512k input",
+      "url": "https://platform.minimax.io/docs/pricing/overview.md",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "metadata.cache_read_input_token_cost",
+        "metadata.input_cost_per_token",
+        "metadata.output_cost_per_token"
+      ]
+    },
+    {
+      "label": "MiniMax official M3 long-input tier >512k",
+      "url": "https://platform.minimax.io/docs/pricing/overview.md",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "metadata.cache_read_input_token_cost_above_512k_tokens",
+        "metadata.input_cost_per_token_above_512k_tokens",
+        "metadata.output_cost_per_token_above_512k_tokens"
+      ]
+    },
+    {
+      "label": "MiniMax official Priority service tier 1.5x standard",
+      "url": "https://platform.minimax.io/docs/pricing/overview.md",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "metadata.input_cost_per_token_priority",
+        "metadata.output_cost_per_token_priority",
+        "metadata.cache_read_input_token_cost_priority",
+        "metadata.input_cost_per_token_above_512k_tokens_priority",
+        "metadata.output_cost_per_token_above_512k_tokens_priority",
+        "metadata.cache_read_input_token_cost_above_512k_tokens_priority"
+      ]
+    },
+    {
+      "label": "MiniMax official ChatCompletion schema: recommended completion 131072, actual maximum 524288; temperature/top_p fixed",
+      "url": "https://platform.minimax.io/docs/api-reference/text-chat-openai.md",
+      "verifiedAt": "2026-11-16T09:31:44Z",
+      "fields": [
+        "metadata.max_output_tokens",
+        "metadata.max_tokens",
+        "metadata.supports_sampling_params"
+      ]
+    },
+    {
+      "label": "MiniMax official M3 adaptive thinking default; disabled skips thinking; effort ignored outside M3.1 Flash",
+      "url": "https://platform.minimax.io/docs/api-reference/text-chat-openai.md",
+      "verifiedAt": "2026-11-16T09:31:44Z",
+      "fields": [
+        "metadata.can_disable_reasoning",
+        "metadata.supports_none_reasoning_effort"
+      ]
+    }
+  ],
+  "notes": "Native-namespace metadata is recorded from pinned LiteLLM code; without an official source this does not establish a public official model or guarantee current availability.",
+  "upstreamModelIds": [
+    "MiniMax-M3"
+  ]
 }

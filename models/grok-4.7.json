@@ -5,7 +5,8 @@
   "status": "verified",
   "matches": {
     "aliases": [
-      "grok-4.7-latest"
+      "grok-4.7-latest",
+      "grok-latest"
     ]
   },
   "sources": [
@@ -13,6 +14,37 @@
       "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [grok-4.7] @ 3040209f205472038c1ba745a1bedd2edd9053b1",
       "url": "https://github.com/Wei-Shaw/sub2api/blob/3040209f205472038c1ba745a1bedd2edd9053b1/backend/resources/model-pricing/model_prices_and_context_window.json#L56",
       "verifiedAt": "2026-10-02T12:21:34Z"
+    },
+    {
+      "label": "LiteLLM registry [xai/grok-4.7] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95; aggregated metadata, not a direct xAI availability check",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:25:26Z",
+      "fields": [
+        "metadata.cache_read_input_token_cost_above_200k_tokens",
+        "metadata.cache_read_input_token_cost_above_200k_tokens_batches",
+        "metadata.cache_read_input_token_cost_batches",
+        "metadata.input_cost_per_image_token",
+        "metadata.input_cost_per_token_above_200k_tokens_batches",
+        "metadata.input_cost_per_token_batches",
+        "metadata.max_output_tokens",
+        "metadata.output_cost_per_token_above_200k_tokens_batches",
+        "metadata.output_cost_per_token_batches",
+        "metadata.source",
+        "metadata.supports_function_calling",
+        "metadata.supports_reasoning",
+        "metadata.supports_response_schema",
+        "metadata.supports_tool_choice",
+        "metadata.supports_vision",
+        "metadata.supports_web_search"
+      ]
+    },
+    {
+      "label": "LiteLLM registry [xai/grok-latest] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95; aggregated metadata, not a direct xAI availability check",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:25:26Z",
+      "fields": [
+        "matches.aliases"
+      ]
     }
   ],
   "metadata": {
@@ -24,7 +56,23 @@
     "litellm_provider": "xai",
     "max_input_tokens": 500000,
     "mode": "chat",
-    "supports_prompt_caching": true
+    "supports_prompt_caching": true,
+    "cache_read_input_token_cost_above_200k_tokens": 1e-06,
+    "cache_read_input_token_cost_above_200k_tokens_batches": 8e-07,
+    "cache_read_input_token_cost_batches": 4e-07,
+    "input_cost_per_image_token": 2e-06,
+    "input_cost_per_token_above_200k_tokens_batches": 3.2e-06,
+    "input_cost_per_token_batches": 1.6e-06,
+    "max_output_tokens": 500000,
+    "output_cost_per_token_above_200k_tokens_batches": 9.6e-06,
+    "output_cost_per_token_batches": 4.8e-06,
+    "source": "https://api.x.ai/v1/language-models",
+    "supports_function_calling": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supports_vision": true,
+    "supports_web_search": true
   },
   "variants": [
     {
@@ -39,8 +87,52 @@
           "grok-4.7-latest"
         ]
       },
-      "metadata": {},
-      "status": "unverified"
+      "metadata": {
+        "input_cost_per_token": 2e-06,
+        "cache_read_input_token_cost": 5e-07,
+        "output_cost_per_token": 6e-06,
+        "supports_reasoning": true,
+        "reasoning_effort_levels": [
+          "low",
+          "medium",
+          "high",
+          "xhigh"
+        ],
+        "default_reasoning_effort": "high",
+        "context_window": 500000,
+        "long_context_input_token_threshold": 256000,
+        "input_cost_per_token_above_256k_tokens": 4e-06,
+        "cache_read_input_token_cost_above_256k_tokens": 1e-06,
+        "output_cost_per_token_above_256k_tokens": 1.2e-05
+      },
+      "status": "unverified",
+      "sources": [
+        {
+          "label": "Cursor official Models & Pricing: USD/MTok rates for additional Cursor-model usage",
+          "url": "https://cursor.com/docs/models",
+          "verifiedAt": "2026-11-16T09:25:26Z",
+          "fields": [
+            "metadata.input_cost_per_token",
+            "metadata.cache_read_input_token_cost",
+            "metadata.output_cost_per_token"
+          ]
+        },
+        {
+          "label": "Cursor official Grok model reference: effort levels/default and provider-specific pricing/context",
+          "url": "https://cursor.com/docs/models/grok-4-7",
+          "verifiedAt": "2026-11-16T09:25:26Z",
+          "fields": [
+            "metadata.reasoning_effort_levels",
+            "metadata.default_reasoning_effort",
+            "metadata.context_window",
+            "metadata.long_context_input_token_threshold",
+            "metadata.input_cost_per_token_above_256k_tokens",
+            "metadata.cache_read_input_token_cost_above_256k_tokens",
+            "metadata.output_cost_per_token_above_256k_tokens"
+          ]
+        }
+      ],
+      "notes": "Cursor additional-usage rates; included plan pools and Teams/Enterprise billing policies are not native xAI API pricing."
     },
     {
       "id": "grok-4.7@grok",
@@ -72,5 +164,6 @@
       "metadata": {},
       "status": "unverified"
     }
-  ]
+  ],
+  "notes": "Native xAI metadata is from the pinned LiteLLM registry; direct xAI documentation was unavailable during this audit. Registry output limits are not independently confirmed. Provider-specific pricing and controls, where verified, are recorded in nested variants."
 }

@@ -1,0 +1,22 @@
+{
+  "id": "glm-ocr",
+  "name": "glm-ocr",
+  "family": "glm",
+  "status": "verified",
+  "metadata": {
+    "input_cost_per_token": 3e-08,
+    "output_cost_per_token": 3e-08
+  },
+  "variants": [],
+  "sources": [
+    {
+      "label": "Z.AI official USD token pricing; temporary free cache storage is not a permanent zero cache-write rate",
+      "url": "https://docs.z.ai/guides/overview/pricing.md",
+      "verifiedAt": "2026-11-16T09:24:55Z",
+      "fields": [
+        "metadata.input_cost_per_token",
+        "metadata.output_cost_per_token"
+      ]
+    }
+  ]
+}
