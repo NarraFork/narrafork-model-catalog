@@ -34,6 +34,11 @@ class ValidationTests(unittest.TestCase):
         with self.assertRaises(AssertionError):
             metadata({"reasoning_effort_levels": ["low"], "default_reasoning_effort": "high"})
 
+    def test_codex_ultra_effort_is_recognized_without_accepting_unknown_values(self):
+        metadata({"reasoning_effort_levels": ["low", "ultra"], "default_reasoning_effort": "ultra"})
+        with self.assertRaises(AssertionError):
+            metadata({"reasoning_effort_levels": ["unlimited"]})
+
     def test_non_reasoning_model_cannot_declare_efforts(self):
         with self.assertRaises(AssertionError):
             metadata({"supports_reasoning": False, "reasoning_effort_levels": ["high"]})
@@ -114,6 +119,80 @@ class CatalogRegressionTests(unittest.TestCase):
         ):
             with self.subTest(model=model_id):
                 self.assertEqual(self.model(model_id)["id"], model_id)
+
+    def test_gpt62_native_cards_have_sourced_limits_and_distinct_prices(self):
+        for suffix, input_price, cached_price, output_price in (
+            ("astra", 8e-6, 4e-7, 40e-6),
+            ("sol", 2e-6, 1e-7, 10e-6),
+            ("astra-law", 8e-6, 4e-7, 40e-6),
+        ):
+            with self.subTest(model=suffix):
+                card = self.model("gpt-6.2-" + suffix)
+                info = card["metadata"]
+                self.assertEqual(card["status"], "unverified")
+                self.assertEqual(info["max_input_tokens"], 922000)
+                self.assertEqual(info["max_output_tokens"], 128000)
+                self.assertEqual(info["input_cost_per_token"], input_price)
+                self.assertEqual(info["cache_read_input_token_cost"], cached_price)
+                self.assertEqual(info["output_cost_per_token"], output_price)
+                self.assertNotIn("default_reasoning_effort", info)
+                if suffix != "astra-law":
+                    self.assertEqual(info["context_window"], 1050000)
+                    self.assertEqual(info["long_context_input_token_threshold"], 272000)
+
+    def test_gpt62_codex_discovery_is_not_native_api_metadata(self):
+        for suffix, default_window in (("astra", 272000), ("sol", 500000)):
+            with self.subTest(model=suffix):
+                card = self.model("gpt-6.2-" + suffix)
+                codex = next(v for v in card["variants"] if v["providerKey"] == "codex")
+                self.assertEqual(codex["metadata"]["context_window"], default_window)
+                self.assertEqual(codex["metadata"]["max_context_window"], 872000)
+                self.assertEqual(codex["metadata"]["default_reasoning_effort"], "low")
+                self.assertEqual(codex["metadata"]["reasoning_effort_levels"], ["low", "medium", "high", "xhigh", "max", "ultra"])
+                self.assertNotIn("ultra", card["metadata"].get("reasoning_effort_levels", []))
+                self.assertEqual("audio" in codex["metadata"]["supported_modalities"], suffix == "sol")
+                self.assertNotIn("audio", card["metadata"]["supported_modalities"])
+
+    def test_gpt62_channel_rates_and_capabilities_remain_scoped(self):
+        for suffix in ("astra", "sol"):
+            with self.subTest(model=suffix):
+                card = self.model("gpt-6.2-" + suffix)
+                azure = next(v for v in card["variants"] if v["id"] == card["id"] + "@azure")
+                self.assertEqual(azure["metadata"]["supports_max_reasoning_effort"], suffix == "sol")
+                self.assertIs(card["metadata"]["supports_max_reasoning_effort"], True)
+                copilot = next(v for v in card["variants"] if v["providerKey"] == "github-copilot")
+                self.assertEqual(copilot["metadata"]["supported_endpoints"], ["/v1/responses"])
+                chatgpt = next(v for v in card["variants"] if v["providerKey"] == "chatgpt")
+                self.assertNotIn("input_cost_per_token", chatgpt["metadata"])
+                self.assertNotIn("max_input_tokens", next(v for v in card["variants"] if v["providerKey"] == "codex")["metadata"])
+
+    def test_gpt62_bedrock_protocols_keep_separate_metadata(self):
+        for suffix in ("astra", "sol"):
+            with self.subTest(model=suffix):
+                card = self.model("gpt-6.2-" + suffix)
+                mantle = next(v for v in card["variants"] if v["providerKey"] == "bedrock-mantle")
+                converse = next(v for v in card["variants"] if v["id"] == card["id"] + "@bedrock-openai")
+                self.assertEqual(mantle["metadata"]["litellm_provider"], "bedrock_mantle")
+                self.assertEqual(converse["metadata"]["litellm_provider"], "bedrock_converse")
+                self.assertAlmostEqual(mantle["metadata"]["input_cost_per_token"], card["metadata"]["input_cost_per_token"] * 1.1)
+                self.assertEqual(converse["metadata"]["input_cost_per_token"], card["metadata"]["input_cost_per_token"])
+
+    def test_gpt62_ultrafast_prices_are_time_limited(self):
+        for suffix in ("astra", "sol"):
+            with self.subTest(model=suffix):
+                info = self.model("gpt-6.2-" + suffix)["metadata"]
+                self.assertEqual(info["ultrafast_promotion_end_at"], "2027-03-01T08:00:00Z")
+                self.assertEqual(info["ultrafast_multiplier_during_promotion"], 3)
+                self.assertEqual(info["ultrafast_multiplier_after_promotion"], 6)
+                for price in ("input_cost_per_token", "output_cost_per_token", "cache_read_input_token_cost", "cache_creation_input_token_cost"):
+                    self.assertAlmostEqual(info[price + "_ultrafast"], info[price] * 3)
+        self.assertNotIn("ultrafast_promotion_end_at", self.model("gpt-6.2-astra-law")["metadata"])
+
+    def test_gpt62_does_not_retarget_existing_latest_aliases(self):
+        for model, alias in (("gpt-6-astra", "gpt-astra-latest"), ("gpt-6.1-sol", "gpt-sol-latest")):
+            self.assertIn(alias, self.model(model)["matches"]["aliases"])
+            for new_model in ("gpt-6.2-astra", "gpt-6.2-sol", "gpt-6.2-astra-law"):
+                self.assertNotIn(alias, self.model(new_model).get("matches", {}).get("aliases", []))
 
     def test_composer_is_not_a_grok_build_alias(self):
         self.assertNotIn("composer-2.5", self.model("grok-build-0.1").get("matches", {}).get("aliases", []))
