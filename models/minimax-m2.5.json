@@ -44,25 +44,9 @@
         {
           "label": "LiteLLM pinned speed/deployment record [minimax/MiniMax-M2.5-lightning]",
           "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z",
-          "fields": [
-            "metadata.cache_creation_input_token_cost",
-            "metadata.cache_read_input_token_cost",
-            "metadata.input_cost_per_token",
-            "metadata.max_input_tokens",
-            "metadata.max_output_tokens",
-            "metadata.mode",
-            "metadata.output_cost_per_token",
-            "metadata.supports_function_calling",
-            "metadata.supports_prompt_caching",
-            "metadata.supports_reasoning",
-            "metadata.supports_system_messages",
-            "metadata.supports_tool_choice",
-            "upstreamModelIds"
-          ]
+          "verifiedAt": "2026-11-16T09:24:55Z"
         }
-      ],
-      "notes": "Speed/deployment variant; not a new base model. Aggregate-code evidence does not establish official public availability."
+      ]
     },
     {
       "id": "minimax-m2.5@streamlake",
@@ -88,23 +72,9 @@
         {
           "label": "LiteLLM pinned provider deployment record [streamlake/minimax-m2.5]",
           "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z",
-          "fields": [
-            "metadata.cache_creation_input_token_cost",
-            "metadata.cache_read_input_token_cost",
-            "metadata.input_cost_per_token",
-            "metadata.max_input_tokens",
-            "metadata.max_output_tokens",
-            "metadata.mode",
-            "metadata.output_cost_per_token",
-            "metadata.supports_function_calling",
-            "metadata.supports_prompt_caching",
-            "metadata.supports_reasoning",
-            "upstreamModelIds"
-          ]
+          "verifiedAt": "2026-11-16T09:24:55Z"
         }
-      ],
-      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+      ]
     },
     {
       "id": "minimax-m2.5@novita:highspeed",
@@ -132,25 +102,9 @@
         {
           "label": "LiteLLM pinned provider deployment record [novita/minimax/minimax-m2.5-highspeed]",
           "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z",
-          "fields": [
-            "metadata.cache_read_input_token_cost",
-            "metadata.input_cost_per_token",
-            "metadata.max_input_tokens",
-            "metadata.max_output_tokens",
-            "metadata.mode",
-            "metadata.output_cost_per_token",
-            "metadata.supports_function_calling",
-            "metadata.supports_prompt_caching",
-            "metadata.supports_reasoning",
-            "metadata.supports_response_schema",
-            "metadata.supports_tool_choice",
-            "metadata.supports_vision",
-            "upstreamModelIds"
-          ]
+          "verifiedAt": "2026-11-16T09:24:55Z"
         }
-      ],
-      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+      ]
     },
     {
       "id": "minimax-m2.5@novita",
@@ -178,56 +132,21 @@
         {
           "label": "LiteLLM pinned provider deployment record [novita/minimax/minimax-m2.5]",
           "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z",
-          "fields": [
-            "metadata.cache_read_input_token_cost",
-            "metadata.input_cost_per_token",
-            "metadata.max_input_tokens",
-            "metadata.max_output_tokens",
-            "metadata.mode",
-            "metadata.output_cost_per_token",
-            "metadata.supports_function_calling",
-            "metadata.supports_prompt_caching",
-            "metadata.supports_reasoning",
-            "metadata.supports_response_schema",
-            "metadata.supports_tool_choice",
-            "metadata.supports_vision",
-            "upstreamModelIds"
-          ]
+          "verifiedAt": "2026-11-16T09:24:55Z"
         }
-      ],
-      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+      ]
     }
   ],
   "sources": [
     {
       "label": "LiteLLM pinned native-namespace record [minimax/MiniMax-M2.5]; code evidence, not official API attestation",
       "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:24:55Z",
-      "fields": [
-        "id",
-        "metadata.cache_creation_input_token_cost",
-        "metadata.cache_read_input_token_cost",
-        "metadata.input_cost_per_token",
-        "metadata.max_input_tokens",
-        "metadata.max_output_tokens",
-        "metadata.mode",
-        "metadata.output_cost_per_token",
-        "metadata.supports_function_calling",
-        "metadata.supports_prompt_caching",
-        "metadata.supports_reasoning",
-        "metadata.supports_system_messages",
-        "metadata.supports_tool_choice"
-      ]
+      "verifiedAt": "2026-11-16T09:24:55Z"
     },
     {
       "label": "MiniMax official historical identity and retirement schedule",
       "url": "https://platform.minimax.io/docs/faq/models.md",
-      "verifiedAt": "2026-11-16T09:24:55Z",
-      "fields": [
-        "id",
-        "notes"
-      ]
+      "verifiedAt": "2026-11-16T09:24:55Z"
     }
   ],
   "notes": "Native-namespace metadata is recorded from pinned LiteLLM code; without an official source this does not establish a public official model or guarantee current availability. Official page is internally inconsistent: retirement notice says pay-as-you-go retirement November 18, 2026 (future at audit) while Retired Models table already labels it retired. New users blocked October 19; subscription requests reroute to M3.1 Flash. Historical prices/limits from LiteLLM are not a current availability promise."

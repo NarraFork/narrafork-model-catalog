@@ -24,51 +24,22 @@
     {
       "label": "sub2api: Haiku 5.5 accepts low/medium/high/xhigh/max @ 8f2cbb53d9d1c40e1865b07ac460571f7d4c48de",
       "url": "https://github.com/Wei-Shaw/sub2api/blob/8f2cbb53d9d1c40e1865b07ac460571f7d4c48de/backend/internal/pkg/claude/effort_catalog.go#L8-L30",
-      "fields": [
-        "reasoning.levels"
-      ],
       "verifiedAt": "2026-10-21T02:30:58Z"
     },
     {
       "label": "sub2api: Haiku 5.5 Responses default medium; none maps to disabled thinking with low effort @ 8f2cbb53d9d1c40e1865b07ac460571f7d4c48de",
       "url": "https://github.com/Wei-Shaw/sub2api/blob/8f2cbb53d9d1c40e1865b07ac460571f7d4c48de/backend/internal/pkg/apicompat/anthropic_responses_test.go#L1943-L1957",
-      "fields": [
-        "reasoning.defaultLevel",
-        "reasoning.canDisable"
-      ],
       "verifiedAt": "2026-10-21T02:30:58Z"
     },
     {
       "label": "sub2api: Haiku 5.5 disabled thinking accepts low/medium/high and rejects xhigh/max @ 8f2cbb53d9d1c40e1865b07ac460571f7d4c48de",
       "url": "https://github.com/Wei-Shaw/sub2api/blob/8f2cbb53d9d1c40e1865b07ac460571f7d4c48de/backend/internal/service/gateway_request_haiku55_test.go#L22-L29",
-      "fields": [
-        "reasoning.canDisable"
-      ],
       "verifiedAt": "2026-10-21T02:30:58Z"
     },
     {
       "label": "LiteLLM aggregate registry: Anthropic-native [claude-haiku-5-5] and explicit claude-haiku-latest alias_of @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95",
       "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:20:54Z",
-      "fields": [
-        "matches.aliases",
-        "metadata.input_cost_per_token_above_100k_tokens_batches",
-        "metadata.output_cost_per_token_above_100k_tokens_batches",
-        "metadata.cache_creation_input_token_cost_above_100k_tokens_batches",
-        "metadata.cache_read_input_token_cost_above_100k_tokens_batches",
-        "metadata.supports_anthropic_compaction",
-        "metadata.cache_creation_input_token_cost_batches",
-        "metadata.cache_read_input_token_cost_batches",
-        "metadata.search_context_cost_per_query",
-        "metadata.thinking_on_by_default",
-        "metadata.supports_mid_conversation_system",
-        "metadata.supports_native_structured_output",
-        "metadata.provider_specific_entry",
-        "metadata.supports_forced_tool_use",
-        "metadata.thinking_always_on",
-        "metadata.prompt_cache_min_tokens",
-        "metadata.supports_web_search"
-      ]
+      "verifiedAt": "2026-11-16T09:20:54Z"
     }
   ],
   "metadata": {
@@ -146,7 +117,6 @@
         "claude-haiku-5.5",
         "github_copilot/claude-haiku-5.5"
       ],
-      "family": "claude",
       "status": "unverified",
       "metadata": {
         "cache_creation_input_token_cost": 1.25e-07,
@@ -178,31 +148,7 @@
         {
           "label": "LiteLLM aggregate deployment registry [github_copilot/claude-haiku-5.5] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95",
           "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:20:54Z",
-          "fields": [
-            "upstreamModelIds",
-            "metadata.cache_creation_input_token_cost",
-            "metadata.cache_creation_input_token_cost_above_100k_tokens",
-            "metadata.cache_read_input_token_cost",
-            "metadata.cache_read_input_token_cost_above_100k_tokens",
-            "metadata.input_cost_per_token",
-            "metadata.input_cost_per_token_above_100k_tokens",
-            "metadata.litellm_provider",
-            "metadata.max_input_tokens",
-            "metadata.max_output_tokens",
-            "metadata.mode",
-            "metadata.output_cost_per_token",
-            "metadata.output_cost_per_token_above_100k_tokens",
-            "metadata.source",
-            "metadata.supported_endpoints",
-            "metadata.supports_adaptive_thinking",
-            "metadata.supports_function_calling",
-            "metadata.supports_parallel_function_calling",
-            "metadata.supports_reasoning",
-            "metadata.supports_response_schema",
-            "metadata.supports_vision",
-            "metadata.thinking_always_on"
-          ]
+          "verifiedAt": "2026-11-16T09:20:54Z"
         }
       ],
       "matches": {
@@ -219,7 +165,6 @@
       "upstreamModelIds": [
         "claude-haiku-5-5"
       ],
-      "family": "claude",
       "status": "verified",
       "metadata": {
         "input_cost_per_token": 1e-07,
@@ -231,13 +176,7 @@
         {
           "label": "Cursor official model pricing; base rates exclude team Cursor Token Rate and residency surcharge",
           "url": "https://cursor.com/docs/models",
-          "verifiedAt": "2026-11-16T09:20:54Z",
-          "fields": [
-            "metadata.input_cost_per_token",
-            "metadata.output_cost_per_token",
-            "metadata.cache_read_input_token_cost",
-            "metadata.cache_creation_input_token_cost"
-          ]
+          "verifiedAt": "2026-11-16T09:20:54Z"
         }
       ]
     }

@@ -18,13 +18,7 @@
     {
       "label": "Z.AI official GLM-Image USD $0.015/image; do not confuse with token output price",
       "url": "https://docs.z.ai/guides/overview/pricing",
-      "verifiedAt": "2026-11-16T09:27:56Z",
-      "fields": [
-        "metadata.mode",
-        "metadata.supported_modalities",
-        "metadata.supported_output_modalities",
-        "metadata.output_cost_per_image"
-      ]
+      "verifiedAt": "2026-11-16T09:27:56Z"
     }
   ]
 }

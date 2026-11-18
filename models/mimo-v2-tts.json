@@ -11,11 +11,7 @@
     {
       "label": "MiMo official complete model-deprecation directory and dated retirement",
       "url": "https://mimo.mi.com/static/docs/updates/deprecate.md",
-      "verifiedAt": "2026-11-16T09:33:42Z",
-      "fields": [
-        "id",
-        "metadata.deprecation_date"
-      ]
+      "verifiedAt": "2026-11-16T09:33:42Z"
     }
   ],
   "notes": "Historical model officially retired at 2026-06-30 00:00 UTC+8. Not an alias of the replacement model; current native availability/pricing is not implied. External deployments may remain available under their own limits and rates."

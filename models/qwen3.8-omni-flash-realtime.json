@@ -42,35 +42,16 @@
         {
           "label": "Alibaba official Beijing CNY realtime text/vision and audio rates",
           "url": "https://help.aliyun.com/zh/model-studio/qwen3-8-omni-flash-realtime",
-          "verifiedAt": "2026-11-16T09:31:44Z",
-          "fields": [
-            "metadata.input_cost_per_token",
-            "metadata.output_cost_per_token",
-            "metadata.input_cost_per_audio_token",
-            "metadata.output_cost_per_audio_token"
-          ]
+          "verifiedAt": "2026-11-16T09:31:44Z"
         }
-      ],
-      "notes": "CNY, not USD; text accompanying audio output is charged separately. Other region prices differ."
+      ]
     }
   ],
   "sources": [
     {
       "label": "Alibaba official Qwen3.8 Omni Flash Realtime: exact aggregate input/output limits, streaming audio/video, text/audio output and function calling",
       "url": "https://help.aliyun.com/zh/model-studio/qwen3-8-omni-flash-realtime",
-      "verifiedAt": "2026-11-16T09:31:44Z",
-      "fields": [
-        "metadata.mode",
-        "metadata.max_input_tokens",
-        "metadata.max_output_tokens",
-        "metadata.max_tokens",
-        "metadata.supported_modalities",
-        "metadata.supported_output_modalities",
-        "metadata.supports_audio_input",
-        "metadata.supports_video_input",
-        "metadata.supports_function_calling",
-        "metadata.supports_native_streaming"
-      ]
+      "verifiedAt": "2026-11-16T09:31:44Z"
     }
   ],
   "notes": "Realtime model supports WebSocket, WebRTC and AOQ; region-specific CNY prices are not inferred as universal USD rates. Media history has separate turn/duration truncation limits."

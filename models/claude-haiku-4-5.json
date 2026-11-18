@@ -23,16 +23,7 @@
     {
       "label": "LiteLLM aggregate registry: Anthropic-native [claude-haiku-4-5] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95",
       "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:20:54Z",
-      "fields": [
-        "metadata.cache_creation_input_token_cost_batches",
-        "metadata.cache_read_input_token_cost_batches",
-        "metadata.input_cost_per_token_batches",
-        "metadata.output_cost_per_token_batches",
-        "metadata.supports_native_structured_output",
-        "metadata.prompt_cache_min_tokens",
-        "metadata.source"
-      ]
+      "verifiedAt": "2026-11-16T09:20:54Z"
     }
   ],
   "metadata": {
@@ -77,8 +68,7 @@
         ]
       },
       "metadata": {},
-      "status": "unverified",
-      "family": "claude"
+      "status": "unverified"
     },
     {
       "id": "claude-haiku-4.5@github-copilot",
@@ -88,7 +78,6 @@
         "claude-haiku-4.5",
         "github_copilot/claude-haiku-4.5"
       ],
-      "family": "claude",
       "status": "unverified",
       "metadata": {
         "cache_creation_input_token_cost": 1.25e-06,
@@ -111,23 +100,7 @@
         {
           "label": "LiteLLM aggregate deployment registry [github_copilot/claude-haiku-4.5] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95",
           "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:20:54Z",
-          "fields": [
-            "upstreamModelIds",
-            "metadata.cache_creation_input_token_cost",
-            "metadata.cache_read_input_token_cost",
-            "metadata.input_cost_per_token",
-            "metadata.litellm_provider",
-            "metadata.max_input_tokens",
-            "metadata.max_output_tokens",
-            "metadata.mode",
-            "metadata.output_cost_per_token",
-            "metadata.supported_endpoints",
-            "metadata.supports_function_calling",
-            "metadata.supports_parallel_function_calling",
-            "metadata.supports_reasoning",
-            "metadata.supports_vision"
-          ]
+          "verifiedAt": "2026-11-16T09:20:54Z"
         }
       ]
     }

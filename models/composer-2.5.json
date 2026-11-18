@@ -21,16 +21,11 @@
         "output_cost_per_token_priority": 1.5e-05
       },
       "status": "unverified",
-      "notes": "Priority price fields represent Cursor Fast speed tier; standard and Fast have separate cache-read prices. No native OpenAI-compatible API availability is implied.",
       "sources": [
         {
           "label": "Cursor official Models & Pricing: Composer 2.5 standard and Fast additional-usage rates (USD/MTok)",
           "url": "https://cursor.com/docs/models",
-          "verifiedAt": "2026-11-16T09:25:26Z",
-          "fields": [
-            "name",
-            "metadata"
-          ]
+          "verifiedAt": "2026-11-16T09:25:26Z"
         }
       ]
     }
@@ -40,11 +35,7 @@
     {
       "label": "Cursor official Models & Pricing: Composer 2.5 identity; price details are scoped to cursor variant",
       "url": "https://cursor.com/docs/models",
-      "verifiedAt": "2026-11-16T09:25:26Z",
-      "fields": [
-        "name",
-        "variants"
-      ]
+      "verifiedAt": "2026-11-16T09:25:26Z"
     }
   ]
 }

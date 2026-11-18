@@ -18,13 +18,7 @@
     {
       "label": "Z.AI official GLM-ASR-2512 USD $0.03/MTok (approximately $0.0024/minute)",
       "url": "https://docs.z.ai/guides/overview/pricing",
-      "verifiedAt": "2026-11-16T09:27:56Z",
-      "fields": [
-        "metadata.mode",
-        "metadata.supported_modalities",
-        "metadata.supported_output_modalities",
-        "metadata.input_cost_per_token"
-      ]
+      "verifiedAt": "2026-11-16T09:27:56Z"
     }
   ]
 }

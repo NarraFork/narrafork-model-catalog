@@ -61,6 +61,10 @@ def metadata(value):
     if value.get("supported_endpoints") is not None:
         strings(value["supported_endpoints"], nonempty=True)
         assert all(x.startswith("/") for x in value["supported_endpoints"]), "Invalid endpoint"
+    total = value.get("context_window")
+    output = value.get("max_output_tokens")
+    if total is not None and output is not None:
+        assert output <= total, "max_output_tokens exceeds context_window"
 
 
 def sources(value):
@@ -73,26 +77,9 @@ def sources(value):
         assert url.scheme in ("http", "https") and url.netloc, "Invalid source URL"
         date = datetime.datetime.fromisoformat(source["verifiedAt"].replace("Z", "+00:00"))
         assert date.tzinfo is not None, "Source date must include timezone"
-        if "fields" in source:
-            strings(source["fields"], nonempty=True)
-
-
-def source_field_exists(value, field):
-    # Older catalog sources use the consumer-facing reasoning vocabulary.
-    field = {
-        "reasoning": "metadata.supports_reasoning",
-        "reasoning.levels": "metadata.reasoning_effort_levels",
-        "reasoning.defaultLevel": "metadata.default_reasoning_effort",
-        "reasoning.canDisable": "metadata.can_disable_reasoning",
-    }.get(field, field)
-    if field in value.get("metadata", {}):
-        return True
-    current = value
-    for part in field.split("."):
-        if not isinstance(current, dict) or part not in current:
-            return False
-        current = current[part]
-    return True
+        # Keep sources inside the schema shared by narrafork-public and older NUG.
+        assert "notes" not in source, "Source notes are not supported by all consumers"
+        assert "fields" not in source, "Source fields must be omitted for consumer compatibility"
 
 
 def entry(value, scope, matches):
@@ -123,9 +110,6 @@ def entry(value, scope, matches):
     sources(value.get("sources", []))
     assert value["status"] != "verified" or value.get("sources"), "Verified entry requires sources"
     metadata(value["metadata"])
-    for source in value.get("sources", []):
-        for field in source.get("fields", []):
-            assert source_field_exists(value, field), f"Source references missing field: {field}"
 
 
 def validate_catalog(directory):
@@ -137,12 +121,15 @@ def validate_catalog(directory):
         try:
             model = json.loads(path.read_text(encoding="utf-8"), object_pairs_hook=unique_object)
             assert isinstance(model, dict) and model["id"] == path.stem, "ID must match filename"
+            assert "upstreamModelIds" not in model, "Model upstream IDs belong in matches.aliases for consumer compatibility"
             entry(model, "", matches)
             assert re.fullmatch(r"[a-z0-9][a-z0-9._-]*", model["id"]), "Invalid model ID"
             assert isinstance(model["variants"], list), "Expected variants array"
             for variant in model["variants"]:
                 assert isinstance(variant, dict), "Expected variant object"
                 assert "modelId" not in variant, "Containing file defines the parent model"
+                assert "family" not in variant, "Variant family is not supported by all consumers"
+                assert "notes" not in variant, "Variant notes are not supported by all consumers"
                 assert isinstance(variant.get("providerKey"), str) and variant["providerKey"].strip(), "Invalid providerKey"
                 strings(variant.get("upstreamModelIds"), nonempty=True)
                 entry(variant, variant["providerKey"], matches)

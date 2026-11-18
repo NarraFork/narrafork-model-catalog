@@ -40,25 +40,9 @@
         {
           "label": "LiteLLM pinned external historical deployment [novita/xiaomimimo/mimo-v2.5-pro]",
           "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:33:42Z",
-          "fields": [
-            "upstreamModelIds",
-            "metadata.cache_read_input_token_cost",
-            "metadata.input_cost_per_token",
-            "metadata.max_input_tokens",
-            "metadata.max_output_tokens",
-            "metadata.mode",
-            "metadata.output_cost_per_token",
-            "metadata.supports_function_calling",
-            "metadata.supports_prompt_caching",
-            "metadata.supports_reasoning",
-            "metadata.supports_response_schema",
-            "metadata.supports_tool_choice",
-            "metadata.supports_vision"
-          ]
+          "verifiedAt": "2026-11-16T09:33:42Z"
         }
-      ],
-      "notes": "Provider-scoped aggregate-code evidence; does not resurrect the retired native Xiaomi API model."
+      ]
     },
     {
       "id": "mimo-v2.5-pro@deepinfra",
@@ -86,25 +70,9 @@
         {
           "label": "LiteLLM pinned external historical deployment [deepinfra/XiaomiMiMo/MiMo-V2.5-Pro]",
           "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:33:42Z",
-          "fields": [
-            "upstreamModelIds",
-            "metadata.max_output_tokens",
-            "metadata.max_input_tokens",
-            "metadata.input_cost_per_token",
-            "metadata.output_cost_per_token",
-            "metadata.cache_read_input_token_cost",
-            "metadata.supports_prompt_caching",
-            "metadata.mode",
-            "metadata.supports_function_calling",
-            "metadata.supports_tool_choice",
-            "metadata.supports_response_schema",
-            "metadata.supports_reasoning",
-            "metadata.supports_vision"
-          ]
+          "verifiedAt": "2026-11-16T09:33:42Z"
         }
-      ],
-      "notes": "Provider-scoped aggregate-code evidence; does not resurrect the retired native Xiaomi API model."
+      ]
     },
     {
       "id": "mimo-v2.5-pro@opencode_go",
@@ -132,23 +100,9 @@
         {
           "label": "LiteLLM pinned external historical deployment [opencode_go/mimo-v2.5-pro]",
           "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:33:42Z",
-          "fields": [
-            "upstreamModelIds",
-            "metadata.mode",
-            "metadata.supported_endpoints",
-            "metadata.input_cost_per_token",
-            "metadata.output_cost_per_token",
-            "metadata.cache_read_input_token_cost",
-            "metadata.max_output_tokens",
-            "metadata.max_input_tokens",
-            "metadata.supports_function_calling",
-            "metadata.supports_reasoning",
-            "metadata.supports_vision"
-          ]
+          "verifiedAt": "2026-11-16T09:33:42Z"
         }
-      ],
-      "notes": "Provider-scoped aggregate-code evidence; does not resurrect the retired native Xiaomi API model."
+      ]
     },
     {
       "id": "mimo-v2.5-pro@gmi",
@@ -169,32 +123,16 @@
         {
           "label": "LiteLLM pinned external historical deployment [gmi/XiaomiMiMo/MiMo-V2.5-Pro]",
           "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:33:42Z",
-          "fields": [
-            "upstreamModelIds",
-            "metadata.cache_read_input_token_cost",
-            "metadata.input_cost_per_token",
-            "metadata.max_input_tokens",
-            "metadata.mode",
-            "metadata.output_cost_per_token"
-          ]
+          "verifiedAt": "2026-11-16T09:33:42Z"
         }
-      ],
-      "notes": "Provider-scoped aggregate-code evidence; does not resurrect the retired native Xiaomi API model."
+      ]
     }
   ],
   "sources": [
     {
       "label": "MiMo official complete model-deprecation directory and dated retirement",
       "url": "https://mimo.mi.com/static/docs/updates/deprecate.md",
-      "verifiedAt": "2026-11-16T09:33:42Z",
-      "fields": [
-        "id",
-        "metadata.deprecation_date",
-        "metadata.supported_modalities",
-        "metadata.supported_output_modalities",
-        "metadata.supports_vision"
-      ]
+      "verifiedAt": "2026-11-16T09:33:42Z"
     }
   ],
   "notes": "Historical model officially retired at 2026-10-21 10:00 UTC+8. Not an alias of the replacement model; current native availability/pricing is not implied. External deployments may remain available under their own limits and rates."

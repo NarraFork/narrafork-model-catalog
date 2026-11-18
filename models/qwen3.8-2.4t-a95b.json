@@ -13,12 +13,7 @@
     {
       "label": "Alibaba official open-model thinking directory: 27B hybrid, 2.4T thinking-only",
       "url": "https://help.aliyun.com/zh/model-studio/deep-thinking",
-      "verifiedAt": "2026-11-16T09:27:56Z",
-      "fields": [
-        "metadata.supports_reasoning",
-        "metadata.can_disable_reasoning",
-        "metadata.supports_none_reasoning_effort"
-      ]
+      "verifiedAt": "2026-11-16T09:27:56Z"
     }
   ]
 }

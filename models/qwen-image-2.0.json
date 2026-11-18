@@ -35,15 +35,9 @@
         {
           "label": "LiteLLM pinned Alibaba namespace regional/deployment record [qwen_ai_platform/qwen-image-2.0]",
           "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z",
-          "fields": [
-            "metadata.mode",
-            "metadata.supported_endpoints",
-            "upstreamModelIds"
-          ]
+          "verifiedAt": "2026-11-16T09:24:55Z"
         }
-      ],
-      "notes": "Code evidence only; pricing currency/region may differ from official Beijing CNY. Does not override official model capabilities or establish current API availability."
+      ]
     },
     {
       "id": "qwen-image-2.0@dashscope",
@@ -65,16 +59,9 @@
         {
           "label": "LiteLLM pinned provider deployment record [dashscope/qwen-image-2.0]",
           "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z",
-          "fields": [
-            "metadata.mode",
-            "metadata.output_cost_per_image",
-            "metadata.supported_endpoints",
-            "upstreamModelIds"
-          ]
+          "verifiedAt": "2026-11-16T09:24:55Z"
         }
-      ],
-      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+      ]
     },
     {
       "id": "qwen-image-2.0@qwencloud",
@@ -94,15 +81,9 @@
         {
           "label": "LiteLLM pinned provider deployment record [qwencloud/qwen-image-2.0]",
           "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z",
-          "fields": [
-            "metadata.mode",
-            "metadata.supported_endpoints",
-            "upstreamModelIds"
-          ]
+          "verifiedAt": "2026-11-16T09:24:55Z"
         }
-      ],
-      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+      ]
     },
     {
       "id": "qwen-image-2.0@dashscope:snapshot-2026-03-03",
@@ -117,10 +98,7 @@
         {
           "label": "Alibaba official image directory dated snapshot",
           "url": "https://help.aliyun.com/zh/model-studio/image-model",
-          "verifiedAt": "2026-11-16T09:31:44Z",
-          "fields": [
-            "upstreamModelIds"
-          ]
+          "verifiedAt": "2026-11-16T09:31:44Z"
         }
       ]
     }
@@ -129,22 +107,12 @@
     {
       "label": "LiteLLM pinned native-namespace record [qwen_ai_platform/qwen-image-2.0]; code evidence, not official API attestation",
       "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:24:55Z",
-      "fields": [
-        "id",
-        "metadata.mode",
-        "metadata.supported_endpoints"
-      ]
+      "verifiedAt": "2026-11-16T09:24:55Z"
     },
     {
       "label": "Alibaba official Qwen Image directory: text-to-image and editing supported",
       "url": "https://help.aliyun.com/zh/model-studio/image-model",
-      "verifiedAt": "2026-11-16T09:31:44Z",
-      "fields": [
-        "metadata.mode",
-        "metadata.supported_modalities",
-        "metadata.supported_output_modalities"
-      ]
+      "verifiedAt": "2026-11-16T09:31:44Z"
     }
   ],
   "notes": "Native-namespace metadata is recorded from pinned LiteLLM code; without an official source this does not establish a public official model or guarantee current availability."

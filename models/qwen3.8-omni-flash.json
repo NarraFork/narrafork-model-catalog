@@ -63,28 +63,9 @@
         {
           "label": "LiteLLM pinned Alibaba namespace regional/deployment record [qwen_ai_platform/qwen3.8-omni-flash]",
           "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z",
-          "fields": [
-            "metadata.cache_read_input_token_cost",
-            "metadata.input_cost_per_token",
-            "metadata.max_input_tokens",
-            "metadata.max_output_tokens",
-            "metadata.mode",
-            "metadata.output_cost_per_token",
-            "metadata.supports_audio_input",
-            "metadata.supports_function_calling",
-            "metadata.supports_prompt_caching",
-            "metadata.supports_reasoning",
-            "metadata.supports_response_schema",
-            "metadata.supports_tool_choice",
-            "metadata.supports_video_input",
-            "metadata.supports_vision",
-            "metadata.supports_web_search",
-            "upstreamModelIds"
-          ]
+          "verifiedAt": "2026-11-16T09:24:55Z"
         }
-      ],
-      "notes": "Code evidence only; pricing currency/region may differ from official Beijing CNY. Does not override official model capabilities or establish current API availability."
+      ]
     },
     {
       "id": "qwen3.8-omni-flash@dashscope",
@@ -115,82 +96,26 @@
         {
           "label": "LiteLLM pinned provider deployment record [dashscope/qwen3.8-omni-flash]",
           "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z",
-          "fields": [
-            "metadata.cache_read_input_token_cost",
-            "metadata.input_cost_per_token",
-            "metadata.max_input_tokens",
-            "metadata.max_output_tokens",
-            "metadata.mode",
-            "metadata.output_cost_per_token",
-            "metadata.supports_audio_input",
-            "metadata.supports_function_calling",
-            "metadata.supports_prompt_caching",
-            "metadata.supports_reasoning",
-            "metadata.supports_response_schema",
-            "metadata.supports_tool_choice",
-            "metadata.supports_video_input",
-            "metadata.supports_vision",
-            "metadata.supports_web_search",
-            "upstreamModelIds"
-          ]
+          "verifiedAt": "2026-11-16T09:24:55Z"
         }
-      ],
-      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+      ]
     }
   ],
   "sources": [
     {
       "label": "LiteLLM pinned native-namespace record [qwen_ai_platform/qwen3.8-omni-flash]; code evidence, not official API attestation",
       "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:24:55Z",
-      "fields": [
-        "id",
-        "metadata.max_input_tokens",
-        "metadata.max_output_tokens",
-        "metadata.mode",
-        "metadata.supports_audio_input",
-        "metadata.supports_function_calling",
-        "metadata.supports_prompt_caching",
-        "metadata.supports_reasoning",
-        "metadata.supports_response_schema",
-        "metadata.supports_tool_choice",
-        "metadata.supports_video_input",
-        "metadata.supports_vision",
-        "metadata.supports_web_search"
-      ]
+      "verifiedAt": "2026-11-16T09:24:55Z"
     },
     {
       "label": "Alibaba official Qwen3.8 Omni Flash full-modal input, text output, exact token limits, function calls, cache and search; default thinking",
       "url": "https://help.aliyun.com/zh/model-studio/qwen3-8-omni-flash",
-      "verifiedAt": "2026-11-16T09:27:56Z",
-      "fields": [
-        "metadata.max_input_tokens",
-        "metadata.max_output_tokens",
-        "metadata.max_tokens",
-        "metadata.supported_modalities",
-        "metadata.supported_output_modalities",
-        "metadata.supports_vision",
-        "metadata.supports_video_input",
-        "metadata.supports_audio_input",
-        "metadata.supports_function_calling",
-        "metadata.supports_prompt_caching",
-        "metadata.supports_web_search",
-        "metadata.supports_reasoning",
-        "metadata.can_disable_reasoning",
-        "metadata.supports_none_reasoning_effort",
-        "metadata.supported_endpoints"
-      ]
+      "verifiedAt": "2026-11-16T09:27:56Z"
     },
     {
       "label": "Alibaba official model-specific hybrid thinking list; enabled by default",
       "url": "https://help.aliyun.com/zh/model-studio/deep-thinking",
-      "verifiedAt": "2026-11-16T09:27:56Z",
-      "fields": [
-        "metadata.supports_reasoning",
-        "metadata.can_disable_reasoning",
-        "metadata.supports_none_reasoning_effort"
-      ]
+      "verifiedAt": "2026-11-16T09:27:56Z"
     }
   ],
   "notes": "Native-namespace metadata is recorded from pinned LiteLLM code; without an official source this does not establish a public official model or guarantee current availability.  Official thinking-mode list states hybrid thinking enabled by default; no undocumented effort enum is inferred."

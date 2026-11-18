@@ -43,23 +43,7 @@
     {
       "label": "LiteLLM aggregate registry: Anthropic-native [claude-sonnet-5-5] and explicit claude-sonnet-latest alias_of @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95",
       "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:20:54Z",
-      "fields": [
-        "matches.aliases",
-        "metadata.supports_anthropic_compaction",
-        "metadata.cache_creation_input_token_cost_batches",
-        "metadata.cache_read_input_token_cost_batches",
-        "metadata.input_cost_per_token_batches",
-        "metadata.output_cost_per_token_batches",
-        "metadata.search_context_cost_per_query",
-        "metadata.supports_mid_conversation_system",
-        "metadata.supports_native_structured_output",
-        "metadata.provider_specific_entry",
-        "metadata.supports_forced_tool_use",
-        "metadata.thinking_always_on",
-        "metadata.prompt_cache_min_tokens",
-        "metadata.supports_web_search"
-      ]
+      "verifiedAt": "2026-11-16T09:20:54Z"
     }
   ],
   "metadata": {
@@ -128,7 +112,6 @@
         "claude-sonnet-5.5",
         "github_copilot/claude-sonnet-5.5"
       ],
-      "family": "claude",
       "status": "unverified",
       "metadata": {
         "cache_creation_input_token_cost": 2.5e-06,
@@ -156,27 +139,7 @@
         {
           "label": "LiteLLM aggregate deployment registry [github_copilot/claude-sonnet-5.5] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95",
           "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:20:54Z",
-          "fields": [
-            "upstreamModelIds",
-            "metadata.cache_creation_input_token_cost",
-            "metadata.cache_read_input_token_cost",
-            "metadata.input_cost_per_token",
-            "metadata.litellm_provider",
-            "metadata.max_input_tokens",
-            "metadata.max_output_tokens",
-            "metadata.mode",
-            "metadata.output_cost_per_token",
-            "metadata.source",
-            "metadata.supported_endpoints",
-            "metadata.supports_adaptive_thinking",
-            "metadata.supports_function_calling",
-            "metadata.supports_parallel_function_calling",
-            "metadata.supports_reasoning",
-            "metadata.supports_response_schema",
-            "metadata.supports_vision",
-            "metadata.thinking_always_on"
-          ]
+          "verifiedAt": "2026-11-16T09:20:54Z"
         }
       ],
       "matches": {
@@ -193,7 +156,6 @@
       "upstreamModelIds": [
         "claude-sonnet-5-5"
       ],
-      "family": "claude",
       "status": "verified",
       "metadata": {
         "input_cost_per_token": 2e-06,
@@ -205,13 +167,7 @@
         {
           "label": "Cursor official model pricing; base rates exclude team Cursor Token Rate and residency surcharge",
           "url": "https://cursor.com/docs/models",
-          "verifiedAt": "2026-11-16T09:20:54Z",
-          "fields": [
-            "metadata.input_cost_per_token",
-            "metadata.output_cost_per_token",
-            "metadata.cache_read_input_token_cost",
-            "metadata.cache_creation_input_token_cost"
-          ]
+          "verifiedAt": "2026-11-16T09:20:54Z"
         }
       ]
     },
@@ -222,20 +178,15 @@
       "upstreamModelIds": [
         "claude-sonnet-5-5"
       ],
-      "family": "claude",
       "status": "unverified",
       "metadata": {},
       "sources": [
         {
           "label": "sub2api unmerged PR #8778 Antigravity adapter whitelist/output spelling; availability unverified",
           "url": "https://github.com/universonic/sub2api/blob/8783acd7b6725c8036098df243b16c0fbd25e71e/backend/internal/domain/constants.go#L112-L137",
-          "verifiedAt": "2026-11-16T09:20:54Z",
-          "fields": [
-            "upstreamModelIds"
-          ]
+          "verifiedAt": "2026-11-16T09:20:54Z"
         }
-      ],
-      "notes": "This spelling is present in an unmerged third-party adapter; it does not establish production availability, official effort levels, pricing or context limits."
+      ]
     },
     {
       "id": "claude-sonnet-5-5-high@antigravity",
@@ -244,20 +195,15 @@
       "upstreamModelIds": [
         "claude-sonnet-5-5-high"
       ],
-      "family": "claude",
       "status": "unverified",
       "metadata": {},
       "sources": [
         {
           "label": "sub2api unmerged PR #8778 Antigravity adapter whitelist/output spelling; availability unverified",
           "url": "https://github.com/universonic/sub2api/blob/8783acd7b6725c8036098df243b16c0fbd25e71e/backend/internal/domain/constants.go#L112-L137",
-          "verifiedAt": "2026-11-16T09:20:54Z",
-          "fields": [
-            "upstreamModelIds"
-          ]
+          "verifiedAt": "2026-11-16T09:20:54Z"
         }
-      ],
-      "notes": "This spelling is present in an unmerged third-party adapter; it does not establish production availability, official effort levels, pricing or context limits."
+      ]
     },
     {
       "id": "claude-sonnet-5-5-medium@antigravity",
@@ -266,20 +212,15 @@
       "upstreamModelIds": [
         "claude-sonnet-5-5-medium"
       ],
-      "family": "claude",
       "status": "unverified",
       "metadata": {},
       "sources": [
         {
           "label": "sub2api unmerged PR #8778 Antigravity adapter whitelist/output spelling; availability unverified",
           "url": "https://github.com/universonic/sub2api/blob/8783acd7b6725c8036098df243b16c0fbd25e71e/backend/internal/domain/constants.go#L112-L137",
-          "verifiedAt": "2026-11-16T09:20:54Z",
-          "fields": [
-            "upstreamModelIds"
-          ]
+          "verifiedAt": "2026-11-16T09:20:54Z"
         }
-      ],
-      "notes": "This spelling is present in an unmerged third-party adapter; it does not establish production availability, official effort levels, pricing or context limits."
+      ]
     },
     {
       "id": "claude-sonnet-5-5-low@antigravity",
@@ -288,20 +229,15 @@
       "upstreamModelIds": [
         "claude-sonnet-5-5-low"
       ],
-      "family": "claude",
       "status": "unverified",
       "metadata": {},
       "sources": [
         {
           "label": "sub2api unmerged PR #8778 Antigravity adapter whitelist/output spelling; availability unverified",
           "url": "https://github.com/universonic/sub2api/blob/8783acd7b6725c8036098df243b16c0fbd25e71e/backend/internal/domain/constants.go#L112-L137",
-          "verifiedAt": "2026-11-16T09:20:54Z",
-          "fields": [
-            "upstreamModelIds"
-          ]
+          "verifiedAt": "2026-11-16T09:20:54Z"
         }
-      ],
-      "notes": "This spelling is present in an unmerged third-party adapter; it does not establish production availability, official effort levels, pricing or context limits."
+      ]
     }
   ]
 }

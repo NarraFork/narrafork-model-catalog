@@ -13,12 +13,7 @@
     {
       "label": "Z.AI official USD token pricing; temporary free cache storage is not a permanent zero cache-write rate",
       "url": "https://docs.z.ai/guides/overview/pricing.md",
-      "verifiedAt": "2026-11-16T09:24:55Z",
-      "fields": [
-        "metadata.cache_read_input_token_cost",
-        "metadata.input_cost_per_token",
-        "metadata.output_cost_per_token"
-      ]
+      "verifiedAt": "2026-11-16T09:24:55Z"
     }
   ]
 }

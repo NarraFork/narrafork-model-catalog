@@ -14,16 +14,11 @@
       ],
       "metadata": {},
       "status": "unverified",
-      "notes": "Cursor Auto is a dynamic router, not a fixed underlying model. Price, context window and capabilities depend on routing mode and selected model, so no fixed model metadata is inferred. The legacy gateway ID auto-smart is not confirmed by the public page.",
       "sources": [
         {
           "label": "Cursor official Models & Pricing: Auto Cost/Balance/Intelligence route and bill differently",
           "url": "https://cursor.com/docs/models",
-          "verifiedAt": "2026-11-16T09:25:26Z",
-          "fields": [
-            "name",
-            "notes"
-          ]
+          "verifiedAt": "2026-11-16T09:25:26Z"
         }
       ]
     }
@@ -33,11 +28,7 @@
     {
       "label": "Cursor official Models & Pricing: Auto Cost/Balance/Intelligence route and bill differently",
       "url": "https://cursor.com/docs/models",
-      "verifiedAt": "2026-11-16T09:25:26Z",
-      "fields": [
-        "name",
-        "notes"
-      ]
+      "verifiedAt": "2026-11-16T09:25:26Z"
     }
   ]
 }

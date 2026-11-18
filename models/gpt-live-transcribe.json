@@ -27,18 +27,7 @@
     {
       "label": "litellm aggregate directory [gpt-live-transcribe] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95; verifies only recorded aggregate fields, not official availability",
       "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:21:44Z",
-      "fields": [
-        "id",
-        "metadata.input_cost_per_second",
-        "metadata.litellm_provider",
-        "metadata.mode",
-        "metadata.supported_endpoints",
-        "metadata.supported_modalities",
-        "metadata.supported_output_modalities",
-        "metadata.supports_audio_input",
-        "metadata.supports_native_streaming"
-      ]
+      "verifiedAt": "2026-11-16T09:21:44Z"
     }
   ]
 }

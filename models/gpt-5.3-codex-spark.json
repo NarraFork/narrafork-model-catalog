@@ -12,38 +12,7 @@
     {
       "label": "sub2api aggregate directory [gpt-5.3-codex-spark] @ d70676756fd3a35b854d41aa46c07935bbef283f; verifies only recorded aggregate fields, not official availability",
       "url": "https://github.com/Wei-Shaw/sub2api/blob/d70676756fd3a35b854d41aa46c07935bbef283f/backend/resources/model-pricing/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:21:44Z",
-      "fields": [
-        "id",
-        "metadata.cache_read_input_token_cost",
-        "metadata.cache_read_input_token_cost_priority",
-        "metadata.input_cost_per_token",
-        "metadata.input_cost_per_token_priority",
-        "metadata.litellm_provider",
-        "metadata.max_input_tokens",
-        "metadata.max_output_tokens",
-        "metadata.max_tokens",
-        "metadata.mode",
-        "metadata.output_cost_per_token",
-        "metadata.output_cost_per_token_priority",
-        "metadata.supported_endpoints",
-        "metadata.supported_modalities",
-        "metadata.supported_output_modalities",
-        "metadata.supports_function_calling",
-        "metadata.supports_minimal_reasoning_effort",
-        "metadata.supports_native_streaming",
-        "metadata.supports_none_reasoning_effort",
-        "metadata.supports_parallel_function_calling",
-        "metadata.supports_pdf_input",
-        "metadata.supports_prompt_caching",
-        "metadata.supports_reasoning",
-        "metadata.supports_response_schema",
-        "metadata.supports_system_messages",
-        "metadata.supports_tool_choice",
-        "metadata.supports_vision",
-        "metadata.supports_web_search",
-        "metadata.supports_xhigh_reasoning_effort"
-      ]
+      "verifiedAt": "2026-11-16T09:21:44Z"
     }
   ],
   "metadata": {

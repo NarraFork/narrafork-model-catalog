@@ -7,65 +7,12 @@
     {
       "label": "LiteLLM aggregated model metadata (not official verification) [gemini/gemini-4-carbon]",
       "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:26:38Z",
-      "fields": [
-        "cache_read_input_token_cost",
-        "cache_read_input_token_cost_batches",
-        "cache_read_input_token_cost_flex",
-        "cache_read_input_token_cost_priority",
-        "google_maps_grounding_cost_per_query",
-        "input_cost_per_token",
-        "input_cost_per_token_batches",
-        "input_cost_per_token_flex",
-        "input_cost_per_token_priority",
-        "litellm_provider",
-        "max_input_tokens",
-        "max_output_tokens",
-        "mode",
-        "output_cost_per_reasoning_token",
-        "output_cost_per_token",
-        "output_cost_per_token_batches",
-        "output_cost_per_token_flex",
-        "output_cost_per_token_priority",
-        "prompt_cache_min_tokens",
-        "rpm",
-        "search_context_cost_per_query",
-        "search_free_requests",
-        "source",
-        "supported_endpoints",
-        "supported_modalities",
-        "supported_output_modalities",
-        "supports_audio_input",
-        "supports_audio_output",
-        "supports_computer_use",
-        "supports_continuation",
-        "supports_function_calling",
-        "supports_minimal_reasoning_effort",
-        "supports_native_streaming",
-        "supports_parallel_function_calling",
-        "supports_pdf_input",
-        "supports_prompt_caching",
-        "supports_reasoning",
-        "supports_response_schema",
-        "supports_system_messages",
-        "supports_tool_choice",
-        "supports_url_context",
-        "supports_video_input",
-        "supports_vision",
-        "supports_web_search",
-        "tpm",
-        "web_search_billing_unit"
-      ],
-      "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel. Output-limit evidence conflict: fixed LiteLLM commit 2f448a9ee896d6d3ccb2899be0532bb031d49d95 explicitly lists max_output_tokens=1048576, while unmerged sub2api PR #8778/#8661 describes synchronous generateContent output as 65536 (64K). The 1048576 value is retained only as unverified aggregator data, not an officially confirmed synchronous output limit; no separate long-decode/background API behavior is inferred."
+      "verifiedAt": "2026-11-16T09:26:38Z"
     },
     {
       "label": "Unresolved output-limit conflict (PR assertion not adopted)",
       "url": "https://github.com/Wei-Shaw/sub2api/pull/8661",
-      "verifiedAt": "2026-11-16T09:32:33Z",
-      "fields": [
-        "max_output_tokens"
-      ],
-      "notes": "Output-limit evidence conflict: fixed LiteLLM commit 2f448a9ee896d6d3ccb2899be0532bb031d49d95 explicitly lists max_output_tokens=1048576, while unmerged sub2api PR #8778/#8661 describes synchronous generateContent output as 65536 (64K). The 1048576 value is retained only as unverified aggregator data, not an officially confirmed synchronous output limit; no separate long-decode/background API behavior is inferred."
+      "verifiedAt": "2026-11-16T09:32:33Z"
     }
   ],
   "metadata": {
@@ -218,74 +165,17 @@
         {
           "label": "LiteLLM aggregated model metadata (not official verification) [gemini/gemini-4-carbon]",
           "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:26:38Z",
-          "fields": [
-            "cache_read_input_token_cost",
-            "cache_read_input_token_cost_batches",
-            "cache_read_input_token_cost_flex",
-            "cache_read_input_token_cost_priority",
-            "google_maps_grounding_cost_per_query",
-            "input_cost_per_token",
-            "input_cost_per_token_batches",
-            "input_cost_per_token_flex",
-            "input_cost_per_token_priority",
-            "litellm_provider",
-            "max_input_tokens",
-            "max_output_tokens",
-            "mode",
-            "output_cost_per_reasoning_token",
-            "output_cost_per_token",
-            "output_cost_per_token_batches",
-            "output_cost_per_token_flex",
-            "output_cost_per_token_priority",
-            "prompt_cache_min_tokens",
-            "rpm",
-            "search_context_cost_per_query",
-            "search_free_requests",
-            "source",
-            "supported_endpoints",
-            "supported_modalities",
-            "supported_output_modalities",
-            "supports_audio_input",
-            "supports_audio_output",
-            "supports_computer_use",
-            "supports_continuation",
-            "supports_function_calling",
-            "supports_minimal_reasoning_effort",
-            "supports_native_streaming",
-            "supports_parallel_function_calling",
-            "supports_pdf_input",
-            "supports_prompt_caching",
-            "supports_reasoning",
-            "supports_response_schema",
-            "supports_system_messages",
-            "supports_tool_choice",
-            "supports_url_context",
-            "supports_video_input",
-            "supports_vision",
-            "supports_web_search",
-            "tpm",
-            "web_search_billing_unit"
-          ],
-          "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel. Output-limit evidence conflict: fixed LiteLLM commit 2f448a9ee896d6d3ccb2899be0532bb031d49d95 explicitly lists max_output_tokens=1048576, while unmerged sub2api PR #8778/#8661 describes synchronous generateContent output as 65536 (64K). The 1048576 value is retained only as unverified aggregator data, not an officially confirmed synchronous output limit; no separate long-decode/background API behavior is inferred."
+          "verifiedAt": "2026-11-16T09:26:38Z"
         },
         {
           "label": "sub2api unmerged PR #8778 fixed code: native Gemini thinkingLevel normalization (not official verification)",
           "url": "https://github.com/universonic/sub2api/blob/8783acd7b6725c8036098df243b16c0fbd25e71e/backend/internal/service/gemini_compat_thinking.go#L122-L149",
-          "verifiedAt": "2026-11-16T09:32:33Z",
-          "fields": [
-            "reasoning_effort_levels"
-          ],
-          "notes": "Actually read fixed-commit implementation. Exact bare IDs gemini-4-carbon and gemini-4-hydrogen accept medium; non-Flash minimal is normalized to low; only exact gemini-4-hydrogen retains xhigh, Carbon xhigh is normalized to high. No default effort inferred. This is unmerged third-party compatibility code, not official model validation."
+          "verifiedAt": "2026-11-16T09:32:33Z"
         },
         {
           "label": "sub2api unmerged PR #8778 fixed code: native AI Studio API-key forwarding call path",
           "url": "https://github.com/universonic/sub2api/blob/8783acd7b6725c8036098df243b16c0fbd25e71e/backend/internal/service/gemini_messages_compat_service.go#L533-L610",
-          "verifiedAt": "2026-11-16T09:32:33Z",
-          "fields": [
-            "reasoning_effort_levels"
-          ],
-          "notes": "Actually read call path: line 564 applies thinkingConfig normalization, and API-key branch lines 580-610 forwards that request to AI Studio generateContent/streamGenerateContent. Scope limited to gemini provider variant; no equivalent Vertex provider claim inferred."
+          "verifiedAt": "2026-11-16T09:32:33Z"
         }
       ]
     },
@@ -366,54 +256,7 @@
         {
           "label": "LiteLLM aggregated model metadata (not official verification) [vertex_ai/gemini-4-carbon]",
           "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:26:38Z",
-          "fields": [
-            "cache_read_input_token_cost",
-            "cache_read_input_token_cost_batches",
-            "cache_read_input_token_cost_priority",
-            "google_maps_grounding_cost_per_query",
-            "input_cost_per_audio_token",
-            "input_cost_per_audio_token_batches",
-            "input_cost_per_audio_token_priority",
-            "input_cost_per_token",
-            "input_cost_per_token_batches",
-            "input_cost_per_token_priority",
-            "litellm_provider",
-            "max_input_tokens",
-            "max_output_tokens",
-            "mode",
-            "output_cost_per_reasoning_token",
-            "output_cost_per_token",
-            "output_cost_per_token_batches",
-            "output_cost_per_token_priority",
-            "prompt_cache_min_tokens",
-            "regional_endpoint_uplift_multiplier",
-            "search_context_cost_per_query",
-            "search_free_requests",
-            "source",
-            "supported_endpoints",
-            "supported_modalities",
-            "supported_output_modalities",
-            "supports_audio_input",
-            "supports_computer_use",
-            "supports_continuation",
-            "supports_function_calling",
-            "supports_minimal_reasoning_effort",
-            "supports_native_streaming",
-            "supports_parallel_function_calling",
-            "supports_pdf_input",
-            "supports_prompt_caching",
-            "supports_reasoning",
-            "supports_response_schema",
-            "supports_system_messages",
-            "supports_tool_choice",
-            "supports_url_context",
-            "supports_video_input",
-            "supports_vision",
-            "supports_web_search",
-            "web_search_billing_unit"
-          ],
-          "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel. Output-limit evidence conflict: fixed LiteLLM commit 2f448a9ee896d6d3ccb2899be0532bb031d49d95 explicitly lists max_output_tokens=1048576, while unmerged sub2api PR #8778/#8661 describes synchronous generateContent output as 65536 (64K). The 1048576 value is retained only as unverified aggregator data, not an officially confirmed synchronous output limit; no separate long-decode/background API behavior is inferred."
+          "verifiedAt": "2026-11-16T09:26:38Z"
         }
       ]
     },
@@ -430,11 +273,7 @@
         {
           "label": "sub2api unmerged PR #8661 (not official verification)",
           "url": "https://github.com/Wei-Shaw/sub2api/pull/8661",
-          "verifiedAt": "2026-11-16T09:26:38Z",
-          "fields": [
-            "upstreamModelIds"
-          ],
-          "notes": "PR is open and unmerged, with no live provider verification. Carbon PR explicitly uses a bare identifier; no Carbon suffixed variants are inferred. PR synchronous output claim (65536) conflicts with LiteLLM total output limit (1048576); do not override native limit."
+          "verifiedAt": "2026-11-16T09:26:38Z"
         }
       ]
     }

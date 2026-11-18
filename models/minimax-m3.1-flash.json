@@ -72,93 +72,37 @@
         {
           "label": "LiteLLM pinned provider deployment record [opencode_go/minimax-m3.1-flash]",
           "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z",
-          "fields": [
-            "metadata.cache_read_input_token_cost",
-            "metadata.input_cost_per_token",
-            "metadata.max_input_tokens",
-            "metadata.max_output_tokens",
-            "metadata.mode",
-            "metadata.output_cost_per_token",
-            "metadata.supported_endpoints",
-            "metadata.supports_function_calling",
-            "metadata.supports_reasoning",
-            "metadata.supports_vision",
-            "upstreamModelIds"
-          ]
+          "verifiedAt": "2026-11-16T09:24:55Z"
         }
-      ],
-      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+      ]
     }
   ],
   "sources": [
     {
       "label": "LiteLLM pinned native-namespace record [minimax/MiniMax-M3.1-Flash]; code evidence, not official API attestation",
       "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:24:55Z",
-      "fields": [
-        "id",
-        "metadata.cache_read_input_token_cost",
-        "metadata.input_cost_per_token",
-        "metadata.max_input_tokens",
-        "metadata.mode",
-        "metadata.output_cost_per_token",
-        "metadata.reasoning_effort_levels",
-        "metadata.supports_function_calling",
-        "metadata.supports_max_reasoning_effort",
-        "metadata.supports_none_reasoning_effort",
-        "metadata.supports_prompt_caching",
-        "metadata.supports_reasoning",
-        "metadata.supports_vision",
-        "metadata.supports_xhigh_reasoning_effort"
-      ]
+      "verifiedAt": "2026-11-16T09:24:55Z"
     },
     {
       "label": "MiniMax official exact 1000000 context, multimodal inputs, streaming/tool use and M3.1 effort contract",
       "url": "https://platform.minimax.io/docs/guides/text-generation.md",
-      "verifiedAt": "2026-11-16T09:24:55Z",
-      "fields": [
-        "metadata.can_disable_reasoning",
-        "metadata.default_reasoning_effort",
-        "metadata.max_input_tokens",
-        "metadata.reasoning_effort_levels",
-        "metadata.supported_endpoints",
-        "metadata.supported_modalities",
-        "metadata.supported_output_modalities",
-        "metadata.supports_function_calling",
-        "metadata.supports_low_reasoning_effort",
-        "metadata.supports_max_reasoning_effort",
-        "metadata.supports_native_streaming",
-        "metadata.supports_none_reasoning_effort",
-        "metadata.supports_reasoning",
-        "metadata.supports_video_input",
-        "metadata.supports_vision",
-        "metadata.supports_xhigh_reasoning_effort"
-      ]
+      "verifiedAt": "2026-11-16T09:24:55Z"
     },
     {
       "label": "MiniMax official USD standard pay-as-you-go rates; M3 standard base tier <=512k input",
       "url": "https://platform.minimax.io/docs/pricing/overview.md",
-      "verifiedAt": "2026-11-16T09:24:55Z",
-      "fields": [
-        "metadata.cache_read_input_token_cost",
-        "metadata.input_cost_per_token",
-        "metadata.output_cost_per_token"
-      ]
+      "verifiedAt": "2026-11-16T09:24:55Z"
     },
     {
       "label": "MiniMax official ChatCompletion schema: recommended completion 131072, actual maximum 524288; temperature/top_p fixed",
       "url": "https://platform.minimax.io/docs/api-reference/text-chat-openai.md",
-      "verifiedAt": "2026-11-16T09:31:44Z",
-      "fields": [
-        "metadata.max_output_tokens",
-        "metadata.max_tokens",
-        "metadata.supports_sampling_params"
-      ]
+      "verifiedAt": "2026-11-16T09:31:44Z"
     }
   ],
   "notes": "Native-namespace metadata is recorded from pinned LiteLLM code; without an official source this does not establish a public official model or guarantee current availability.",
-  "upstreamModelIds": [
-    "MiniMax-M3.1-Flash"
-  ]
+  "matches": {
+    "aliases": [
+      "MiniMax-M3.1-Flash"
+    ]
+  }
 }

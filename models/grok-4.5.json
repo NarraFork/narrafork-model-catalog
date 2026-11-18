@@ -62,50 +62,21 @@
         {
           "label": "Cursor official Models & Pricing: USD/MTok rates for additional Cursor-model usage",
           "url": "https://cursor.com/docs/models",
-          "verifiedAt": "2026-11-16T09:25:26Z",
-          "fields": [
-            "metadata.input_cost_per_token",
-            "metadata.cache_read_input_token_cost",
-            "metadata.output_cost_per_token"
-          ]
+          "verifiedAt": "2026-11-16T09:25:26Z"
         },
         {
           "label": "Cursor official Grok model reference: effort levels/default and provider-specific pricing/context",
           "url": "https://cursor.com/docs/models/grok-4-5",
-          "verifiedAt": "2026-11-16T09:25:26Z",
-          "fields": [
-            "metadata.reasoning_effort_levels",
-            "metadata.default_reasoning_effort"
-          ]
+          "verifiedAt": "2026-11-16T09:25:26Z"
         }
-      ],
-      "notes": "Cursor additional-usage rates; included plan pools and Teams/Enterprise billing policies are not native xAI API pricing."
+      ]
     }
   ],
   "sources": [
     {
       "label": "LiteLLM registry [xai/grok-4.5] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95; aggregated metadata, not a direct xAI availability check",
       "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:25:26Z",
-      "fields": [
-        "metadata.cache_read_input_token_cost",
-        "metadata.cache_read_input_token_cost_above_200k_tokens",
-        "metadata.input_cost_per_image_token",
-        "metadata.input_cost_per_token_above_200k_tokens",
-        "metadata.litellm_provider",
-        "metadata.max_input_tokens",
-        "metadata.max_output_tokens",
-        "metadata.mode",
-        "metadata.output_cost_per_token_above_200k_tokens",
-        "metadata.source",
-        "metadata.supports_function_calling",
-        "metadata.supports_prompt_caching",
-        "metadata.supports_reasoning",
-        "metadata.supports_response_schema",
-        "metadata.supports_tool_choice",
-        "metadata.supports_vision",
-        "metadata.supports_web_search"
-      ]
+      "verifiedAt": "2026-11-16T09:25:26Z"
     }
   ],
   "notes": "Native xAI metadata is from the pinned LiteLLM registry; direct xAI documentation was unavailable during this audit. Registry output limits are not independently confirmed. Provider-specific pricing and controls, where verified, are recorded in nested variants. The former unsourced global cache-read rate ($0.50/MTok) is retained for Cursor; xAI registry lists $0.30/MTok."

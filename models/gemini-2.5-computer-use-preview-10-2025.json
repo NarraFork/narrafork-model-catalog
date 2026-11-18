@@ -11,32 +11,7 @@
     {
       "label": "LiteLLM aggregated model metadata (not official verification) [gemini/gemini-2.5-computer-use-preview-10-2025]",
       "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:26:38Z",
-      "fields": [
-        "deprecation_date",
-        "deprecation_source",
-        "input_cost_per_token",
-        "input_cost_per_token_above_200k_tokens",
-        "litellm_provider",
-        "max_input_tokens",
-        "max_output_tokens",
-        "mode",
-        "output_cost_per_token",
-        "output_cost_per_token_above_200k_tokens",
-        "rpm",
-        "source",
-        "successor_model",
-        "supported_endpoints",
-        "supported_modalities",
-        "supported_output_modalities",
-        "supports_computer_use",
-        "supports_function_calling",
-        "supports_system_messages",
-        "supports_tool_choice",
-        "supports_vision",
-        "tpm"
-      ],
-      "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
+      "verifiedAt": "2026-11-16T09:26:38Z"
     }
   ],
   "metadata": {
@@ -118,32 +93,7 @@
         {
           "label": "LiteLLM aggregated model metadata (not official verification) [gemini/gemini-2.5-computer-use-preview-10-2025]",
           "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:26:38Z",
-          "fields": [
-            "deprecation_date",
-            "deprecation_source",
-            "input_cost_per_token",
-            "input_cost_per_token_above_200k_tokens",
-            "litellm_provider",
-            "max_input_tokens",
-            "max_output_tokens",
-            "mode",
-            "output_cost_per_token",
-            "output_cost_per_token_above_200k_tokens",
-            "rpm",
-            "source",
-            "successor_model",
-            "supported_endpoints",
-            "supported_modalities",
-            "supported_output_modalities",
-            "supports_computer_use",
-            "supports_function_calling",
-            "supports_system_messages",
-            "supports_tool_choice",
-            "supports_vision",
-            "tpm"
-          ],
-          "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
+          "verifiedAt": "2026-11-16T09:26:38Z"
         }
       ]
     }

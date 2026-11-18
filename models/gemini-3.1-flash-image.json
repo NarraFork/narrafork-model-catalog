@@ -12,39 +12,7 @@
     {
       "label": "LiteLLM aggregated model metadata (not official verification) [gemini/gemini-3.1-flash-image]",
       "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:26:38Z",
-      "fields": [
-        "input_cost_per_token",
-        "input_cost_per_token_batches",
-        "litellm_provider",
-        "max_input_tokens",
-        "max_output_tokens",
-        "mode",
-        "output_cost_per_image",
-        "output_cost_per_image_token",
-        "output_cost_per_image_token_batches",
-        "output_cost_per_token",
-        "output_cost_per_token_batches",
-        "rpm",
-        "search_context_cost_per_query",
-        "search_free_requests",
-        "source",
-        "successor_model",
-        "supported_endpoints",
-        "supported_modalities",
-        "supported_output_modalities",
-        "supports_function_calling",
-        "supports_pdf_input",
-        "supports_prompt_caching",
-        "supports_reasoning",
-        "supports_response_schema",
-        "supports_system_messages",
-        "supports_vision",
-        "supports_web_search",
-        "tpm",
-        "web_search_billing_unit"
-      ],
-      "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
+      "verifiedAt": "2026-11-16T09:26:38Z"
     }
   ],
   "metadata": {
@@ -170,39 +138,7 @@
         {
           "label": "LiteLLM aggregated model metadata (not official verification) [gemini/gemini-3.1-flash-image]",
           "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:26:38Z",
-          "fields": [
-            "input_cost_per_token",
-            "input_cost_per_token_batches",
-            "litellm_provider",
-            "max_input_tokens",
-            "max_output_tokens",
-            "mode",
-            "output_cost_per_image",
-            "output_cost_per_image_token",
-            "output_cost_per_image_token_batches",
-            "output_cost_per_token",
-            "output_cost_per_token_batches",
-            "rpm",
-            "search_context_cost_per_query",
-            "search_free_requests",
-            "source",
-            "successor_model",
-            "supported_endpoints",
-            "supported_modalities",
-            "supported_output_modalities",
-            "supports_function_calling",
-            "supports_pdf_input",
-            "supports_prompt_caching",
-            "supports_reasoning",
-            "supports_response_schema",
-            "supports_system_messages",
-            "supports_vision",
-            "supports_web_search",
-            "tpm",
-            "web_search_billing_unit"
-          ],
-          "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
+          "verifiedAt": "2026-11-16T09:26:38Z"
         }
       ]
     },
@@ -250,35 +186,7 @@
         {
           "label": "LiteLLM aggregated model metadata (not official verification) [vertex_ai/gemini-3.1-flash-image]",
           "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:26:38Z",
-          "fields": [
-            "cache_read_input_token_cost",
-            "cache_read_input_token_cost_batches",
-            "cache_read_input_token_cost_flex",
-            "cache_read_input_token_cost_priority",
-            "input_cost_per_image",
-            "input_cost_per_token",
-            "input_cost_per_token_batches",
-            "input_cost_per_token_flex",
-            "input_cost_per_token_priority",
-            "litellm_provider",
-            "max_input_tokens",
-            "max_output_tokens",
-            "mode",
-            "output_cost_per_image",
-            "output_cost_per_image_token",
-            "output_cost_per_image_token_batches",
-            "output_cost_per_image_token_priority",
-            "output_cost_per_token",
-            "output_cost_per_token_batches",
-            "output_cost_per_token_flex",
-            "output_cost_per_token_priority",
-            "regional_endpoint_uplift_multiplier",
-            "source",
-            "supported_endpoints",
-            "supports_reasoning"
-          ],
-          "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
+          "verifiedAt": "2026-11-16T09:26:38Z"
         }
       ]
     }

@@ -23,19 +23,7 @@
     {
       "label": "LiteLLM aggregate registry: Anthropic-native [claude-sonnet-4-5] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95",
       "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:20:54Z",
-      "fields": [
-        "metadata.cache_creation_input_token_cost_batches",
-        "metadata.cache_read_input_token_cost_batches",
-        "metadata.deprecation_date",
-        "metadata.deprecation_source",
-        "metadata.successor_model",
-        "metadata.input_cost_per_token_batches",
-        "metadata.output_cost_per_token_batches",
-        "metadata.supports_native_structured_output",
-        "metadata.prompt_cache_min_tokens",
-        "metadata.source"
-      ]
+      "verifiedAt": "2026-11-16T09:20:54Z"
     }
   ],
   "metadata": {
@@ -120,8 +108,7 @@
           "url": "https://github.com/Wei-Shaw/sub2api/blob/e2cfaa46e79241f34e52bf4781f7710cd511c5d2/backend/resources/model-pricing/model_prices_and_context_window.json#L654",
           "verifiedAt": "2026-09-22T07:33:33Z"
         }
-      ],
-      "family": "claude"
+      ]
     },
     {
       "id": "claude-sonnet-4-5@cursor",
@@ -136,8 +123,7 @@
         ]
       },
       "metadata": {},
-      "status": "unverified",
-      "family": "claude"
+      "status": "unverified"
     },
     {
       "id": "claude-sonnet-4-5@antigravity",
@@ -146,20 +132,15 @@
       "upstreamModelIds": [
         "claude-sonnet-4-5"
       ],
-      "family": "claude",
       "status": "unverified",
       "metadata": {},
       "sources": [
         {
           "label": "sub2api unmerged PR #8778 Antigravity adapter whitelist/output spelling; availability unverified",
           "url": "https://github.com/universonic/sub2api/blob/8783acd7b6725c8036098df243b16c0fbd25e71e/backend/internal/domain/constants.go#L112-L137",
-          "verifiedAt": "2026-11-16T09:20:54Z",
-          "fields": [
-            "upstreamModelIds"
-          ]
+          "verifiedAt": "2026-11-16T09:20:54Z"
         }
-      ],
-      "notes": "This spelling is present in an unmerged third-party adapter; it does not establish production availability, official effort levels, pricing or context limits."
+      ]
     }
   ]
 }

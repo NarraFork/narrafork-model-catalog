@@ -37,39 +37,16 @@
         {
           "label": "LiteLLM pinned provider deployment record [novita/zai-org/glm-4.6v]",
           "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z",
-          "fields": [
-            "metadata.cache_read_input_token_cost",
-            "metadata.input_cost_per_token",
-            "metadata.input_cost_per_token_cache_hit",
-            "metadata.max_input_tokens",
-            "metadata.max_output_tokens",
-            "metadata.mode",
-            "metadata.output_cost_per_token",
-            "metadata.supports_function_calling",
-            "metadata.supports_parallel_function_calling",
-            "metadata.supports_reasoning",
-            "metadata.supports_response_schema",
-            "metadata.supports_system_messages",
-            "metadata.supports_tool_choice",
-            "metadata.supports_vision",
-            "upstreamModelIds"
-          ]
+          "verifiedAt": "2026-11-16T09:24:55Z"
         }
-      ],
-      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+      ]
     }
   ],
   "sources": [
     {
       "label": "Z.AI official USD token pricing; temporary free cache storage is not a permanent zero cache-write rate",
       "url": "https://docs.z.ai/guides/overview/pricing.md",
-      "verifiedAt": "2026-11-16T09:24:55Z",
-      "fields": [
-        "metadata.cache_read_input_token_cost",
-        "metadata.input_cost_per_token",
-        "metadata.output_cost_per_token"
-      ]
+      "verifiedAt": "2026-11-16T09:24:55Z"
     }
   ]
 }

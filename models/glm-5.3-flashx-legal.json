@@ -38,44 +38,17 @@
     {
       "label": "Z.AI official USD token pricing; temporary free cache storage is not a permanent zero cache-write rate",
       "url": "https://docs.z.ai/guides/overview/pricing.md",
-      "verifiedAt": "2026-11-16T09:24:55Z",
-      "fields": [
-        "metadata.cache_read_input_token_cost",
-        "metadata.input_cost_per_token",
-        "metadata.output_cost_per_token"
-      ]
+      "verifiedAt": "2026-11-16T09:24:55Z"
     },
     {
       "label": "Z.AI official model guide: modalities, streaming, tools, structured output and thinking; exact output maximum from linked Chat Completion OpenAPI",
       "url": "https://docs.z.ai/guides/vlm/glm-5.3-flash.md",
-      "verifiedAt": "2026-11-16T09:24:55Z",
-      "fields": [
-        "metadata.can_disable_reasoning",
-        "metadata.default_reasoning_effort",
-        "metadata.max_output_tokens",
-        "metadata.max_tokens",
-        "metadata.reasoning_effort_levels",
-        "metadata.supported_modalities",
-        "metadata.supported_output_modalities",
-        "metadata.supports_function_calling",
-        "metadata.supports_native_streaming",
-        "metadata.supports_none_reasoning_effort",
-        "metadata.supports_prompt_caching",
-        "metadata.supports_reasoning",
-        "metadata.supports_response_schema",
-        "metadata.supports_video_input",
-        "metadata.supports_vision"
-      ]
+      "verifiedAt": "2026-11-16T09:24:55Z"
     },
     {
       "label": "Z.AI Chat Completion OpenAPI exact max_tokens ceiling and reasoning contract",
       "url": "https://docs.z.ai/api-reference/llm/chat-completion.md",
-      "verifiedAt": "2026-11-16T09:24:55Z",
-      "fields": [
-        "metadata.max_output_tokens",
-        "metadata.max_tokens",
-        "metadata.reasoning_effort_levels"
-      ]
+      "verifiedAt": "2026-11-16T09:24:55Z"
     }
   ],
   "notes": "Official context is stated as 1M without an exact integer; any retained exact context value is separately attributed to pinned LiteLLM. File input is not a distinct catalog modality."

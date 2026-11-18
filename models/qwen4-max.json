@@ -61,71 +61,26 @@
         {
           "label": "Alibaba official Beijing CNY Qwen4-Max token rates",
           "url": "https://help.aliyun.com/zh/model-studio/qwen4-max",
-          "verifiedAt": "2026-11-16T09:24:55Z",
-          "fields": [
-            "metadata.input_cost_per_token",
-            "metadata.output_cost_per_token",
-            "metadata.pricing_currency",
-            "upstreamModelIds"
-          ]
+          "verifiedAt": "2026-11-16T09:24:55Z"
         }
-      ],
-      "notes": "Regional CNY per token; no currency conversion applied."
+      ]
     }
   ],
   "sources": [
     {
       "label": "Alibaba official full text-generation and visual-understanding directory",
       "url": "https://help.aliyun.com/zh/model-studio/text-generation-model",
-      "verifiedAt": "2026-11-16T09:24:55Z",
-      "fields": [
-        "id"
-      ]
+      "verifiedAt": "2026-11-16T09:24:55Z"
     },
     {
       "label": "Alibaba official model-specific capability rows; 1M shorthand not converted",
       "url": "https://help.aliyun.com/zh/model-studio/text-generation-model",
-      "verifiedAt": "2026-11-16T09:24:55Z",
-      "fields": [
-        "metadata.supported_modalities",
-        "metadata.supported_output_modalities",
-        "metadata.supports_function_calling",
-        "metadata.supports_reasoning",
-        "metadata.supports_response_schema",
-        "metadata.supports_video_input",
-        "metadata.supports_vision"
-      ]
+      "verifiedAt": "2026-11-16T09:24:55Z"
     },
     {
       "label": "Alibaba official Qwen4-Max exact limits, modalities, API support and native reasoning low/high/xhigh (default high); max is a compatibility mapping",
       "url": "https://help.aliyun.com/zh/model-studio/qwen4-max",
-      "verifiedAt": "2026-11-16T09:24:55Z",
-      "fields": [
-        "metadata.can_disable_reasoning",
-        "metadata.default_reasoning_effort",
-        "metadata.max_input_tokens",
-        "metadata.max_output_tokens",
-        "metadata.max_tokens",
-        "metadata.reasoning_effort_levels",
-        "metadata.supported_endpoints",
-        "metadata.supported_modalities",
-        "metadata.supported_output_modalities",
-        "metadata.supports_batch",
-        "metadata.supports_function_calling",
-        "metadata.supports_low_reasoning_effort",
-        "metadata.supports_max_reasoning_effort",
-        "metadata.supports_minimal_reasoning_effort",
-        "metadata.supports_native_streaming",
-        "metadata.supports_none_reasoning_effort",
-        "metadata.supports_parallel_function_calling",
-        "metadata.supports_prompt_caching",
-        "metadata.supports_reasoning",
-        "metadata.supports_response_schema",
-        "metadata.supports_video_input",
-        "metadata.supports_vision",
-        "metadata.supports_web_search",
-        "metadata.supports_xhigh_reasoning_effort"
-      ]
+      "verifiedAt": "2026-11-16T09:24:55Z"
     }
   ],
   "notes": "Maximum completion 262144 includes thinking plus answer; non-thinking output max 131072. Maximum input 991808 non-thinking / 983616 thinking; total context 1000000. No USD price inferred from official regional CNY prices."

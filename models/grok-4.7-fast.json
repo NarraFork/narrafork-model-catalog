@@ -32,7 +32,6 @@
         "grok-4.7-fast"
       ],
       "status": "unverified",
-      "notes": "Cursor documents this as a speed tier, not a separate native xAI API model. Input above 256k uses 3x the standard-speed rate; maximum context is 500k.",
       "metadata": {
         "input_cost_per_token": 4e-06,
         "cache_read_input_token_cost": 1e-06,
@@ -55,10 +54,7 @@
         {
           "label": "Cursor official Grok 4.7: Fast speed tier, effort controls, pricing and 256k long-context threshold",
           "url": "https://cursor.com/docs/models/grok-4-7",
-          "verifiedAt": "2026-11-16T09:25:26Z",
-          "fields": [
-            "metadata"
-          ]
+          "verifiedAt": "2026-11-16T09:25:26Z"
         }
       ]
     }

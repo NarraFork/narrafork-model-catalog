@@ -18,17 +18,7 @@
     {
       "label": "litellm aggregate directory [gpt-5.5-cyber] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95; verifies only recorded aggregate fields, not official availability",
       "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:21:44Z",
-      "fields": [
-        "id",
-        "metadata.cache_read_input_token_cost",
-        "metadata.fedramp_uplift_multiplier",
-        "metadata.input_cost_per_token",
-        "metadata.litellm_provider",
-        "metadata.mode",
-        "metadata.output_cost_per_token",
-        "metadata.supports_reasoning"
-      ]
+      "verifiedAt": "2026-11-16T09:21:44Z"
     }
   ]
 }

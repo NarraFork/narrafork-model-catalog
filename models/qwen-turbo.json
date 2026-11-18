@@ -33,22 +33,9 @@
         {
           "label": "LiteLLM pinned Alibaba namespace regional/deployment record [qwen_ai_platform/qwen-turbo]",
           "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z",
-          "fields": [
-            "metadata.input_cost_per_token",
-            "metadata.max_input_tokens",
-            "metadata.max_output_tokens",
-            "metadata.mode",
-            "metadata.output_cost_per_reasoning_token",
-            "metadata.output_cost_per_token",
-            "metadata.supports_function_calling",
-            "metadata.supports_reasoning",
-            "metadata.supports_tool_choice",
-            "upstreamModelIds"
-          ]
+          "verifiedAt": "2026-11-16T09:24:55Z"
         }
-      ],
-      "notes": "Code evidence only; pricing currency/region may differ from official Beijing CNY. Does not override official model capabilities or establish current API availability."
+      ]
     },
     {
       "id": "qwen-turbo@dashscope",
@@ -73,22 +60,9 @@
         {
           "label": "LiteLLM pinned provider deployment record [dashscope/qwen-turbo]",
           "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z",
-          "fields": [
-            "metadata.input_cost_per_token",
-            "metadata.max_input_tokens",
-            "metadata.max_output_tokens",
-            "metadata.mode",
-            "metadata.output_cost_per_reasoning_token",
-            "metadata.output_cost_per_token",
-            "metadata.supports_function_calling",
-            "metadata.supports_reasoning",
-            "metadata.supports_tool_choice",
-            "upstreamModelIds"
-          ]
+          "verifiedAt": "2026-11-16T09:24:55Z"
         }
-      ],
-      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+      ]
     },
     {
       "id": "qwen-turbo@qwencloud",
@@ -113,22 +87,9 @@
         {
           "label": "LiteLLM pinned provider deployment record [qwencloud/qwen-turbo]",
           "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z",
-          "fields": [
-            "metadata.input_cost_per_token",
-            "metadata.max_input_tokens",
-            "metadata.max_output_tokens",
-            "metadata.mode",
-            "metadata.output_cost_per_reasoning_token",
-            "metadata.output_cost_per_token",
-            "metadata.supports_function_calling",
-            "metadata.supports_reasoning",
-            "metadata.supports_tool_choice",
-            "upstreamModelIds"
-          ]
+          "verifiedAt": "2026-11-16T09:24:55Z"
         }
-      ],
-      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+      ]
     },
     {
       "id": "qwen-turbo@qwen_ai_platform:qwen-turbo-2024-11-01",
@@ -152,21 +113,9 @@
         {
           "label": "LiteLLM pinned Alibaba namespace regional/deployment record [qwen_ai_platform/qwen-turbo-2024-11-01]",
           "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z",
-          "fields": [
-            "metadata.input_cost_per_token",
-            "metadata.max_input_tokens",
-            "metadata.max_output_tokens",
-            "metadata.mode",
-            "metadata.output_cost_per_token",
-            "metadata.supports_function_calling",
-            "metadata.supports_reasoning",
-            "metadata.supports_tool_choice",
-            "upstreamModelIds"
-          ]
+          "verifiedAt": "2026-11-16T09:24:55Z"
         }
-      ],
-      "notes": "Code evidence only; pricing currency/region may differ from official Beijing CNY. Does not override official model capabilities or establish current API availability."
+      ]
     },
     {
       "id": "qwen-turbo@dashscope:qwen-turbo-2024-11-01",
@@ -190,21 +139,9 @@
         {
           "label": "LiteLLM pinned provider deployment record [dashscope/qwen-turbo-2024-11-01]",
           "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z",
-          "fields": [
-            "metadata.input_cost_per_token",
-            "metadata.max_input_tokens",
-            "metadata.max_output_tokens",
-            "metadata.mode",
-            "metadata.output_cost_per_token",
-            "metadata.supports_function_calling",
-            "metadata.supports_reasoning",
-            "metadata.supports_tool_choice",
-            "upstreamModelIds"
-          ]
+          "verifiedAt": "2026-11-16T09:24:55Z"
         }
-      ],
-      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+      ]
     },
     {
       "id": "qwen-turbo@qwencloud:qwen-turbo-2024-11-01",
@@ -228,21 +165,9 @@
         {
           "label": "LiteLLM pinned provider deployment record [qwencloud/qwen-turbo-2024-11-01]",
           "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z",
-          "fields": [
-            "metadata.input_cost_per_token",
-            "metadata.max_input_tokens",
-            "metadata.max_output_tokens",
-            "metadata.mode",
-            "metadata.output_cost_per_token",
-            "metadata.supports_function_calling",
-            "metadata.supports_reasoning",
-            "metadata.supports_tool_choice",
-            "upstreamModelIds"
-          ]
+          "verifiedAt": "2026-11-16T09:24:55Z"
         }
-      ],
-      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+      ]
     },
     {
       "id": "qwen-turbo@qwen_ai_platform:qwen-turbo-2025-04-28",
@@ -267,22 +192,9 @@
         {
           "label": "LiteLLM pinned Alibaba namespace regional/deployment record [qwen_ai_platform/qwen-turbo-2025-04-28]",
           "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z",
-          "fields": [
-            "metadata.input_cost_per_token",
-            "metadata.max_input_tokens",
-            "metadata.max_output_tokens",
-            "metadata.mode",
-            "metadata.output_cost_per_reasoning_token",
-            "metadata.output_cost_per_token",
-            "metadata.supports_function_calling",
-            "metadata.supports_reasoning",
-            "metadata.supports_tool_choice",
-            "upstreamModelIds"
-          ]
+          "verifiedAt": "2026-11-16T09:24:55Z"
         }
-      ],
-      "notes": "Code evidence only; pricing currency/region may differ from official Beijing CNY. Does not override official model capabilities or establish current API availability."
+      ]
     },
     {
       "id": "qwen-turbo@dashscope:qwen-turbo-2025-04-28",
@@ -307,22 +219,9 @@
         {
           "label": "LiteLLM pinned provider deployment record [dashscope/qwen-turbo-2025-04-28]",
           "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z",
-          "fields": [
-            "metadata.input_cost_per_token",
-            "metadata.max_input_tokens",
-            "metadata.max_output_tokens",
-            "metadata.mode",
-            "metadata.output_cost_per_reasoning_token",
-            "metadata.output_cost_per_token",
-            "metadata.supports_function_calling",
-            "metadata.supports_reasoning",
-            "metadata.supports_tool_choice",
-            "upstreamModelIds"
-          ]
+          "verifiedAt": "2026-11-16T09:24:55Z"
         }
-      ],
-      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+      ]
     },
     {
       "id": "qwen-turbo@qwencloud:qwen-turbo-2025-04-28",
@@ -347,36 +246,16 @@
         {
           "label": "LiteLLM pinned provider deployment record [qwencloud/qwen-turbo-2025-04-28]",
           "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z",
-          "fields": [
-            "metadata.input_cost_per_token",
-            "metadata.max_input_tokens",
-            "metadata.max_output_tokens",
-            "metadata.mode",
-            "metadata.output_cost_per_reasoning_token",
-            "metadata.output_cost_per_token",
-            "metadata.supports_function_calling",
-            "metadata.supports_reasoning",
-            "metadata.supports_tool_choice",
-            "upstreamModelIds"
-          ]
+          "verifiedAt": "2026-11-16T09:24:55Z"
         }
-      ],
-      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+      ]
     }
   ],
   "sources": [
     {
       "label": "LiteLLM pinned native-namespace record [qwen_ai_platform/qwen-turbo]; code evidence, not official API attestation",
       "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:24:55Z",
-      "fields": [
-        "id",
-        "metadata.mode",
-        "metadata.supports_function_calling",
-        "metadata.supports_reasoning",
-        "metadata.supports_tool_choice"
-      ]
+      "verifiedAt": "2026-11-16T09:24:55Z"
     }
   ],
   "notes": "Native-namespace metadata is recorded from pinned LiteLLM code; without an official source this does not establish a public official model or guarantee current availability. Only aggregate-code evidence was available for this identity/metadata in this audit; this is not a claim of official public release."

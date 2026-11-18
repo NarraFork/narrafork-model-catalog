@@ -11,21 +11,7 @@
     {
       "label": "sub2api aggregated model metadata (not official verification) [gemini-flash-experimental]",
       "url": "https://github.com/Wei-Shaw/sub2api/blob/d70676756fd3a35b854d41aa46c07935bbef283f/backend/resources/model-pricing/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:26:38Z",
-      "fields": [
-        "input_cost_per_character",
-        "input_cost_per_token",
-        "litellm_provider",
-        "max_input_tokens",
-        "max_output_tokens",
-        "max_tokens",
-        "mode",
-        "output_cost_per_token",
-        "output_vector_size",
-        "source",
-        "uses_embed_content"
-      ],
-      "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
+      "verifiedAt": "2026-11-16T09:26:38Z"
     }
   ],
   "metadata": {

@@ -25,38 +25,12 @@
     {
       "label": "litellm aggregate directory [gpt-image-2.5-flare-2026-09-08] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95; verifies only recorded aggregate fields, not official availability",
       "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:21:44Z",
-      "fields": [
-        "id",
-        "metadata.cache_read_input_image_token_cost",
-        "metadata.cache_read_input_token_cost",
-        "metadata.input_cost_per_image_token",
-        "metadata.input_cost_per_token",
-        "metadata.litellm_provider",
-        "metadata.mode",
-        "metadata.output_cost_per_image_token",
-        "metadata.supported_endpoints",
-        "metadata.supports_pdf_input",
-        "metadata.supports_vision"
-      ]
+      "verifiedAt": "2026-11-16T09:21:44Z"
     },
     {
       "label": "sub2api aggregate directory [gpt-image-2.5-flare-2026-09-08] @ d70676756fd3a35b854d41aa46c07935bbef283f; verifies only recorded aggregate fields, not official availability",
       "url": "https://github.com/Wei-Shaw/sub2api/blob/d70676756fd3a35b854d41aa46c07935bbef283f/backend/resources/model-pricing/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:21:44Z",
-      "fields": [
-        "id",
-        "metadata.cache_read_input_image_token_cost",
-        "metadata.cache_read_input_token_cost",
-        "metadata.input_cost_per_image_token",
-        "metadata.input_cost_per_token",
-        "metadata.litellm_provider",
-        "metadata.mode",
-        "metadata.output_cost_per_image_token",
-        "metadata.supported_endpoints",
-        "metadata.supports_prompt_caching",
-        "metadata.supports_vision"
-      ]
+      "verifiedAt": "2026-11-16T09:21:44Z"
     }
   ]
 }

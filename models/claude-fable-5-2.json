@@ -72,7 +72,6 @@
         "claude-fable-5.2",
         "github_copilot/claude-fable-5.2"
       ],
-      "family": "claude",
       "status": "unverified",
       "metadata": {
         "cache_creation_input_token_cost": 1e-05,
@@ -100,27 +99,7 @@
         {
           "label": "LiteLLM aggregate deployment registry [github_copilot/claude-fable-5.2] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95",
           "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:20:54Z",
-          "fields": [
-            "upstreamModelIds",
-            "metadata.cache_creation_input_token_cost",
-            "metadata.cache_read_input_token_cost",
-            "metadata.input_cost_per_token",
-            "metadata.litellm_provider",
-            "metadata.max_input_tokens",
-            "metadata.max_output_tokens",
-            "metadata.mode",
-            "metadata.output_cost_per_token",
-            "metadata.source",
-            "metadata.supported_endpoints",
-            "metadata.supports_adaptive_thinking",
-            "metadata.supports_function_calling",
-            "metadata.supports_parallel_function_calling",
-            "metadata.supports_reasoning",
-            "metadata.supports_response_schema",
-            "metadata.supports_vision",
-            "metadata.thinking_always_on"
-          ]
+          "verifiedAt": "2026-11-16T09:20:54Z"
         }
       ],
       "matches": {
@@ -137,7 +116,6 @@
       "upstreamModelIds": [
         "claude-fable-5-2"
       ],
-      "family": "claude",
       "status": "verified",
       "metadata": {
         "input_cost_per_token": 8e-06,
@@ -149,13 +127,7 @@
         {
           "label": "Cursor official model pricing; base rates exclude team Cursor Token Rate and residency surcharge",
           "url": "https://cursor.com/docs/models",
-          "verifiedAt": "2026-11-16T09:20:54Z",
-          "fields": [
-            "metadata.input_cost_per_token",
-            "metadata.output_cost_per_token",
-            "metadata.cache_read_input_token_cost",
-            "metadata.cache_creation_input_token_cost"
-          ]
+          "verifiedAt": "2026-11-16T09:20:54Z"
         }
       ]
     }
@@ -164,70 +136,17 @@
     {
       "label": "LiteLLM aggregate registry: Anthropic-native [claude-fable-5-2] and explicit claude-fable-latest alias_of @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95",
       "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:20:54Z",
-      "fields": [
-        "matches.aliases",
-        "metadata.cache_creation_input_token_cost",
-        "metadata.cache_creation_input_token_cost_above_1hr",
-        "metadata.cache_creation_input_token_cost_batches",
-        "metadata.cache_read_input_token_cost",
-        "metadata.cache_read_input_token_cost_batches",
-        "metadata.input_cost_per_token",
-        "metadata.input_cost_per_token_batches",
-        "metadata.litellm_provider",
-        "metadata.max_input_tokens",
-        "metadata.max_output_tokens",
-        "metadata.mode",
-        "metadata.output_cost_per_token",
-        "metadata.output_cost_per_token_batches",
-        "metadata.prompt_cache_min_tokens",
-        "metadata.provider_specific_entry",
-        "metadata.search_context_cost_per_query",
-        "metadata.source",
-        "metadata.supports_adaptive_thinking",
-        "metadata.supports_anthropic_compaction",
-        "metadata.supports_assistant_prefill",
-        "metadata.supports_computer_use",
-        "metadata.supports_fast_mode",
-        "metadata.supports_forced_tool_use",
-        "metadata.supports_function_calling",
-        "metadata.supports_max_reasoning_effort",
-        "metadata.supports_mid_conversation_system",
-        "metadata.supports_native_structured_output",
-        "metadata.supports_output_config",
-        "metadata.supports_pdf_input",
-        "metadata.supports_prompt_caching",
-        "metadata.supports_reasoning",
-        "metadata.supports_response_schema",
-        "metadata.supports_sampling_params",
-        "metadata.supports_speed",
-        "metadata.supports_tool_choice",
-        "metadata.supports_vision",
-        "metadata.supports_web_search",
-        "metadata.supports_xhigh_reasoning_effort",
-        "metadata.thinking_always_on"
-      ]
+      "verifiedAt": "2026-11-16T09:20:54Z"
     },
     {
       "label": "sub2api EffortLevelsForModel exact/prefix family dispatch; bridge-supported levels, not independently verified official API limits",
       "url": "https://github.com/Wei-Shaw/sub2api/blob/d70676756fd3a35b854d41aa46c07935bbef283f/backend/internal/pkg/claude/effort_catalog.go",
-      "verifiedAt": "2026-11-16T09:20:54Z",
-      "fields": [
-        "metadata.reasoning_effort_levels"
-      ]
+      "verifiedAt": "2026-11-16T09:20:54Z"
     },
     {
       "label": "Anthropic official fable product page: model identity and explicitly stated standard USD token rates; other fields remain attributed to aggregate sources",
       "url": "https://www.anthropic.com/claude/fable",
-      "verifiedAt": "2026-11-16T09:20:54Z",
-      "fields": [
-        "id",
-        "name",
-        "status",
-        "metadata.input_cost_per_token",
-        "metadata.output_cost_per_token",
-        "metadata.cache_read_input_token_cost"
-      ]
+      "verifiedAt": "2026-11-16T09:20:54Z"
     }
   ]
 }

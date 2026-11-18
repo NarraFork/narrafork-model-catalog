@@ -11,30 +11,7 @@
     {
       "label": "LiteLLM aggregated model metadata (not official verification) [gemini/gemini-embedding-2]",
       "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:26:38Z",
-      "fields": [
-        "input_cost_per_audio_token",
-        "input_cost_per_audio_token_batches",
-        "input_cost_per_image_token",
-        "input_cost_per_image_token_batches",
-        "input_cost_per_token",
-        "input_cost_per_token_batches",
-        "input_cost_per_video_token",
-        "input_cost_per_video_token_batches",
-        "litellm_provider",
-        "max_input_tokens",
-        "mode",
-        "output_cost_per_token",
-        "output_vector_size",
-        "rpm",
-        "source",
-        "supports_audio_input",
-        "supports_embedding_image_input",
-        "supports_multimodal",
-        "supports_vision",
-        "tpm"
-      ],
-      "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
+      "verifiedAt": "2026-11-16T09:26:38Z"
     }
   ],
   "metadata": {
@@ -96,27 +73,7 @@
         {
           "label": "LiteLLM aggregated model metadata (not official verification) [vertex_ai/gemini-embedding-2]",
           "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:26:38Z",
-          "fields": [
-            "input_cost_per_audio_token",
-            "input_cost_per_audio_token_batches",
-            "input_cost_per_image_token",
-            "input_cost_per_image_token_batches",
-            "input_cost_per_token",
-            "input_cost_per_token_batches",
-            "input_cost_per_video_token",
-            "input_cost_per_video_token_batches",
-            "litellm_provider",
-            "max_input_tokens",
-            "mode",
-            "output_cost_per_token",
-            "output_vector_size",
-            "source",
-            "supports_embedding_image_input",
-            "supports_multimodal",
-            "uses_embed_content"
-          ],
-          "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
+          "verifiedAt": "2026-11-16T09:26:38Z"
         }
       ]
     },
@@ -154,30 +111,7 @@
         {
           "label": "LiteLLM aggregated model metadata (not official verification) [gemini/gemini-embedding-2]",
           "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:26:38Z",
-          "fields": [
-            "input_cost_per_audio_token",
-            "input_cost_per_audio_token_batches",
-            "input_cost_per_image_token",
-            "input_cost_per_image_token_batches",
-            "input_cost_per_token",
-            "input_cost_per_token_batches",
-            "input_cost_per_video_token",
-            "input_cost_per_video_token_batches",
-            "litellm_provider",
-            "max_input_tokens",
-            "mode",
-            "output_cost_per_token",
-            "output_vector_size",
-            "rpm",
-            "source",
-            "supports_audio_input",
-            "supports_embedding_image_input",
-            "supports_multimodal",
-            "supports_vision",
-            "tpm"
-          ],
-          "notes": "Fixed-commit aggregator evidence only. Embedded metadata.source URLs have not been independently verified; provider-specific metadata applies only to the named channel."
+          "verifiedAt": "2026-11-16T09:26:38Z"
         }
       ]
     }

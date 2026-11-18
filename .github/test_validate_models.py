@@ -30,6 +30,12 @@ class ValidationTests(unittest.TestCase):
             with self.subTest(value=value), self.assertRaises(AssertionError):
                 metadata({"context_window": value})
 
+    def test_explicit_total_context_rejects_larger_output(self):
+        with self.assertRaises(AssertionError):
+            metadata({"context_window": 131072, "max_output_tokens": 260640})
+        metadata({"max_input_tokens": 131072, "max_output_tokens": 260640})
+        metadata({"context_window": None, "max_output_tokens": 260640})
+
     def test_reasoning_default_must_be_declared(self):
         with self.assertRaises(AssertionError):
             metadata({"reasoning_effort_levels": ["low"], "default_reasoning_effort": "high"})
@@ -54,7 +60,12 @@ class ValidationTests(unittest.TestCase):
 
     def test_sources_need_url_and_timezone(self):
         sources([SOURCE])
-        for patch in ({"url": "example.com"}, {"verifiedAt": "2026-11-16"}, {"fields": []}):
+        for patch in ({"url": "example.com"}, {"verifiedAt": "2026-11-16"}):
+            with self.subTest(patch=patch), self.assertRaises(AssertionError):
+                sources([{**SOURCE, **patch}])
+
+    def test_consumer_only_source_fields_are_rejected(self):
+        for patch in ({"notes": "aggregate evidence"}, {"fields": ["limits"]}):
             with self.subTest(patch=patch), self.assertRaises(AssertionError):
                 sources([{**SOURCE, **patch}])
 
@@ -79,17 +90,6 @@ class ValidationTests(unittest.TestCase):
             entry({**MODEL, "status": "verified"}, "", {})
         entry({**MODEL, "status": "verified", "sources": [SOURCE]}, "", {})
 
-    def test_source_fields_must_reference_recorded_values(self):
-        model = {**MODEL, "sources": [{**SOURCE, "fields": ["metadata.input_cost_per_token"]}]}
-        with self.assertRaisesRegex(AssertionError, "Source references missing field"):
-            entry(model, "", {})
-        model["metadata"] = {"input_cost_per_token": 1e-6}
-        entry(model, "", {})
-
-    def test_legacy_reasoning_source_vocabulary(self):
-        model = {**MODEL, "metadata": {"supports_reasoning": True}, "sources": [{**SOURCE, "fields": ["reasoning"]}]}
-        entry(model, "", {})
-
     def test_catalog_and_nested_variants(self):
         with tempfile.TemporaryDirectory() as directory:
             path = pathlib.Path(directory) / "model-a.json"
@@ -102,12 +102,49 @@ class ValidationTests(unittest.TestCase):
             with self.assertRaisesRegex(AssertionError, "ID must match filename"):
                 validate_catalog(directory)
 
+    def test_consumer_only_entry_fields_are_rejected(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = pathlib.Path(directory) / "model-a.json"
+            model = copy.deepcopy(MODEL)
+            model["upstreamModelIds"] = ["Model-A"]
+            path.write_text(json.dumps(model), encoding="utf-8")
+            with self.assertRaisesRegex(AssertionError, "matches.aliases"):
+                validate_catalog(directory)
+            del model["upstreamModelIds"]
+            model["variants"] = [{**MODEL, "id": "model-a@provider", "providerKey": "provider", "upstreamModelIds": ["model-a"], "family": "test", "notes": "provider-only"}]
+            path.write_text(json.dumps(model), encoding="utf-8")
+            with self.assertRaisesRegex(AssertionError, "Variant family"):
+                validate_catalog(directory)
+
 
 class CatalogRegressionTests(unittest.TestCase):
     @staticmethod
     def model(model_id):
         path = pathlib.Path(__file__).resolve().parents[1] / "models" / f"{model_id}.json"
         return json.loads(path.read_text(encoding="utf-8"))
+
+    def test_gemini_omni_vertex_total_context_is_explicitly_unknown(self):
+        card = self.model("gemini-omni-1.2-flash")
+        vertex = next(v for v in card["variants"] if v["providerKey"] == "vertex_ai")
+        self.assertIsNone(vertex["metadata"]["max_input_tokens"])
+        self.assertEqual(vertex["metadata"]["max_output_tokens"], 260640)
+        self.assertNotIn("context_window", vertex["metadata"])
+        metadata(vertex["metadata"])
+
+    def test_catalog_stays_inside_the_consumer_shared_schema(self):
+        for path in pathlib.Path(__file__).resolve().parents[1].glob("models/*.json"):
+            with self.subTest(path=path.name):
+                model = json.loads(path.read_text(encoding="utf-8"))
+                self.assertNotIn("upstreamModelIds", model)
+                for source in model.get("sources", []):
+                    self.assertNotIn("notes", source)
+                    self.assertNotIn("fields", source)
+                for variant in model.get("variants", []):
+                    self.assertNotIn("family", variant)
+                    self.assertNotIn("notes", variant)
+                    for source in variant.get("sources", []):
+                        self.assertNotIn("notes", source)
+                        self.assertNotIn("fields", source)
 
     def test_new_model_candidates_have_cards(self):
         for model_id in (

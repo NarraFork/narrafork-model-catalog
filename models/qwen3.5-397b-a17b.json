@@ -45,23 +45,9 @@
         {
           "label": "LiteLLM pinned provider deployment record [streamlake/qwen3.5-397b-a17b]",
           "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z",
-          "fields": [
-            "metadata.cache_read_input_token_cost",
-            "metadata.input_cost_per_token",
-            "metadata.max_input_tokens",
-            "metadata.max_output_tokens",
-            "metadata.mode",
-            "metadata.output_cost_per_token",
-            "metadata.supports_function_calling",
-            "metadata.supports_prompt_caching",
-            "metadata.supports_reasoning",
-            "metadata.supports_vision",
-            "upstreamModelIds"
-          ]
+          "verifiedAt": "2026-11-16T09:24:55Z"
         }
-      ],
-      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+      ]
     },
     {
       "id": "qwen3.5-397b-a17b@novita",
@@ -87,23 +73,9 @@
         {
           "label": "LiteLLM pinned provider deployment record [novita/qwen/qwen3.5-397b-a17b]",
           "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z",
-          "fields": [
-            "metadata.input_cost_per_token",
-            "metadata.max_input_tokens",
-            "metadata.max_output_tokens",
-            "metadata.mode",
-            "metadata.output_cost_per_token",
-            "metadata.supports_function_calling",
-            "metadata.supports_reasoning",
-            "metadata.supports_response_schema",
-            "metadata.supports_tool_choice",
-            "metadata.supports_vision",
-            "upstreamModelIds"
-          ]
+          "verifiedAt": "2026-11-16T09:24:55Z"
         }
-      ],
-      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+      ]
     },
     {
       "id": "qwen3.5-397b-a17b@deepinfra",
@@ -131,59 +103,26 @@
         {
           "label": "LiteLLM pinned provider deployment record [deepinfra/Qwen/Qwen3.5-397B-A17B]",
           "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z",
-          "fields": [
-            "metadata.cache_read_input_token_cost",
-            "metadata.input_cost_per_token",
-            "metadata.max_input_tokens",
-            "metadata.max_output_tokens",
-            "metadata.mode",
-            "metadata.output_cost_per_token",
-            "metadata.supports_function_calling",
-            "metadata.supports_prompt_caching",
-            "metadata.supports_reasoning",
-            "metadata.supports_response_schema",
-            "metadata.supports_tool_choice",
-            "metadata.supports_vision",
-            "upstreamModelIds"
-          ]
+          "verifiedAt": "2026-11-16T09:24:55Z"
         }
-      ],
-      "notes": "Provider-scoped deployment data from pinned LiteLLM; not the native vendor global price or guaranteed current public API."
+      ]
     }
   ],
   "sources": [
     {
       "label": "Alibaba official full text-generation and visual-understanding directory",
       "url": "https://help.aliyun.com/zh/model-studio/text-generation-model",
-      "verifiedAt": "2026-11-16T09:24:55Z",
-      "fields": [
-        "id"
-      ]
+      "verifiedAt": "2026-11-16T09:24:55Z"
     },
     {
       "label": "Alibaba official model-specific capability rows; 1M shorthand not converted",
       "url": "https://help.aliyun.com/zh/model-studio/text-generation-model",
-      "verifiedAt": "2026-11-16T09:24:55Z",
-      "fields": [
-        "metadata.supported_modalities",
-        "metadata.supported_output_modalities",
-        "metadata.supports_function_calling",
-        "metadata.supports_reasoning",
-        "metadata.supports_response_schema",
-        "metadata.supports_video_input",
-        "metadata.supports_vision"
-      ]
+      "verifiedAt": "2026-11-16T09:24:55Z"
     },
     {
       "label": "Alibaba official model-specific hybrid thinking list; enabled by default",
       "url": "https://help.aliyun.com/zh/model-studio/deep-thinking",
-      "verifiedAt": "2026-11-16T09:27:56Z",
-      "fields": [
-        "metadata.supports_reasoning",
-        "metadata.can_disable_reasoning",
-        "metadata.supports_none_reasoning_effort"
-      ]
+      "verifiedAt": "2026-11-16T09:27:56Z"
     }
   ],
   "notes": "Official directory is internally inconsistent: capability table says 256k context but visual table says 32k/8k output. No exact native integer inferred from either; provider limits stay scoped. Official thinking-mode list states hybrid thinking enabled by default; no undocumented effort enum is inferred."
