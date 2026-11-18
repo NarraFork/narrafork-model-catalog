@@ -27,26 +27,10 @@
       ],
       "status": "unverified",
       "metadata": {
-        "input_cost_per_token": 3e-07,
         "output_cost_per_token": 2.4e-06,
-        "cache_read_input_token_cost": 3e-08,
-        "cache_creation_input_token_cost": 3.75e-07,
-        "mode": "chat",
-        "supports_function_calling": true,
-        "supports_tool_choice": true,
-        "supports_prompt_caching": true,
-        "supports_reasoning": true,
-        "supports_system_messages": true,
         "max_input_tokens": 1000000,
         "max_output_tokens": 8192
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned speed/deployment record [minimax/MiniMax-M2.5-lightning]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+      }
     },
     {
       "id": "minimax-m2.5@streamlake",
@@ -57,24 +41,9 @@
       ],
       "status": "unverified",
       "metadata": {
-        "cache_creation_input_token_cost": 3.75e-07,
-        "cache_read_input_token_cost": 3e-08,
-        "input_cost_per_token": 3e-07,
         "max_input_tokens": 196608,
-        "max_output_tokens": 128000,
-        "mode": "chat",
-        "output_cost_per_token": 1.2e-06,
-        "supports_function_calling": true,
-        "supports_reasoning": true,
-        "supports_prompt_caching": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [streamlake/minimax-m2.5]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+        "max_output_tokens": 128000
+      }
     },
     {
       "id": "minimax-m2.5@novita:highspeed",
@@ -85,26 +54,13 @@
       ],
       "status": "unverified",
       "metadata": {
-        "cache_read_input_token_cost": 3e-08,
         "input_cost_per_token": 6e-07,
         "max_input_tokens": 204800,
         "max_output_tokens": 131100,
-        "mode": "chat",
         "output_cost_per_token": 2.4e-06,
-        "supports_function_calling": true,
-        "supports_prompt_caching": true,
-        "supports_reasoning": true,
         "supports_response_schema": true,
-        "supports_tool_choice": true,
         "supports_vision": false
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [novita/minimax/minimax-m2.5-highspeed]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+      }
     },
     {
       "id": "minimax-m2.5@novita",
@@ -115,37 +71,17 @@
       ],
       "status": "unverified",
       "metadata": {
-        "cache_read_input_token_cost": 3e-08,
-        "input_cost_per_token": 3e-07,
         "max_input_tokens": 204800,
         "max_output_tokens": 131100,
-        "mode": "chat",
-        "output_cost_per_token": 1.2e-06,
-        "supports_function_calling": true,
-        "supports_prompt_caching": true,
-        "supports_reasoning": true,
         "supports_response_schema": true,
-        "supports_tool_choice": true,
         "supports_vision": false
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [novita/minimax/minimax-m2.5]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+      }
     }
   ],
   "sources": [
     {
       "label": "LiteLLM pinned native-namespace record [minimax/MiniMax-M2.5]; code evidence, not official API attestation",
       "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "MiniMax official historical identity and retirement schedule",
-      "url": "https://platform.minimax.io/docs/faq/models.md",
       "verifiedAt": "2026-11-16T09:24:55Z"
     }
   ],

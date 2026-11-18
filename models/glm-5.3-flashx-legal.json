@@ -39,16 +39,6 @@
       "label": "Z.AI official USD token pricing; temporary free cache storage is not a permanent zero cache-write rate",
       "url": "https://docs.z.ai/guides/overview/pricing.md",
       "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "Z.AI official model guide: modalities, streaming, tools, structured output and thinking; exact output maximum from linked Chat Completion OpenAPI",
-      "url": "https://docs.z.ai/guides/vlm/glm-5.3-flash.md",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "Z.AI Chat Completion OpenAPI exact max_tokens ceiling and reasoning contract",
-      "url": "https://docs.z.ai/api-reference/llm/chat-completion.md",
-      "verifiedAt": "2026-11-16T09:24:55Z"
     }
   ],
   "notes": "Official context is stated as 1M without an exact integer; any retained exact context value is separately attributed to pinned LiteLLM. File input is not a distinct catalog modality."

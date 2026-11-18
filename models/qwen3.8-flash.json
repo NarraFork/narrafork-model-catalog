@@ -66,24 +66,8 @@
         "input_cost_per_token": 1.5e-07,
         "max_input_tokens": 991808,
         "max_output_tokens": 131072,
-        "mode": "chat",
-        "output_cost_per_token": 4.7e-07,
-        "supports_function_calling": true,
-        "supports_prompt_caching": true,
-        "supports_reasoning": true,
-        "supports_response_schema": true,
-        "supports_tool_choice": true,
-        "supports_video_input": true,
-        "supports_vision": true,
-        "supports_web_search": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned Alibaba namespace regional/deployment record [qwen_ai_platform/qwen3.8-flash]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+        "output_cost_per_token": 4.7e-07
+      }
     },
     {
       "id": "qwen3.8-flash@opencode_go",
@@ -94,7 +78,6 @@
       ],
       "status": "unverified",
       "metadata": {
-        "mode": "chat",
         "supported_endpoints": [
           "/v1/messages"
         ],
@@ -103,18 +86,8 @@
         "cache_read_input_token_cost": 1.6e-08,
         "cache_creation_input_token_cost": 2.0000000000000002e-07,
         "max_output_tokens": 131072,
-        "max_input_tokens": 1000000,
-        "supports_function_calling": true,
-        "supports_reasoning": true,
-        "supports_vision": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [opencode_go/qwen3.8-flash]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+        "max_input_tokens": 1000000
+      }
     }
   ],
   "sources": [
@@ -122,26 +95,6 @@
       "label": "LiteLLM pinned native-namespace record [qwen_ai_platform/qwen3.8-flash]; code evidence, not official API attestation",
       "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
       "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "Alibaba official full text-generation and visual-understanding directory",
-      "url": "https://help.aliyun.com/zh/model-studio/text-generation-model",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "Alibaba official model-specific capability rows; 1M shorthand not converted",
-      "url": "https://help.aliyun.com/zh/model-studio/text-generation-model",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "Alibaba official exact non-thinking maximum input/output and capabilities; thinking max input 983616",
-      "url": "https://help.aliyun.com/zh/model-studio/qwen3-8-flash",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "Alibaba official model-specific hybrid thinking list; enabled by default",
-      "url": "https://help.aliyun.com/zh/model-studio/deep-thinking",
-      "verifiedAt": "2026-11-16T09:27:56Z"
     }
   ],
   "notes": "Native-namespace metadata is recorded from pinned LiteLLM code; without an official source this does not establish a public official model or guarantee current availability. Prices are regional and currency-specific; no global USD price is asserted. Non-thinking max input 991808; thinking max input 983616; total context 1000000. Search and batch vary by region. CNY pricing is explicitly scoped to cn-beijing variants. Official thinking-mode list states hybrid thinking enabled by default; no undocumented effort enum is inferred."

@@ -35,19 +35,8 @@
         "max_output_tokens": 65536,
         "mode": "chat",
         "output_cost_per_token": 2e-06,
-        "supports_function_calling": true,
-        "supports_reasoning": true,
-        "supports_response_schema": true,
-        "supports_tool_choice": true,
-        "supports_vision": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [novita/qwen/qwen3.5-35b-a3b]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+        "supports_tool_choice": true
+      }
     },
     {
       "id": "qwen3.5-35b-a3b@deepinfra",
@@ -65,19 +54,8 @@
         "cache_read_input_token_cost": 5e-08,
         "supports_prompt_caching": true,
         "mode": "chat",
-        "supports_function_calling": true,
-        "supports_tool_choice": true,
-        "supports_response_schema": true,
-        "supports_reasoning": true,
-        "supports_vision": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [deepinfra/Qwen/Qwen3.5-35B-A3B]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+        "supports_tool_choice": true
+      }
     }
   ],
   "sources": [
@@ -85,16 +63,6 @@
       "label": "Alibaba official full text-generation and visual-understanding directory",
       "url": "https://help.aliyun.com/zh/model-studio/text-generation-model",
       "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "Alibaba official model-specific capability rows; 1M shorthand not converted",
-      "url": "https://help.aliyun.com/zh/model-studio/text-generation-model",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "Alibaba official model-specific hybrid thinking list; enabled by default",
-      "url": "https://help.aliyun.com/zh/model-studio/deep-thinking",
-      "verifiedAt": "2026-11-16T09:27:56Z"
     }
   ],
   "notes": "Official directory is internally inconsistent: capability table says 256k context but visual table says 32k/8k output. No exact native integer inferred from either; provider limits stay scoped. Official thinking-mode list states hybrid thinking enabled by default; no undocumented effort enum is inferred."

@@ -65,16 +65,6 @@
       "label": "LiteLLM aggregate registry: Anthropic-native [claude-mythos-5] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95",
       "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
       "verifiedAt": "2026-11-16T09:20:54Z"
-    },
-    {
-      "label": "sub2api EffortLevelsForModel exact/prefix family dispatch; bridge-supported levels, not independently verified official API limits",
-      "url": "https://github.com/Wei-Shaw/sub2api/blob/d70676756fd3a35b854d41aa46c07935bbef283f/backend/internal/pkg/claude/effort_catalog.go",
-      "verifiedAt": "2026-11-16T09:20:54Z"
-    },
-    {
-      "label": "Anthropic official mythos product page: model identity and explicitly stated standard USD token rates; other fields remain attributed to aggregate sources",
-      "url": "https://www.anthropic.com/claude/mythos",
-      "verifiedAt": "2026-11-16T09:20:54Z"
     }
   ]
 }

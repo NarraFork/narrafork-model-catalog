@@ -28,25 +28,9 @@
       ],
       "status": "unverified",
       "metadata": {
-        "cache_read_input_token_cost": 2.6e-07,
-        "input_cost_per_token": 1.4e-06,
         "max_input_tokens": 202745,
-        "max_output_tokens": 131072,
-        "mode": "chat",
-        "output_cost_per_token": 4.4e-06,
-        "supports_function_calling": true,
-        "supports_prompt_caching": true,
-        "supports_reasoning": true,
-        "supports_response_schema": true,
-        "supports_tool_choice": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [dashscope/glm-5.1]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+        "max_output_tokens": 131072
+      }
     },
     {
       "id": "glm-5.1@qwencloud",
@@ -57,25 +41,9 @@
       ],
       "status": "unverified",
       "metadata": {
-        "cache_read_input_token_cost": 2.6e-07,
-        "input_cost_per_token": 1.4e-06,
         "max_input_tokens": 202745,
-        "max_output_tokens": 131072,
-        "mode": "chat",
-        "output_cost_per_token": 4.4e-06,
-        "supports_function_calling": true,
-        "supports_prompt_caching": true,
-        "supports_reasoning": true,
-        "supports_response_schema": true,
-        "supports_tool_choice": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [qwencloud/glm-5.1]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+        "max_output_tokens": 131072
+      }
     },
     {
       "id": "glm-5.1@streamlake",
@@ -86,23 +54,9 @@
       ],
       "status": "unverified",
       "metadata": {
-        "cache_read_input_token_cost": 2.6e-07,
-        "input_cost_per_token": 1.4e-06,
         "max_input_tokens": 202752,
-        "max_output_tokens": 128000,
-        "mode": "chat",
-        "output_cost_per_token": 4.4e-06,
-        "supports_function_calling": true,
-        "supports_reasoning": true,
-        "supports_prompt_caching": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [streamlake/glm-5.1]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+        "max_output_tokens": 128000
+      }
     },
     {
       "id": "glm-5.1@novita",
@@ -113,26 +67,11 @@
       ],
       "status": "unverified",
       "metadata": {
-        "cache_read_input_token_cost": 2.6e-07,
         "input_cost_per_token": 1.38e-06,
         "max_input_tokens": 204800,
         "max_output_tokens": 131072,
-        "mode": "chat",
-        "output_cost_per_token": 4.4e-06,
-        "supports_function_calling": true,
-        "supports_prompt_caching": true,
-        "supports_reasoning": true,
-        "supports_response_schema": true,
-        "supports_tool_choice": true,
         "supports_vision": false
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [novita/zai-org/glm-5.1]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+      }
     },
     {
       "id": "glm-5.1@deepinfra",
@@ -148,42 +87,14 @@
         "input_cost_per_token": 1.05e-06,
         "output_cost_per_token": 3.5e-06,
         "cache_read_input_token_cost": 2.05e-07,
-        "supports_prompt_caching": true,
-        "mode": "chat",
-        "supports_function_calling": true,
-        "supports_tool_choice": true,
-        "supports_response_schema": true,
-        "supports_reasoning": true,
         "supports_vision": false
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [deepinfra/zai-org/GLM-5.1]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+      }
     }
   ],
   "sources": [
     {
       "label": "LiteLLM pinned native-namespace record [qwen_ai_platform/glm-5.1]; code evidence, not official API attestation",
       "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "LiteLLM pinned native-namespace record [zai/glm-5.1]; code evidence, not official API attestation",
-      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "Z.AI official USD token pricing; temporary free cache storage is not a permanent zero cache-write rate",
-      "url": "https://docs.z.ai/guides/overview/pricing.md",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "Z.AI thinking mode: enabled by default, optional disable for pre-5.3 models",
-      "url": "https://docs.z.ai/guides/capabilities/thinking-mode.md",
       "verifiedAt": "2026-11-16T09:24:55Z"
     }
   ],

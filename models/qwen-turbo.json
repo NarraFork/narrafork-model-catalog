@@ -22,20 +22,9 @@
         "input_cost_per_token": 5e-08,
         "max_input_tokens": 129024,
         "max_output_tokens": 16384,
-        "mode": "chat",
         "output_cost_per_reasoning_token": 5e-07,
-        "output_cost_per_token": 2e-07,
-        "supports_function_calling": true,
-        "supports_reasoning": true,
-        "supports_tool_choice": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned Alibaba namespace regional/deployment record [qwen_ai_platform/qwen-turbo]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+        "output_cost_per_token": 2e-07
+      }
     },
     {
       "id": "qwen-turbo@dashscope",
@@ -49,20 +38,9 @@
         "input_cost_per_token": 5e-08,
         "max_input_tokens": 129024,
         "max_output_tokens": 16384,
-        "mode": "chat",
         "output_cost_per_reasoning_token": 5e-07,
-        "output_cost_per_token": 2e-07,
-        "supports_function_calling": true,
-        "supports_reasoning": true,
-        "supports_tool_choice": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [dashscope/qwen-turbo]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+        "output_cost_per_token": 2e-07
+      }
     },
     {
       "id": "qwen-turbo@qwencloud",
@@ -76,20 +54,9 @@
         "input_cost_per_token": 5e-08,
         "max_input_tokens": 129024,
         "max_output_tokens": 16384,
-        "mode": "chat",
         "output_cost_per_reasoning_token": 5e-07,
-        "output_cost_per_token": 2e-07,
-        "supports_function_calling": true,
-        "supports_reasoning": true,
-        "supports_tool_choice": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [qwencloud/qwen-turbo]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+        "output_cost_per_token": 2e-07
+      }
     },
     {
       "id": "qwen-turbo@qwen_ai_platform:qwen-turbo-2024-11-01",
@@ -103,19 +70,8 @@
         "input_cost_per_token": 5e-08,
         "max_input_tokens": 1000000,
         "max_output_tokens": 8192,
-        "mode": "chat",
-        "output_cost_per_token": 2e-07,
-        "supports_function_calling": true,
-        "supports_reasoning": true,
-        "supports_tool_choice": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned Alibaba namespace regional/deployment record [qwen_ai_platform/qwen-turbo-2024-11-01]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+        "output_cost_per_token": 2e-07
+      }
     },
     {
       "id": "qwen-turbo@dashscope:qwen-turbo-2024-11-01",
@@ -129,19 +85,8 @@
         "input_cost_per_token": 5e-08,
         "max_input_tokens": 1000000,
         "max_output_tokens": 8192,
-        "mode": "chat",
-        "output_cost_per_token": 2e-07,
-        "supports_function_calling": true,
-        "supports_reasoning": true,
-        "supports_tool_choice": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [dashscope/qwen-turbo-2024-11-01]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+        "output_cost_per_token": 2e-07
+      }
     },
     {
       "id": "qwen-turbo@qwencloud:qwen-turbo-2024-11-01",
@@ -155,19 +100,8 @@
         "input_cost_per_token": 5e-08,
         "max_input_tokens": 1000000,
         "max_output_tokens": 8192,
-        "mode": "chat",
-        "output_cost_per_token": 2e-07,
-        "supports_function_calling": true,
-        "supports_reasoning": true,
-        "supports_tool_choice": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [qwencloud/qwen-turbo-2024-11-01]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+        "output_cost_per_token": 2e-07
+      }
     },
     {
       "id": "qwen-turbo@qwen_ai_platform:qwen-turbo-2025-04-28",
@@ -181,20 +115,9 @@
         "input_cost_per_token": 5e-08,
         "max_input_tokens": 1000000,
         "max_output_tokens": 16384,
-        "mode": "chat",
         "output_cost_per_reasoning_token": 5e-07,
-        "output_cost_per_token": 2e-07,
-        "supports_function_calling": true,
-        "supports_reasoning": true,
-        "supports_tool_choice": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned Alibaba namespace regional/deployment record [qwen_ai_platform/qwen-turbo-2025-04-28]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+        "output_cost_per_token": 2e-07
+      }
     },
     {
       "id": "qwen-turbo@dashscope:qwen-turbo-2025-04-28",
@@ -208,20 +131,9 @@
         "input_cost_per_token": 5e-08,
         "max_input_tokens": 1000000,
         "max_output_tokens": 16384,
-        "mode": "chat",
         "output_cost_per_reasoning_token": 5e-07,
-        "output_cost_per_token": 2e-07,
-        "supports_function_calling": true,
-        "supports_reasoning": true,
-        "supports_tool_choice": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [dashscope/qwen-turbo-2025-04-28]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+        "output_cost_per_token": 2e-07
+      }
     },
     {
       "id": "qwen-turbo@qwencloud:qwen-turbo-2025-04-28",
@@ -235,27 +147,9 @@
         "input_cost_per_token": 5e-08,
         "max_input_tokens": 1000000,
         "max_output_tokens": 16384,
-        "mode": "chat",
         "output_cost_per_reasoning_token": 5e-07,
-        "output_cost_per_token": 2e-07,
-        "supports_function_calling": true,
-        "supports_reasoning": true,
-        "supports_tool_choice": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [qwencloud/qwen-turbo-2025-04-28]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
-    }
-  ],
-  "sources": [
-    {
-      "label": "LiteLLM pinned native-namespace record [qwen_ai_platform/qwen-turbo]; code evidence, not official API attestation",
-      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:24:55Z"
+        "output_cost_per_token": 2e-07
+      }
     }
   ],
   "notes": "Native-namespace metadata is recorded from pinned LiteLLM code; without an official source this does not establish a public official model or guarantee current availability. Only aggregate-code evidence was available for this identity/metadata in this audit; this is not a claim of official public release."

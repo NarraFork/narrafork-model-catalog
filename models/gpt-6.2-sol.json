@@ -4,23 +4,6 @@
   "family": "gpt",
   "status": "unverified",
   "notes": "Native API metadata is from fixed aggregate registries; OpenAI model/pricing pages returned HTTP 403 during verification. Unknown native reasoning defaults and complete effort lists are intentionally omitted. Provider-specific limits, modalities, reasoning controls and retirement dates apply only to the matching nested variant. Existing latest aliases remain on the targets explicitly named by the pinned registry. The *_ultrafast rates are the 3x promotional snapshot through February 28, 2027 Pacific time; from March 1 at 08:00 UTC the gateway evidence specifies 6x Standard. They must not be treated as perpetual prices. Long-context rates apply above 272000 input tokens, not at the boundary.",
-  "sources": [
-    {
-      "label": "LiteLLM aggregate registry [gpt-6.2-sol] @ 65de9b210476eaca1a3bae28bec849e8de35949c; not independent official availability verification",
-      "url": "https://github.com/BerriAI/litellm/blob/65de9b210476eaca1a3bae28bec849e8de35949c/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-18T02:26:43Z"
-    },
-    {
-      "label": "sub2api pricing snapshot [gpt-6.2-sol] @ 69d2fae91318359e4e25c0171eaf70364dad3629; aggregate corroboration and additional limits/tier metadata",
-      "url": "https://github.com/Wei-Shaw/sub2api/blob/69d2fae91318359e4e25c0171eaf70364dad3629/backend/resources/model-pricing/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-18T02:26:43Z"
-    },
-    {
-      "label": "sub2api GPT-6.2 billing regression: Ultrafast changes from 3x to 6x at 2027-03-01 08:00:00 UTC, including cache creation/read",
-      "url": "https://github.com/Wei-Shaw/sub2api/blob/69d2fae91318359e4e25c0171eaf70364dad3629/backend/internal/service/openai_gpt62_test.go#L106-L162",
-      "verifiedAt": "2026-11-18T02:26:43Z"
-    }
-  ],
   "metadata": {
     "cache_creation_input_token_cost": 2.5e-06,
     "cache_creation_input_token_cost_above_12hr": 5e-06,
@@ -156,32 +139,8 @@
           "/v1/chat/completions",
           "/v1/responses"
         ],
-        "supported_modalities": [
-          "text",
-          "image"
-        ],
-        "supported_output_modalities": [
-          "text"
-        ],
-        "supports_function_calling": true,
-        "supports_max_reasoning_effort": true,
-        "supports_minimal_reasoning_effort": false,
-        "supports_none_reasoning_effort": false,
-        "supports_prompt_caching": true,
-        "supports_reasoning": true,
-        "supports_response_schema": true,
-        "supports_tool_choice": true,
-        "supports_vision": true,
-        "supports_xhigh_reasoning_effort": true,
         "use_openai_responses_path": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM aggregate registry [bedrock_mantle/openai.gpt-6.2-sol] @ 65de9b210476eaca1a3bae28bec849e8de35949c; not independent official availability verification",
-          "url": "https://github.com/BerriAI/litellm/blob/65de9b210476eaca1a3bae28bec849e8de35949c/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-18T02:26:43Z"
-        }
-      ]
+      }
     },
     {
       "id": "gpt-6.2-sol@chatgpt",
@@ -197,28 +156,11 @@
         "max_input_tokens": 922000,
         "max_output_tokens": 128000,
         "mode": "responses",
-        "source": "https://developers.openai.com/api/docs/pricing",
         "supported_endpoints": [
           "/v1/chat/completions",
           "/v1/responses"
-        ],
-        "supports_function_calling": true,
-        "supports_max_reasoning_effort": true,
-        "supports_minimal_reasoning_effort": false,
-        "supports_none_reasoning_effort": false,
-        "supports_parallel_function_calling": true,
-        "supports_reasoning": true,
-        "supports_response_schema": true,
-        "supports_vision": true,
-        "supports_xhigh_reasoning_effort": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM aggregate registry [chatgpt/gpt-6.2-sol] @ 65de9b210476eaca1a3bae28bec849e8de35949c; not independent official availability verification",
-          "url": "https://github.com/BerriAI/litellm/blob/65de9b210476eaca1a3bae28bec849e8de35949c/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-18T02:26:43Z"
-        }
-      ]
+        ]
+      }
     },
     {
       "id": "gpt-6.2-sol@azure",
@@ -230,22 +172,11 @@
       ],
       "status": "unverified",
       "metadata": {
-        "cache_creation_input_token_cost": 2.5e-06,
-        "cache_creation_input_token_cost_above_12hr": 5e-06,
-        "cache_creation_input_token_cost_above_12hr_above_272k_tokens": 1e-05,
-        "cache_creation_input_token_cost_above_272k_tokens": 5e-06,
-        "cache_read_input_token_cost": 1e-07,
-        "cache_read_input_token_cost_above_272k_tokens": 2e-07,
         "deprecation_date": "2027-11-17",
         "deprecation_source": "https://management.azure.com/subscriptions/{subscriptionId}/providers/Microsoft.CognitiveServices/locations/eastus/models?api-version=2024-10-01",
-        "input_cost_per_token": 2e-06,
-        "input_cost_per_token_above_272k_tokens": 4e-06,
         "litellm_provider": "azure",
         "max_input_tokens": 922000,
         "max_output_tokens": 128000,
-        "mode": "chat",
-        "output_cost_per_token": 1e-05,
-        "output_cost_per_token_above_272k_tokens": 1.5e-05,
         "search_context_cost_per_query": {
           "search_context_size_high": 0.014,
           "search_context_size_low": 0.014,
@@ -255,43 +186,8 @@
         "supported_endpoints": [
           "/v1/chat/completions",
           "/v1/responses"
-        ],
-        "supported_modalities": [
-          "text",
-          "image"
-        ],
-        "supported_output_modalities": [
-          "text"
-        ],
-        "supports_computer_use": true,
-        "supports_function_calling": true,
-        "supports_max_reasoning_effort": true,
-        "supports_minimal_reasoning_effort": false,
-        "supports_native_streaming": true,
-        "supports_none_reasoning_effort": false,
-        "supports_parallel_function_calling": true,
-        "supports_pdf_input": true,
-        "supports_prompt_caching": true,
-        "supports_reasoning": true,
-        "supports_response_schema": true,
-        "supports_system_messages": true,
-        "supports_tool_choice": true,
-        "supports_vision": true,
-        "supports_web_search": true,
-        "supports_xhigh_reasoning_effort": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM aggregate registry [azure/gpt-6.2-sol] @ 65de9b210476eaca1a3bae28bec849e8de35949c; not independent official availability verification",
-          "url": "https://github.com/BerriAI/litellm/blob/65de9b210476eaca1a3bae28bec849e8de35949c/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-18T02:26:43Z"
-        },
-        {
-          "label": "Microsoft Foundry official launch (2026-11-17): Azure-scoped text/image modalities, Standard short/long-context token rates and 30m/12h cache-write pricing",
-          "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/gpt-6-2-astra-and-gpt-6-2-sol-now-generally-available-in/ba-p/4574122",
-          "verifiedAt": "2026-11-18T02:26:43Z"
-        }
-      ]
+        ]
+      }
     },
     {
       "id": "gpt-6.2-sol@azure-us",
@@ -315,7 +211,6 @@
         "litellm_provider": "azure",
         "max_input_tokens": 922000,
         "max_output_tokens": 128000,
-        "mode": "chat",
         "output_cost_per_token": 1.1e-05,
         "output_cost_per_token_above_272k_tokens": 1.65e-05,
         "search_context_cost_per_query": {
@@ -327,43 +222,8 @@
         "supported_endpoints": [
           "/v1/chat/completions",
           "/v1/responses"
-        ],
-        "supported_modalities": [
-          "text",
-          "image"
-        ],
-        "supported_output_modalities": [
-          "text"
-        ],
-        "supports_computer_use": true,
-        "supports_function_calling": true,
-        "supports_max_reasoning_effort": true,
-        "supports_minimal_reasoning_effort": false,
-        "supports_native_streaming": true,
-        "supports_none_reasoning_effort": false,
-        "supports_parallel_function_calling": true,
-        "supports_pdf_input": true,
-        "supports_prompt_caching": true,
-        "supports_reasoning": true,
-        "supports_response_schema": true,
-        "supports_system_messages": true,
-        "supports_tool_choice": true,
-        "supports_vision": true,
-        "supports_web_search": true,
-        "supports_xhigh_reasoning_effort": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM aggregate registry [azure/us/gpt-6.2-sol] @ 65de9b210476eaca1a3bae28bec849e8de35949c; not independent official availability verification",
-          "url": "https://github.com/BerriAI/litellm/blob/65de9b210476eaca1a3bae28bec849e8de35949c/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-18T02:26:43Z"
-        },
-        {
-          "label": "Microsoft Foundry official launch (2026-11-17): Azure-scoped text/image modalities, Standard short/long-context token rates and 30m/12h cache-write pricing",
-          "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/gpt-6-2-astra-and-gpt-6-2-sol-now-generally-available-in/ba-p/4574122",
-          "verifiedAt": "2026-11-18T02:26:43Z"
-        }
-      ]
+        ]
+      }
     },
     {
       "id": "gpt-6.2-sol@azure-eu",
@@ -387,7 +247,6 @@
         "litellm_provider": "azure",
         "max_input_tokens": 922000,
         "max_output_tokens": 128000,
-        "mode": "chat",
         "output_cost_per_token": 1.2e-05,
         "output_cost_per_token_above_272k_tokens": 1.8e-05,
         "search_context_cost_per_query": {
@@ -399,43 +258,8 @@
         "supported_endpoints": [
           "/v1/chat/completions",
           "/v1/responses"
-        ],
-        "supported_modalities": [
-          "text",
-          "image"
-        ],
-        "supported_output_modalities": [
-          "text"
-        ],
-        "supports_computer_use": true,
-        "supports_function_calling": true,
-        "supports_max_reasoning_effort": true,
-        "supports_minimal_reasoning_effort": false,
-        "supports_native_streaming": true,
-        "supports_none_reasoning_effort": false,
-        "supports_parallel_function_calling": true,
-        "supports_pdf_input": true,
-        "supports_prompt_caching": true,
-        "supports_reasoning": true,
-        "supports_response_schema": true,
-        "supports_system_messages": true,
-        "supports_tool_choice": true,
-        "supports_vision": true,
-        "supports_web_search": true,
-        "supports_xhigh_reasoning_effort": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM aggregate registry [azure/eu/gpt-6.2-sol] @ 65de9b210476eaca1a3bae28bec849e8de35949c; not independent official availability verification",
-          "url": "https://github.com/BerriAI/litellm/blob/65de9b210476eaca1a3bae28bec849e8de35949c/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-18T02:26:43Z"
-        },
-        {
-          "label": "Microsoft Foundry official launch (2026-11-17): Azure-scoped text/image modalities, Standard short/long-context token rates and 30m/12h cache-write pricing",
-          "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/gpt-6-2-astra-and-gpt-6-2-sol-now-generally-available-in/ba-p/4574122",
-          "verifiedAt": "2026-11-18T02:26:43Z"
-        }
-      ]
+        ]
+      }
     },
     {
       "id": "gpt-6.2-sol@azure-apac",
@@ -459,7 +283,6 @@
         "litellm_provider": "azure",
         "max_input_tokens": 922000,
         "max_output_tokens": 128000,
-        "mode": "chat",
         "output_cost_per_token": 1.2e-05,
         "output_cost_per_token_above_272k_tokens": 1.8e-05,
         "search_context_cost_per_query": {
@@ -471,43 +294,8 @@
         "supported_endpoints": [
           "/v1/chat/completions",
           "/v1/responses"
-        ],
-        "supported_modalities": [
-          "text",
-          "image"
-        ],
-        "supported_output_modalities": [
-          "text"
-        ],
-        "supports_computer_use": true,
-        "supports_function_calling": true,
-        "supports_max_reasoning_effort": true,
-        "supports_minimal_reasoning_effort": false,
-        "supports_native_streaming": true,
-        "supports_none_reasoning_effort": false,
-        "supports_parallel_function_calling": true,
-        "supports_pdf_input": true,
-        "supports_prompt_caching": true,
-        "supports_reasoning": true,
-        "supports_response_schema": true,
-        "supports_system_messages": true,
-        "supports_tool_choice": true,
-        "supports_vision": true,
-        "supports_web_search": true,
-        "supports_xhigh_reasoning_effort": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM aggregate registry [azure/apac/gpt-6.2-sol] @ 65de9b210476eaca1a3bae28bec849e8de35949c; not independent official availability verification",
-          "url": "https://github.com/BerriAI/litellm/blob/65de9b210476eaca1a3bae28bec849e8de35949c/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-18T02:26:43Z"
-        },
-        {
-          "label": "Microsoft Foundry official launch (2026-11-17): Azure-scoped text/image modalities, Standard short/long-context token rates and 30m/12h cache-write pricing",
-          "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/gpt-6-2-astra-and-gpt-6-2-sol-now-generally-available-in/ba-p/4574122",
-          "verifiedAt": "2026-11-18T02:26:43Z"
-        }
-      ]
+        ]
+      }
     },
     {
       "id": "gpt-6.2-sol@bedrock-global",
@@ -518,50 +306,17 @@
       ],
       "status": "unverified",
       "metadata": {
-        "cache_creation_input_token_cost": 2.5e-06,
-        "cache_creation_input_token_cost_above_272k_tokens": 5e-06,
-        "cache_read_input_token_cost": 1e-07,
-        "cache_read_input_token_cost_above_272k_tokens": 2e-07,
-        "input_cost_per_token": 2e-06,
-        "input_cost_per_token_above_272k_tokens": 4e-06,
         "litellm_provider": "bedrock_converse",
         "max_input_tokens": 922000,
         "max_output_tokens": 128000,
-        "mode": "chat",
-        "output_cost_per_token": 1e-05,
-        "output_cost_per_token_above_272k_tokens": 1.5e-05,
-        "source": "https://developers.openai.com/api/docs/pricing",
         "supported_endpoints": [
           "/v1/chat/completions",
           "/v1/responses"
         ],
-        "supported_modalities": [
-          "text",
-          "image"
-        ],
-        "supported_output_modalities": [
-          "text"
-        ],
         "supports_bedrock_converse_tool_result_images": false,
         "supports_bedrock_runtime_chat_completions_response_format": true,
-        "supports_function_calling": true,
-        "supports_max_reasoning_effort": true,
-        "supports_minimal_reasoning_effort": false,
-        "supports_none_reasoning_effort": false,
-        "supports_prompt_caching": true,
-        "supports_reasoning": true,
-        "supports_sampling_params": false,
-        "supports_tool_choice": true,
-        "supports_vision": true,
-        "supports_xhigh_reasoning_effort": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM aggregate registry [global.openai.gpt-6.2-sol] @ 65de9b210476eaca1a3bae28bec849e8de35949c; not independent official availability verification",
-          "url": "https://github.com/BerriAI/litellm/blob/65de9b210476eaca1a3bae28bec849e8de35949c/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-18T02:26:43Z"
-        }
-      ]
+        "supports_sampling_params": false
+      }
     },
     {
       "id": "gpt-6.2-sol@bedrock-us",
@@ -581,41 +336,16 @@
         "litellm_provider": "bedrock_converse",
         "max_input_tokens": 922000,
         "max_output_tokens": 128000,
-        "mode": "chat",
         "output_cost_per_token": 1.1e-05,
         "output_cost_per_token_above_272k_tokens": 1.65e-05,
-        "source": "https://developers.openai.com/api/docs/pricing",
         "supported_endpoints": [
           "/v1/chat/completions",
           "/v1/responses"
         ],
-        "supported_modalities": [
-          "text",
-          "image"
-        ],
-        "supported_output_modalities": [
-          "text"
-        ],
         "supports_bedrock_converse_tool_result_images": false,
         "supports_bedrock_runtime_chat_completions_response_format": true,
-        "supports_function_calling": true,
-        "supports_max_reasoning_effort": true,
-        "supports_minimal_reasoning_effort": false,
-        "supports_none_reasoning_effort": false,
-        "supports_prompt_caching": true,
-        "supports_reasoning": true,
-        "supports_sampling_params": false,
-        "supports_tool_choice": true,
-        "supports_vision": true,
-        "supports_xhigh_reasoning_effort": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM aggregate registry [us.openai.gpt-6.2-sol] @ 65de9b210476eaca1a3bae28bec849e8de35949c; not independent official availability verification",
-          "url": "https://github.com/BerriAI/litellm/blob/65de9b210476eaca1a3bae28bec849e8de35949c/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-18T02:26:43Z"
-        }
-      ]
+        "supports_sampling_params": false
+      }
     },
     {
       "id": "gpt-6.2-sol@bedrock-openai",
@@ -626,45 +356,12 @@
       ],
       "status": "unverified",
       "metadata": {
-        "cache_creation_input_token_cost": 2.5e-06,
-        "cache_creation_input_token_cost_above_272k_tokens": 5e-06,
-        "cache_read_input_token_cost": 1e-07,
-        "cache_read_input_token_cost_above_272k_tokens": 2e-07,
-        "input_cost_per_token": 2e-06,
-        "input_cost_per_token_above_272k_tokens": 4e-06,
         "litellm_provider": "bedrock_converse",
         "max_input_tokens": 922000,
         "max_output_tokens": 128000,
-        "mode": "chat",
-        "output_cost_per_token": 1e-05,
-        "output_cost_per_token_above_272k_tokens": 1.5e-05,
-        "source": "https://developers.openai.com/api/docs/pricing",
-        "supported_modalities": [
-          "text",
-          "image"
-        ],
-        "supported_output_modalities": [
-          "text"
-        ],
         "supports_bedrock_converse_tool_result_images": false,
-        "supports_function_calling": true,
-        "supports_max_reasoning_effort": true,
-        "supports_minimal_reasoning_effort": false,
-        "supports_none_reasoning_effort": false,
-        "supports_prompt_caching": true,
-        "supports_reasoning": true,
-        "supports_sampling_params": false,
-        "supports_tool_choice": true,
-        "supports_vision": true,
-        "supports_xhigh_reasoning_effort": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM aggregate registry [openai.gpt-6.2-sol] @ 65de9b210476eaca1a3bae28bec849e8de35949c; not independent official availability verification",
-          "url": "https://github.com/BerriAI/litellm/blob/65de9b210476eaca1a3bae28bec849e8de35949c/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-18T02:26:43Z"
-        }
-      ]
+        "supports_sampling_params": false
+      }
     },
     {
       "id": "gpt-6.2-sol@github-copilot",
@@ -676,35 +373,15 @@
       ],
       "status": "unverified",
       "metadata": {
-        "cache_creation_input_token_cost": 2.5e-06,
-        "cache_creation_input_token_cost_above_272k_tokens": 5e-06,
-        "cache_read_input_token_cost": 1e-07,
-        "cache_read_input_token_cost_above_272k_tokens": 2e-07,
-        "input_cost_per_token": 2e-06,
-        "input_cost_per_token_above_272k_tokens": 4e-06,
         "litellm_provider": "github_copilot",
         "max_input_tokens": 922000,
         "max_output_tokens": 128000,
         "mode": "responses",
-        "output_cost_per_token": 1e-05,
-        "output_cost_per_token_above_272k_tokens": 1.5e-05,
         "source": "https://raw.githubusercontent.com/github/docs/main/data/tables/copilot/models-and-pricing.yml",
         "supported_endpoints": [
           "/v1/responses"
-        ],
-        "supports_function_calling": true,
-        "supports_parallel_function_calling": true,
-        "supports_reasoning": true,
-        "supports_response_schema": true,
-        "supports_vision": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM aggregate registry [github_copilot/gpt-6.2-sol] @ 65de9b210476eaca1a3bae28bec849e8de35949c; not independent official availability verification",
-          "url": "https://github.com/BerriAI/litellm/blob/65de9b210476eaca1a3bae28bec849e8de35949c/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-18T02:26:43Z"
-        }
-      ]
+        ]
+      }
     },
     {
       "id": "gpt-6.2-sol@codex",
@@ -722,7 +399,6 @@
           "image",
           "audio"
         ],
-        "supports_reasoning": true,
         "reasoning_effort_levels": [
           "low",
           "medium",
@@ -732,17 +408,8 @@
           "ultra"
         ],
         "default_reasoning_effort": "low",
-        "supports_parallel_function_calling": true,
-        "supports_vision": true,
         "supports_audio_input": true
-      },
-      "sources": [
-        {
-          "label": "sub2api bundled Codex discovery [gpt-6.2-sol] @ 69d2fae91318359e4e25c0171eaf70364dad3629: default/maximum session windows, reasoning levels/default and input modalities",
-          "url": "https://github.com/Wei-Shaw/sub2api/blob/69d2fae91318359e4e25c0171eaf70364dad3629/backend/internal/pkg/openai/codex_gpt62_sol.json",
-          "verifiedAt": "2026-11-18T02:26:43Z"
-        }
-      ]
+      }
     }
   ]
 }

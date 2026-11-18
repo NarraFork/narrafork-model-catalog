@@ -7,11 +7,6 @@
       "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [gemini-exp-1206] @ e2cfaa46e79241f34e52bf4781f7710cd511c5d2",
       "url": "https://github.com/Wei-Shaw/sub2api/blob/e2cfaa46e79241f34e52bf4781f7710cd511c5d2/backend/resources/model-pricing/model_prices_and_context_window.json#L2411",
       "verifiedAt": "2026-09-22T07:33:33Z"
-    },
-    {
-      "label": "LiteLLM aggregated model metadata (not official verification) [gemini/gemini-exp-1206]",
-      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:26:38Z"
     }
   ],
   "metadata": {
@@ -76,28 +71,9 @@
       ],
       "status": "unverified",
       "metadata": {
-        "input_cost_per_token": 0,
-        "input_cost_per_token_above_128k_tokens": 0,
-        "litellm_provider": "gemini",
         "max_input_tokens": 2097152,
-        "max_output_tokens": 8192,
-        "mode": "chat",
-        "output_cost_per_token": 0,
-        "output_cost_per_token_above_128k_tokens": 0,
-        "source": "https://ai.google.dev/pricing",
-        "supports_function_calling": true,
-        "supports_response_schema": true,
-        "supports_system_messages": true,
-        "supports_tool_choice": true,
-        "supports_vision": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM aggregated model metadata (not official verification) [gemini/gemini-exp-1206]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:26:38Z"
-        }
-      ]
+        "max_output_tokens": 8192
+      }
     }
   ],
   "family": "gemini"

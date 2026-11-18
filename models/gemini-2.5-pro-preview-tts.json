@@ -7,11 +7,6 @@
       "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [gemini-2.5-pro-preview-tts] @ e2cfaa46e79241f34e52bf4781f7710cd511c5d2",
       "url": "https://github.com/Wei-Shaw/sub2api/blob/e2cfaa46e79241f34e52bf4781f7710cd511c5d2/backend/resources/model-pricing/model_prices_and_context_window.json#L1468",
       "verifiedAt": "2026-09-22T07:33:33Z"
-    },
-    {
-      "label": "LiteLLM aggregated model metadata (not official verification) [gemini/gemini-2.5-pro-preview-tts]",
-      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:26:38Z"
     }
   ],
   "metadata": {
@@ -74,51 +69,9 @@
       ],
       "status": "unverified",
       "metadata": {
-        "cache_read_input_token_cost": 1.25e-07,
-        "deprecation_date": "2026-12-18",
-        "deprecation_source": "https://ai.google.dev/gemini-api/docs/deprecations",
-        "successor_model": "gemini/gemini-3.8-flash-tts",
-        "input_cost_per_audio_token": 7e-07,
-        "input_cost_per_token": 1e-06,
-        "input_cost_per_token_batches": 5e-07,
-        "litellm_provider": "gemini",
         "max_input_tokens": 8192,
-        "max_output_tokens": 16384,
-        "mode": "chat",
-        "output_cost_per_audio_token": 2e-05,
-        "output_cost_per_token": 2e-05,
-        "output_cost_per_token_batches": 1e-05,
-        "rpm": 10000,
-        "source": "https://ai.google.dev/gemini-api/docs/pricing",
-        "supported_modalities": [
-          "text"
-        ],
-        "supported_output_modalities": [
-          "audio"
-        ],
-        "supports_audio_output": false,
-        "supports_function_calling": false,
-        "supports_prompt_caching": true,
-        "supports_response_schema": false,
-        "supports_system_messages": true,
-        "supports_tool_choice": true,
-        "supports_vision": false,
-        "supports_web_search": false,
-        "tpm": 10000000,
-        "search_context_cost_per_query": {
-          "search_context_size_low": 0.035,
-          "search_context_size_medium": 0.035,
-          "search_context_size_high": 0.035
-        },
-        "supports_audio_input": false
-      },
-      "sources": [
-        {
-          "label": "LiteLLM aggregated model metadata (not official verification) [gemini/gemini-2.5-pro-preview-tts]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:26:38Z"
-        }
-      ]
+        "max_output_tokens": 16384
+      }
     }
   ],
   "family": "gemini"

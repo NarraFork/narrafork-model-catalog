@@ -46,10 +46,7 @@
         ]
       },
       "metadata": {
-        "input_cost_per_token": 2e-06,
         "cache_read_input_token_cost": 5e-07,
-        "output_cost_per_token": 6e-06,
-        "supports_reasoning": true,
         "reasoning_effort_levels": [
           "low",
           "medium",
@@ -57,26 +54,7 @@
         ],
         "default_reasoning_effort": "high"
       },
-      "status": "unverified",
-      "sources": [
-        {
-          "label": "Cursor official Models & Pricing: USD/MTok rates for additional Cursor-model usage",
-          "url": "https://cursor.com/docs/models",
-          "verifiedAt": "2026-11-16T09:25:26Z"
-        },
-        {
-          "label": "Cursor official Grok model reference: effort levels/default and provider-specific pricing/context",
-          "url": "https://cursor.com/docs/models/grok-4-5",
-          "verifiedAt": "2026-11-16T09:25:26Z"
-        }
-      ]
-    }
-  ],
-  "sources": [
-    {
-      "label": "LiteLLM registry [xai/grok-4.5] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95; aggregated metadata, not a direct xAI availability check",
-      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:25:26Z"
+      "status": "unverified"
     }
   ],
   "notes": "Native xAI metadata is from the pinned LiteLLM registry; direct xAI documentation was unavailable during this audit. Registry output limits are not independently confirmed. Provider-specific pricing and controls, where verified, are recorded in nested variants. The former unsourced global cache-read rate ($0.50/MTok) is retained for Cursor; xAI registry lists $0.30/MTok."

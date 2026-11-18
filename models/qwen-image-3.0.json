@@ -25,19 +25,7 @@
         "qwen-image-3.0"
       ],
       "status": "unverified",
-      "metadata": {
-        "mode": "image_generation",
-        "supported_endpoints": [
-          "/v1/images/generations"
-        ]
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned Alibaba namespace regional/deployment record [qwen_ai_platform/qwen-image-3.0]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+      "metadata": {}
     },
     {
       "id": "qwen-image-3.0@dashscope",
@@ -48,20 +36,12 @@
       ],
       "status": "unverified",
       "metadata": {
-        "mode": "image_generation",
         "output_cost_per_image": 0.03,
         "supported_endpoints": [
           "/v1/images/generations",
           "/v1/images/edits"
         ]
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [dashscope/qwen-image-3.0]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+      }
     },
     {
       "id": "qwen-image-3.0@qwencloud",
@@ -71,19 +51,7 @@
         "qwen-image-3.0"
       ],
       "status": "unverified",
-      "metadata": {
-        "mode": "image_generation",
-        "supported_endpoints": [
-          "/v1/images/generations"
-        ]
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [qwencloud/qwen-image-3.0]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+      "metadata": {}
     }
   ],
   "sources": [
@@ -91,11 +59,6 @@
       "label": "LiteLLM pinned native-namespace record [qwen_ai_platform/qwen-image-3.0]; code evidence, not official API attestation",
       "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
       "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "Alibaba official Qwen Image directory: text-to-image and editing supported",
-      "url": "https://help.aliyun.com/zh/model-studio/image-model",
-      "verifiedAt": "2026-11-16T09:31:44Z"
     }
   ],
   "notes": "Native-namespace metadata is recorded from pinned LiteLLM code; without an official source this does not establish a public official model or guarantee current availability."

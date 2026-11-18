@@ -3,7 +3,6 @@
   "name": "Veo 3.1 Generate Preview",
   "family": "veo",
   "status": "unverified",
-  "sources": [],
   "metadata": {},
   "variants": [
     {
@@ -27,14 +26,7 @@
         "supported_output_modalities": [
           "video"
         ]
-      },
-      "sources": [
-        {
-          "label": "LiteLLM aggregated model metadata (not official verification) [vertex_ai/veo-3.1-generate-preview]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:26:38Z"
-        }
-      ]
+      }
     }
   ]
 }

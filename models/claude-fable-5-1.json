@@ -66,34 +66,16 @@
       ],
       "status": "unverified",
       "metadata": {
-        "cache_creation_input_token_cost": 1.25e-05,
-        "cache_read_input_token_cost": 2.5e-07,
-        "input_cost_per_token": 1e-05,
         "litellm_provider": "github_copilot",
         "max_input_tokens": 200000,
         "max_output_tokens": 64000,
-        "mode": "chat",
-        "output_cost_per_token": 5e-05,
         "source": "https://raw.githubusercontent.com/github/docs/main/data/tables/copilot/models-and-pricing.yml",
         "supported_endpoints": [
           "/v1/chat/completions",
           "/v1/messages"
         ],
-        "supports_adaptive_thinking": true,
-        "supports_function_calling": true,
-        "supports_parallel_function_calling": true,
-        "supports_reasoning": true,
-        "supports_response_schema": true,
-        "supports_vision": true,
-        "thinking_always_on": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM aggregate deployment registry [github_copilot/claude-fable-5.1] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:20:54Z"
-        }
-      ]
+        "supports_parallel_function_calling": true
+      }
     },
     {
       "id": "claude-fable-5-1@antigravity",
@@ -103,30 +85,13 @@
         "claude-fable-5-1"
       ],
       "status": "unverified",
-      "metadata": {},
-      "sources": [
-        {
-          "label": "sub2api unmerged PR #8778 Antigravity adapter whitelist/output spelling; availability unverified",
-          "url": "https://github.com/universonic/sub2api/blob/8783acd7b6725c8036098df243b16c0fbd25e71e/backend/internal/domain/constants.go#L112-L137",
-          "verifiedAt": "2026-11-16T09:20:54Z"
-        }
-      ]
+      "metadata": {}
     }
   ],
   "sources": [
     {
       "label": "LiteLLM aggregate registry: Anthropic-native [claude-fable-5-1] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95",
       "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:20:54Z"
-    },
-    {
-      "label": "sub2api EffortLevelsForModel exact/prefix family dispatch; bridge-supported levels, not independently verified official API limits",
-      "url": "https://github.com/Wei-Shaw/sub2api/blob/d70676756fd3a35b854d41aa46c07935bbef283f/backend/internal/pkg/claude/effort_catalog.go",
-      "verifiedAt": "2026-11-16T09:20:54Z"
-    },
-    {
-      "label": "Anthropic official fable product page: model identity and explicitly stated standard USD token rates; other fields remain attributed to aggregate sources",
-      "url": "https://www.anthropic.com/claude/fable",
       "verifiedAt": "2026-11-16T09:20:54Z"
     }
   ]

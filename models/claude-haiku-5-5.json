@@ -20,26 +20,6 @@
       "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [claude-haiku-5-5] @ 8f2cbb53d9d1c40e1865b07ac460571f7d4c48de",
       "url": "https://github.com/Wei-Shaw/sub2api/blob/8f2cbb53d9d1c40e1865b07ac460571f7d4c48de/backend/resources/model-pricing/model_prices_and_context_window.json#L384",
       "verifiedAt": "2026-10-21T02:30:58Z"
-    },
-    {
-      "label": "sub2api: Haiku 5.5 accepts low/medium/high/xhigh/max @ 8f2cbb53d9d1c40e1865b07ac460571f7d4c48de",
-      "url": "https://github.com/Wei-Shaw/sub2api/blob/8f2cbb53d9d1c40e1865b07ac460571f7d4c48de/backend/internal/pkg/claude/effort_catalog.go#L8-L30",
-      "verifiedAt": "2026-10-21T02:30:58Z"
-    },
-    {
-      "label": "sub2api: Haiku 5.5 Responses default medium; none maps to disabled thinking with low effort @ 8f2cbb53d9d1c40e1865b07ac460571f7d4c48de",
-      "url": "https://github.com/Wei-Shaw/sub2api/blob/8f2cbb53d9d1c40e1865b07ac460571f7d4c48de/backend/internal/pkg/apicompat/anthropic_responses_test.go#L1943-L1957",
-      "verifiedAt": "2026-10-21T02:30:58Z"
-    },
-    {
-      "label": "sub2api: Haiku 5.5 disabled thinking accepts low/medium/high and rejects xhigh/max @ 8f2cbb53d9d1c40e1865b07ac460571f7d4c48de",
-      "url": "https://github.com/Wei-Shaw/sub2api/blob/8f2cbb53d9d1c40e1865b07ac460571f7d4c48de/backend/internal/service/gateway_request_haiku55_test.go#L22-L29",
-      "verifiedAt": "2026-10-21T02:30:58Z"
-    },
-    {
-      "label": "LiteLLM aggregate registry: Anthropic-native [claude-haiku-5-5] and explicit claude-haiku-latest alias_of @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95",
-      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:20:54Z"
     }
   ],
   "metadata": {
@@ -119,38 +99,16 @@
       ],
       "status": "unverified",
       "metadata": {
-        "cache_creation_input_token_cost": 1.25e-07,
-        "cache_creation_input_token_cost_above_100k_tokens": 6.25e-07,
-        "cache_read_input_token_cost": 1e-08,
-        "cache_read_input_token_cost_above_100k_tokens": 5e-08,
-        "input_cost_per_token": 1e-07,
-        "input_cost_per_token_above_100k_tokens": 5e-07,
         "litellm_provider": "github_copilot",
         "max_input_tokens": 128000,
         "max_output_tokens": 16000,
-        "mode": "chat",
-        "output_cost_per_token": 5e-07,
-        "output_cost_per_token_above_100k_tokens": 2.5e-06,
         "source": "https://raw.githubusercontent.com/github/docs/main/data/tables/copilot/models-and-pricing.yml",
         "supported_endpoints": [
           "/v1/chat/completions",
           "/v1/messages"
         ],
-        "supports_adaptive_thinking": true,
-        "supports_function_calling": true,
-        "supports_parallel_function_calling": true,
-        "supports_reasoning": true,
-        "supports_response_schema": true,
-        "supports_vision": true,
-        "thinking_always_on": false
+        "supports_parallel_function_calling": true
       },
-      "sources": [
-        {
-          "label": "LiteLLM aggregate deployment registry [github_copilot/claude-haiku-5.5] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:20:54Z"
-        }
-      ],
       "matches": {
         "aliases": [
           "claude-haiku-latest",
@@ -166,12 +124,7 @@
         "claude-haiku-5-5"
       ],
       "status": "verified",
-      "metadata": {
-        "input_cost_per_token": 1e-07,
-        "output_cost_per_token": 5e-07,
-        "cache_read_input_token_cost": 1e-08,
-        "cache_creation_input_token_cost": 1.25e-07
-      },
+      "metadata": {},
       "sources": [
         {
           "label": "Cursor official model pricing; base rates exclude team Cursor Token Rate and residency surcharge",

@@ -8,41 +8,6 @@
       "label": "Z.AI GLM-5.3-Flash/FlashX: text/image/video/file input, text output, 1M context (exact integer not stated); always-on reasoning, streaming, function calling and context caching; file input is not represented as a separate modality by this catalog",
       "url": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
       "verifiedAt": "2026-10-24T00:00:00Z"
-    },
-    {
-      "label": "Z.AI Chat Completion OpenAPI: Vision request explicitly includes glm-5.3-flash and glm-5.3-flashx; max_tokens maximum 131072; reasoning_effort enum low/high/max with default max",
-      "url": "https://docs.z.ai/api-reference/llm/chat-completion",
-      "verifiedAt": "2026-10-24T00:00:00Z"
-    },
-    {
-      "label": "Z.AI pricing: USD per 1M tokens, input $0.15 / cached input $0.03 / output $0.50; storage is only temporarily free and is not recorded as a permanent zero price",
-      "url": "https://docs.z.ai/guides/overview/pricing",
-      "verifiedAt": "2026-10-24T00:00:00Z"
-    },
-    {
-      "label": "LiteLLM pinned native-namespace record [zai/glm-5.3-flash]; code evidence, not official API attestation",
-      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "LiteLLM pinned native-namespace record [bigmodel/glm-5.3-flash]; code evidence, not official API attestation",
-      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "Z.AI official USD token pricing; temporary free cache storage is not a permanent zero cache-write rate",
-      "url": "https://docs.z.ai/guides/overview/pricing.md",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "Z.AI official model guide: modalities, streaming, tools, structured output and thinking; exact output maximum from linked Chat Completion OpenAPI",
-      "url": "https://docs.z.ai/guides/vlm/glm-5.3-flash.md",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "Z.AI Chat Completion OpenAPI exact max_tokens ceiling and reasoning contract",
-      "url": "https://docs.z.ai/api-reference/llm/chat-completion.md",
-      "verifiedAt": "2026-11-16T09:24:55Z"
     }
   ],
   "metadata": {
@@ -101,26 +66,10 @@
       ],
       "status": "unverified",
       "metadata": {
-        "cache_read_input_token_cost": 3e-08,
-        "input_cost_per_token": 1.5e-07,
         "max_input_tokens": 1048576,
         "max_output_tokens": 128000,
-        "mode": "chat",
-        "output_cost_per_token": 5e-07,
-        "supports_function_calling": true,
-        "supports_reasoning": true,
-        "supports_response_schema": true,
-        "supports_vision": true,
-        "supports_assistant_prefill": true,
-        "supports_prompt_caching": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [streamlake/GLM-5.3-Flash]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+        "supports_assistant_prefill": true
+      }
     },
     {
       "id": "glm-5.3-flash@tencent",
@@ -132,33 +81,14 @@
       "status": "unverified",
       "metadata": {
         "cache_creation_input_token_cost": 0.0,
-        "cache_read_input_token_cost": 3e-08,
-        "input_cost_per_token": 1.5e-07,
         "input_cost_per_token_cache_hit": 3e-08,
         "max_input_tokens": 1000000,
         "max_output_tokens": 128000,
-        "mode": "chat",
-        "output_cost_per_token": 5e-07,
         "supported_endpoints": [
           "/v1/chat/completions"
         ],
-        "supports_function_calling": true,
-        "supports_native_streaming": true,
-        "supports_prompt_caching": true,
-        "supports_reasoning": true,
-        "supports_response_schema": true,
-        "supports_system_messages": true,
-        "supports_tool_choice": true,
-        "supports_video_input": true,
-        "supports_vision": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [tencent/glm-5.3-flash]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+        "supports_system_messages": true
+      }
     },
     {
       "id": "glm-5.3-flash@deepinfra",
@@ -170,26 +100,8 @@
       "status": "unverified",
       "metadata": {
         "max_output_tokens": 1048576,
-        "max_input_tokens": 1048576,
-        "input_cost_per_token": 1.5e-07,
-        "output_cost_per_token": 5e-07,
-        "cache_read_input_token_cost": 3e-08,
-        "supports_prompt_caching": true,
-        "mode": "chat",
-        "supports_function_calling": true,
-        "supports_tool_choice": true,
-        "supports_response_schema": true,
-        "supports_reasoning": true,
-        "supports_vision": true,
-        "supports_video_input": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [deepinfra/zai-org/GLM-5.3-Flash]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+        "max_input_tokens": 1048576
+      }
     },
     {
       "id": "glm-5.3-flash@opencode_go",
@@ -200,26 +112,12 @@
       ],
       "status": "unverified",
       "metadata": {
-        "mode": "chat",
         "supported_endpoints": [
           "/v1/chat/completions"
         ],
-        "input_cost_per_token": 1.5e-07,
-        "output_cost_per_token": 5e-07,
-        "cache_read_input_token_cost": 3e-08,
         "max_output_tokens": 131072,
-        "max_input_tokens": 1000000,
-        "supports_function_calling": true,
-        "supports_reasoning": true,
-        "supports_vision": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [opencode_go/glm-5.3-flash]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+        "max_input_tokens": 1000000
+      }
     }
   ],
   "notes": "Official context is stated as 1M without an exact integer; any retained exact context value is separately attributed to pinned LiteLLM. File input is not a distinct catalog modality."

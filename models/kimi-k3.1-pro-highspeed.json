@@ -14,26 +14,6 @@
       "label": "Kimi K3.1 Pro quickstart: kimi-k3.1-pro-highspeed is the high-speed variant with the K3.1 Pro API contract",
       "url": "https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart",
       "verifiedAt": "2026-10-24T00:00:00Z"
-    },
-    {
-      "label": "Kimi official pricing embedded DocTable: USD per MTok input 4 / output 20 / cached input 0.20 / 5m writes 4 / 1h writes 8; K3 context 1048576",
-      "url": "https://platform.kimi.ai/docs/pricing/chat",
-      "verifiedAt": "2026-10-24T00:00:00Z"
-    },
-    {
-      "label": "LiteLLM pinned native-namespace record [moonshot/kimi-k3.1-pro-highspeed]; code evidence, not official API attestation",
-      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "Kimi official pricing embedded DocTable: USD input/output/cache read, TTL cache writes and exact context",
-      "url": "https://platform.kimi.ai/docs/pricing/chat",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "Kimi official guide: always-on low/high/max (default max), exact completion maximum, fixed sampling, visual input, streaming, tools and schema",
-      "url": "https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart",
-      "verifiedAt": "2026-11-16T09:24:55Z"
     }
   ],
   "metadata": {
@@ -113,10 +93,7 @@
           "low",
           "high",
           "max"
-        ],
-        "default_reasoning_effort": "max",
-        "can_disable_reasoning": false,
-        "supports_none_reasoning_effort": false
+        ]
       }
     }
   ]

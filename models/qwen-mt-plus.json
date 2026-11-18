@@ -24,24 +24,12 @@
         "max_input_tokens": 16384,
         "max_output_tokens": 8192,
         "supports_system_messages": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [novita/qwen/qwen-mt-plus]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+      }
     }
   ],
   "sources": [
     {
       "label": "Alibaba official full text-generation and visual-understanding directory",
-      "url": "https://help.aliyun.com/zh/model-studio/text-generation-model",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "Alibaba official domain-model capability matrix",
       "url": "https://help.aliyun.com/zh/model-studio/text-generation-model",
       "verifiedAt": "2026-11-16T09:24:55Z"
     }

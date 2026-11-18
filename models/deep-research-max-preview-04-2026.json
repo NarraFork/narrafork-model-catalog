@@ -3,13 +3,6 @@
   "name": "Deep Research Max Preview 04 2026",
   "family": "deep-research",
   "status": "unverified",
-  "sources": [
-    {
-      "label": "LiteLLM aggregated model metadata (not official verification) [gemini/deep-research-max-preview-04-2026]",
-      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:26:38Z"
-    }
-  ],
   "metadata": {
     "input_cost_per_token": 2e-06,
     "input_cost_per_token_batches": 1e-06,
@@ -56,48 +49,9 @@
       ],
       "status": "unverified",
       "metadata": {
-        "input_cost_per_token": 2e-06,
-        "input_cost_per_token_batches": 1e-06,
-        "litellm_provider": "gemini",
         "max_input_tokens": 1048576,
-        "max_output_tokens": 65536,
-        "mode": "chat",
-        "output_cost_per_token": 1.2e-05,
-        "rpm": 1000,
-        "tpm": 4000000,
-        "output_cost_per_token_batches": 6e-06,
-        "source": "https://ai.google.dev/gemini-api/docs/pricing",
-        "supported_endpoints": [
-          "/v1/chat/completions",
-          "/v1/completions",
-          "/v1/batch"
-        ],
-        "supported_modalities": [
-          "text",
-          "image"
-        ],
-        "supported_output_modalities": [
-          "text"
-        ],
-        "supports_function_calling": false,
-        "supports_prompt_caching": false,
-        "supports_response_schema": false,
-        "supports_system_messages": true,
-        "supports_vision": true,
-        "supports_web_search": true,
-        "search_context_cost_per_query": {
-          "search_context_size_low": 0.035,
-          "search_context_size_medium": 0.035,
-          "search_context_size_high": 0.035
-        }
-      },
-      "sources": [
-        {
-          "label": "LiteLLM aggregated model metadata (not official verification) [gemini/deep-research-max-preview-04-2026]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:26:38Z"
-        }
-      ]
+        "max_output_tokens": 65536
+      }
     }
   ]
 }

@@ -71,16 +71,6 @@
       "label": "Alibaba official full text-generation and visual-understanding directory",
       "url": "https://help.aliyun.com/zh/model-studio/text-generation-model",
       "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "Alibaba official model-specific capability rows; 1M shorthand not converted",
-      "url": "https://help.aliyun.com/zh/model-studio/text-generation-model",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "Alibaba official Qwen4-Max exact limits, modalities, API support and native reasoning low/high/xhigh (default high); max is a compatibility mapping",
-      "url": "https://help.aliyun.com/zh/model-studio/qwen4-max",
-      "verifiedAt": "2026-11-16T09:24:55Z"
     }
   ],
   "notes": "Maximum completion 262144 includes thinking plus answer; non-thinking output max 131072. Maximum input 991808 non-thinking / 983616 thinking; total context 1000000. No USD price inferred from official regional CNY prices."

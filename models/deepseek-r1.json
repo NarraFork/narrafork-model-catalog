@@ -30,18 +30,8 @@
         "max_input_tokens": 163840,
         "max_output_tokens": 163840,
         "input_cost_per_token": 7e-07,
-        "output_cost_per_token": 2.4e-06,
-        "mode": "chat",
-        "supports_tool_choice": true,
-        "supports_function_calling": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [deepinfra/deepseek-ai/DeepSeek-R1]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+        "output_cost_per_token": 2.4e-06
+      }
     },
     {
       "id": "deepseek-r1@streamlake",
@@ -56,19 +46,8 @@
         "input_cost_per_token": 5.71e-07,
         "max_input_tokens": 98304,
         "max_output_tokens": 16000,
-        "mode": "chat",
-        "output_cost_per_token": 2.286e-06,
-        "supports_function_calling": true,
-        "supports_reasoning": true,
-        "supports_prompt_caching": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [streamlake/deepseek-r1]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+        "output_cost_per_token": 2.286e-06
+      }
     },
     {
       "id": "deepseek-r1@novita",
@@ -82,27 +61,9 @@
         "input_cost_per_token": 4e-06,
         "max_input_tokens": 64000,
         "max_output_tokens": 16000,
-        "mode": "chat",
         "output_cost_per_token": 4e-06,
-        "supports_function_calling": true,
-        "supports_reasoning": true,
-        "supports_tool_choice": true,
         "supports_vision": false
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [novita/deepseek/deepseek-r1]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
-    }
-  ],
-  "sources": [
-    {
-      "label": "LiteLLM pinned native-namespace record [deepseek/deepseek-r1]; code evidence, not official API attestation",
-      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:24:55Z"
+      }
     }
   ],
   "notes": "Native-namespace metadata is recorded from pinned LiteLLM code; without an official source this does not establish a public official model or guarantee current availability. Only aggregate-code evidence was available for this identity/metadata in this audit; this is not a claim of official public release."

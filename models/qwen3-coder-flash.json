@@ -21,10 +21,6 @@
       "metadata": {
         "max_input_tokens": 997952,
         "max_output_tokens": 65536,
-        "mode": "chat",
-        "supports_function_calling": true,
-        "supports_reasoning": true,
-        "supports_tool_choice": true,
         "tiered_pricing": [
           {
             "cache_read_input_token_cost": 8e-08,
@@ -63,14 +59,7 @@
             ]
           }
         ]
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned Alibaba namespace regional/deployment record [qwen_ai_platform/qwen3-coder-flash]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+      }
     },
     {
       "id": "qwen3-coder-flash@dashscope",
@@ -83,10 +72,6 @@
       "metadata": {
         "max_input_tokens": 997952,
         "max_output_tokens": 65536,
-        "mode": "chat",
-        "supports_function_calling": true,
-        "supports_reasoning": true,
-        "supports_tool_choice": true,
         "tiered_pricing": [
           {
             "cache_read_input_token_cost": 8e-08,
@@ -125,14 +110,7 @@
             ]
           }
         ]
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [dashscope/qwen3-coder-flash]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+      }
     },
     {
       "id": "qwen3-coder-flash@qwencloud",
@@ -145,10 +123,6 @@
       "metadata": {
         "max_input_tokens": 997952,
         "max_output_tokens": 65536,
-        "mode": "chat",
-        "supports_function_calling": true,
-        "supports_reasoning": true,
-        "supports_tool_choice": true,
         "tiered_pricing": [
           {
             "cache_read_input_token_cost": 8e-08,
@@ -187,14 +161,7 @@
             ]
           }
         ]
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [qwencloud/qwen3-coder-flash]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+      }
     },
     {
       "id": "qwen3-coder-flash@qwen_ai_platform:qwen3-coder-flash-2025-07-28",
@@ -207,10 +174,6 @@
       "metadata": {
         "max_input_tokens": 997952,
         "max_output_tokens": 65536,
-        "mode": "chat",
-        "supports_function_calling": true,
-        "supports_reasoning": true,
-        "supports_tool_choice": true,
         "tiered_pricing": [
           {
             "input_cost_per_token": 3e-07,
@@ -245,14 +208,7 @@
             ]
           }
         ]
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned Alibaba namespace regional/deployment record [qwen_ai_platform/qwen3-coder-flash-2025-07-28]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+      }
     },
     {
       "id": "qwen3-coder-flash@dashscope:qwen3-coder-flash-2025-07-28",
@@ -265,10 +221,6 @@
       "metadata": {
         "max_input_tokens": 997952,
         "max_output_tokens": 65536,
-        "mode": "chat",
-        "supports_function_calling": true,
-        "supports_reasoning": true,
-        "supports_tool_choice": true,
         "tiered_pricing": [
           {
             "input_cost_per_token": 3e-07,
@@ -303,14 +255,7 @@
             ]
           }
         ]
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [dashscope/qwen3-coder-flash-2025-07-28]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+      }
     },
     {
       "id": "qwen3-coder-flash@qwencloud:qwen3-coder-flash-2025-07-28",
@@ -323,10 +268,6 @@
       "metadata": {
         "max_input_tokens": 997952,
         "max_output_tokens": 65536,
-        "mode": "chat",
-        "supports_function_calling": true,
-        "supports_reasoning": true,
-        "supports_tool_choice": true,
         "tiered_pricing": [
           {
             "input_cost_per_token": 3e-07,
@@ -361,25 +302,13 @@
             ]
           }
         ]
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [qwencloud/qwen3-coder-flash-2025-07-28]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+      }
     }
   ],
   "sources": [
     {
       "label": "LiteLLM pinned native-namespace record [qwen_ai_platform/qwen3-coder-flash]; code evidence, not official API attestation",
       "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "Alibaba official full text-generation and visual-understanding directory",
-      "url": "https://help.aliyun.com/zh/model-studio/text-generation-model",
       "verifiedAt": "2026-11-16T09:24:55Z"
     }
   ],

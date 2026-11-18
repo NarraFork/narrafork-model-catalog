@@ -9,26 +9,6 @@
       "label": "OpenAI GPT-6.1 Terra model reference: exact ID, token limits, effort levels/default, modalities, endpoints, tools and USD pricing including retention and long-context adjustments",
       "url": "https://developers.openai.com/api/docs/models/gpt-6.1-terra",
       "verifiedAt": "2026-10-27T00:37:54Z"
-    },
-    {
-      "label": "OpenAI GPT-6.1 Terra announcement: API ID and Standard USD/MTok input 1 / cached input 0.05 / output 5",
-      "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
-      "verifiedAt": "2026-10-27T00:37:54Z"
-    },
-    {
-      "label": "litellm aggregate directory [gpt-6.1-terra] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95; verifies only recorded aggregate fields, not official availability",
-      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:21:44Z"
-    },
-    {
-      "label": "litellm aggregate directory [gpt-terra-latest] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95; verifies only recorded aggregate fields, not official availability",
-      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:21:44Z"
-    },
-    {
-      "label": "sub2api aggregate directory [gpt-6.1-terra] @ d70676756fd3a35b854d41aa46c07935bbef283f; verifies only recorded aggregate fields, not official availability",
-      "url": "https://github.com/Wei-Shaw/sub2api/blob/d70676756fd3a35b854d41aa46c07935bbef283f/backend/resources/model-pricing/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:21:44Z"
     }
   ],
   "metadata": {

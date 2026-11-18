@@ -31,18 +31,8 @@
         "max_input_tokens": 131072,
         "max_output_tokens": 131072,
         "input_cost_per_token": 4e-07,
-        "output_cost_per_token": 1.6e-06,
-        "mode": "chat",
-        "supports_tool_choice": true,
-        "supports_function_calling": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [deepinfra/zai-org/GLM-4.5]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+        "output_cost_per_token": 1.6e-06
+      }
     },
     {
       "id": "glm-4.5@novita",
@@ -53,37 +43,19 @@
       ],
       "status": "unverified",
       "metadata": {
-        "mode": "chat",
-        "input_cost_per_token": 6e-07,
-        "output_cost_per_token": 2.2e-06,
         "max_input_tokens": 131072,
         "max_output_tokens": 98304,
-        "supports_function_calling": true,
         "supports_parallel_function_calling": true,
-        "supports_tool_choice": true,
         "supports_system_messages": true,
-        "cache_read_input_token_cost": 1.1e-07,
         "input_cost_per_token_cache_hit": 1.1e-07,
         "supports_reasoning": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [novita/zai-org/glm-4.5]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+      }
     }
   ],
   "sources": [
     {
       "label": "LiteLLM pinned native-namespace record [zai/glm-4.5]; code evidence, not official API attestation",
       "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "Z.AI official USD token pricing; temporary free cache storage is not a permanent zero cache-write rate",
-      "url": "https://docs.z.ai/guides/overview/pricing.md",
       "verifiedAt": "2026-11-16T09:24:55Z"
     }
   ],

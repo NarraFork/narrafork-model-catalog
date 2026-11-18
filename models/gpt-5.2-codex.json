@@ -8,16 +8,6 @@
       "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [gpt-5.2-codex] @ e2cfaa46e79241f34e52bf4781f7710cd511c5d2",
       "url": "https://github.com/Wei-Shaw/sub2api/blob/e2cfaa46e79241f34e52bf4781f7710cd511c5d2/backend/resources/model-pricing/model_prices_and_context_window.json#L4457",
       "verifiedAt": "2026-09-22T07:33:33Z"
-    },
-    {
-      "label": "litellm aggregate directory [gpt-5.2-codex] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95; verifies only recorded aggregate fields, not official availability",
-      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:21:44Z"
-    },
-    {
-      "label": "sub2api aggregate directory [gpt-5.2-codex] @ d70676756fd3a35b854d41aa46c07935bbef283f; verifies only recorded aggregate fields, not official availability",
-      "url": "https://github.com/Wei-Shaw/sub2api/blob/d70676756fd3a35b854d41aa46c07935bbef283f/backend/resources/model-pricing/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:21:44Z"
     }
   ],
   "metadata": {

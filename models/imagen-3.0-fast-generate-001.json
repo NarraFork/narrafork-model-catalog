@@ -3,13 +3,6 @@
   "name": "Imagen 3.0 Fast Generate 001",
   "family": "imagen",
   "status": "unverified",
-  "sources": [
-    {
-      "label": "LiteLLM aggregated model metadata (not official verification) [gemini/imagen-3.0-fast-generate-001]",
-      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:26:38Z"
-    }
-  ],
   "metadata": {
     "litellm_provider": "gemini",
     "mode": "image_generation",
@@ -25,19 +18,7 @@
         "imagen-3.0-fast-generate-001"
       ],
       "status": "unverified",
-      "metadata": {
-        "litellm_provider": "gemini",
-        "mode": "image_generation",
-        "output_cost_per_image": 0.02,
-        "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing"
-      },
-      "sources": [
-        {
-          "label": "LiteLLM aggregated model metadata (not official verification) [gemini/imagen-3.0-fast-generate-001]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:26:38Z"
-        }
-      ]
+      "metadata": {}
     }
   ]
 }

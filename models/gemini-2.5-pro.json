@@ -7,11 +7,6 @@
       "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [gemini-2.5-pro] @ e2cfaa46e79241f34e52bf4781f7710cd511c5d2",
       "url": "https://github.com/Wei-Shaw/sub2api/blob/e2cfaa46e79241f34e52bf4781f7710cd511c5d2/backend/resources/model-pricing/model_prices_and_context_window.json#L1416",
       "verifiedAt": "2026-09-22T07:33:33Z"
-    },
-    {
-      "label": "LiteLLM aggregated model metadata (not official verification) [gemini/gemini-2.5-pro]",
-      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:26:38Z"
     }
   ],
   "metadata": {
@@ -107,85 +102,9 @@
       ],
       "status": "unverified",
       "metadata": {
-        "cache_read_input_token_cost": 1.25e-07,
-        "cache_read_input_token_cost_above_200k_tokens": 2.5e-07,
-        "cache_read_input_token_cost_above_200k_tokens_priority": 4.5e-07,
-        "cache_read_input_token_cost_batches": 1.25e-07,
-        "cache_read_input_token_cost_flex": 1.25e-07,
-        "cache_read_input_token_cost_priority": 2.25e-07,
-        "input_cost_per_token": 1.25e-06,
-        "input_cost_per_token_above_200k_tokens": 2.5e-06,
-        "input_cost_per_token_priority": 2.25e-06,
-        "input_cost_per_token_above_200k_tokens_priority": 4.5e-06,
-        "litellm_provider": "gemini",
         "max_input_tokens": 1048576,
-        "max_output_tokens": 65536,
-        "mode": "chat",
-        "output_cost_per_token": 1e-05,
-        "output_cost_per_token_above_200k_tokens": 1.5e-05,
-        "output_cost_per_token_priority": 1.8e-05,
-        "output_cost_per_token_above_200k_tokens_priority": 2.7e-05,
-        "rpm": 2000,
-        "source": "https://ai.google.dev/gemini-api/docs/pricing",
-        "supported_endpoints": [
-          "/v1/chat/completions",
-          "/v1/completions"
-        ],
-        "supported_modalities": [
-          "text",
-          "image",
-          "audio",
-          "video"
-        ],
-        "supported_output_modalities": [
-          "text"
-        ],
-        "supports_audio_input": true,
-        "supports_function_calling": true,
-        "supports_pdf_input": true,
-        "supports_prompt_caching": true,
-        "prompt_cache_min_tokens": 2048,
-        "supports_reasoning": true,
-        "supports_response_schema": true,
-        "supports_system_messages": true,
-        "supports_tool_choice": true,
-        "supports_video_input": true,
-        "supports_vision": true,
-        "supports_web_search": true,
-        "tpm": 800000,
-        "search_context_cost_per_query": {
-          "search_context_size_low": 0.035,
-          "search_context_size_medium": 0.035,
-          "search_context_size_high": 0.035
-        },
-        "search_free_requests": {
-          "count": 10000,
-          "period": "day",
-          "shared_group": "gemini-2.5-pro"
-        },
-        "google_maps_grounding_cost_per_query": 0.025,
-        "input_cost_per_token_batches": 6.25e-07,
-        "input_cost_per_token_flex": 6.25e-07,
-        "output_cost_per_token_batches": 5e-06,
-        "output_cost_per_token_flex": 5e-06,
-        "supports_url_context": true,
-        "cache_read_input_token_cost_above_200k_tokens_batches": 2.5e-07,
-        "cache_read_input_token_cost_above_200k_tokens_flex": 2.5e-07,
-        "deprecation_date": "2026-12-01",
-        "deprecation_source": "https://ai.google.dev/gemini-api/docs/deprecations",
-        "successor_model": "gemini/gemini-3.8-flash",
-        "input_cost_per_token_above_200k_tokens_batches": 1.25e-06,
-        "input_cost_per_token_above_200k_tokens_flex": 1.25e-06,
-        "output_cost_per_token_above_200k_tokens_batches": 7.5e-06,
-        "output_cost_per_token_above_200k_tokens_flex": 7.5e-06
-      },
-      "sources": [
-        {
-          "label": "LiteLLM aggregated model metadata (not official verification) [gemini/gemini-2.5-pro]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:26:38Z"
-        }
-      ]
+        "max_output_tokens": 65536
+      }
     }
   ],
   "family": "gemini"

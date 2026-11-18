@@ -20,19 +20,8 @@
       "status": "unverified",
       "metadata": {
         "max_input_tokens": 129024,
-        "max_output_tokens": 16384,
-        "mode": "chat",
-        "supports_function_calling": true,
-        "supports_reasoning": true,
-        "supports_tool_choice": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned Alibaba namespace regional/deployment record [qwen_ai_platform/qwen3-30b-a3b]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+        "max_output_tokens": 16384
+      }
     },
     {
       "id": "qwen3-30b-a3b@dashscope",
@@ -44,19 +33,8 @@
       "status": "unverified",
       "metadata": {
         "max_input_tokens": 129024,
-        "max_output_tokens": 16384,
-        "mode": "chat",
-        "supports_function_calling": true,
-        "supports_reasoning": true,
-        "supports_tool_choice": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [dashscope/qwen3-30b-a3b]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+        "max_output_tokens": 16384
+      }
     },
     {
       "id": "qwen3-30b-a3b@qwencloud",
@@ -68,19 +46,8 @@
       "status": "unverified",
       "metadata": {
         "max_input_tokens": 129024,
-        "max_output_tokens": 16384,
-        "mode": "chat",
-        "supports_function_calling": true,
-        "supports_reasoning": true,
-        "supports_tool_choice": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [qwencloud/qwen3-30b-a3b]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+        "max_output_tokens": 16384
+      }
     },
     {
       "id": "qwen3-30b-a3b@deepinfra",
@@ -94,18 +61,8 @@
         "max_input_tokens": 40960,
         "max_output_tokens": 40960,
         "input_cost_per_token": 1.2e-07,
-        "output_cost_per_token": 5e-07,
-        "mode": "chat",
-        "supports_tool_choice": true,
-        "supports_function_calling": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [deepinfra/Qwen/Qwen3-30B-A3B]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+        "output_cost_per_token": 5e-07
+      }
     },
     {
       "id": "qwen3-30b-a3b@novita:fp8",
@@ -116,30 +73,12 @@
       ],
       "status": "unverified",
       "metadata": {
-        "mode": "chat",
         "input_cost_per_token": 9e-08,
         "output_cost_per_token": 4.5e-07,
         "max_input_tokens": 40960,
         "max_output_tokens": 20000,
-        "supports_system_messages": true,
-        "supports_reasoning": true,
-        "supports_function_calling": true,
-        "supports_tool_choice": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [novita/qwen/qwen3-30b-a3b-fp8]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
-    }
-  ],
-  "sources": [
-    {
-      "label": "LiteLLM pinned native-namespace record [qwen_ai_platform/qwen3-30b-a3b]; code evidence, not official API attestation",
-      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:24:55Z"
+        "supports_system_messages": true
+      }
     }
   ],
   "notes": "Native-namespace metadata is recorded from pinned LiteLLM code; without an official source this does not establish a public official model or guarantee current availability. Only aggregate-code evidence was available for this identity/metadata in this audit; this is not a claim of official public release."

@@ -27,38 +27,20 @@
       ],
       "status": "unverified",
       "metadata": {
-        "mode": "chat",
         "input_cost_per_token": 3e-07,
         "output_cost_per_token": 1.2e-06,
         "max_input_tokens": 204800,
         "max_output_tokens": 131072,
-        "supports_function_calling": true,
         "supports_parallel_function_calling": true,
-        "supports_tool_choice": true,
-        "supports_system_messages": true,
-        "cache_read_input_token_cost": 3e-08,
         "input_cost_per_token_cache_hit": 3e-08,
-        "supports_reasoning": true,
         "supports_response_schema": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [novita/minimax/minimax-m2]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+      }
     }
   ],
   "sources": [
     {
       "label": "LiteLLM pinned native-namespace record [minimax/MiniMax-M2]; code evidence, not official API attestation",
       "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "MiniMax official historical identity and retirement schedule",
-      "url": "https://platform.minimax.io/docs/faq/models.md",
       "verifiedAt": "2026-11-16T09:24:55Z"
     }
   ],

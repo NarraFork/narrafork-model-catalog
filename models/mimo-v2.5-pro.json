@@ -33,16 +33,8 @@
         "supports_prompt_caching": true,
         "supports_reasoning": true,
         "supports_response_schema": true,
-        "supports_tool_choice": true,
-        "supports_vision": false
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned external historical deployment [novita/xiaomimimo/mimo-v2.5-pro]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:33:42Z"
-        }
-      ]
+        "supports_tool_choice": true
+      }
     },
     {
       "id": "mimo-v2.5-pro@deepinfra",
@@ -63,16 +55,8 @@
         "supports_function_calling": true,
         "supports_tool_choice": true,
         "supports_response_schema": true,
-        "supports_reasoning": true,
-        "supports_vision": false
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned external historical deployment [deepinfra/XiaomiMiMo/MiMo-V2.5-Pro]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:33:42Z"
-        }
-      ]
+        "supports_reasoning": true
+      }
     },
     {
       "id": "mimo-v2.5-pro@opencode_go",
@@ -93,16 +77,8 @@
         "max_output_tokens": 128000,
         "max_input_tokens": 1048576,
         "supports_function_calling": true,
-        "supports_reasoning": true,
-        "supports_vision": false
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned external historical deployment [opencode_go/mimo-v2.5-pro]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:33:42Z"
-        }
-      ]
+        "supports_reasoning": true
+      }
     },
     {
       "id": "mimo-v2.5-pro@gmi",
@@ -118,14 +94,7 @@
         "max_input_tokens": 1050000,
         "mode": "chat",
         "output_cost_per_token": 6.09e-07
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned external historical deployment [gmi/XiaomiMiMo/MiMo-V2.5-Pro]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:33:42Z"
-        }
-      ]
+      }
     }
   ],
   "sources": [

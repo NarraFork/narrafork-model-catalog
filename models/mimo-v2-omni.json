@@ -24,14 +24,7 @@
         "supports_prompt_caching": true,
         "supports_vision": true,
         "supports_web_search": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned external historical deployment [aihubmix/mimo-v2-omni]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:33:42Z"
-        }
-      ]
+      }
     }
   ],
   "sources": [

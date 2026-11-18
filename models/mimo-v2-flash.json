@@ -29,14 +29,7 @@
         "cache_read_input_token_cost": 2.4e-08,
         "input_cost_per_token_cache_hit": 2.4e-08,
         "supports_reasoning": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned external historical deployment [novita/xiaomimimo/mimo-v2-flash]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:33:42Z"
-        }
-      ]
+      }
     }
   ],
   "sources": [

@@ -50,21 +50,7 @@
         "mimo-v2.6-flash"
       ],
       "status": "unverified",
-      "metadata": {
-        "cache_read_input_token_cost": 2.8e-09,
-        "input_cost_per_token": 1.4e-07,
-        "mode": "chat",
-        "output_cost_per_token": 2.8e-07,
-        "supports_vision": true,
-        "supports_prompt_caching": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [streamlake/mimo-v2.6-flash]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+      "metadata": {}
     },
     {
       "id": "mimo-v2.6-flash@deepinfra",
@@ -75,27 +61,8 @@
       ],
       "status": "unverified",
       "metadata": {
-        "max_input_tokens": 1048576,
-        "input_cost_per_token": 1.4e-07,
-        "output_cost_per_token": 2.8e-07,
-        "cache_read_input_token_cost": 2.8e-09,
-        "supports_prompt_caching": true,
-        "mode": "chat",
-        "supports_function_calling": true,
-        "supports_tool_choice": true,
-        "supports_response_schema": true,
-        "supports_reasoning": true,
-        "supports_vision": true,
-        "supports_video_input": true,
-        "supports_audio_input": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [deepinfra/XiaomiMiMo/MiMo-V2.6-Flash]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+        "max_input_tokens": 1048576
+      }
     },
     {
       "id": "mimo-v2.6-flash@opencode_go",
@@ -106,62 +73,15 @@
       ],
       "status": "unverified",
       "metadata": {
-        "mode": "chat",
-        "supported_endpoints": [
-          "/v1/chat/completions"
-        ],
-        "input_cost_per_token": 1.4e-07,
-        "output_cost_per_token": 2.8e-07,
-        "cache_read_input_token_cost": 2.8e-09,
         "max_output_tokens": 131072,
-        "max_input_tokens": 1048576,
-        "supports_function_calling": true,
-        "supports_reasoning": true,
-        "supports_vision": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [opencode_go/mimo-v2.6-flash]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+        "max_input_tokens": 1048576
+      }
     }
   ],
   "sources": [
     {
       "label": "LiteLLM pinned native-namespace record [xiaomi_mimo/mimo-v2.6-flash]; code evidence, not official API attestation",
       "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "MiMo official current model directory: full-modal understanding, streaming, tools, structured output, search; shorthand 1M/128K limits",
-      "url": "https://mimo.mi.com/static/docs/quick-start/summary/model.md",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "MiMo official multimodal audio input",
-      "url": "https://mimo.mi.com/static/docs/quick-start/usage-guide/multimodal-understanding/audio-understanding.md",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "MiMo official thinking: enabled by default, can be disabled; no native effort levels documented",
-      "url": "https://mimo.mi.com/static/docs/quick-start/usage-guide/text-generation/deep-thinking.md",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "MiMo official overseas USD pay-as-you-go pricing",
-      "url": "https://mimo.mi.com/static/docs/price/pay-as-you-go.md",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "MiMo official OpenAI Chat API schema max_completion_tokens range [1, 131072]",
-      "url": "https://mimo.mi.com/static/docs/api/chat/openai-api-post.md",
-      "verifiedAt": "2026-11-16T09:27:56Z"
-    },
-    {
-      "label": "MiMo official overseas USD batch pricing",
-      "url": "https://mimo.mi.com/static/docs/price/pay-as-you-go.md",
       "verifiedAt": "2026-11-16T09:24:55Z"
     }
   ],

@@ -7,16 +7,6 @@
       "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [claude-opus-4-5-20251101] @ e2cfaa46e79241f34e52bf4781f7710cd511c5d2",
       "url": "https://github.com/Wei-Shaw/sub2api/blob/e2cfaa46e79241f34e52bf4781f7710cd511c5d2/backend/resources/model-pricing/model_prices_and_context_window.json#L282",
       "verifiedAt": "2026-09-22T07:33:33Z"
-    },
-    {
-      "label": "LiteLLM aggregate registry: Anthropic-native [claude-opus-4-5-20251101] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95",
-      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:20:54Z"
-    },
-    {
-      "label": "sub2api EffortLevelsForModel exact/prefix family dispatch; bridge-supported levels, not independently verified official API limits",
-      "url": "https://github.com/Wei-Shaw/sub2api/blob/d70676756fd3a35b854d41aa46c07935bbef283f/backend/internal/pkg/claude/effort_catalog.go",
-      "verifiedAt": "2026-11-16T09:20:54Z"
     }
   ],
   "metadata": {

@@ -91,11 +91,6 @@
           "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [gemini-3.1-pro-high] @ e2cfaa46e79241f34e52bf4781f7710cd511c5d2",
           "url": "https://github.com/Wei-Shaw/sub2api/blob/e2cfaa46e79241f34e52bf4781f7710cd511c5d2/backend/resources/model-pricing/model_prices_and_context_window.json#L2037",
           "verifiedAt": "2026-09-22T07:33:33Z"
-        },
-        {
-          "label": "sub2api aggregated model metadata (not official verification) [gemini-3.1-pro-high]",
-          "url": "https://github.com/Wei-Shaw/sub2api/blob/d70676756fd3a35b854d41aa46c07935bbef283f/backend/resources/model-pricing/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:26:38Z"
         }
       ]
     },
@@ -179,11 +174,6 @@
           "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [gemini-3.1-pro-low] @ e2cfaa46e79241f34e52bf4781f7710cd511c5d2",
           "url": "https://github.com/Wei-Shaw/sub2api/blob/e2cfaa46e79241f34e52bf4781f7710cd511c5d2/backend/resources/model-pricing/model_prices_and_context_window.json#L2104",
           "verifiedAt": "2026-09-22T07:33:33Z"
-        },
-        {
-          "label": "sub2api aggregated model metadata (not official verification) [gemini-3.1-pro-low]",
-          "url": "https://github.com/Wei-Shaw/sub2api/blob/d70676756fd3a35b854d41aa46c07935bbef283f/backend/resources/model-pricing/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:26:38Z"
         }
       ]
     },

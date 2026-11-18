@@ -19,31 +19,6 @@
       "label": "Claude official pricing: USD per MTok base input 2 / 5m cache writes 2.50 / 1h cache writes 4 / cache hits 0.10 / output 10; supersedes older sub2api cache-read rate",
       "url": "https://platform.claude.com/docs/en/about-claude/pricing.md",
       "verifiedAt": "2026-10-24T00:00:00Z"
-    },
-    {
-      "label": "Anthropic Sonnet 5.5 announcement: USD per MTok input 2 / output 10 / cache reads 0.10; Claude Platform defaults to high effort",
-      "url": "https://www.anthropic.com/news/claude-sonnet-5-5",
-      "verifiedAt": "2026-10-24T00:00:00Z"
-    },
-    {
-      "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [claude-sonnet-5-5] @ 3040209f205472038c1ba745a1bedd2edd9053b1",
-      "url": "https://github.com/Wei-Shaw/sub2api/blob/3040209f205472038c1ba745a1bedd2edd9053b1/backend/resources/model-pricing/model_prices_and_context_window.json#L924",
-      "verifiedAt": "2026-10-02T12:21:34Z"
-    },
-    {
-      "label": "sub2api: Sonnet 5.5 low/medium/high/xhigh/max effort and dotted-ID normalization @ 5c185c5c5d4f5e409e2139806e0964ae944e03e8",
-      "url": "https://github.com/Wei-Shaw/sub2api/blob/5c185c5c5d4f5e409e2139806e0964ae944e03e8/backend/internal/pkg/claude/effort_catalog.go",
-      "verifiedAt": "2026-10-24T00:00:00Z"
-    },
-    {
-      "label": "sub2api: TestSonnet55ResponsesThinkingAndSampling defaults to high; none maps to between_tools with low effort, not disabled thinking",
-      "url": "https://github.com/Wei-Shaw/sub2api/blob/5c185c5c5d4f5e409e2139806e0964ae944e03e8/backend/internal/pkg/apicompat/anthropic_responses_test.go#L1885-L1918",
-      "verifiedAt": "2026-10-24T00:00:00Z"
-    },
-    {
-      "label": "LiteLLM aggregate registry: Anthropic-native [claude-sonnet-5-5] and explicit claude-sonnet-latest alias_of @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95",
-      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:20:54Z"
     }
   ],
   "metadata": {
@@ -114,34 +89,16 @@
       ],
       "status": "unverified",
       "metadata": {
-        "cache_creation_input_token_cost": 2.5e-06,
-        "cache_read_input_token_cost": 1e-07,
-        "input_cost_per_token": 2e-06,
         "litellm_provider": "github_copilot",
         "max_input_tokens": 200000,
         "max_output_tokens": 128000,
-        "mode": "chat",
-        "output_cost_per_token": 1e-05,
         "source": "https://raw.githubusercontent.com/github/docs/main/data/tables/copilot/models-and-pricing.yml",
         "supported_endpoints": [
           "/v1/chat/completions",
           "/v1/messages"
         ],
-        "supports_adaptive_thinking": true,
-        "supports_function_calling": true,
-        "supports_parallel_function_calling": true,
-        "supports_reasoning": true,
-        "supports_response_schema": true,
-        "supports_vision": true,
-        "thinking_always_on": true
+        "supports_parallel_function_calling": true
       },
-      "sources": [
-        {
-          "label": "LiteLLM aggregate deployment registry [github_copilot/claude-sonnet-5.5] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:20:54Z"
-        }
-      ],
       "matches": {
         "aliases": [
           "claude-sonnet-latest",
@@ -157,12 +114,7 @@
         "claude-sonnet-5-5"
       ],
       "status": "verified",
-      "metadata": {
-        "input_cost_per_token": 2e-06,
-        "output_cost_per_token": 1e-05,
-        "cache_read_input_token_cost": 1e-07,
-        "cache_creation_input_token_cost": 2.5e-06
-      },
+      "metadata": {},
       "sources": [
         {
           "label": "Cursor official model pricing; base rates exclude team Cursor Token Rate and residency surcharge",
@@ -179,14 +131,7 @@
         "claude-sonnet-5-5"
       ],
       "status": "unverified",
-      "metadata": {},
-      "sources": [
-        {
-          "label": "sub2api unmerged PR #8778 Antigravity adapter whitelist/output spelling; availability unverified",
-          "url": "https://github.com/universonic/sub2api/blob/8783acd7b6725c8036098df243b16c0fbd25e71e/backend/internal/domain/constants.go#L112-L137",
-          "verifiedAt": "2026-11-16T09:20:54Z"
-        }
-      ]
+      "metadata": {}
     },
     {
       "id": "claude-sonnet-5-5-high@antigravity",
@@ -196,14 +141,7 @@
         "claude-sonnet-5-5-high"
       ],
       "status": "unverified",
-      "metadata": {},
-      "sources": [
-        {
-          "label": "sub2api unmerged PR #8778 Antigravity adapter whitelist/output spelling; availability unverified",
-          "url": "https://github.com/universonic/sub2api/blob/8783acd7b6725c8036098df243b16c0fbd25e71e/backend/internal/domain/constants.go#L112-L137",
-          "verifiedAt": "2026-11-16T09:20:54Z"
-        }
-      ]
+      "metadata": {}
     },
     {
       "id": "claude-sonnet-5-5-medium@antigravity",
@@ -213,14 +151,7 @@
         "claude-sonnet-5-5-medium"
       ],
       "status": "unverified",
-      "metadata": {},
-      "sources": [
-        {
-          "label": "sub2api unmerged PR #8778 Antigravity adapter whitelist/output spelling; availability unverified",
-          "url": "https://github.com/universonic/sub2api/blob/8783acd7b6725c8036098df243b16c0fbd25e71e/backend/internal/domain/constants.go#L112-L137",
-          "verifiedAt": "2026-11-16T09:20:54Z"
-        }
-      ]
+      "metadata": {}
     },
     {
       "id": "claude-sonnet-5-5-low@antigravity",
@@ -230,14 +161,7 @@
         "claude-sonnet-5-5-low"
       ],
       "status": "unverified",
-      "metadata": {},
-      "sources": [
-        {
-          "label": "sub2api unmerged PR #8778 Antigravity adapter whitelist/output spelling; availability unverified",
-          "url": "https://github.com/universonic/sub2api/blob/8783acd7b6725c8036098df243b16c0fbd25e71e/backend/internal/domain/constants.go#L112-L137",
-          "verifiedAt": "2026-11-16T09:20:54Z"
-        }
-      ]
+      "metadata": {}
     }
   ]
 }

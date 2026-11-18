@@ -34,11 +34,6 @@
       "metadata": {
         "max_input_tokens": 991808,
         "max_output_tokens": 65536,
-        "mode": "chat",
-        "supports_function_calling": true,
-        "supports_reasoning": true,
-        "supports_tool_choice": true,
-        "supports_vision": true,
         "tiered_pricing": [
           {
             "input_cost_per_token": 4e-07,
@@ -57,14 +52,7 @@
             ]
           }
         ]
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned Alibaba namespace regional/deployment record [qwen_ai_platform/qwen3.5-plus]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+      }
     },
     {
       "id": "qwen3.5-plus@dashscope",
@@ -77,11 +65,6 @@
       "metadata": {
         "max_input_tokens": 991808,
         "max_output_tokens": 65536,
-        "mode": "chat",
-        "supports_function_calling": true,
-        "supports_reasoning": true,
-        "supports_tool_choice": true,
-        "supports_vision": true,
         "tiered_pricing": [
           {
             "input_cost_per_token": 4e-07,
@@ -100,14 +83,7 @@
             ]
           }
         ]
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [dashscope/qwen3.5-plus]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+      }
     },
     {
       "id": "qwen3.5-plus@qwencloud",
@@ -120,11 +96,6 @@
       "metadata": {
         "max_input_tokens": 991808,
         "max_output_tokens": 65536,
-        "mode": "chat",
-        "supports_function_calling": true,
-        "supports_reasoning": true,
-        "supports_tool_choice": true,
-        "supports_vision": true,
         "tiered_pricing": [
           {
             "input_cost_per_token": 4e-07,
@@ -143,14 +114,7 @@
             ]
           }
         ]
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [qwencloud/qwen3.5-plus]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+      }
     }
   ],
   "sources": [
@@ -158,21 +122,6 @@
       "label": "LiteLLM pinned native-namespace record [qwen_ai_platform/qwen3.5-plus]; code evidence, not official API attestation",
       "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
       "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "Alibaba official full text-generation and visual-understanding directory",
-      "url": "https://help.aliyun.com/zh/model-studio/text-generation-model",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "Alibaba official model-specific capability rows; 1M shorthand not converted",
-      "url": "https://help.aliyun.com/zh/model-studio/text-generation-model",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "Alibaba official model-specific hybrid thinking list; enabled by default",
-      "url": "https://help.aliyun.com/zh/model-studio/deep-thinking",
-      "verifiedAt": "2026-11-16T09:27:56Z"
     }
   ],
   "notes": "Native-namespace metadata is recorded from pinned LiteLLM code; without an official source this does not establish a public official model or guarantee current availability. Official thinking-mode list states hybrid thinking enabled by default; no undocumented effort enum is inferred."

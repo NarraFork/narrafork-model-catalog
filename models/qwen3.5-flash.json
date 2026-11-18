@@ -26,16 +26,6 @@
       "label": "Alibaba official full text-generation and visual-understanding directory",
       "url": "https://help.aliyun.com/zh/model-studio/text-generation-model",
       "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "Alibaba official model-specific capability rows; 1M shorthand not converted",
-      "url": "https://help.aliyun.com/zh/model-studio/text-generation-model",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "Alibaba official model-specific hybrid thinking list; enabled by default",
-      "url": "https://help.aliyun.com/zh/model-studio/deep-thinking",
-      "verifiedAt": "2026-11-16T09:27:56Z"
     }
   ],
   "notes": "Official thinking-mode list states hybrid thinking enabled by default; no undocumented effort enum is inferred."

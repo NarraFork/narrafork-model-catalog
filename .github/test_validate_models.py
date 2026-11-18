@@ -182,12 +182,13 @@ class CatalogRegressionTests(unittest.TestCase):
             with self.subTest(model=suffix):
                 card = self.model("gpt-6.2-" + suffix)
                 codex = next(v for v in card["variants"] if v["providerKey"] == "codex")
-                self.assertEqual(codex["metadata"]["context_window"], default_window)
-                self.assertEqual(codex["metadata"]["max_context_window"], 872000)
-                self.assertEqual(codex["metadata"]["default_reasoning_effort"], "low")
-                self.assertEqual(codex["metadata"]["reasoning_effort_levels"], ["low", "medium", "high", "xhigh", "max", "ultra"])
+                effective = {**card["metadata"], **codex["metadata"]}
+                self.assertEqual(effective["context_window"], default_window)
+                self.assertEqual(effective["max_context_window"], 872000)
+                self.assertEqual(effective["default_reasoning_effort"], "low")
+                self.assertEqual(effective["reasoning_effort_levels"], ["low", "medium", "high", "xhigh", "max", "ultra"])
                 self.assertNotIn("ultra", card["metadata"].get("reasoning_effort_levels", []))
-                self.assertEqual("audio" in codex["metadata"]["supported_modalities"], suffix == "sol")
+                self.assertEqual("audio" in effective["supported_modalities"], suffix == "sol")
                 self.assertNotIn("audio", card["metadata"]["supported_modalities"])
 
     def test_gpt62_channel_rates_and_capabilities_remain_scoped(self):
@@ -195,10 +196,12 @@ class CatalogRegressionTests(unittest.TestCase):
             with self.subTest(model=suffix):
                 card = self.model("gpt-6.2-" + suffix)
                 azure = next(v for v in card["variants"] if v["id"] == card["id"] + "@azure")
-                self.assertEqual(azure["metadata"]["supports_max_reasoning_effort"], suffix == "sol")
+                azure_effective = {**card["metadata"], **azure["metadata"]}
+                self.assertEqual(azure_effective["supports_max_reasoning_effort"], suffix == "sol")
                 self.assertIs(card["metadata"]["supports_max_reasoning_effort"], True)
                 copilot = next(v for v in card["variants"] if v["providerKey"] == "github-copilot")
-                self.assertEqual(copilot["metadata"]["supported_endpoints"], ["/v1/responses"])
+                copilot_effective = {**card["metadata"], **copilot["metadata"]}
+                self.assertEqual(copilot_effective["supported_endpoints"], ["/v1/responses"])
                 chatgpt = next(v for v in card["variants"] if v["providerKey"] == "chatgpt")
                 self.assertNotIn("input_cost_per_token", chatgpt["metadata"])
                 self.assertNotIn("max_input_tokens", next(v for v in card["variants"] if v["providerKey"] == "codex")["metadata"])
@@ -209,10 +212,12 @@ class CatalogRegressionTests(unittest.TestCase):
                 card = self.model("gpt-6.2-" + suffix)
                 mantle = next(v for v in card["variants"] if v["providerKey"] == "bedrock-mantle")
                 converse = next(v for v in card["variants"] if v["id"] == card["id"] + "@bedrock-openai")
-                self.assertEqual(mantle["metadata"]["litellm_provider"], "bedrock_mantle")
-                self.assertEqual(converse["metadata"]["litellm_provider"], "bedrock_converse")
-                self.assertAlmostEqual(mantle["metadata"]["input_cost_per_token"], card["metadata"]["input_cost_per_token"] * 1.1)
-                self.assertEqual(converse["metadata"]["input_cost_per_token"], card["metadata"]["input_cost_per_token"])
+                mantle_effective = {**card["metadata"], **mantle["metadata"]}
+                converse_effective = {**card["metadata"], **converse["metadata"]}
+                self.assertEqual(mantle_effective["litellm_provider"], "bedrock_mantle")
+                self.assertEqual(converse_effective["litellm_provider"], "bedrock_converse")
+                self.assertAlmostEqual(mantle_effective["input_cost_per_token"], card["metadata"]["input_cost_per_token"] * 1.1)
+                self.assertEqual(converse_effective["input_cost_per_token"], card["metadata"]["input_cost_per_token"])
 
     def test_gpt62_ultrafast_prices_are_time_limited(self):
         for suffix in ("astra", "sol"):

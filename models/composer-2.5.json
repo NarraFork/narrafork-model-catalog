@@ -20,22 +20,8 @@
         "cache_read_input_token_cost_priority": 5e-07,
         "output_cost_per_token_priority": 1.5e-05
       },
-      "status": "unverified",
-      "sources": [
-        {
-          "label": "Cursor official Models & Pricing: Composer 2.5 standard and Fast additional-usage rates (USD/MTok)",
-          "url": "https://cursor.com/docs/models",
-          "verifiedAt": "2026-11-16T09:25:26Z"
-        }
-      ]
+      "status": "unverified"
     }
   ],
-  "notes": "Cursor-owned model, distinct from Grok Build 0.1. Official model name and additional-usage prices are verified; exact gateway ID, token limits and reasoning controls are not confirmed.",
-  "sources": [
-    {
-      "label": "Cursor official Models & Pricing: Composer 2.5 identity; price details are scoped to cursor variant",
-      "url": "https://cursor.com/docs/models",
-      "verifiedAt": "2026-11-16T09:25:26Z"
-    }
-  ]
+  "notes": "Cursor-owned model, distinct from Grok Build 0.1. Official model name and additional-usage prices are verified; exact gateway ID, token limits and reasoning controls are not confirmed."
 }

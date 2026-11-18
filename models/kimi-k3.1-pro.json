@@ -14,36 +14,6 @@
       "label": "Kimi K3.1 Pro quickstart: API ID, reasoning, completion limits, vision, tools and structured output",
       "url": "https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart",
       "verifiedAt": "2026-10-24T00:00:00Z"
-    },
-    {
-      "label": "Kimi official pricing embedded DocTable: USD per MTok input 2 / output 10 / cached input 0.20 / 5m writes 2 / 1h writes 4; K3 context 1048576",
-      "url": "https://platform.kimi.ai/docs/pricing/chat",
-      "verifiedAt": "2026-10-24T00:00:00Z"
-    },
-    {
-      "label": "LiteLLM pinned native-namespace record [moonshot/kimi-k3.1-pro]; code evidence, not official API attestation",
-      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "Kimi official pricing embedded DocTable: USD input/output/cache read, TTL cache writes and exact context",
-      "url": "https://platform.kimi.ai/docs/pricing/chat",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "Kimi official guide: always-on low/high/max (default max), exact completion maximum, fixed sampling, visual input, streaming, tools and schema",
-      "url": "https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "Kimi official batch inference at 60% of standard prices",
-      "url": "https://platform.kimi.ai/docs/pricing/batch",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "Kimi official embedded batch-price table: exact USD input/output/cache-read and 5m/1h cache writes; K2.6 cached batch is explicitly $0.10/MTok",
-      "url": "https://platform.kimi.ai/docs/pricing/batch",
-      "verifiedAt": "2026-11-16T09:31:44Z"
     }
   ],
   "metadata": {
@@ -129,10 +99,7 @@
           "low",
           "high",
           "max"
-        ],
-        "default_reasoning_effort": "max",
-        "can_disable_reasoning": false,
-        "supports_none_reasoning_effort": false
+        ]
       }
     },
     {
@@ -144,27 +111,9 @@
       ],
       "status": "unverified",
       "metadata": {
-        "mode": "chat",
-        "supported_endpoints": [
-          "/v1/chat/completions"
-        ],
-        "input_cost_per_token": 2e-06,
-        "output_cost_per_token": 1e-05,
-        "cache_read_input_token_cost": 2.0000000000000002e-07,
-        "cache_creation_input_token_cost": 2e-06,
         "max_output_tokens": 131072,
-        "max_input_tokens": 1048576,
-        "supports_function_calling": true,
-        "supports_reasoning": true,
-        "supports_vision": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [opencode_go/kimi-k3.1-pro]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+        "max_input_tokens": 1048576
+      }
     }
   ]
 }

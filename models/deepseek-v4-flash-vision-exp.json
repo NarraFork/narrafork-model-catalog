@@ -8,36 +8,6 @@
       "label": "DeepSeek Thinking Mode: native low/high/max, default high; none disables thinking",
       "url": "https://api-docs.deepseek.com/guides/thinking_mode",
       "verifiedAt": "2026-10-21T02:30:58Z"
-    },
-    {
-      "label": "DeepSeek Models & Pricing: legacy deepseek-v4-flash and vision-exp names served by deepseek-flash",
-      "url": "https://api-docs.deepseek.com/quick_start/pricing",
-      "verifiedAt": "2026-10-21T02:30:58Z"
-    },
-    {
-      "label": "LiteLLM pinned native-namespace record [deepseek/deepseek-v4-flash-vision-exp]; code evidence, not official API attestation",
-      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "DeepSeek official current model capabilities and legacy routing; 1M context / 384K output; exact integer limits are separately retained from pinned LiteLLM",
-      "url": "https://api-docs.deepseek.com/quick_start/pricing",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "DeepSeek native effort low/high/max; high by default; thinking can be disabled; compatibility effort mappings are not native levels",
-      "url": "https://api-docs.deepseek.com/guides/thinking_mode",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "Pinned sub2api model record [deepseek-v4-flash-vision-exp]",
-      "url": "https://github.com/Wei-Shaw/sub2api/blob/d70676756fd3a35b854d41aa46c07935bbef283f/backend/resources/model-pricing/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "DeepSeek official conditional USD peak/off-peak rates; no universal rate asserted",
-      "url": "https://api-docs.deepseek.com/quick_start/pricing",
-      "verifiedAt": "2026-11-16T09:27:56Z"
     }
   ],
   "metadata": {
@@ -130,22 +100,8 @@
         "input_cost_per_token": 4.4e-07,
         "max_input_tokens": 1048576,
         "max_output_tokens": 393216,
-        "mode": "chat",
-        "output_cost_per_token": 1.32e-06,
-        "supports_function_calling": true,
-        "supports_prompt_caching": true,
-        "supports_reasoning": true,
-        "supports_response_schema": true,
-        "supports_tool_choice": true,
-        "supports_vision": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [novita/deepseek/deepseek-v4-flash-vision-exp]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+        "output_cost_per_token": 1.32e-06
+      }
     }
   ],
   "family": "deepseek"

@@ -3,7 +3,6 @@
   "name": "Gemini 4 Carbon Cyber Permissive",
   "family": "gemini",
   "status": "unverified",
-  "sources": [],
   "metadata": {},
   "variants": [
     {
@@ -78,14 +77,7 @@
         "supports_vision": true,
         "supports_web_search": true,
         "web_search_billing_unit": "per_query"
-      },
-      "sources": [
-        {
-          "label": "LiteLLM aggregated model metadata (not official verification) [vertex_ai/gemini-4-carbon-cyber-permissive]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:26:38Z"
-        }
-      ]
+      }
     }
   ]
 }

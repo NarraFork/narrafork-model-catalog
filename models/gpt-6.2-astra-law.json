@@ -4,13 +4,6 @@
   "family": "gpt",
   "status": "unverified",
   "notes": "Native API metadata is from fixed aggregate registries; OpenAI model/pricing pages returned HTTP 403 during verification. Unknown native reasoning defaults and complete effort lists are intentionally omitted. Provider-specific limits, modalities, reasoning controls and retirement dates apply only to the matching nested variant. Existing latest aliases remain on the targets explicitly named by the pinned registry. The Astra Law identity currently has only LiteLLM evidence; neither general Foundry model announcements nor predecessor Law cards establish its public native API availability.",
-  "sources": [
-    {
-      "label": "LiteLLM aggregate registry [gpt-6.2-astra-law] @ 65de9b210476eaca1a3bae28bec849e8de35949c; not independent official availability verification",
-      "url": "https://github.com/BerriAI/litellm/blob/65de9b210476eaca1a3bae28bec849e8de35949c/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-18T02:26:43Z"
-    }
-  ],
   "metadata": {
     "cache_creation_input_token_cost": 1e-05,
     "cache_creation_input_token_cost_above_12hr": 2e-05,
@@ -90,28 +83,11 @@
         "max_input_tokens": 922000,
         "max_output_tokens": 128000,
         "mode": "responses",
-        "source": "https://developers.openai.com/api/docs/pricing",
         "supported_endpoints": [
           "/v1/chat/completions",
           "/v1/responses"
-        ],
-        "supports_function_calling": true,
-        "supports_max_reasoning_effort": true,
-        "supports_minimal_reasoning_effort": false,
-        "supports_none_reasoning_effort": false,
-        "supports_parallel_function_calling": true,
-        "supports_reasoning": true,
-        "supports_response_schema": true,
-        "supports_vision": true,
-        "supports_xhigh_reasoning_effort": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM aggregate registry [chatgpt/gpt-6.2-astra-law] @ 65de9b210476eaca1a3bae28bec849e8de35949c; not independent official availability verification",
-          "url": "https://github.com/BerriAI/litellm/blob/65de9b210476eaca1a3bae28bec849e8de35949c/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-18T02:26:43Z"
-        }
-      ]
+        ]
+      }
     }
   ]
 }

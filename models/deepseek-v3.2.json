@@ -27,27 +27,15 @@
       ],
       "status": "unverified",
       "metadata": {
-        "mode": "chat",
         "input_cost_per_token": 2.69e-07,
-        "output_cost_per_token": 4e-07,
         "max_input_tokens": 163840,
         "max_output_tokens": 65536,
-        "supports_function_calling": true,
         "supports_parallel_function_calling": true,
-        "supports_tool_choice": true,
         "supports_system_messages": true,
         "supports_response_schema": true,
         "cache_read_input_token_cost": 1.345e-07,
-        "input_cost_per_token_cache_hit": 1.345e-07,
-        "supports_reasoning": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [novita/deepseek/deepseek-v3.2]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+        "input_cost_per_token_cache_hit": 1.345e-07
+      }
     },
     {
       "id": "deepseek-v3.2@deepinfra",
@@ -63,27 +51,9 @@
         "input_cost_per_token": 2.6e-07,
         "output_cost_per_token": 3.8e-07,
         "cache_read_input_token_cost": 1.3e-07,
-        "supports_prompt_caching": true,
-        "mode": "chat",
-        "supports_function_calling": true,
-        "supports_tool_choice": true,
         "supports_response_schema": true,
         "supports_vision": false
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [deepinfra/deepseek-ai/DeepSeek-V3.2]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
-    }
-  ],
-  "sources": [
-    {
-      "label": "LiteLLM pinned native-namespace record [deepseek/deepseek-v3.2]; code evidence, not official API attestation",
-      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:24:55Z"
+      }
     }
   ],
   "notes": "Native-namespace metadata is recorded from pinned LiteLLM code; without an official source this does not establish a public official model or guarantee current availability. Only aggregate-code evidence was available for this identity/metadata in this audit; this is not a claim of official public release."

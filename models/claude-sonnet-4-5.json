@@ -19,11 +19,6 @@
       "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [claude-sonnet-4-5] @ e2cfaa46e79241f34e52bf4781f7710cd511c5d2",
       "url": "https://github.com/Wei-Shaw/sub2api/blob/e2cfaa46e79241f34e52bf4781f7710cd511c5d2/backend/resources/model-pricing/model_prices_and_context_window.json#L591",
       "verifiedAt": "2026-09-22T07:33:33Z"
-    },
-    {
-      "label": "LiteLLM aggregate registry: Anthropic-native [claude-sonnet-4-5] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95",
-      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:20:54Z"
     }
   ],
   "metadata": {
@@ -76,29 +71,9 @@
       ],
       "name": "claude-sonnet-4-5-20250929-v1:0",
       "metadata": {
-        "cache_creation_input_token_cost": 3.75e-06,
-        "cache_creation_input_token_cost_above_1hr": 6e-06,
-        "cache_creation_input_token_cost_above_200k_tokens": 7.5e-06,
-        "cache_read_input_token_cost": 3e-07,
-        "cache_read_input_token_cost_above_200k_tokens": 6e-07,
-        "input_cost_per_token": 3e-06,
-        "input_cost_per_token_above_200k_tokens": 6e-06,
         "litellm_provider": "bedrock",
         "max_input_tokens": 200000,
         "max_output_tokens": 64000,
-        "max_tokens": 64000,
-        "mode": "chat",
-        "output_cost_per_token": 1.5e-05,
-        "output_cost_per_token_above_200k_tokens": 2.25e-05,
-        "supports_assistant_prefill": true,
-        "supports_computer_use": true,
-        "supports_function_calling": true,
-        "supports_pdf_input": true,
-        "supports_prompt_caching": true,
-        "supports_reasoning": true,
-        "supports_response_schema": true,
-        "supports_tool_choice": true,
-        "supports_vision": true,
         "tool_use_system_prompt_tokens": 159
       },
       "status": "verified",
@@ -133,14 +108,7 @@
         "claude-sonnet-4-5"
       ],
       "status": "unverified",
-      "metadata": {},
-      "sources": [
-        {
-          "label": "sub2api unmerged PR #8778 Antigravity adapter whitelist/output spelling; availability unverified",
-          "url": "https://github.com/universonic/sub2api/blob/8783acd7b6725c8036098df243b16c0fbd25e71e/backend/internal/domain/constants.go#L112-L137",
-          "verifiedAt": "2026-11-16T09:20:54Z"
-        }
-      ]
+      "metadata": {}
     }
   ]
 }

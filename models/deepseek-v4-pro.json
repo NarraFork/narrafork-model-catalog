@@ -13,36 +13,6 @@
       "label": "DeepSeek Thinking Mode: native low/high/max, default high; none disables thinking",
       "url": "https://api-docs.deepseek.com/guides/thinking_mode",
       "verifiedAt": "2026-10-21T02:30:58Z"
-    },
-    {
-      "label": "LiteLLM pinned native-namespace record [qwen_ai_platform/deepseek-v4-pro]; code evidence, not official API attestation",
-      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "LiteLLM pinned native-namespace record [deepseek/deepseek-v4-pro]; code evidence, not official API attestation",
-      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "DeepSeek official current model capabilities and legacy routing; 1M context / 384K output; exact integer limits are separately retained from pinned LiteLLM",
-      "url": "https://api-docs.deepseek.com/quick_start/pricing",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "DeepSeek native effort low/high/max; high by default; thinking can be disabled; compatibility effort mappings are not native levels",
-      "url": "https://api-docs.deepseek.com/guides/thinking_mode",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "Pinned sub2api model record [deepseek-v4-pro]",
-      "url": "https://github.com/Wei-Shaw/sub2api/blob/d70676756fd3a35b854d41aa46c07935bbef283f/backend/resources/model-pricing/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:24:55Z"
-    },
-    {
-      "label": "DeepSeek official conditional USD peak/off-peak rates; no universal rate asserted",
-      "url": "https://api-docs.deepseek.com/quick_start/pricing",
-      "verifiedAt": "2026-11-16T09:27:56Z"
     }
   ],
   "metadata": {
@@ -136,21 +106,8 @@
         "input_cost_per_token": 2.4e-06,
         "max_input_tokens": 1000000,
         "max_output_tokens": 393216,
-        "mode": "chat",
-        "output_cost_per_token": 4.8e-06,
-        "supports_function_calling": true,
-        "supports_prompt_caching": true,
-        "supports_reasoning": true,
-        "supports_response_schema": true,
-        "supports_tool_choice": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [dashscope/deepseek-v4-pro]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+        "output_cost_per_token": 4.8e-06
+      }
     },
     {
       "id": "deepseek-v4-pro@qwencloud",
@@ -165,21 +122,8 @@
         "input_cost_per_token": 2.4e-06,
         "max_input_tokens": 1000000,
         "max_output_tokens": 393216,
-        "mode": "chat",
-        "output_cost_per_token": 4.8e-06,
-        "supports_function_calling": true,
-        "supports_prompt_caching": true,
-        "supports_reasoning": true,
-        "supports_response_schema": true,
-        "supports_tool_choice": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [qwencloud/deepseek-v4-pro]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+        "output_cost_per_token": 4.8e-06
+      }
     },
     {
       "id": "deepseek-v4-pro@streamlake",
@@ -194,19 +138,8 @@
         "input_cost_per_token": 1.74e-06,
         "max_input_tokens": 1048576,
         "max_output_tokens": 384000,
-        "mode": "chat",
-        "output_cost_per_token": 3.48e-06,
-        "supports_function_calling": true,
-        "supports_reasoning": true,
-        "supports_prompt_caching": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [streamlake/deepseek-v4-pro]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+        "output_cost_per_token": 3.48e-06
+      }
     },
     {
       "id": "deepseek-v4-pro@tencent",
@@ -223,29 +156,11 @@
         "input_cost_per_token_cache_hit": 1.45e-07,
         "max_input_tokens": 1000000,
         "max_output_tokens": 384000,
-        "mode": "chat",
         "output_cost_per_token": 3.48e-06,
         "supported_endpoints": [
           "/v1/chat/completions"
-        ],
-        "supports_assistant_prefill": true,
-        "supports_function_calling": true,
-        "supports_native_streaming": true,
-        "supports_parallel_function_calling": true,
-        "supports_prompt_caching": true,
-        "supports_response_schema": true,
-        "supports_system_messages": true,
-        "supports_tool_choice": true,
-        "supports_reasoning": true,
-        "supports_vision": false
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [tencent/deepseek-v4-pro]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+        ]
+      }
     },
     {
       "id": "deepseek-v4-pro@novita",
@@ -260,22 +175,8 @@
         "input_cost_per_token": 1.6000000000000001e-06,
         "max_input_tokens": 1048576,
         "max_output_tokens": 393216,
-        "mode": "chat",
-        "output_cost_per_token": 3.2000000000000003e-06,
-        "supports_function_calling": true,
-        "supports_prompt_caching": true,
-        "supports_reasoning": true,
-        "supports_response_schema": true,
-        "supports_tool_choice": true,
-        "supports_vision": false
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [novita/deepseek/deepseek-v4-pro]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+        "output_cost_per_token": 3.2000000000000003e-06
+      }
     },
     {
       "id": "deepseek-v4-pro@deepinfra",
@@ -290,22 +191,8 @@
         "max_input_tokens": 1048576,
         "input_cost_per_token": 1.3e-06,
         "output_cost_per_token": 2.6e-06,
-        "cache_read_input_token_cost": 1e-07,
-        "supports_prompt_caching": true,
-        "mode": "chat",
-        "supports_function_calling": true,
-        "supports_tool_choice": true,
-        "supports_response_schema": true,
-        "supports_reasoning": true,
-        "supports_vision": false
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [deepinfra/deepseek-ai/DeepSeek-V4-Pro]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+        "cache_read_input_token_cost": 1e-07
+      }
     },
     {
       "id": "deepseek-v4-pro@opencode_go",
@@ -316,7 +203,6 @@
       ],
       "status": "unverified",
       "metadata": {
-        "mode": "chat",
         "supported_endpoints": [
           "/v1/chat/completions"
         ],
@@ -324,18 +210,8 @@
         "output_cost_per_token": 3.96e-06,
         "cache_read_input_token_cost": 4.4e-08,
         "max_output_tokens": 384000,
-        "max_input_tokens": 1000000,
-        "supports_function_calling": true,
-        "supports_reasoning": true,
-        "supports_vision": false
-      },
-      "sources": [
-        {
-          "label": "LiteLLM pinned provider deployment record [opencode_go/deepseek-v4-pro]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:24:55Z"
-        }
-      ]
+        "max_input_tokens": 1000000
+      }
     }
   ],
   "notes": "Token prices vary by UTC peak/off-peak schedule; conditional prices are *_peak / *_off_peak fields, not a universal native rate. Official shorthand context/output limits are not independently converted to integers. Peak: 01:00–04:00 and 06:00–10:00 UTC Monday–Friday excluding Chinese public holidays; all other hours off-peak. Conditional rates use *_peak / *_off_peak metadata, not distinct model routes."

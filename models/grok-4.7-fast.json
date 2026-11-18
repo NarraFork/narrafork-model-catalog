@@ -33,9 +33,6 @@
       ],
       "status": "unverified",
       "metadata": {
-        "input_cost_per_token": 4e-06,
-        "cache_read_input_token_cost": 1e-06,
-        "output_cost_per_token": 1.2e-05,
         "context_window": 500000,
         "long_context_input_token_threshold": 256000,
         "input_cost_per_token_above_256k_tokens": 6e-06,
@@ -49,14 +46,7 @@
           "xhigh"
         ],
         "default_reasoning_effort": "high"
-      },
-      "sources": [
-        {
-          "label": "Cursor official Grok 4.7: Fast speed tier, effort controls, pricing and 256k long-context threshold",
-          "url": "https://cursor.com/docs/models/grok-4-7",
-          "verifiedAt": "2026-11-16T09:25:26Z"
-        }
-      ]
+      }
     }
   ]
 }

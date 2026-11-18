@@ -26,11 +26,6 @@
       "label": "OpenAI gpt-oss release: open-weight identities, text training, reasoning low/medium/high, tools and structured outputs; not hosted API availability",
       "url": "https://openai.com/index/introducing-gpt-oss/",
       "verifiedAt": "2026-11-16T09:21:44Z"
-    },
-    {
-      "label": "OpenAI gpt-oss reference repository: configurable low/medium/high reasoning, function calling and Structured Outputs; runtime CLI defaults are not model defaults",
-      "url": "https://github.com/openai/gpt-oss/blob/main/README.md",
-      "verifiedAt": "2026-11-16T09:21:44Z"
     }
   ]
 }

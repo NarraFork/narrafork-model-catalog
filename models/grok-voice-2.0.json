@@ -26,12 +26,5 @@
     "supports_function_calling": true
   },
   "variants": [],
-  "sources": [
-    {
-      "label": "LiteLLM registry [xai/grok-voice-2.0] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95; aggregated metadata, not a direct xAI availability check",
-      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:25:26Z"
-    }
-  ],
   "notes": "Native xAI metadata is from the pinned LiteLLM registry; direct xAI documentation was unavailable during this audit. Registry output limits are not independently confirmed. Provider-specific pricing and controls, where verified, are recorded in nested variants."
 }

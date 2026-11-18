@@ -3,7 +3,6 @@
   "name": "Deep Research Pro Preview 12 2025",
   "family": "deep-research",
   "status": "unverified",
-  "sources": [],
   "metadata": {},
   "variants": [
     {
@@ -29,14 +28,7 @@
         "output_cost_per_token": 1.2e-05,
         "output_cost_per_token_batches": 6e-06,
         "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing"
-      },
-      "sources": [
-        {
-          "label": "LiteLLM aggregated model metadata (not official verification) [vertex_ai/deep-research-pro-preview-12-2025]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:26:38Z"
-        }
-      ]
+      }
     }
   ]
 }

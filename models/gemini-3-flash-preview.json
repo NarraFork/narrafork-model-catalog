@@ -14,11 +14,6 @@
       "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [gemini-3-flash-preview] @ e2cfaa46e79241f34e52bf4781f7710cd511c5d2",
       "url": "https://github.com/Wei-Shaw/sub2api/blob/e2cfaa46e79241f34e52bf4781f7710cd511c5d2/backend/resources/model-pricing/model_prices_and_context_window.json#L1566",
       "verifiedAt": "2026-09-22T07:33:33Z"
-    },
-    {
-      "label": "LiteLLM aggregated model metadata (not official verification) [gemini/gemini-3-flash-preview]",
-      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:26:38Z"
     }
   ],
   "metadata": {
@@ -111,78 +106,16 @@
       ],
       "status": "unverified",
       "metadata": {
-        "cache_read_input_audio_token_cost": 1e-07,
-        "cache_read_input_audio_token_cost_priority": 1.8e-07,
-        "cache_read_input_token_cost": 5e-08,
-        "cache_read_input_token_cost_priority": 9e-08,
-        "google_maps_grounding_cost_per_query": 0.014,
-        "input_cost_per_audio_token": 1e-06,
         "input_cost_per_audio_token_above_200k_tokens": 1e-06,
         "input_cost_per_audio_token_above_200k_tokens_batches": 5e-07,
         "input_cost_per_audio_token_above_200k_tokens_flex": 5e-07,
         "input_cost_per_audio_token_above_200k_tokens_priority": 1.8e-06,
-        "input_cost_per_audio_token_batches": 5e-07,
-        "input_cost_per_audio_token_flex": 5e-07,
-        "input_cost_per_audio_token_priority": 1.8e-06,
-        "input_cost_per_token": 5e-07,
-        "input_cost_per_token_batches": 2.5e-07,
-        "input_cost_per_token_flex": 2.5e-07,
-        "input_cost_per_token_priority": 9e-07,
         "litellm_provider": "vertex_ai",
         "max_input_tokens": 1048576,
         "max_output_tokens": 65536,
-        "mode": "chat",
-        "output_cost_per_token": 3e-06,
-        "output_cost_per_token_batches": 1.5e-06,
-        "output_cost_per_token_flex": 1.5e-06,
-        "output_cost_per_token_priority": 5.4e-06,
-        "search_context_cost_per_query": {
-          "search_context_size_low": 0.014,
-          "search_context_size_medium": 0.014,
-          "search_context_size_high": 0.014
-        },
-        "search_free_requests": {
-          "count": 5000,
-          "period": "month",
-          "shared_group": "gemini-3"
-        },
         "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
-        "supported_endpoints": [
-          "/v1/chat/completions",
-          "/v1/completions",
-          "/v1/batch"
-        ],
-        "supported_modalities": [
-          "text",
-          "image",
-          "audio",
-          "video"
-        ],
-        "supported_output_modalities": [
-          "text"
-        ],
-        "supports_audio_input": true,
-        "supports_computer_use": true,
-        "supports_function_calling": true,
-        "supports_native_streaming": true,
-        "supports_pdf_input": true,
-        "supports_prompt_caching": true,
-        "supports_reasoning": true,
-        "supports_response_schema": true,
-        "supports_system_messages": true,
-        "supports_tool_choice": true,
-        "supports_video_input": true,
-        "supports_vision": true,
-        "supports_web_search": true,
-        "web_search_billing_unit": "per_query"
-      },
-      "sources": [
-        {
-          "label": "LiteLLM aggregated model metadata (not official verification) [vertex_ai/gemini-3-flash-preview]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:26:38Z"
-        }
-      ]
+        "supports_video_input": true
+      }
     },
     {
       "id": "gemini-3-flash-preview@gemini",
@@ -193,84 +126,9 @@
       ],
       "status": "unverified",
       "metadata": {
-        "cache_read_input_audio_token_cost": 1e-07,
-        "cache_read_input_audio_token_cost_batches": 1e-07,
-        "cache_read_input_audio_token_cost_flex": 1e-07,
-        "cache_read_input_audio_token_cost_priority": 1.8e-07,
-        "cache_read_input_token_cost": 5e-08,
-        "cache_read_input_token_cost_batches": 5e-08,
-        "cache_read_input_token_cost_flex": 5e-08,
-        "input_cost_per_audio_token": 1e-06,
-        "input_cost_per_audio_token_flex": 5e-07,
-        "input_cost_per_token": 5e-07,
-        "litellm_provider": "gemini",
         "max_input_tokens": 1048576,
-        "max_output_tokens": 65536,
-        "mode": "chat",
-        "output_cost_per_reasoning_token": 3e-06,
-        "output_cost_per_token": 3e-06,
-        "rpm": 2000,
-        "source": "https://ai.google.dev/gemini-api/docs/deprecations",
-        "supported_endpoints": [
-          "/v1/chat/completions",
-          "/v1/completions",
-          "/v1/batch"
-        ],
-        "supported_modalities": [
-          "text",
-          "image",
-          "audio",
-          "video"
-        ],
-        "supported_output_modalities": [
-          "text"
-        ],
-        "supports_audio_output": false,
-        "supports_function_calling": true,
-        "supports_parallel_function_calling": true,
-        "supports_pdf_input": true,
-        "supports_prompt_caching": true,
-        "supports_reasoning": true,
-        "supports_response_schema": true,
-        "supports_system_messages": true,
-        "supports_tool_choice": true,
-        "supports_url_context": true,
-        "supports_vision": true,
-        "supports_web_search": true,
-        "supports_native_streaming": true,
-        "tpm": 800000,
-        "input_cost_per_token_priority": 9e-07,
-        "input_cost_per_audio_token_priority": 1.8e-06,
-        "output_cost_per_token_priority": 5.4e-06,
-        "cache_read_input_token_cost_priority": 9e-08,
-        "search_context_cost_per_query": {
-          "search_context_size_low": 0.014,
-          "search_context_size_medium": 0.014,
-          "search_context_size_high": 0.014
-        },
-        "search_free_requests": {
-          "count": 5000,
-          "period": "month",
-          "shared_group": "gemini-3"
-        },
-        "web_search_billing_unit": "per_query",
-        "google_maps_grounding_cost_per_query": 0.014,
-        "input_cost_per_audio_token_batches": 5e-07,
-        "input_cost_per_token_batches": 2.5e-07,
-        "input_cost_per_token_flex": 2.5e-07,
-        "output_cost_per_token_batches": 1.5e-06,
-        "output_cost_per_token_flex": 1.5e-06,
-        "successor_model": "gemini/gemini-3.6-flash",
-        "supports_audio_input": true,
-        "supports_computer_use": true
-      },
-      "sources": [
-        {
-          "label": "LiteLLM aggregated model metadata (not official verification) [gemini/gemini-3-flash-preview]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:26:38Z"
-        }
-      ]
+        "max_output_tokens": 65536
+      }
     }
   ]
 }

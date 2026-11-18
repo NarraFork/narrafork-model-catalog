@@ -3,13 +3,6 @@
   "name": "Gemini 3.1 Flash TTS Preview",
   "family": "gemini",
   "status": "unverified",
-  "sources": [
-    {
-      "label": "LiteLLM aggregated model metadata (not official verification) [gemini/gemini-3.1-flash-tts-preview]",
-      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-      "verifiedAt": "2026-11-16T09:26:38Z"
-    }
-  ],
   "metadata": {
     "deprecation_date": "2026-12-18",
     "deprecation_source": "https://ai.google.dev/gemini-api/docs/deprecations",
@@ -43,35 +36,9 @@
       ],
       "status": "unverified",
       "metadata": {
-        "deprecation_date": "2026-12-18",
-        "deprecation_source": "https://ai.google.dev/gemini-api/docs/deprecations",
-        "successor_model": "gemini/gemini-3.8-flash-tts",
-        "input_cost_per_token": 1e-06,
-        "input_cost_per_token_batches": 5e-07,
-        "litellm_provider": "gemini",
         "max_input_tokens": 8192,
-        "max_output_tokens": 16384,
-        "mode": "audio_speech",
-        "output_cost_per_audio_token": 2e-05,
-        "output_cost_per_token": 2e-05,
-        "output_cost_per_token_batches": 1e-05,
-        "source": "https://ai.google.dev/gemini-api/docs/pricing",
-        "supported_endpoints": [
-          "/v1/audio/speech"
-        ],
-        "tpm": 4000000,
-        "rpm": 10,
-        "supports_function_calling": false,
-        "supports_response_schema": false,
-        "supports_web_search": false
-      },
-      "sources": [
-        {
-          "label": "LiteLLM aggregated model metadata (not official verification) [gemini/gemini-3.1-flash-tts-preview]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:26:38Z"
-        }
-      ]
+        "max_output_tokens": 16384
+      }
     },
     {
       "id": "gemini-3.1-flash-tts-preview@vertex_ai",
@@ -82,21 +49,9 @@
       ],
       "status": "unverified",
       "metadata": {
-        "input_cost_per_token": 1e-06,
-        "input_cost_per_token_batches": 5e-07,
         "litellm_provider": "vertex_ai",
-        "mode": "audio_speech",
-        "output_cost_per_audio_token": 2e-05,
-        "output_cost_per_token": 2e-05,
         "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing"
-      },
-      "sources": [
-        {
-          "label": "LiteLLM aggregated model metadata (not official verification) [vertex_ai/gemini-3.1-flash-tts-preview]",
-          "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-          "verifiedAt": "2026-11-16T09:26:38Z"
-        }
-      ]
+      }
     }
   ]
 }
