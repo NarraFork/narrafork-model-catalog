@@ -1,71 +1,71 @@
 {
- "id": "swe-1.6",
- "name": "SWE-1.6",
- "family": "swe",
- "status": "verified",
- "notes": "Cognition SWE-1.6 observed through the Devin model catalog. Billed model (no free tier): input 0.5 / output 2.5 / cacheRead 0.2 USD per MTok, cost tier 1. Image input supported; 200000-token context. Upstream also exposes a swe-1-6-slow variant on Devin Free credentials.",
- "matches": {
-  "aliases": [
-   "swe-1-6"
+  "id": "swe-1.6",
+  "name": "SWE-1.6",
+  "family": "swe",
+  "status": "verified",
+  "notes": "Cognition SWE-1.6 observed through the Devin model catalog. Billed model (no free tier): input 0.5 / output 2.5 / cacheRead 0.2 USD per MTok, cost tier 1. Image input supported; 200000-token context. Upstream also exposes a swe-1-6-slow variant on Devin Free credentials.",
+  "matches": {
+    "aliases": [
+      "swe-1-6"
+    ],
+    "prefixes": [
+      "swe-1.6",
+      "swe-1-6"
+    ],
+    "volatileSuffixes": true
+  },
+  "sources": [
+    {
+      "label": "Devin model catalog snapshot on a Devin Max credential: swe-1-6 price {input:0.5,output:2.5,cacheRead:0.2} USD per MTok costTier:1",
+      "url": "https://nug.vivy1024.cc",
+      "verifiedAt": "2026-11-23T05:09:00Z"
+    }
   ],
-  "prefixes": [
-   "swe-1.6",
-   "swe-1-6"
-  ],
-  "volatileSuffixes": true
- },
- "sources": [
-  {
-   "label": "Devin model catalog snapshot on a Devin Max credential: swe-1-6 price {input:0.5,output:2.5,cacheRead:0.2} USD per MTok costTier:1",
-   "url": "https://nug.vivy1024.cc",
-   "verifiedAt": "2026-11-23T05:09:00Z"
-  }
- ],
- "metadata": {
-  "litellm_provider": "devin",
-  "max_input_tokens": 200000,
-  "max_output_tokens": 128000,
-  "max_tokens": 128000,
-  "mode": "chat",
-  "input_cost_per_token": 5e-07,
-  "output_cost_per_token": 2.5e-06,
-  "cache_read_input_token_cost": 2e-07,
-  "supported_modalities": [
-   "text",
-   "image"
-  ],
-  "supported_output_modalities": [
-   "text"
-  ],
-  "supported_endpoints": [
-   "/v1/chat/completions"
-  ],
-  "supports_prompt_caching": true,
-  "supports_vision": true
- },
- "variants": [
-  {
-   "id": "swe-1.6@devin",
-   "name": "SWE-1.6",
-   "providerKey": "devin",
-   "upstreamModelIds": [
-    "swe-1-6",
-    "swe-1-6-fast",
-    "swe-1-6-slow"
-   ],
-   "metadata": {
+  "metadata": {
+    "litellm_provider": "devin",
     "max_input_tokens": 200000,
     "max_output_tokens": 128000,
+    "max_tokens": 128000,
+    "mode": "chat",
+    "input_cost_per_token": 5e-07,
+    "output_cost_per_token": 2.5e-06,
+    "cache_read_input_token_cost": 2e-07,
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supported_endpoints": [
+      "/v1/chat/completions"
+    ],
+    "supports_prompt_caching": true,
     "supports_vision": true
-   },
-   "status": "verified",
-   "sources": [
+  },
+  "variants": [
     {
-     "label": "NUG devin channel upstream models (models_snapshot.json devin models list 2026-11-05; live credential models_data 2026-11-23)",
-     "url": "https://github.com/NarraFork/narrafork-unified-gateway/blob/main/internal/devin/dvcore/models_snapshot.json",
-     "verifiedAt": "2026-11-23T00:00:00Z"
+      "id": "swe-1.6@devin",
+      "name": "SWE-1.6",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "swe-1-6",
+        "swe-1-6-fast",
+        "swe-1-6-slow"
+      ],
+      "metadata": {
+        "max_input_tokens": 200000,
+        "max_output_tokens": 128000,
+        "supports_vision": true
+      },
+      "status": "verified",
+      "sources": [
+        {
+          "label": "NUG devin channel upstream models (models_snapshot.json devin models list 2026-11-05; live credential models_data 2026-11-23)",
+          "url": "https://github.com/NarraFork/narrafork-unified-gateway/blob/main/internal/devin/dvcore/models_snapshot.json",
+          "verifiedAt": "2026-11-23T00:00:00Z"
+        }
+      ]
     }
-   ]
-  }
- ]
+  ]
 }

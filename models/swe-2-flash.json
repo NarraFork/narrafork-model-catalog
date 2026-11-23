@@ -1,100 +1,100 @@
 {
- "id": "swe-2-flash",
- "name": "SWE-2 Flash",
- "family": "swe",
- "status": "verified",
- "notes": "Cognition SWE-2 Flash family observed through the Devin model catalog. Base variants (medium/high/max) are cost tier 4: provider-marked free, no quota consumption on quota-billed plans. The *-lightning variants are billed at input 1 / output 5 / cacheRead 0.1 USD per MTok (cost tier 2). Text-only (images:false upstream); 262144-token context; released 2026-11-04 as the light workhorse tier built on Inkling-Small.",
- "matches": {
-  "aliases": [
-   "swe2-flash"
-  ],
-  "prefixes": [
-   "swe-2-flash"
-  ],
-  "volatileSuffixes": true
- },
- "sources": [
-  {
-   "label": "Devin model catalog snapshot on a Devin Max credential: swe-2-flash-medium/high/max free:true costTier:4; swe-2-flash-*-lightning price {input:1,output:5,cacheRead:0.1} costTier:2",
-   "url": "https://nug.vivy1024.cc",
-   "verifiedAt": "2026-11-23T05:09:00Z"
-  }
- ],
- "metadata": {
-  "litellm_provider": "devin",
-  "max_input_tokens": 262144,
-  "max_output_tokens": 131072,
-  "max_tokens": 131072,
-  "mode": "chat",
-  "supported_modalities": [
-   "text"
-  ],
-  "supported_output_modalities": [
-   "text"
-  ],
-  "supported_endpoints": [
-   "/v1/chat/completions"
-  ],
-  "supports_reasoning": true,
-  "reasoning_effort_levels": [
-   "medium",
-   "high",
-   "max"
-  ],
-  "default_reasoning_effort": "medium",
-  "supports_max_reasoning_effort": true,
-  "supports_prompt_caching": true,
-  "supports_vision": false
- },
- "variants": [
-  {
-   "id": "swe-2-flash@devin",
-   "name": "SWE-2 Flash (Devin)",
-   "providerKey": "devin",
-   "upstreamModelIds": [
-    "swe-2-flash",
-    "swe-2-flash-medium",
-    "swe-2-flash-high",
-    "swe-2-flash-max"
-   ],
-   "status": "verified",
-   "metadata": {
-    "input_cost_per_token": 0,
-    "output_cost_per_token": 0,
-    "cache_read_input_token_cost": 0,
-    "supports_vision": false
-   },
-   "sources": [
-    {
-     "label": "Devin Max credential model catalog: swe-2-flash-medium/high/max free:true costTier:4",
-     "url": "https://nug.vivy1024.cc",
-     "verifiedAt": "2026-11-23T05:09:00Z"
-    }
-   ]
+  "id": "swe-2-flash",
+  "name": "SWE-2 Flash",
+  "family": "swe",
+  "status": "verified",
+  "notes": "Cognition SWE-2 Flash family observed through the Devin model catalog. Base variants (medium/high/max) are cost tier 4: provider-marked free, no quota consumption on quota-billed plans. The *-lightning variants are billed at input 1 / output 5 / cacheRead 0.1 USD per MTok (cost tier 2). Text-only (images:false upstream); 262144-token context; released 2026-11-04 as the light workhorse tier built on Inkling-Small.",
+  "matches": {
+    "aliases": [
+      "swe2-flash"
+    ],
+    "prefixes": [
+      "swe-2-flash"
+    ],
+    "volatileSuffixes": true
   },
-  {
-   "id": "swe-2-flash-lightning@devin",
-   "name": "SWE-2 Flash Lightning (Devin)",
-   "providerKey": "devin",
-   "upstreamModelIds": [
-    "swe-2-flash-medium-lightning",
-    "swe-2-flash-high-lightning",
-    "swe-2-flash-max-lightning"
-   ],
-   "status": "verified",
-   "metadata": {
-    "input_cost_per_token": 1e-06,
-    "output_cost_per_token": 5e-06,
-    "cache_read_input_token_cost": 1e-07,
-    "supports_vision": false
-   },
-   "sources": [
+  "sources": [
     {
-     "label": "Devin Max credential model catalog: swe-2-flash-*-lightning price {input:1,output:5,cacheRead:0.1} USD per MTok",
-     "url": "https://nug.vivy1024.cc",
-     "verifiedAt": "2026-11-23T05:09:00Z"
+      "label": "Devin model catalog snapshot on a Devin Max credential: swe-2-flash-medium/high/max free:true costTier:4; swe-2-flash-*-lightning price {input:1,output:5,cacheRead:0.1} costTier:2",
+      "url": "https://nug.vivy1024.cc",
+      "verifiedAt": "2026-11-23T05:09:00Z"
     }
-   ]
-  }
- ]
+  ],
+  "metadata": {
+    "litellm_provider": "devin",
+    "max_input_tokens": 262144,
+    "max_output_tokens": 131072,
+    "max_tokens": 131072,
+    "mode": "chat",
+    "supported_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supported_endpoints": [
+      "/v1/chat/completions"
+    ],
+    "supports_reasoning": true,
+    "reasoning_effort_levels": [
+      "medium",
+      "high",
+      "max"
+    ],
+    "default_reasoning_effort": "medium",
+    "supports_max_reasoning_effort": true,
+    "supports_prompt_caching": true,
+    "supports_vision": false
+  },
+  "variants": [
+    {
+      "id": "swe-2-flash@devin",
+      "name": "SWE-2 Flash (Devin)",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "swe-2-flash",
+        "swe-2-flash-medium",
+        "swe-2-flash-high",
+        "swe-2-flash-max"
+      ],
+      "status": "verified",
+      "metadata": {
+        "input_cost_per_token": 0,
+        "output_cost_per_token": 0,
+        "cache_read_input_token_cost": 0,
+        "supports_vision": false
+      },
+      "sources": [
+        {
+          "label": "Devin Max credential model catalog: swe-2-flash-medium/high/max free:true costTier:4",
+          "url": "https://nug.vivy1024.cc",
+          "verifiedAt": "2026-11-23T05:09:00Z"
+        }
+      ]
+    },
+    {
+      "id": "swe-2-flash-lightning@devin",
+      "name": "SWE-2 Flash Lightning (Devin)",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "swe-2-flash-medium-lightning",
+        "swe-2-flash-high-lightning",
+        "swe-2-flash-max-lightning"
+      ],
+      "status": "verified",
+      "metadata": {
+        "input_cost_per_token": 1e-06,
+        "output_cost_per_token": 5e-06,
+        "cache_read_input_token_cost": 1e-07,
+        "supports_vision": false
+      },
+      "sources": [
+        {
+          "label": "Devin Max credential model catalog: swe-2-flash-*-lightning price {input:1,output:5,cacheRead:0.1} USD per MTok",
+          "url": "https://nug.vivy1024.cc",
+          "verifiedAt": "2026-11-23T05:09:00Z"
+        }
+      ]
+    }
+  ]
 }

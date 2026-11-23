@@ -1,31 +1,31 @@
 {
- "id": "inkling",
- "name": "Inkling",
- "family": "inkling",
- "status": "unverified",
- "metadata": {
-  "max_input_tokens": 1048576,
-  "max_output_tokens": 131072,
-  "mode": "chat",
-  "supports_function_calling": true,
-  "supports_vision": false,
-  "source": "NUG devin channel upstream model list (models_snapshot.json, devin models list 2026-11-05)"
- },
- "variants": [
-  {
-   "id": "inkling@devin",
-   "name": "Inkling",
-   "providerKey": "devin",
-   "upstreamModelIds": [
-    "inkling-high",
-    "inkling-low",
-    "inkling-max",
-    "inkling-medium",
-    "inkling-none",
-    "inkling-xhigh"
-   ],
-   "metadata": {},
-   "status": "unverified"
-  }
- ]
+  "id": "inkling",
+  "name": "Inkling",
+  "family": "inkling",
+  "status": "unverified",
+  "metadata": {
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 131072,
+    "mode": "chat",
+    "supports_function_calling": true,
+    "supports_vision": false,
+    "source": "NUG devin channel upstream model list (models_snapshot.json, devin models list 2026-11-05)"
+  },
+  "variants": [
+    {
+      "id": "inkling@devin",
+      "name": "Inkling",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "inkling-high",
+        "inkling-low",
+        "inkling-max",
+        "inkling-medium",
+        "inkling-none",
+        "inkling-xhigh"
+      ],
+      "metadata": {},
+      "status": "unverified"
+    }
+  ]
 }

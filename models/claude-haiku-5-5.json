@@ -1,155 +1,155 @@
 {
- "id": "claude-haiku-5-5",
- "name": "Claude Haiku 5.5",
- "family": "claude",
- "status": "verified",
- "notes": "Thinking can be disabled only with low, medium or high effort. In sub2api's Responses bridge, none maps to disabled thinking with low effort; xhigh/max require adaptive thinking.",
- "matches": {
-  "aliases": [
-   "claude-haiku-5.5",
-   "claude-haiku-latest"
-  ],
-  "prefixes": [
-   "claude-haiku-5-5",
-   "claude-haiku-5.5"
-  ],
-  "volatileSuffixes": true
- },
- "sources": [
-  {
-   "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [claude-haiku-5-5] @ 8f2cbb53d9d1c40e1865b07ac460571f7d4c48de",
-   "url": "https://github.com/Wei-Shaw/sub2api/blob/8f2cbb53d9d1c40e1865b07ac460571f7d4c48de/backend/resources/model-pricing/model_prices_and_context_window.json#L384",
-   "verifiedAt": "2026-10-21T02:30:58Z"
-  }
- ],
- "metadata": {
-  "cache_creation_input_token_cost": 1.25e-07,
-  "cache_creation_input_token_cost_above_1hr": 2e-07,
-  "cache_creation_input_token_cost_above_100k_tokens": 6.25e-07,
-  "cache_creation_input_token_cost_above_1hr_above_100k_tokens": 1e-06,
-  "cache_read_input_token_cost": 1e-08,
-  "cache_read_input_token_cost_above_100k_tokens": 5e-08,
-  "input_cost_per_token": 1e-07,
-  "input_cost_per_token_above_100k_tokens": 5e-07,
-  "litellm_provider": "anthropic",
-  "max_input_tokens": 1000000,
-  "max_output_tokens": 128000,
-  "max_tokens": 128000,
-  "mode": "chat",
-  "output_cost_per_token": 5e-07,
-  "output_cost_per_token_above_100k_tokens": 2.5e-06,
-  "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
-  "supports_adaptive_thinking": true,
-  "supports_assistant_prefill": false,
-  "supports_computer_use": true,
-  "supports_function_calling": true,
-  "supports_max_reasoning_effort": true,
-  "supports_output_config": true,
-  "supports_pdf_input": true,
-  "supports_prompt_caching": true,
-  "supports_reasoning": true,
-  "reasoning_effort_levels": [
-   "low",
-   "medium",
-   "high",
-   "xhigh",
-   "max"
-  ],
-  "default_reasoning_effort": "medium",
-  "can_disable_reasoning": true,
-  "supports_none_reasoning_effort": true,
-  "supports_response_schema": true,
-  "supports_sampling_params": false,
-  "supports_tool_choice": true,
-  "supports_vision": true,
-  "supports_xhigh_reasoning_effort": true,
-  "input_cost_per_token_batches": 5e-08,
-  "output_cost_per_token_batches": 2.5e-07,
-  "input_cost_per_token_above_100k_tokens_batches": 2.5e-07,
-  "output_cost_per_token_above_100k_tokens_batches": 1.25e-06,
-  "cache_creation_input_token_cost_above_100k_tokens_batches": 3.125e-07,
-  "cache_read_input_token_cost_above_100k_tokens_batches": 2.5e-08,
-  "supports_anthropic_compaction": true,
-  "cache_creation_input_token_cost_batches": 6.25e-08,
-  "cache_read_input_token_cost_batches": 5e-09,
-  "search_context_cost_per_query": {
-   "search_context_size_high": 0.01,
-   "search_context_size_low": 0.01,
-   "search_context_size_medium": 0.01
-  },
-  "thinking_on_by_default": true,
-  "supports_mid_conversation_system": true,
-  "supports_native_structured_output": true,
-  "provider_specific_entry": {
-   "us": 1.1
-  },
-  "supports_forced_tool_use": true,
-  "thinking_always_on": false,
-  "prompt_cache_min_tokens": 512,
-  "supports_web_search": true
- },
- "variants": [
-  {
-   "id": "claude-haiku-5.5@github-copilot",
-   "name": "claude-haiku-5.5",
-   "providerKey": "github-copilot",
-   "upstreamModelIds": [
-    "claude-haiku-5.5",
-    "github_copilot/claude-haiku-5.5"
-   ],
-   "status": "unverified",
-   "metadata": {
-    "litellm_provider": "github_copilot",
-    "max_input_tokens": 128000,
-    "max_output_tokens": 16000,
-    "source": "https://raw.githubusercontent.com/github/docs/main/data/tables/copilot/models-and-pricing.yml",
-    "supported_endpoints": [
-     "/v1/chat/completions",
-     "/v1/messages"
-    ],
-    "supports_parallel_function_calling": true
-   },
-   "matches": {
+  "id": "claude-haiku-5-5",
+  "name": "Claude Haiku 5.5",
+  "family": "claude",
+  "status": "verified",
+  "notes": "Thinking can be disabled only with low, medium or high effort. In sub2api's Responses bridge, none maps to disabled thinking with low effort; xhigh/max require adaptive thinking.",
+  "matches": {
     "aliases": [
-     "claude-haiku-latest",
-     "github_copilot/claude-haiku-latest"
-    ]
-   }
+      "claude-haiku-5.5",
+      "claude-haiku-latest"
+    ],
+    "prefixes": [
+      "claude-haiku-5-5",
+      "claude-haiku-5.5"
+    ],
+    "volatileSuffixes": true
   },
-  {
-   "id": "claude-haiku-5-5@cursor",
-   "name": "Claude Haiku 5.5",
-   "providerKey": "cursor",
-   "upstreamModelIds": [
-    "claude-haiku-5-5"
-   ],
-   "status": "verified",
-   "metadata": {},
-   "sources": [
+  "sources": [
     {
-     "label": "Cursor official model pricing; base rates exclude team Cursor Token Rate and residency surcharge",
-     "url": "https://cursor.com/docs/models",
-     "verifiedAt": "2026-11-16T09:20:54Z"
+      "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [claude-haiku-5-5] @ 8f2cbb53d9d1c40e1865b07ac460571f7d4c48de",
+      "url": "https://github.com/Wei-Shaw/sub2api/blob/8f2cbb53d9d1c40e1865b07ac460571f7d4c48de/backend/resources/model-pricing/model_prices_and_context_window.json#L384",
+      "verifiedAt": "2026-10-21T02:30:58Z"
     }
-   ]
-  },
-  {
-   "id": "claude-haiku-5-5@devin",
-   "name": "Claude Haiku 5 5",
-   "providerKey": "devin",
-   "upstreamModelIds": [
-    "claude-haiku-5-5-high",
-    "claude-haiku-5-5-low",
-    "claude-haiku-5-5-max",
-    "claude-haiku-5-5-medium",
-    "claude-haiku-5-5-xhigh"
-   ],
-   "metadata": {
+  ],
+  "metadata": {
+    "cache_creation_input_token_cost": 1.25e-07,
+    "cache_creation_input_token_cost_above_1hr": 2e-07,
+    "cache_creation_input_token_cost_above_100k_tokens": 6.25e-07,
+    "cache_creation_input_token_cost_above_1hr_above_100k_tokens": 1e-06,
+    "cache_read_input_token_cost": 1e-08,
+    "cache_read_input_token_cost_above_100k_tokens": 5e-08,
+    "input_cost_per_token": 1e-07,
+    "input_cost_per_token_above_100k_tokens": 5e-07,
+    "litellm_provider": "anthropic",
     "max_input_tokens": 1000000,
     "max_output_tokens": 128000,
-    "supports_vision": true
-   },
-   "status": "unverified"
-  }
- ]
+    "max_tokens": 128000,
+    "mode": "chat",
+    "output_cost_per_token": 5e-07,
+    "output_cost_per_token_above_100k_tokens": 2.5e-06,
+    "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+    "supports_adaptive_thinking": true,
+    "supports_assistant_prefill": false,
+    "supports_computer_use": true,
+    "supports_function_calling": true,
+    "supports_max_reasoning_effort": true,
+    "supports_output_config": true,
+    "supports_pdf_input": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "reasoning_effort_levels": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
+    "default_reasoning_effort": "medium",
+    "can_disable_reasoning": true,
+    "supports_none_reasoning_effort": true,
+    "supports_response_schema": true,
+    "supports_sampling_params": false,
+    "supports_tool_choice": true,
+    "supports_vision": true,
+    "supports_xhigh_reasoning_effort": true,
+    "input_cost_per_token_batches": 5e-08,
+    "output_cost_per_token_batches": 2.5e-07,
+    "input_cost_per_token_above_100k_tokens_batches": 2.5e-07,
+    "output_cost_per_token_above_100k_tokens_batches": 1.25e-06,
+    "cache_creation_input_token_cost_above_100k_tokens_batches": 3.125e-07,
+    "cache_read_input_token_cost_above_100k_tokens_batches": 2.5e-08,
+    "supports_anthropic_compaction": true,
+    "cache_creation_input_token_cost_batches": 6.25e-08,
+    "cache_read_input_token_cost_batches": 5e-09,
+    "search_context_cost_per_query": {
+      "search_context_size_high": 0.01,
+      "search_context_size_low": 0.01,
+      "search_context_size_medium": 0.01
+    },
+    "thinking_on_by_default": true,
+    "supports_mid_conversation_system": true,
+    "supports_native_structured_output": true,
+    "provider_specific_entry": {
+      "us": 1.1
+    },
+    "supports_forced_tool_use": true,
+    "thinking_always_on": false,
+    "prompt_cache_min_tokens": 512,
+    "supports_web_search": true
+  },
+  "variants": [
+    {
+      "id": "claude-haiku-5.5@github-copilot",
+      "name": "claude-haiku-5.5",
+      "providerKey": "github-copilot",
+      "upstreamModelIds": [
+        "claude-haiku-5.5",
+        "github_copilot/claude-haiku-5.5"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "litellm_provider": "github_copilot",
+        "max_input_tokens": 128000,
+        "max_output_tokens": 16000,
+        "source": "https://raw.githubusercontent.com/github/docs/main/data/tables/copilot/models-and-pricing.yml",
+        "supported_endpoints": [
+          "/v1/chat/completions",
+          "/v1/messages"
+        ],
+        "supports_parallel_function_calling": true
+      },
+      "matches": {
+        "aliases": [
+          "claude-haiku-latest",
+          "github_copilot/claude-haiku-latest"
+        ]
+      }
+    },
+    {
+      "id": "claude-haiku-5-5@cursor",
+      "name": "Claude Haiku 5.5",
+      "providerKey": "cursor",
+      "upstreamModelIds": [
+        "claude-haiku-5-5"
+      ],
+      "status": "verified",
+      "metadata": {},
+      "sources": [
+        {
+          "label": "Cursor official model pricing; base rates exclude team Cursor Token Rate and residency surcharge",
+          "url": "https://cursor.com/docs/models",
+          "verifiedAt": "2026-11-16T09:20:54Z"
+        }
+      ]
+    },
+    {
+      "id": "claude-haiku-5-5@devin",
+      "name": "Claude Haiku 5 5",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "claude-haiku-5-5-high",
+        "claude-haiku-5-5-low",
+        "claude-haiku-5-5-max",
+        "claude-haiku-5-5-medium",
+        "claude-haiku-5-5-xhigh"
+      ],
+      "metadata": {
+        "max_input_tokens": 1000000,
+        "max_output_tokens": 128000,
+        "supports_vision": true
+      },
+      "status": "unverified"
+    }
+  ]
 }

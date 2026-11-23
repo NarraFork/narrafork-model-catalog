@@ -1,31 +1,31 @@
 {
- "id": "muse-wonder-1-0",
- "name": "Muse Wonder 1.0",
- "family": "muse",
- "status": "unverified",
- "metadata": {
-  "max_input_tokens": 1048576,
-  "max_output_tokens": 131072,
-  "mode": "chat",
-  "supports_function_calling": true,
-  "supports_vision": true,
-  "source": "NUG devin channel upstream model list (models_snapshot.json, devin models list 2026-11-05)"
- },
- "variants": [
-  {
-   "id": "muse-wonder-1-0@devin",
-   "name": "Muse Wonder 1 0",
-   "providerKey": "devin",
-   "upstreamModelIds": [
-    "muse-wonder-1-0-high",
-    "muse-wonder-1-0-low",
-    "muse-wonder-1-0-max",
-    "muse-wonder-1-0-medium",
-    "muse-wonder-1-0-minimal",
-    "muse-wonder-1-0-xhigh"
-   ],
-   "metadata": {},
-   "status": "unverified"
-  }
- ]
+  "id": "muse-wonder-1-0",
+  "name": "Muse Wonder 1.0",
+  "family": "muse",
+  "status": "unverified",
+  "metadata": {
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 131072,
+    "mode": "chat",
+    "supports_function_calling": true,
+    "supports_vision": true,
+    "source": "NUG devin channel upstream model list (models_snapshot.json, devin models list 2026-11-05)"
+  },
+  "variants": [
+    {
+      "id": "muse-wonder-1-0@devin",
+      "name": "Muse Wonder 1 0",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "muse-wonder-1-0-high",
+        "muse-wonder-1-0-low",
+        "muse-wonder-1-0-max",
+        "muse-wonder-1-0-medium",
+        "muse-wonder-1-0-minimal",
+        "muse-wonder-1-0-xhigh"
+      ],
+      "metadata": {},
+      "status": "unverified"
+    }
+  ]
 }

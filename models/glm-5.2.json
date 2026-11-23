@@ -1,195 +1,195 @@
 {
- "id": "glm-5.2",
- "name": "GLM 5.2",
- "family": "glm",
- "status": "verified",
- "metadata": {
-  "cache_read_input_token_cost": 2.6e-07,
-  "input_cost_per_token": 1.4e-06,
-  "max_input_tokens": 1048576,
-  "max_output_tokens": 131072,
-  "mode": "chat",
-  "output_cost_per_token": 4.4e-06,
-  "supports_function_calling": true,
-  "supports_prompt_caching": true,
-  "supports_reasoning": true,
-  "supports_response_schema": true,
-  "supports_tool_choice": true,
-  "supported_modalities": [
-   "text"
-  ],
-  "supported_output_modalities": [
-   "text"
-  ],
-  "supports_vision": false,
-  "supports_video_input": false,
-  "supports_native_streaming": true,
-  "can_disable_reasoning": true,
-  "supports_none_reasoning_effort": true,
-  "max_tokens": 131072,
-  "reasoning_effort_levels": [
-   "high",
-   "max"
-  ],
-  "default_reasoning_effort": "max",
-  "supports_low_reasoning_effort": false,
-  "supports_max_reasoning_effort": true,
-  "supports_minimal_reasoning_effort": false,
-  "supports_xhigh_reasoning_effort": false
- },
- "variants": [
-  {
-   "id": "glm-5.2@cursor",
-   "name": "Cursor GLM 5.2",
-   "providerKey": "cursor",
-   "upstreamModelIds": [
-    "glm-5.2"
-   ],
-   "metadata": {},
-   "status": "unverified"
-  },
-  {
-   "id": "glm-5.2@dashscope",
-   "name": "glm-5.2",
-   "providerKey": "dashscope",
-   "upstreamModelIds": [
-    "glm-5.2"
-   ],
-   "status": "unverified",
-   "metadata": {
-    "cache_read_input_token_cost": 2.8e-07,
+  "id": "glm-5.2",
+  "name": "GLM 5.2",
+  "family": "glm",
+  "status": "verified",
+  "metadata": {
+    "cache_read_input_token_cost": 2.6e-07,
+    "input_cost_per_token": 1.4e-06,
     "max_input_tokens": 1048576,
-    "max_output_tokens": 131072
-   }
-  },
-  {
-   "id": "glm-5.2@qwencloud",
-   "name": "glm-5.2",
-   "providerKey": "qwencloud",
-   "upstreamModelIds": [
-    "glm-5.2"
-   ],
-   "status": "unverified",
-   "metadata": {
-    "cache_read_input_token_cost": 2.8e-07,
-    "max_input_tokens": 1048576,
-    "max_output_tokens": 131072
-   }
-  },
-  {
-   "id": "glm-5.2@streamlake",
-   "name": "glm-5.2",
-   "providerKey": "streamlake",
-   "upstreamModelIds": [
-    "glm-5.2"
-   ],
-   "status": "unverified",
-   "metadata": {
-    "max_input_tokens": 1048566,
-    "max_output_tokens": 128000
-   }
-  },
-  {
-   "id": "glm-5.2@tencent",
-   "name": "glm-5.2",
-   "providerKey": "tencent",
-   "upstreamModelIds": [
-    "glm-5.2"
-   ],
-   "status": "unverified",
-   "metadata": {
-    "cache_creation_input_token_cost": 0.0,
-    "input_cost_per_token_cache_hit": 2.6e-07,
-    "max_input_tokens": 1000000,
-    "max_output_tokens": 128000,
-    "supported_endpoints": [
-     "/v1/chat/completions"
-    ],
-    "supports_system_messages": true
-   }
-  },
-  {
-   "id": "glm-5.2@novita",
-   "name": "zai-org/glm-5.2",
-   "providerKey": "novita",
-   "upstreamModelIds": [
-    "zai-org/glm-5.2"
-   ],
-   "status": "unverified",
-   "metadata": {
-    "max_input_tokens": 1048576,
-    "max_output_tokens": 131072
-   }
-  },
-  {
-   "id": "glm-5.2@deepinfra",
-   "name": "zai-org/GLM-5.2",
-   "providerKey": "deepinfra",
-   "upstreamModelIds": [
-    "zai-org/GLM-5.2"
-   ],
-   "status": "unverified",
-   "metadata": {
-    "max_output_tokens": 1048576,
-    "max_input_tokens": 1048576,
-    "input_cost_per_token": 7.5e-07,
-    "output_cost_per_token": 2.4e-06,
-    "cache_read_input_token_cost": 1.4e-07
-   }
-  },
-  {
-   "id": "glm-5.2@opencode_go",
-   "name": "glm-5.2",
-   "providerKey": "opencode_go",
-   "upstreamModelIds": [
-    "glm-5.2"
-   ],
-   "status": "unverified",
-   "metadata": {
-    "supported_endpoints": [
-     "/v1/chat/completions"
-    ],
     "max_output_tokens": 131072,
-    "max_input_tokens": 1000000
-   }
+    "mode": "chat",
+    "output_cost_per_token": 4.4e-06,
+    "supports_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supported_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_vision": false,
+    "supports_video_input": false,
+    "supports_native_streaming": true,
+    "can_disable_reasoning": true,
+    "supports_none_reasoning_effort": true,
+    "max_tokens": 131072,
+    "reasoning_effort_levels": [
+      "high",
+      "max"
+    ],
+    "default_reasoning_effort": "max",
+    "supports_low_reasoning_effort": false,
+    "supports_max_reasoning_effort": true,
+    "supports_minimal_reasoning_effort": false,
+    "supports_xhigh_reasoning_effort": false
   },
-  {
-   "id": "glm-5-2@devin",
-   "name": "Glm 5.2",
-   "providerKey": "devin",
-   "upstreamModelIds": [
-    "glm-5-2",
-    "glm-5-2-max",
-    "glm-5-2-none"
-   ],
-   "metadata": {
-    "max_input_tokens": 200000,
-    "max_output_tokens": 128000
-   },
-   "status": "unverified"
-  },
-  {
-   "id": "glm-5-2-1m@devin",
-   "name": "Glm 5.2 1M",
-   "providerKey": "devin",
-   "upstreamModelIds": [
-    "glm-5-2-1m",
-    "glm-5-2-max-1m",
-    "glm-5-2-none-1m"
-   ],
-   "metadata": {
-    "max_input_tokens": 1000000,
-    "max_output_tokens": 128000
-   },
-   "status": "unverified"
-  }
- ],
- "sources": [
-  {
-   "label": "LiteLLM pinned native-namespace record [qwen_ai_platform/glm-5.2]; code evidence, not official API attestation",
-   "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-   "verifiedAt": "2026-11-16T09:24:55Z"
-  }
- ],
- "notes": "Native-namespace metadata is recorded from pinned LiteLLM code; without an official source this does not establish a public official model or guarantee current availability. Official context is stated as 1M without an exact integer; any retained exact context value is separately attributed to pinned LiteLLM. File input is not a distinct catalog modality."
+  "variants": [
+    {
+      "id": "glm-5.2@cursor",
+      "name": "Cursor GLM 5.2",
+      "providerKey": "cursor",
+      "upstreamModelIds": [
+        "glm-5.2"
+      ],
+      "metadata": {},
+      "status": "unverified"
+    },
+    {
+      "id": "glm-5.2@dashscope",
+      "name": "glm-5.2",
+      "providerKey": "dashscope",
+      "upstreamModelIds": [
+        "glm-5.2"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "cache_read_input_token_cost": 2.8e-07,
+        "max_input_tokens": 1048576,
+        "max_output_tokens": 131072
+      }
+    },
+    {
+      "id": "glm-5.2@qwencloud",
+      "name": "glm-5.2",
+      "providerKey": "qwencloud",
+      "upstreamModelIds": [
+        "glm-5.2"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "cache_read_input_token_cost": 2.8e-07,
+        "max_input_tokens": 1048576,
+        "max_output_tokens": 131072
+      }
+    },
+    {
+      "id": "glm-5.2@streamlake",
+      "name": "glm-5.2",
+      "providerKey": "streamlake",
+      "upstreamModelIds": [
+        "glm-5.2"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "max_input_tokens": 1048566,
+        "max_output_tokens": 128000
+      }
+    },
+    {
+      "id": "glm-5.2@tencent",
+      "name": "glm-5.2",
+      "providerKey": "tencent",
+      "upstreamModelIds": [
+        "glm-5.2"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "cache_creation_input_token_cost": 0.0,
+        "input_cost_per_token_cache_hit": 2.6e-07,
+        "max_input_tokens": 1000000,
+        "max_output_tokens": 128000,
+        "supported_endpoints": [
+          "/v1/chat/completions"
+        ],
+        "supports_system_messages": true
+      }
+    },
+    {
+      "id": "glm-5.2@novita",
+      "name": "zai-org/glm-5.2",
+      "providerKey": "novita",
+      "upstreamModelIds": [
+        "zai-org/glm-5.2"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "max_input_tokens": 1048576,
+        "max_output_tokens": 131072
+      }
+    },
+    {
+      "id": "glm-5.2@deepinfra",
+      "name": "zai-org/GLM-5.2",
+      "providerKey": "deepinfra",
+      "upstreamModelIds": [
+        "zai-org/GLM-5.2"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "max_output_tokens": 1048576,
+        "max_input_tokens": 1048576,
+        "input_cost_per_token": 7.5e-07,
+        "output_cost_per_token": 2.4e-06,
+        "cache_read_input_token_cost": 1.4e-07
+      }
+    },
+    {
+      "id": "glm-5.2@opencode_go",
+      "name": "glm-5.2",
+      "providerKey": "opencode_go",
+      "upstreamModelIds": [
+        "glm-5.2"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "supported_endpoints": [
+          "/v1/chat/completions"
+        ],
+        "max_output_tokens": 131072,
+        "max_input_tokens": 1000000
+      }
+    },
+    {
+      "id": "glm-5-2@devin",
+      "name": "Glm 5.2",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "glm-5-2",
+        "glm-5-2-max",
+        "glm-5-2-none"
+      ],
+      "metadata": {
+        "max_input_tokens": 200000,
+        "max_output_tokens": 128000
+      },
+      "status": "unverified"
+    },
+    {
+      "id": "glm-5-2-1m@devin",
+      "name": "Glm 5.2 1M",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "glm-5-2-1m",
+        "glm-5-2-max-1m",
+        "glm-5-2-none-1m"
+      ],
+      "metadata": {
+        "max_input_tokens": 1000000,
+        "max_output_tokens": 128000
+      },
+      "status": "unverified"
+    }
+  ],
+  "sources": [
+    {
+      "label": "LiteLLM pinned native-namespace record [qwen_ai_platform/glm-5.2]; code evidence, not official API attestation",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:24:55Z"
+    }
+  ],
+  "notes": "Native-namespace metadata is recorded from pinned LiteLLM code; without an official source this does not establish a public official model or guarantee current availability. Official context is stated as 1M without an exact integer; any retained exact context value is separately attributed to pinned LiteLLM. File input is not a distinct catalog modality."
 }

@@ -1,28 +1,28 @@
 {
- "id": "nemotron-3-5-super",
- "name": "Nemotron 3.5 Super",
- "family": "nemotron",
- "status": "unverified",
- "metadata": {
-  "max_input_tokens": 1048576,
-  "max_output_tokens": 65536,
-  "mode": "chat",
-  "supports_function_calling": true,
-  "supports_vision": true,
-  "source": "NUG devin channel upstream model list (models_snapshot.json, devin models list 2026-11-05)"
- },
- "variants": [
-  {
-   "id": "nemotron-3-5-super@devin",
-   "name": "Nemotron 3 5 Super",
-   "providerKey": "devin",
-   "upstreamModelIds": [
-    "nemotron-3-5-super-high",
-    "nemotron-3-5-super-medium",
-    "nemotron-3-5-super-none"
-   ],
-   "metadata": {},
-   "status": "unverified"
-  }
- ]
+  "id": "nemotron-3-5-super",
+  "name": "Nemotron 3.5 Super",
+  "family": "nemotron",
+  "status": "unverified",
+  "metadata": {
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 65536,
+    "mode": "chat",
+    "supports_function_calling": true,
+    "supports_vision": true,
+    "source": "NUG devin channel upstream model list (models_snapshot.json, devin models list 2026-11-05)"
+  },
+  "variants": [
+    {
+      "id": "nemotron-3-5-super@devin",
+      "name": "Nemotron 3 5 Super",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "nemotron-3-5-super-high",
+        "nemotron-3-5-super-medium",
+        "nemotron-3-5-super-none"
+      ],
+      "metadata": {},
+      "status": "unverified"
+    }
+  ]
 }

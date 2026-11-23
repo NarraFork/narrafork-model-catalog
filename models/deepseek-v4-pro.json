@@ -1,232 +1,232 @@
 {
- "id": "deepseek-v4-pro",
- "name": "DeepSeek V4 Pro",
- "family": "deepseek",
- "status": "verified",
- "matches": {
-  "aliases": [
-   "deepseek-v4"
-  ]
- },
- "sources": [
-  {
-   "label": "DeepSeek Thinking Mode: native low/high/max, default high; none disables thinking",
-   "url": "https://api-docs.deepseek.com/guides/thinking_mode",
-   "verifiedAt": "2026-10-21T02:30:58Z"
-  }
- ],
- "metadata": {
-  "litellm_provider": "deepseek",
-  "max_input_tokens": 1048576,
-  "max_output_tokens": 393216,
-  "max_tokens": 393216,
-  "mode": "chat",
-  "source": "https://api-docs.deepseek.com/quick_start/pricing",
-  "supported_endpoints": [
-   "/v1/chat/completions",
-   "/v1/responses",
-   "/v1/messages"
-  ],
-  "supports_function_calling": true,
-  "supports_native_streaming": true,
-  "supports_parallel_function_calling": true,
-  "supports_prompt_caching": true,
-  "supports_reasoning": true,
-  "reasoning_effort_levels": [
-   "low",
-   "high",
-   "max"
-  ],
-  "default_reasoning_effort": "high",
-  "can_disable_reasoning": true,
-  "supports_none_reasoning_effort": true,
-  "supports_low_reasoning_effort": true,
-  "supports_max_reasoning_effort": true,
-  "supports_minimal_reasoning_effort": false,
-  "supports_xhigh_reasoning_effort": false,
-  "supports_response_schema": true,
-  "supports_system_messages": true,
-  "supports_tool_choice": true,
-  "off_peak_pricing": {
-   "cache_read_input_token_cost": 2.2e-08,
-   "input_cost_per_token": 6.6e-07,
-   "output_cost_per_token": 1.98e-06,
-   "windows": [
+  "id": "deepseek-v4-pro",
+  "name": "DeepSeek V4 Pro",
+  "family": "deepseek",
+  "status": "verified",
+  "matches": {
+    "aliases": [
+      "deepseek-v4"
+    ]
+  },
+  "sources": [
     {
-     "hours_utc": [
-      "00:00-01:00",
-      "04:00-06:00",
-      "10:00-00:00"
-     ],
-     "weekdays": [
-      1,
-      2,
-      3,
-      4,
-      5
-     ]
+      "label": "DeepSeek Thinking Mode: native low/high/max, default high; none disables thinking",
+      "url": "https://api-docs.deepseek.com/guides/thinking_mode",
+      "verifiedAt": "2026-10-21T02:30:58Z"
+    }
+  ],
+  "metadata": {
+    "litellm_provider": "deepseek",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 393216,
+    "max_tokens": 393216,
+    "mode": "chat",
+    "source": "https://api-docs.deepseek.com/quick_start/pricing",
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/v1/responses",
+      "/v1/messages"
+    ],
+    "supports_function_calling": true,
+    "supports_native_streaming": true,
+    "supports_parallel_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "reasoning_effort_levels": [
+      "low",
+      "high",
+      "max"
+    ],
+    "default_reasoning_effort": "high",
+    "can_disable_reasoning": true,
+    "supports_none_reasoning_effort": true,
+    "supports_low_reasoning_effort": true,
+    "supports_max_reasoning_effort": true,
+    "supports_minimal_reasoning_effort": false,
+    "supports_xhigh_reasoning_effort": false,
+    "supports_response_schema": true,
+    "supports_system_messages": true,
+    "supports_tool_choice": true,
+    "off_peak_pricing": {
+      "cache_read_input_token_cost": 2.2e-08,
+      "input_cost_per_token": 6.6e-07,
+      "output_cost_per_token": 1.98e-06,
+      "windows": [
+        {
+          "hours_utc": [
+            "00:00-01:00",
+            "04:00-06:00",
+            "10:00-00:00"
+          ],
+          "weekdays": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "hours_utc": "00:00-00:00",
+          "weekdays": [
+            6,
+            7
+          ]
+        }
+      ]
+    },
+    "supports_assistant_prefill": true,
+    "supports_vision": false,
+    "token_count_framing": 76,
+    "token_count_tool_framing": 75,
+    "supported_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "input_cost_per_token_off_peak": 6.6e-07,
+    "output_cost_per_token_off_peak": 1.98e-06,
+    "cache_read_input_token_cost_off_peak": 2.2e-08,
+    "input_cost_per_token_peak": 1.32e-06,
+    "output_cost_per_token_peak": 3.96e-06,
+    "cache_read_input_token_cost_peak": 4.4e-08
+  },
+  "variants": [
+    {
+      "id": "deepseek-v4-pro@dashscope",
+      "name": "deepseek-v4-pro",
+      "providerKey": "dashscope",
+      "upstreamModelIds": [
+        "deepseek-v4-pro"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "cache_read_input_token_cost": 2e-07,
+        "input_cost_per_token": 2.4e-06,
+        "max_input_tokens": 1000000,
+        "max_output_tokens": 393216,
+        "output_cost_per_token": 4.8e-06
+      }
     },
     {
-     "hours_utc": "00:00-00:00",
-     "weekdays": [
-      6,
-      7
-     ]
+      "id": "deepseek-v4-pro@qwencloud",
+      "name": "deepseek-v4-pro",
+      "providerKey": "qwencloud",
+      "upstreamModelIds": [
+        "deepseek-v4-pro"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "cache_read_input_token_cost": 2e-07,
+        "input_cost_per_token": 2.4e-06,
+        "max_input_tokens": 1000000,
+        "max_output_tokens": 393216,
+        "output_cost_per_token": 4.8e-06
+      }
+    },
+    {
+      "id": "deepseek-v4-pro@streamlake",
+      "name": "deepseek-v4-pro",
+      "providerKey": "streamlake",
+      "upstreamModelIds": [
+        "deepseek-v4-pro"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "cache_read_input_token_cost": 1.45e-07,
+        "input_cost_per_token": 1.74e-06,
+        "max_input_tokens": 1048576,
+        "max_output_tokens": 384000,
+        "output_cost_per_token": 3.48e-06
+      }
+    },
+    {
+      "id": "deepseek-v4-pro@tencent",
+      "name": "deepseek-v4-pro",
+      "providerKey": "tencent",
+      "upstreamModelIds": [
+        "deepseek-v4-pro"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "cache_creation_input_token_cost": 0.0,
+        "cache_read_input_token_cost": 1.45e-07,
+        "input_cost_per_token": 1.74e-06,
+        "input_cost_per_token_cache_hit": 1.45e-07,
+        "max_input_tokens": 1000000,
+        "max_output_tokens": 384000,
+        "output_cost_per_token": 3.48e-06,
+        "supported_endpoints": [
+          "/v1/chat/completions"
+        ]
+      }
+    },
+    {
+      "id": "deepseek-v4-pro@novita",
+      "name": "deepseek/deepseek-v4-pro",
+      "providerKey": "novita",
+      "upstreamModelIds": [
+        "deepseek/deepseek-v4-pro"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "cache_read_input_token_cost": 1.35e-07,
+        "input_cost_per_token": 1.6000000000000001e-06,
+        "max_input_tokens": 1048576,
+        "max_output_tokens": 393216,
+        "output_cost_per_token": 3.2000000000000003e-06
+      }
+    },
+    {
+      "id": "deepseek-v4-pro@deepinfra",
+      "name": "deepseek-ai/DeepSeek-V4-Pro",
+      "providerKey": "deepinfra",
+      "upstreamModelIds": [
+        "deepseek-ai/DeepSeek-V4-Pro"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "max_output_tokens": 1048576,
+        "max_input_tokens": 1048576,
+        "input_cost_per_token": 1.3e-06,
+        "output_cost_per_token": 2.6e-06,
+        "cache_read_input_token_cost": 1e-07
+      }
+    },
+    {
+      "id": "deepseek-v4-pro@opencode_go",
+      "name": "deepseek-v4-pro",
+      "providerKey": "opencode_go",
+      "upstreamModelIds": [
+        "deepseek-v4-pro"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "supported_endpoints": [
+          "/v1/chat/completions"
+        ],
+        "input_cost_per_token": 1.32e-06,
+        "output_cost_per_token": 3.96e-06,
+        "cache_read_input_token_cost": 4.4e-08,
+        "max_output_tokens": 384000,
+        "max_input_tokens": 1000000
+      }
+    },
+    {
+      "id": "deepseek-v4-pro@devin",
+      "name": "Deepseek V4 Pro",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "deepseek-v4-pro-high",
+        "deepseek-v4-pro-max"
+      ],
+      "metadata": {
+        "max_input_tokens": 1048576,
+        "max_output_tokens": 384000
+      },
+      "status": "unverified"
     }
-   ]
-  },
-  "supports_assistant_prefill": true,
-  "supports_vision": false,
-  "token_count_framing": 76,
-  "token_count_tool_framing": 75,
-  "supported_modalities": [
-   "text"
   ],
-  "supported_output_modalities": [
-   "text"
-  ],
-  "input_cost_per_token_off_peak": 6.6e-07,
-  "output_cost_per_token_off_peak": 1.98e-06,
-  "cache_read_input_token_cost_off_peak": 2.2e-08,
-  "input_cost_per_token_peak": 1.32e-06,
-  "output_cost_per_token_peak": 3.96e-06,
-  "cache_read_input_token_cost_peak": 4.4e-08
- },
- "variants": [
-  {
-   "id": "deepseek-v4-pro@dashscope",
-   "name": "deepseek-v4-pro",
-   "providerKey": "dashscope",
-   "upstreamModelIds": [
-    "deepseek-v4-pro"
-   ],
-   "status": "unverified",
-   "metadata": {
-    "cache_read_input_token_cost": 2e-07,
-    "input_cost_per_token": 2.4e-06,
-    "max_input_tokens": 1000000,
-    "max_output_tokens": 393216,
-    "output_cost_per_token": 4.8e-06
-   }
-  },
-  {
-   "id": "deepseek-v4-pro@qwencloud",
-   "name": "deepseek-v4-pro",
-   "providerKey": "qwencloud",
-   "upstreamModelIds": [
-    "deepseek-v4-pro"
-   ],
-   "status": "unverified",
-   "metadata": {
-    "cache_read_input_token_cost": 2e-07,
-    "input_cost_per_token": 2.4e-06,
-    "max_input_tokens": 1000000,
-    "max_output_tokens": 393216,
-    "output_cost_per_token": 4.8e-06
-   }
-  },
-  {
-   "id": "deepseek-v4-pro@streamlake",
-   "name": "deepseek-v4-pro",
-   "providerKey": "streamlake",
-   "upstreamModelIds": [
-    "deepseek-v4-pro"
-   ],
-   "status": "unverified",
-   "metadata": {
-    "cache_read_input_token_cost": 1.45e-07,
-    "input_cost_per_token": 1.74e-06,
-    "max_input_tokens": 1048576,
-    "max_output_tokens": 384000,
-    "output_cost_per_token": 3.48e-06
-   }
-  },
-  {
-   "id": "deepseek-v4-pro@tencent",
-   "name": "deepseek-v4-pro",
-   "providerKey": "tencent",
-   "upstreamModelIds": [
-    "deepseek-v4-pro"
-   ],
-   "status": "unverified",
-   "metadata": {
-    "cache_creation_input_token_cost": 0.0,
-    "cache_read_input_token_cost": 1.45e-07,
-    "input_cost_per_token": 1.74e-06,
-    "input_cost_per_token_cache_hit": 1.45e-07,
-    "max_input_tokens": 1000000,
-    "max_output_tokens": 384000,
-    "output_cost_per_token": 3.48e-06,
-    "supported_endpoints": [
-     "/v1/chat/completions"
-    ]
-   }
-  },
-  {
-   "id": "deepseek-v4-pro@novita",
-   "name": "deepseek/deepseek-v4-pro",
-   "providerKey": "novita",
-   "upstreamModelIds": [
-    "deepseek/deepseek-v4-pro"
-   ],
-   "status": "unverified",
-   "metadata": {
-    "cache_read_input_token_cost": 1.35e-07,
-    "input_cost_per_token": 1.6000000000000001e-06,
-    "max_input_tokens": 1048576,
-    "max_output_tokens": 393216,
-    "output_cost_per_token": 3.2000000000000003e-06
-   }
-  },
-  {
-   "id": "deepseek-v4-pro@deepinfra",
-   "name": "deepseek-ai/DeepSeek-V4-Pro",
-   "providerKey": "deepinfra",
-   "upstreamModelIds": [
-    "deepseek-ai/DeepSeek-V4-Pro"
-   ],
-   "status": "unverified",
-   "metadata": {
-    "max_output_tokens": 1048576,
-    "max_input_tokens": 1048576,
-    "input_cost_per_token": 1.3e-06,
-    "output_cost_per_token": 2.6e-06,
-    "cache_read_input_token_cost": 1e-07
-   }
-  },
-  {
-   "id": "deepseek-v4-pro@opencode_go",
-   "name": "deepseek-v4-pro",
-   "providerKey": "opencode_go",
-   "upstreamModelIds": [
-    "deepseek-v4-pro"
-   ],
-   "status": "unverified",
-   "metadata": {
-    "supported_endpoints": [
-     "/v1/chat/completions"
-    ],
-    "input_cost_per_token": 1.32e-06,
-    "output_cost_per_token": 3.96e-06,
-    "cache_read_input_token_cost": 4.4e-08,
-    "max_output_tokens": 384000,
-    "max_input_tokens": 1000000
-   }
-  },
-  {
-   "id": "deepseek-v4-pro@devin",
-   "name": "Deepseek V4 Pro",
-   "providerKey": "devin",
-   "upstreamModelIds": [
-    "deepseek-v4-pro-high",
-    "deepseek-v4-pro-max"
-   ],
-   "metadata": {
-    "max_input_tokens": 1048576,
-    "max_output_tokens": 384000
-   },
-   "status": "unverified"
-  }
- ],
- "notes": "Token prices vary by UTC peak/off-peak schedule; conditional prices are *_peak / *_off_peak fields, not a universal native rate. Official shorthand context/output limits are not independently converted to integers. Peak: 01:00–04:00 and 06:00–10:00 UTC Monday–Friday excluding Chinese public holidays; all other hours off-peak. Conditional rates use *_peak / *_off_peak metadata, not distinct model routes."
+  "notes": "Token prices vary by UTC peak/off-peak schedule; conditional prices are *_peak / *_off_peak fields, not a universal native rate. Official shorthand context/output limits are not independently converted to integers. Peak: 01:00–04:00 and 06:00–10:00 UTC Monday–Friday excluding Chinese public holidays; all other hours off-peak. Conditional rates use *_peak / *_off_peak metadata, not distinct model routes."
 }

@@ -1,184 +1,184 @@
 {
- "id": "claude-sonnet-4-6",
- "name": "Claude Sonnet 4.6",
- "family": "claude",
- "status": "verified",
- "matches": {
-  "aliases": [
-   "claude-sonnet-4.6"
-  ],
-  "prefixes": [
-   "claude-sonnet-4-6",
-   "claude-sonnet-4.6"
-  ],
-  "volatileSuffixes": true
- },
- "sources": [
-  {
-   "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [claude-sonnet-4-6] @ e2cfaa46e79241f34e52bf4781f7710cd511c5d2",
-   "url": "https://github.com/Wei-Shaw/sub2api/blob/e2cfaa46e79241f34e52bf4781f7710cd511c5d2/backend/resources/model-pricing/model_prices_and_context_window.json#L680",
-   "verifiedAt": "2026-09-22T07:33:33Z"
-  }
- ],
- "metadata": {
-  "cache_creation_input_token_cost": 3.75e-06,
-  "cache_creation_input_token_cost_above_1hr": 6e-06,
-  "cache_read_input_token_cost": 3e-07,
-  "input_cost_per_token": 3e-06,
-  "litellm_provider": "anthropic",
-  "max_input_tokens": 1000000,
-  "max_output_tokens": 64000,
-  "max_tokens": 64000,
-  "mode": "chat",
-  "output_cost_per_token": 1.5e-05,
-  "search_context_cost_per_query": {
-   "search_context_size_high": 0.01,
-   "search_context_size_low": 0.01,
-   "search_context_size_medium": 0.01
-  },
-  "supports_adaptive_thinking": true,
-  "supports_assistant_prefill": true,
-  "supports_computer_use": true,
-  "supports_function_calling": true,
-  "supports_max_reasoning_effort": true,
-  "supports_minimal_reasoning_effort": true,
-  "supports_output_config": true,
-  "supports_pdf_input": true,
-  "supports_prompt_caching": true,
-  "supports_reasoning": true,
-  "supports_response_schema": true,
-  "supports_tool_choice": true,
-  "supports_vision": true,
-  "tool_use_system_prompt_tokens": 346,
-  "supports_web_search": true,
-  "supports_anthropic_compaction": true,
-  "cache_creation_input_token_cost_batches": 1.875e-06,
-  "cache_read_input_token_cost_batches": 1.5e-07,
-  "input_cost_per_token_batches": 1.5e-06,
-  "output_cost_per_token_batches": 7.5e-06,
-  "supports_legacy_thinking": true,
-  "supports_thinking_cache_preservation": true,
-  "supports_native_structured_output": true,
-  "prompt_cache_min_tokens": 1024,
-  "provider_specific_entry": {
-   "us": 1.1
-  },
-  "source": "https://platform.claude.com/docs/en/about-claude/pricing",
-  "reasoning_effort_levels": [
-   "low",
-   "medium",
-   "high",
-   "max"
-  ]
- },
- "variants": [
-  {
-   "id": "claude-sonnet-4-6@antigravity",
-   "name": "Claude Sonnet 4.6",
-   "providerKey": "antigravity",
-   "upstreamModelIds": [
-    "claude-sonnet-4-6"
-   ],
-   "matches": {
+  "id": "claude-sonnet-4-6",
+  "name": "Claude Sonnet 4.6",
+  "family": "claude",
+  "status": "verified",
+  "matches": {
     "aliases": [
-     "claude-sonnet-4.6"
-    ]
-   },
-   "metadata": {},
-   "status": "unverified"
-  },
-  {
-   "id": "claude-sonnet-4-6@cursor",
-   "name": "Claude Sonnet 4.6",
-   "providerKey": "cursor",
-   "upstreamModelIds": [
-    "claude-sonnet-4-6"
-   ],
-   "matches": {
-    "aliases": [
-     "claude-sonnet-4.6"
-    ]
-   },
-   "metadata": {},
-   "status": "unverified"
-  },
-  {
-   "id": "claude-sonnet-4.6@github-copilot",
-   "name": "claude-sonnet-4.6",
-   "providerKey": "github-copilot",
-   "upstreamModelIds": [
-    "claude-sonnet-4.6",
-    "github_copilot/claude-sonnet-4.6"
-   ],
-   "status": "unverified",
-   "metadata": {
-    "deprecation_date": "2026-09-01",
-    "litellm_provider": "github_copilot",
-    "max_input_tokens": 200000,
-    "max_output_tokens": 64000,
-    "source": "https://raw.githubusercontent.com/github/docs/main/data/tables/copilot/models-and-pricing.yml",
-    "supported_endpoints": [
-     "/v1/chat/completions",
-     "/v1/messages"
+      "claude-sonnet-4.6"
     ],
-    "supports_parallel_function_calling": true
-   }
+    "prefixes": [
+      "claude-sonnet-4-6",
+      "claude-sonnet-4.6"
+    ],
+    "volatileSuffixes": true
   },
-  {
-   "id": "claude-sonnet-4-6@devin",
-   "name": "Claude Sonnet 4 6",
-   "providerKey": "devin",
-   "upstreamModelIds": [
-    "claude-sonnet-4-6"
-   ],
-   "metadata": {
-    "max_input_tokens": 200000,
-    "max_output_tokens": 128000,
-    "supports_vision": true
-   },
-   "status": "unverified"
-  },
-  {
-   "id": "claude-sonnet-4-6-thinking@devin",
-   "name": "Claude Sonnet 4 6 Thinking",
-   "providerKey": "devin",
-   "upstreamModelIds": [
-    "claude-sonnet-4-6-thinking"
-   ],
-   "metadata": {
-    "max_input_tokens": 200000,
-    "max_output_tokens": 128000,
-    "supports_vision": true
-   },
-   "status": "unverified"
-  },
-  {
-   "id": "claude-sonnet-4-6-1m@devin",
-   "name": "Claude Sonnet 4 6 1M",
-   "providerKey": "devin",
-   "upstreamModelIds": [
-    "claude-sonnet-4-6-1m"
-   ],
-   "metadata": {
+  "sources": [
+    {
+      "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [claude-sonnet-4-6] @ e2cfaa46e79241f34e52bf4781f7710cd511c5d2",
+      "url": "https://github.com/Wei-Shaw/sub2api/blob/e2cfaa46e79241f34e52bf4781f7710cd511c5d2/backend/resources/model-pricing/model_prices_and_context_window.json#L680",
+      "verifiedAt": "2026-09-22T07:33:33Z"
+    }
+  ],
+  "metadata": {
+    "cache_creation_input_token_cost": 3.75e-06,
+    "cache_creation_input_token_cost_above_1hr": 6e-06,
+    "cache_read_input_token_cost": 3e-07,
+    "input_cost_per_token": 3e-06,
+    "litellm_provider": "anthropic",
     "max_input_tokens": 1000000,
-    "max_output_tokens": 128000,
-    "supports_vision": true
-   },
-   "status": "unverified"
+    "max_output_tokens": 64000,
+    "max_tokens": 64000,
+    "mode": "chat",
+    "output_cost_per_token": 1.5e-05,
+    "search_context_cost_per_query": {
+      "search_context_size_high": 0.01,
+      "search_context_size_low": 0.01,
+      "search_context_size_medium": 0.01
+    },
+    "supports_adaptive_thinking": true,
+    "supports_assistant_prefill": true,
+    "supports_computer_use": true,
+    "supports_function_calling": true,
+    "supports_max_reasoning_effort": true,
+    "supports_minimal_reasoning_effort": true,
+    "supports_output_config": true,
+    "supports_pdf_input": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supports_vision": true,
+    "tool_use_system_prompt_tokens": 346,
+    "supports_web_search": true,
+    "supports_anthropic_compaction": true,
+    "cache_creation_input_token_cost_batches": 1.875e-06,
+    "cache_read_input_token_cost_batches": 1.5e-07,
+    "input_cost_per_token_batches": 1.5e-06,
+    "output_cost_per_token_batches": 7.5e-06,
+    "supports_legacy_thinking": true,
+    "supports_thinking_cache_preservation": true,
+    "supports_native_structured_output": true,
+    "prompt_cache_min_tokens": 1024,
+    "provider_specific_entry": {
+      "us": 1.1
+    },
+    "source": "https://platform.claude.com/docs/en/about-claude/pricing",
+    "reasoning_effort_levels": [
+      "low",
+      "medium",
+      "high",
+      "max"
+    ]
   },
-  {
-   "id": "claude-sonnet-4-6-thinking-1m@devin",
-   "name": "Claude Sonnet 4 6 Thinking 1M",
-   "providerKey": "devin",
-   "upstreamModelIds": [
-    "claude-sonnet-4-6-thinking-1m"
-   ],
-   "metadata": {
-    "max_input_tokens": 1000000,
-    "max_output_tokens": 128000,
-    "supports_vision": true
-   },
-   "status": "unverified"
-  }
- ]
+  "variants": [
+    {
+      "id": "claude-sonnet-4-6@antigravity",
+      "name": "Claude Sonnet 4.6",
+      "providerKey": "antigravity",
+      "upstreamModelIds": [
+        "claude-sonnet-4-6"
+      ],
+      "matches": {
+        "aliases": [
+          "claude-sonnet-4.6"
+        ]
+      },
+      "metadata": {},
+      "status": "unverified"
+    },
+    {
+      "id": "claude-sonnet-4-6@cursor",
+      "name": "Claude Sonnet 4.6",
+      "providerKey": "cursor",
+      "upstreamModelIds": [
+        "claude-sonnet-4-6"
+      ],
+      "matches": {
+        "aliases": [
+          "claude-sonnet-4.6"
+        ]
+      },
+      "metadata": {},
+      "status": "unverified"
+    },
+    {
+      "id": "claude-sonnet-4.6@github-copilot",
+      "name": "claude-sonnet-4.6",
+      "providerKey": "github-copilot",
+      "upstreamModelIds": [
+        "claude-sonnet-4.6",
+        "github_copilot/claude-sonnet-4.6"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "deprecation_date": "2026-09-01",
+        "litellm_provider": "github_copilot",
+        "max_input_tokens": 200000,
+        "max_output_tokens": 64000,
+        "source": "https://raw.githubusercontent.com/github/docs/main/data/tables/copilot/models-and-pricing.yml",
+        "supported_endpoints": [
+          "/v1/chat/completions",
+          "/v1/messages"
+        ],
+        "supports_parallel_function_calling": true
+      }
+    },
+    {
+      "id": "claude-sonnet-4-6@devin",
+      "name": "Claude Sonnet 4 6",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "claude-sonnet-4-6"
+      ],
+      "metadata": {
+        "max_input_tokens": 200000,
+        "max_output_tokens": 128000,
+        "supports_vision": true
+      },
+      "status": "unverified"
+    },
+    {
+      "id": "claude-sonnet-4-6-thinking@devin",
+      "name": "Claude Sonnet 4 6 Thinking",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "claude-sonnet-4-6-thinking"
+      ],
+      "metadata": {
+        "max_input_tokens": 200000,
+        "max_output_tokens": 128000,
+        "supports_vision": true
+      },
+      "status": "unverified"
+    },
+    {
+      "id": "claude-sonnet-4-6-1m@devin",
+      "name": "Claude Sonnet 4 6 1M",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "claude-sonnet-4-6-1m"
+      ],
+      "metadata": {
+        "max_input_tokens": 1000000,
+        "max_output_tokens": 128000,
+        "supports_vision": true
+      },
+      "status": "unverified"
+    },
+    {
+      "id": "claude-sonnet-4-6-thinking-1m@devin",
+      "name": "Claude Sonnet 4 6 Thinking 1M",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "claude-sonnet-4-6-thinking-1m"
+      ],
+      "metadata": {
+        "max_input_tokens": 1000000,
+        "max_output_tokens": 128000,
+        "supports_vision": true
+      },
+      "status": "unverified"
+    }
+  ]
 }

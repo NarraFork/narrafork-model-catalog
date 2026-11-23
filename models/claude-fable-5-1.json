@@ -1,116 +1,116 @@
 {
- "id": "claude-fable-5-1",
- "name": "Claude Fable 5.1",
- "family": "claude",
- "status": "verified",
- "metadata": {
-  "supports_web_search": true,
-  "supports_anthropic_compaction": true,
-  "cache_creation_input_token_cost": 1.25e-05,
-  "cache_creation_input_token_cost_above_1hr": 2e-05,
-  "cache_creation_input_token_cost_batches": 6.25e-06,
-  "cache_read_input_token_cost": 2.5e-07,
-  "cache_read_input_token_cost_batches": 1.25e-07,
-  "input_cost_per_token": 1e-05,
-  "input_cost_per_token_batches": 5e-06,
-  "litellm_provider": "anthropic",
-  "max_input_tokens": 1000000,
-  "max_output_tokens": 128000,
-  "mode": "chat",
-  "output_cost_per_token": 5e-05,
-  "output_cost_per_token_batches": 2.5e-05,
-  "search_context_cost_per_query": {
-   "search_context_size_high": 0.01,
-   "search_context_size_low": 0.01,
-   "search_context_size_medium": 0.01
-  },
-  "supports_adaptive_thinking": true,
-  "thinking_always_on": true,
-  "supports_mid_conversation_system": true,
-  "supports_assistant_prefill": false,
-  "supports_computer_use": true,
-  "supports_forced_tool_use": false,
-  "supports_function_calling": true,
-  "supports_pdf_input": true,
-  "supports_prompt_caching": true,
-  "supports_reasoning": true,
-  "supports_response_schema": true,
-  "supports_sampling_params": false,
-  "supports_tool_choice": true,
-  "supports_vision": true,
-  "supports_xhigh_reasoning_effort": true,
-  "supports_max_reasoning_effort": true,
-  "provider_specific_entry": {
-   "us": 1.1
-  },
-  "supports_output_config": true,
-  "prompt_cache_min_tokens": 512,
-  "supports_native_structured_output": true,
-  "source": "https://platform.claude.com/docs/en/about-claude/pricing",
-  "reasoning_effort_levels": [
-   "low",
-   "medium",
-   "high",
-   "xhigh",
-   "max"
-  ]
- },
- "variants": [
-  {
-   "id": "claude-fable-5.1@github-copilot",
-   "name": "claude-fable-5.1",
-   "providerKey": "github-copilot",
-   "upstreamModelIds": [
-    "claude-fable-5.1",
-    "github_copilot/claude-fable-5.1"
-   ],
-   "status": "unverified",
-   "metadata": {
-    "litellm_provider": "github_copilot",
-    "max_input_tokens": 200000,
-    "max_output_tokens": 64000,
-    "source": "https://raw.githubusercontent.com/github/docs/main/data/tables/copilot/models-and-pricing.yml",
-    "supported_endpoints": [
-     "/v1/chat/completions",
-     "/v1/messages"
-    ],
-    "supports_parallel_function_calling": true
-   }
-  },
-  {
-   "id": "claude-fable-5-1@antigravity",
-   "name": "claude-fable-5-1",
-   "providerKey": "antigravity",
-   "upstreamModelIds": [
-    "claude-fable-5-1"
-   ],
-   "status": "unverified",
-   "metadata": {}
-  },
-  {
-   "id": "claude-fable-5-1@devin",
-   "name": "Claude Fable 5 1",
-   "providerKey": "devin",
-   "upstreamModelIds": [
-    "claude-fable-5-1-high",
-    "claude-fable-5-1-low",
-    "claude-fable-5-1-max",
-    "claude-fable-5-1-medium",
-    "claude-fable-5-1-xhigh"
-   ],
-   "metadata": {
+  "id": "claude-fable-5-1",
+  "name": "Claude Fable 5.1",
+  "family": "claude",
+  "status": "verified",
+  "metadata": {
+    "supports_web_search": true,
+    "supports_anthropic_compaction": true,
+    "cache_creation_input_token_cost": 1.25e-05,
+    "cache_creation_input_token_cost_above_1hr": 2e-05,
+    "cache_creation_input_token_cost_batches": 6.25e-06,
+    "cache_read_input_token_cost": 2.5e-07,
+    "cache_read_input_token_cost_batches": 1.25e-07,
+    "input_cost_per_token": 1e-05,
+    "input_cost_per_token_batches": 5e-06,
+    "litellm_provider": "anthropic",
     "max_input_tokens": 1000000,
     "max_output_tokens": 128000,
-    "supports_vision": true
-   },
-   "status": "unverified"
-  }
- ],
- "sources": [
-  {
-   "label": "LiteLLM aggregate registry: Anthropic-native [claude-fable-5-1] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95",
-   "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
-   "verifiedAt": "2026-11-16T09:20:54Z"
-  }
- ]
+    "mode": "chat",
+    "output_cost_per_token": 5e-05,
+    "output_cost_per_token_batches": 2.5e-05,
+    "search_context_cost_per_query": {
+      "search_context_size_high": 0.01,
+      "search_context_size_low": 0.01,
+      "search_context_size_medium": 0.01
+    },
+    "supports_adaptive_thinking": true,
+    "thinking_always_on": true,
+    "supports_mid_conversation_system": true,
+    "supports_assistant_prefill": false,
+    "supports_computer_use": true,
+    "supports_forced_tool_use": false,
+    "supports_function_calling": true,
+    "supports_pdf_input": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_sampling_params": false,
+    "supports_tool_choice": true,
+    "supports_vision": true,
+    "supports_xhigh_reasoning_effort": true,
+    "supports_max_reasoning_effort": true,
+    "provider_specific_entry": {
+      "us": 1.1
+    },
+    "supports_output_config": true,
+    "prompt_cache_min_tokens": 512,
+    "supports_native_structured_output": true,
+    "source": "https://platform.claude.com/docs/en/about-claude/pricing",
+    "reasoning_effort_levels": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ]
+  },
+  "variants": [
+    {
+      "id": "claude-fable-5.1@github-copilot",
+      "name": "claude-fable-5.1",
+      "providerKey": "github-copilot",
+      "upstreamModelIds": [
+        "claude-fable-5.1",
+        "github_copilot/claude-fable-5.1"
+      ],
+      "status": "unverified",
+      "metadata": {
+        "litellm_provider": "github_copilot",
+        "max_input_tokens": 200000,
+        "max_output_tokens": 64000,
+        "source": "https://raw.githubusercontent.com/github/docs/main/data/tables/copilot/models-and-pricing.yml",
+        "supported_endpoints": [
+          "/v1/chat/completions",
+          "/v1/messages"
+        ],
+        "supports_parallel_function_calling": true
+      }
+    },
+    {
+      "id": "claude-fable-5-1@antigravity",
+      "name": "claude-fable-5-1",
+      "providerKey": "antigravity",
+      "upstreamModelIds": [
+        "claude-fable-5-1"
+      ],
+      "status": "unverified",
+      "metadata": {}
+    },
+    {
+      "id": "claude-fable-5-1@devin",
+      "name": "Claude Fable 5 1",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "claude-fable-5-1-high",
+        "claude-fable-5-1-low",
+        "claude-fable-5-1-max",
+        "claude-fable-5-1-medium",
+        "claude-fable-5-1-xhigh"
+      ],
+      "metadata": {
+        "max_input_tokens": 1000000,
+        "max_output_tokens": 128000,
+        "supports_vision": true
+      },
+      "status": "unverified"
+    }
+  ],
+  "sources": [
+    {
+      "label": "LiteLLM aggregate registry: Anthropic-native [claude-fable-5-1] @ 2f448a9ee896d6d3ccb2899be0532bb031d49d95",
+      "url": "https://github.com/BerriAI/litellm/blob/2f448a9ee896d6d3ccb2899be0532bb031d49d95/model_prices_and_context_window.json",
+      "verifiedAt": "2026-11-16T09:20:54Z"
+    }
+  ]
 }
