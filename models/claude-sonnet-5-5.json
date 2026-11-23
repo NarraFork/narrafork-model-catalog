@@ -1,167 +1,185 @@
 {
-  "id": "claude-sonnet-5-5",
-  "name": "Claude Sonnet 5.5",
-  "family": "claude",
-  "status": "verified",
-  "notes": "sub2api accepts low/medium/high/xhigh/max and defaults to high in its Responses bridge. The bridge maps none to between_tools thinking with low effort, not disabled thinking; a full reasoning-off toggle must not be advertised. USD pricing is verified against the official Claude pricing table and Sonnet 5.5 launch announcement; cached input is $0.10 per MTok, not the older upstream table's $0.20.",
-  "matches": {
-    "aliases": [
-      "claude-sonnet-5.5",
-      "claude-sonnet-latest"
-    ],
-    "prefixes": [
-      "claude-sonnet-5-5"
-    ],
-    "volatileSuffixes": true
-  },
-  "sources": [
-    {
-      "label": "Claude official pricing: USD per MTok base input 2 / 5m cache writes 2.50 / 1h cache writes 4 / cache hits 0.10 / output 10; supersedes older sub2api cache-read rate",
-      "url": "https://platform.claude.com/docs/en/about-claude/pricing.md",
-      "verifiedAt": "2026-10-24T00:00:00Z"
-    }
+ "id": "claude-sonnet-5-5",
+ "name": "Claude Sonnet 5.5",
+ "family": "claude",
+ "status": "verified",
+ "notes": "sub2api accepts low/medium/high/xhigh/max and defaults to high in its Responses bridge. The bridge maps none to between_tools thinking with low effort, not disabled thinking; a full reasoning-off toggle must not be advertised. USD pricing is verified against the official Claude pricing table and Sonnet 5.5 launch announcement; cached input is $0.10 per MTok, not the older upstream table's $0.20.",
+ "matches": {
+  "aliases": [
+   "claude-sonnet-5.5",
+   "claude-sonnet-latest"
   ],
-  "metadata": {
-    "cache_creation_input_token_cost": 2.5e-06,
-    "cache_creation_input_token_cost_above_1hr": 4e-06,
-    "cache_read_input_token_cost": 1e-07,
-    "input_cost_per_token": 2e-06,
-    "litellm_provider": "anthropic",
+  "prefixes": [
+   "claude-sonnet-5-5"
+  ],
+  "volatileSuffixes": true
+ },
+ "sources": [
+  {
+   "label": "Claude official pricing: USD per MTok base input 2 / 5m cache writes 2.50 / 1h cache writes 4 / cache hits 0.10 / output 10; supersedes older sub2api cache-read rate",
+   "url": "https://platform.claude.com/docs/en/about-claude/pricing.md",
+   "verifiedAt": "2026-10-24T00:00:00Z"
+  }
+ ],
+ "metadata": {
+  "cache_creation_input_token_cost": 2.5e-06,
+  "cache_creation_input_token_cost_above_1hr": 4e-06,
+  "cache_read_input_token_cost": 1e-07,
+  "input_cost_per_token": 2e-06,
+  "litellm_provider": "anthropic",
+  "max_input_tokens": 1000000,
+  "max_output_tokens": 128000,
+  "max_tokens": 128000,
+  "mode": "chat",
+  "output_cost_per_token": 1e-05,
+  "source": "https://platform.claude.com/docs/en/models/sonnet-5-5/overview",
+  "supports_adaptive_thinking": true,
+  "supports_assistant_prefill": false,
+  "supports_computer_use": true,
+  "supports_function_calling": true,
+  "supports_max_reasoning_effort": true,
+  "supports_output_config": true,
+  "supports_pdf_input": true,
+  "supports_prompt_caching": true,
+  "supports_reasoning": true,
+  "reasoning_effort_levels": [
+   "low",
+   "medium",
+   "high",
+   "xhigh",
+   "max"
+  ],
+  "default_reasoning_effort": "high",
+  "can_disable_reasoning": false,
+  "supports_none_reasoning_effort": false,
+  "supports_minimal_reasoning_effort": false,
+  "supports_response_schema": true,
+  "supports_sampling_params": false,
+  "supports_tool_choice": true,
+  "supports_vision": true,
+  "supports_xhigh_reasoning_effort": true,
+  "supports_anthropic_compaction": true,
+  "cache_creation_input_token_cost_batches": 1.25e-06,
+  "cache_read_input_token_cost_batches": 5e-08,
+  "input_cost_per_token_batches": 1e-06,
+  "output_cost_per_token_batches": 5e-06,
+  "search_context_cost_per_query": {
+   "search_context_size_high": 0.01,
+   "search_context_size_low": 0.01,
+   "search_context_size_medium": 0.01
+  },
+  "supports_mid_conversation_system": true,
+  "supports_native_structured_output": true,
+  "provider_specific_entry": {
+   "us": 1.1
+  },
+  "supports_forced_tool_use": false,
+  "thinking_always_on": true,
+  "prompt_cache_min_tokens": 512,
+  "supports_web_search": true
+ },
+ "variants": [
+  {
+   "id": "claude-sonnet-5.5@github-copilot",
+   "name": "claude-sonnet-5.5",
+   "providerKey": "github-copilot",
+   "upstreamModelIds": [
+    "claude-sonnet-5.5",
+    "github_copilot/claude-sonnet-5.5"
+   ],
+   "status": "unverified",
+   "metadata": {
+    "litellm_provider": "github_copilot",
+    "max_input_tokens": 200000,
+    "max_output_tokens": 128000,
+    "source": "https://raw.githubusercontent.com/github/docs/main/data/tables/copilot/models-and-pricing.yml",
+    "supported_endpoints": [
+     "/v1/chat/completions",
+     "/v1/messages"
+    ],
+    "supports_parallel_function_calling": true
+   },
+   "matches": {
+    "aliases": [
+     "claude-sonnet-latest",
+     "github_copilot/claude-sonnet-latest"
+    ]
+   }
+  },
+  {
+   "id": "claude-sonnet-5-5@cursor",
+   "name": "Claude Sonnet 5.5",
+   "providerKey": "cursor",
+   "upstreamModelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "status": "verified",
+   "metadata": {},
+   "sources": [
+    {
+     "label": "Cursor official model pricing; base rates exclude team Cursor Token Rate and residency surcharge",
+     "url": "https://cursor.com/docs/models",
+     "verifiedAt": "2026-11-16T09:20:54Z"
+    }
+   ]
+  },
+  {
+   "id": "claude-sonnet-5-5@antigravity",
+   "name": "claude-sonnet-5-5",
+   "providerKey": "antigravity",
+   "upstreamModelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "status": "unverified",
+   "metadata": {}
+  },
+  {
+   "id": "claude-sonnet-5-5-high@antigravity",
+   "name": "claude-sonnet-5-5-high",
+   "providerKey": "antigravity",
+   "upstreamModelIds": [
+    "claude-sonnet-5-5-high"
+   ],
+   "status": "unverified",
+   "metadata": {}
+  },
+  {
+   "id": "claude-sonnet-5-5-medium@antigravity",
+   "name": "claude-sonnet-5-5-medium",
+   "providerKey": "antigravity",
+   "upstreamModelIds": [
+    "claude-sonnet-5-5-medium"
+   ],
+   "status": "unverified",
+   "metadata": {}
+  },
+  {
+   "id": "claude-sonnet-5-5-low@antigravity",
+   "name": "claude-sonnet-5-5-low",
+   "providerKey": "antigravity",
+   "upstreamModelIds": [
+    "claude-sonnet-5-5-low"
+   ],
+   "status": "unverified",
+   "metadata": {}
+  },
+  {
+   "id": "claude-sonnet-5-5@devin",
+   "name": "Claude Sonnet 5 5",
+   "providerKey": "devin",
+   "upstreamModelIds": [
+    "claude-sonnet-5-5-high",
+    "claude-sonnet-5-5-low",
+    "claude-sonnet-5-5-max",
+    "claude-sonnet-5-5-medium",
+    "claude-sonnet-5-5-xhigh"
+   ],
+   "metadata": {
     "max_input_tokens": 1000000,
     "max_output_tokens": 128000,
-    "max_tokens": 128000,
-    "mode": "chat",
-    "output_cost_per_token": 1e-05,
-    "source": "https://platform.claude.com/docs/en/models/sonnet-5-5/overview",
-    "supports_adaptive_thinking": true,
-    "supports_assistant_prefill": false,
-    "supports_computer_use": true,
-    "supports_function_calling": true,
-    "supports_max_reasoning_effort": true,
-    "supports_output_config": true,
-    "supports_pdf_input": true,
-    "supports_prompt_caching": true,
-    "supports_reasoning": true,
-    "reasoning_effort_levels": [
-      "low",
-      "medium",
-      "high",
-      "xhigh",
-      "max"
-    ],
-    "default_reasoning_effort": "high",
-    "can_disable_reasoning": false,
-    "supports_none_reasoning_effort": false,
-    "supports_minimal_reasoning_effort": false,
-    "supports_response_schema": true,
-    "supports_sampling_params": false,
-    "supports_tool_choice": true,
-    "supports_vision": true,
-    "supports_xhigh_reasoning_effort": true,
-    "supports_anthropic_compaction": true,
-    "cache_creation_input_token_cost_batches": 1.25e-06,
-    "cache_read_input_token_cost_batches": 5e-08,
-    "input_cost_per_token_batches": 1e-06,
-    "output_cost_per_token_batches": 5e-06,
-    "search_context_cost_per_query": {
-      "search_context_size_high": 0.01,
-      "search_context_size_low": 0.01,
-      "search_context_size_medium": 0.01
-    },
-    "supports_mid_conversation_system": true,
-    "supports_native_structured_output": true,
-    "provider_specific_entry": {
-      "us": 1.1
-    },
-    "supports_forced_tool_use": false,
-    "thinking_always_on": true,
-    "prompt_cache_min_tokens": 512,
-    "supports_web_search": true
-  },
-  "variants": [
-    {
-      "id": "claude-sonnet-5.5@github-copilot",
-      "name": "claude-sonnet-5.5",
-      "providerKey": "github-copilot",
-      "upstreamModelIds": [
-        "claude-sonnet-5.5",
-        "github_copilot/claude-sonnet-5.5"
-      ],
-      "status": "unverified",
-      "metadata": {
-        "litellm_provider": "github_copilot",
-        "max_input_tokens": 200000,
-        "max_output_tokens": 128000,
-        "source": "https://raw.githubusercontent.com/github/docs/main/data/tables/copilot/models-and-pricing.yml",
-        "supported_endpoints": [
-          "/v1/chat/completions",
-          "/v1/messages"
-        ],
-        "supports_parallel_function_calling": true
-      },
-      "matches": {
-        "aliases": [
-          "claude-sonnet-latest",
-          "github_copilot/claude-sonnet-latest"
-        ]
-      }
-    },
-    {
-      "id": "claude-sonnet-5-5@cursor",
-      "name": "Claude Sonnet 5.5",
-      "providerKey": "cursor",
-      "upstreamModelIds": [
-        "claude-sonnet-5-5"
-      ],
-      "status": "verified",
-      "metadata": {},
-      "sources": [
-        {
-          "label": "Cursor official model pricing; base rates exclude team Cursor Token Rate and residency surcharge",
-          "url": "https://cursor.com/docs/models",
-          "verifiedAt": "2026-11-16T09:20:54Z"
-        }
-      ]
-    },
-    {
-      "id": "claude-sonnet-5-5@antigravity",
-      "name": "claude-sonnet-5-5",
-      "providerKey": "antigravity",
-      "upstreamModelIds": [
-        "claude-sonnet-5-5"
-      ],
-      "status": "unverified",
-      "metadata": {}
-    },
-    {
-      "id": "claude-sonnet-5-5-high@antigravity",
-      "name": "claude-sonnet-5-5-high",
-      "providerKey": "antigravity",
-      "upstreamModelIds": [
-        "claude-sonnet-5-5-high"
-      ],
-      "status": "unverified",
-      "metadata": {}
-    },
-    {
-      "id": "claude-sonnet-5-5-medium@antigravity",
-      "name": "claude-sonnet-5-5-medium",
-      "providerKey": "antigravity",
-      "upstreamModelIds": [
-        "claude-sonnet-5-5-medium"
-      ],
-      "status": "unverified",
-      "metadata": {}
-    },
-    {
-      "id": "claude-sonnet-5-5-low@antigravity",
-      "name": "claude-sonnet-5-5-low",
-      "providerKey": "antigravity",
-      "upstreamModelIds": [
-        "claude-sonnet-5-5-low"
-      ],
-      "status": "unverified",
-      "metadata": {}
-    }
-  ]
+    "supports_vision": true
+   },
+   "status": "unverified"
+  }
+ ]
 }

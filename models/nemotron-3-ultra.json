@@ -1,0 +1,28 @@
+{
+ "id": "nemotron-3-ultra",
+ "name": "Nemotron 3 Ultra",
+ "family": "nemotron",
+ "status": "unverified",
+ "metadata": {
+  "max_input_tokens": 1000000,
+  "max_output_tokens": 32768,
+  "mode": "chat",
+  "supports_function_calling": true,
+  "supports_vision": false,
+  "source": "NUG devin channel upstream model list (models_snapshot.json, devin models list 2026-11-05)"
+ },
+ "variants": [
+  {
+   "id": "nemotron-3-ultra@devin",
+   "name": "Nemotron 3 Ultra",
+   "providerKey": "devin",
+   "upstreamModelIds": [
+    "nemotron-3-ultra-high",
+    "nemotron-3-ultra-medium",
+    "nemotron-3-ultra-none"
+   ],
+   "metadata": {},
+   "status": "unverified"
+  }
+ ]
+}

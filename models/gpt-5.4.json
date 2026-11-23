@@ -1,102 +1,138 @@
 {
-  "id": "gpt-5.4",
-  "name": "GPT-5.4",
-  "family": "gpt",
-  "status": "verified",
-  "sources": [
-    {
-      "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [gpt-5.4] @ e2cfaa46e79241f34e52bf4781f7710cd511c5d2",
-      "url": "https://github.com/Wei-Shaw/sub2api/blob/e2cfaa46e79241f34e52bf4781f7710cd511c5d2/backend/resources/model-pricing/model_prices_and_context_window.json#L4674",
-      "verifiedAt": "2026-09-22T07:33:33Z"
-    }
+ "id": "gpt-5.4",
+ "name": "GPT-5.4",
+ "family": "gpt",
+ "status": "verified",
+ "sources": [
+  {
+   "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [gpt-5.4] @ e2cfaa46e79241f34e52bf4781f7710cd511c5d2",
+   "url": "https://github.com/Wei-Shaw/sub2api/blob/e2cfaa46e79241f34e52bf4781f7710cd511c5d2/backend/resources/model-pricing/model_prices_and_context_window.json#L4674",
+   "verifiedAt": "2026-09-22T07:33:33Z"
+  }
+ ],
+ "metadata": {
+  "cache_read_input_token_cost": 2.5e-07,
+  "cache_read_input_token_cost_above_272k_tokens": 5e-07,
+  "cache_read_input_token_cost_flex": 1.3e-07,
+  "cache_read_input_token_cost_priority": 5e-07,
+  "input_cost_per_token": 2.5e-06,
+  "input_cost_per_token_above_272k_tokens": 5e-06,
+  "input_cost_per_token_batches": 1.25e-06,
+  "input_cost_per_token_flex": 1.25e-06,
+  "input_cost_per_token_priority": 5e-06,
+  "litellm_provider": "openai",
+  "max_input_tokens": 1050000,
+  "max_output_tokens": 128000,
+  "max_tokens": 128000,
+  "mode": "chat",
+  "output_cost_per_token": 1.5e-05,
+  "output_cost_per_token_above_272k_tokens": 2.25e-05,
+  "output_cost_per_token_batches": 7.5e-06,
+  "output_cost_per_token_flex": 7.5e-06,
+  "output_cost_per_token_priority": 3e-05,
+  "supported_endpoints": [
+   "/v1/chat/completions",
+   "/v1/batch",
+   "/v1/responses"
   ],
-  "metadata": {
-    "cache_read_input_token_cost": 2.5e-07,
-    "cache_read_input_token_cost_above_272k_tokens": 5e-07,
-    "cache_read_input_token_cost_flex": 1.3e-07,
-    "cache_read_input_token_cost_priority": 5e-07,
-    "input_cost_per_token": 2.5e-06,
-    "input_cost_per_token_above_272k_tokens": 5e-06,
-    "input_cost_per_token_batches": 1.25e-06,
-    "input_cost_per_token_flex": 1.25e-06,
-    "input_cost_per_token_priority": 5e-06,
-    "litellm_provider": "openai",
-    "max_input_tokens": 1050000,
-    "max_output_tokens": 128000,
-    "max_tokens": 128000,
-    "mode": "chat",
-    "output_cost_per_token": 1.5e-05,
-    "output_cost_per_token_above_272k_tokens": 2.25e-05,
-    "output_cost_per_token_batches": 7.5e-06,
-    "output_cost_per_token_flex": 7.5e-06,
-    "output_cost_per_token_priority": 3e-05,
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/v1/batch",
-      "/v1/responses"
-    ],
-    "supported_modalities": [
-      "text",
-      "image"
-    ],
-    "supported_output_modalities": [
-      "text"
-    ],
-    "supports_function_calling": true,
-    "supports_minimal_reasoning_effort": true,
-    "supports_native_streaming": true,
-    "supports_none_reasoning_effort": true,
-    "supports_parallel_function_calling": true,
-    "supports_pdf_input": true,
-    "supports_prompt_caching": true,
-    "supports_reasoning": true,
-    "supports_response_schema": true,
-    "supports_service_tier": true,
-    "supports_system_messages": true,
-    "supports_tool_choice": true,
-    "supports_vision": true,
-    "supports_xhigh_reasoning_effort": true,
-    "cache_read_input_token_cost_batches": 1.3e-07,
-    "cache_read_input_token_cost_above_272k_tokens_batches": 2.5e-07,
-    "input_cost_per_token_above_272k_tokens_batches": 2.5e-06,
-    "output_cost_per_token_above_272k_tokens_batches": 1.125e-05,
-    "reasoning_contexts": [
-      "auto",
-      "current_turn",
-      "all_turns"
-    ],
-    "reasoning_modes": [
-      "standard"
-    ],
-    "regional_processing_uplift_multiplier_eu": 1.1,
-    "regional_processing_uplift_multiplier_us": 1.1,
-    "fedramp_uplift_multiplier": 1.1,
-    "supports_tool_search": true,
-    "default_reasoning_effort": "none",
-    "input_cost_per_token_above_272k_tokens_flex": 2.5e-06,
-    "output_cost_per_token_above_272k_tokens_flex": 1.125e-05,
-    "cache_read_input_token_cost_above_272k_tokens_flex": 2.5e-07
+  "supported_modalities": [
+   "text",
+   "image"
+  ],
+  "supported_output_modalities": [
+   "text"
+  ],
+  "supports_function_calling": true,
+  "supports_minimal_reasoning_effort": true,
+  "supports_native_streaming": true,
+  "supports_none_reasoning_effort": true,
+  "supports_parallel_function_calling": true,
+  "supports_pdf_input": true,
+  "supports_prompt_caching": true,
+  "supports_reasoning": true,
+  "supports_response_schema": true,
+  "supports_service_tier": true,
+  "supports_system_messages": true,
+  "supports_tool_choice": true,
+  "supports_vision": true,
+  "supports_xhigh_reasoning_effort": true,
+  "cache_read_input_token_cost_batches": 1.3e-07,
+  "cache_read_input_token_cost_above_272k_tokens_batches": 2.5e-07,
+  "input_cost_per_token_above_272k_tokens_batches": 2.5e-06,
+  "output_cost_per_token_above_272k_tokens_batches": 1.125e-05,
+  "reasoning_contexts": [
+   "auto",
+   "current_turn",
+   "all_turns"
+  ],
+  "reasoning_modes": [
+   "standard"
+  ],
+  "regional_processing_uplift_multiplier_eu": 1.1,
+  "regional_processing_uplift_multiplier_us": 1.1,
+  "fedramp_uplift_multiplier": 1.1,
+  "supports_tool_search": true,
+  "default_reasoning_effort": "none",
+  "input_cost_per_token_above_272k_tokens_flex": 2.5e-06,
+  "output_cost_per_token_above_272k_tokens_flex": 1.125e-05,
+  "cache_read_input_token_cost_above_272k_tokens_flex": 2.5e-07
+ },
+ "variants": [
+  {
+   "id": "gpt-5.4@codex",
+   "name": "GPT-5.4",
+   "providerKey": "codex",
+   "upstreamModelIds": [
+    "gpt-5.4"
+   ],
+   "metadata": {},
+   "status": "unverified"
   },
-  "variants": [
-    {
-      "id": "gpt-5.4@codex",
-      "name": "GPT-5.4",
-      "providerKey": "codex",
-      "upstreamModelIds": [
-        "gpt-5.4"
-      ],
-      "metadata": {},
-      "status": "unverified"
-    },
-    {
-      "id": "gpt-5.4@cursor",
-      "name": "GPT-5.4",
-      "providerKey": "cursor",
-      "upstreamModelIds": [
-        "gpt-5.4"
-      ],
-      "metadata": {},
-      "status": "unverified"
-    }
-  ]
+  {
+   "id": "gpt-5.4@cursor",
+   "name": "GPT-5.4",
+   "providerKey": "cursor",
+   "upstreamModelIds": [
+    "gpt-5.4"
+   ],
+   "metadata": {},
+   "status": "unverified"
+  },
+  {
+   "id": "gpt-5-4@devin",
+   "name": "Gpt 5.4",
+   "providerKey": "devin",
+   "upstreamModelIds": [
+    "gpt-5-4-high",
+    "gpt-5-4-low",
+    "gpt-5-4-medium",
+    "gpt-5-4-none",
+    "gpt-5-4-xhigh"
+   ],
+   "metadata": {
+    "max_input_tokens": 272000,
+    "max_output_tokens": 128000,
+    "supports_vision": true
+   },
+   "status": "unverified"
+  },
+  {
+   "id": "gpt-5-4-priority@devin",
+   "name": "Gpt 5.4 Priority",
+   "providerKey": "devin",
+   "upstreamModelIds": [
+    "gpt-5-4-high-priority",
+    "gpt-5-4-low-priority",
+    "gpt-5-4-medium-priority",
+    "gpt-5-4-none-priority",
+    "gpt-5-4-xhigh-priority"
+   ],
+   "metadata": {
+    "max_input_tokens": 272000,
+    "max_output_tokens": 128000,
+    "supports_vision": true
+   },
+   "status": "unverified"
+  }
+ ]
 }

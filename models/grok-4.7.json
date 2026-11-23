@@ -1,107 +1,124 @@
 {
-  "id": "grok-4.7",
-  "name": "Grok 4.7",
-  "family": "grok",
-  "status": "verified",
-  "matches": {
+ "id": "grok-4.7",
+ "name": "Grok 4.7",
+ "family": "grok",
+ "status": "verified",
+ "matches": {
+  "aliases": [
+   "grok-4.7-latest",
+   "grok-latest"
+  ]
+ },
+ "sources": [
+  {
+   "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [grok-4.7] @ 3040209f205472038c1ba745a1bedd2edd9053b1",
+   "url": "https://github.com/Wei-Shaw/sub2api/blob/3040209f205472038c1ba745a1bedd2edd9053b1/backend/resources/model-pricing/model_prices_and_context_window.json#L56",
+   "verifiedAt": "2026-10-02T12:21:34Z"
+  }
+ ],
+ "metadata": {
+  "input_cost_per_token": 2e-06,
+  "output_cost_per_token": 6e-06,
+  "cache_read_input_token_cost": 5e-07,
+  "input_cost_per_token_above_200k_tokens": 4e-06,
+  "output_cost_per_token_above_200k_tokens": 1.2e-05,
+  "litellm_provider": "xai",
+  "max_input_tokens": 500000,
+  "mode": "chat",
+  "supports_prompt_caching": true,
+  "cache_read_input_token_cost_above_200k_tokens": 1e-06,
+  "cache_read_input_token_cost_above_200k_tokens_batches": 8e-07,
+  "cache_read_input_token_cost_batches": 4e-07,
+  "input_cost_per_image_token": 2e-06,
+  "input_cost_per_token_above_200k_tokens_batches": 3.2e-06,
+  "input_cost_per_token_batches": 1.6e-06,
+  "max_output_tokens": 500000,
+  "output_cost_per_token_above_200k_tokens_batches": 9.6e-06,
+  "output_cost_per_token_batches": 4.8e-06,
+  "source": "https://api.x.ai/v1/language-models",
+  "supports_function_calling": true,
+  "supports_reasoning": true,
+  "supports_response_schema": true,
+  "supports_tool_choice": true,
+  "supports_vision": true,
+  "supports_web_search": true
+ },
+ "variants": [
+  {
+   "id": "grok-4.7@cursor",
+   "name": "Grok 4.7",
+   "providerKey": "cursor",
+   "upstreamModelIds": [
+    "grok-4.7"
+   ],
+   "matches": {
     "aliases": [
-      "grok-4.7-latest",
-      "grok-latest"
+     "grok-4.7-latest"
     ]
+   },
+   "metadata": {
+    "reasoning_effort_levels": [
+     "low",
+     "medium",
+     "high",
+     "xhigh"
+    ],
+    "default_reasoning_effort": "high",
+    "context_window": 500000,
+    "long_context_input_token_threshold": 256000,
+    "input_cost_per_token_above_256k_tokens": 4e-06,
+    "cache_read_input_token_cost_above_256k_tokens": 1e-06,
+    "output_cost_per_token_above_256k_tokens": 1.2e-05
+   },
+   "status": "unverified"
   },
-  "sources": [
-    {
-      "label": "sub2api: backend/resources/model-pricing/model_prices_and_context_window.json [grok-4.7] @ 3040209f205472038c1ba745a1bedd2edd9053b1",
-      "url": "https://github.com/Wei-Shaw/sub2api/blob/3040209f205472038c1ba745a1bedd2edd9053b1/backend/resources/model-pricing/model_prices_and_context_window.json#L56",
-      "verifiedAt": "2026-10-02T12:21:34Z"
-    }
-  ],
-  "metadata": {
-    "input_cost_per_token": 2e-06,
-    "output_cost_per_token": 6e-06,
-    "cache_read_input_token_cost": 5e-07,
-    "input_cost_per_token_above_200k_tokens": 4e-06,
-    "output_cost_per_token_above_200k_tokens": 1.2e-05,
-    "litellm_provider": "xai",
+  {
+   "id": "grok-4.7@grok",
+   "name": "Grok 4.7",
+   "providerKey": "grok",
+   "upstreamModelIds": [
+    "grok-4.7"
+   ],
+   "matches": {
+    "aliases": [
+     "grok-4.7-latest"
+    ]
+   },
+   "metadata": {},
+   "status": "unverified"
+  },
+  {
+   "id": "grok-4.7@grokbot",
+   "name": "Grok 4.7",
+   "providerKey": "grokbot",
+   "upstreamModelIds": [
+    "grok-4.7"
+   ],
+   "matches": {
+    "aliases": [
+     "grok-4.7-latest"
+    ]
+   },
+   "metadata": {},
+   "status": "unverified"
+  },
+  {
+   "id": "grok-4-7@devin",
+   "name": "Grok 4.7",
+   "providerKey": "devin",
+   "upstreamModelIds": [
+    "grok-4-7-high",
+    "grok-4-7-low",
+    "grok-4-7-medium",
+    "grok-4-7-xhigh"
+   ],
+   "metadata": {
     "max_input_tokens": 500000,
-    "mode": "chat",
-    "supports_prompt_caching": true,
-    "cache_read_input_token_cost_above_200k_tokens": 1e-06,
-    "cache_read_input_token_cost_above_200k_tokens_batches": 8e-07,
-    "cache_read_input_token_cost_batches": 4e-07,
-    "input_cost_per_image_token": 2e-06,
-    "input_cost_per_token_above_200k_tokens_batches": 3.2e-06,
-    "input_cost_per_token_batches": 1.6e-06,
-    "max_output_tokens": 500000,
-    "output_cost_per_token_above_200k_tokens_batches": 9.6e-06,
-    "output_cost_per_token_batches": 4.8e-06,
-    "source": "https://api.x.ai/v1/language-models",
-    "supports_function_calling": true,
-    "supports_reasoning": true,
-    "supports_response_schema": true,
-    "supports_tool_choice": true,
-    "supports_vision": true,
-    "supports_web_search": true
-  },
-  "variants": [
-    {
-      "id": "grok-4.7@cursor",
-      "name": "Grok 4.7",
-      "providerKey": "cursor",
-      "upstreamModelIds": [
-        "grok-4.7"
-      ],
-      "matches": {
-        "aliases": [
-          "grok-4.7-latest"
-        ]
-      },
-      "metadata": {
-        "reasoning_effort_levels": [
-          "low",
-          "medium",
-          "high",
-          "xhigh"
-        ],
-        "default_reasoning_effort": "high",
-        "context_window": 500000,
-        "long_context_input_token_threshold": 256000,
-        "input_cost_per_token_above_256k_tokens": 4e-06,
-        "cache_read_input_token_cost_above_256k_tokens": 1e-06,
-        "output_cost_per_token_above_256k_tokens": 1.2e-05
-      },
-      "status": "unverified"
-    },
-    {
-      "id": "grok-4.7@grok",
-      "name": "Grok 4.7",
-      "providerKey": "grok",
-      "upstreamModelIds": [
-        "grok-4.7"
-      ],
-      "matches": {
-        "aliases": [
-          "grok-4.7-latest"
-        ]
-      },
-      "metadata": {},
-      "status": "unverified"
-    },
-    {
-      "id": "grok-4.7@grokbot",
-      "name": "Grok 4.7",
-      "providerKey": "grokbot",
-      "upstreamModelIds": [
-        "grok-4.7"
-      ],
-      "matches": {
-        "aliases": [
-          "grok-4.7-latest"
-        ]
-      },
-      "metadata": {},
-      "status": "unverified"
-    }
-  ],
-  "notes": "Native xAI metadata is from the pinned LiteLLM registry; direct xAI documentation was unavailable during this audit. Registry output limits are not independently confirmed. Provider-specific pricing and controls, where verified, are recorded in nested variants."
+    "max_output_tokens": 100000,
+    "supports_vision": true
+   },
+   "status": "unverified"
+  }
+ ],
+ "notes": "Native xAI metadata is from the pinned LiteLLM registry; direct xAI documentation was unavailable during this audit. Registry output limits are not independently confirmed. Provider-specific pricing and controls, where verified, are recorded in nested variants."
 }

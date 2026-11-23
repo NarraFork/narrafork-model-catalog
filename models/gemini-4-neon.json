@@ -1,0 +1,104 @@
+{
+ "id": "gemini-4-neon",
+ "name": "Gemini 4 Neon",
+ "family": "gemini",
+ "status": "unverified",
+ "matches": {
+  "aliases": [
+   "gemini-4-neon-low",
+   "gemini-4-neon-medium",
+   "gemini-4-neon-high",
+   "gemini-4-neon-xhigh"
+  ]
+ },
+ "metadata": {
+  "litellm_provider": "gemini",
+  "mode": "chat",
+  "max_input_tokens": 1048576,
+  "max_output_tokens": 1048576,
+  "supported_modalities": [
+   "text",
+   "image",
+   "audio",
+   "video"
+  ],
+  "supported_output_modalities": [
+   "text"
+  ],
+  "supports_reasoning": true,
+  "supports_function_calling": true,
+  "supports_vision": true,
+  "supports_native_streaming": true,
+  "source": "Devin/antigravity gateway model lists (NUG models_snapshot 2026-11); no public list price"
+ },
+ "variants": [
+  {
+   "id": "gemini-4-neon@devin",
+   "name": "Gemini 4 Neon",
+   "providerKey": "devin",
+   "upstreamModelIds": [
+    "gemini-4-neon"
+   ],
+   "metadata": {
+    "supports_vision": true
+   },
+   "status": "unverified"
+  },
+  {
+   "id": "gemini-4-neon-low@antigravity",
+   "name": "Gemini 4 Neon Low",
+   "providerKey": "antigravity",
+   "upstreamModelIds": [
+    "gemini-4-neon-low"
+   ],
+   "metadata": {
+    "reasoning_effort_levels": [
+     "low"
+    ]
+   },
+   "status": "unverified"
+  },
+  {
+   "id": "gemini-4-neon-medium@antigravity",
+   "name": "Gemini 4 Neon Medium",
+   "providerKey": "antigravity",
+   "upstreamModelIds": [
+    "gemini-4-neon-medium"
+   ],
+   "metadata": {
+    "reasoning_effort_levels": [
+     "medium"
+    ]
+   },
+   "status": "unverified"
+  },
+  {
+   "id": "gemini-4-neon-high@antigravity",
+   "name": "Gemini 4 Neon High",
+   "providerKey": "antigravity",
+   "upstreamModelIds": [
+    "gemini-4-neon-high"
+   ],
+   "metadata": {
+    "reasoning_effort_levels": [
+     "high"
+    ]
+   },
+   "status": "unverified"
+  },
+  {
+   "id": "gemini-4-neon-xhigh@antigravity",
+   "name": "Gemini 4 Neon Xhigh",
+   "providerKey": "antigravity",
+   "upstreamModelIds": [
+    "gemini-4-neon-xhigh"
+   ],
+   "metadata": {
+    "reasoning_effort_levels": [
+     "xhigh"
+    ]
+   },
+   "status": "unverified"
+  }
+ ]
+}

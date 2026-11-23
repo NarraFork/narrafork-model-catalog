@@ -1,142 +1,178 @@
 {
-  "id": "gpt-6-astra",
-  "name": "GPT-6 Astra",
-  "family": "gpt",
-  "status": "unverified",
-  "matches": {
-    "prefixes": [
-      "gpt-6-astra"
-    ],
-    "volatileSuffixes": true,
-    "aliases": [
-      "gpt-astra-latest"
-    ]
-  },
-  "metadata": {
-    "max_input_tokens": 1050000,
-    "max_output_tokens": 128000,
-    "reasoning_effort_levels": [
-      "low",
-      "medium",
-      "high",
-      "xhigh",
-      "max"
-    ],
-    "input_cost_per_token": 1e-05,
-    "output_cost_per_token": 5e-05,
-    "cache_read_input_token_cost": 1e-06,
-    "cache_creation_input_token_cost": 1.25e-05,
-    "cache_creation_input_token_cost_above_12hr": 2.5e-05,
-    "cache_creation_input_token_cost_above_12hr_ultrafast": 0.00015,
-    "cache_creation_input_token_cost_above_12hr_batches": 1.25e-05,
-    "cache_creation_input_token_cost_above_12hr_above_272k_tokens": 5e-05,
-    "cache_creation_input_token_cost_above_12hr_above_272k_tokens_batches": 2.5e-05,
-    "cache_creation_input_token_cost_above_12hr_above_272k_tokens_flex": 2.5e-05,
-    "cache_creation_input_token_cost_above_12hr_above_272k_tokens_priority": 0.0001,
-    "cache_creation_input_token_cost_above_12hr_above_272k_tokens_ultrafast": 0.0003,
-    "cache_creation_input_token_cost_above_12hr_flex": 1.25e-05,
-    "cache_creation_input_token_cost_above_12hr_priority": 5e-05,
-    "cache_creation_input_token_cost_above_272k_tokens": 2.5e-05,
-    "cache_creation_input_token_cost_above_272k_tokens_flex": 1.25e-05,
-    "cache_creation_input_token_cost_above_272k_tokens_priority": 5e-05,
-    "cache_creation_input_token_cost_flex": 6.25e-06,
-    "cache_creation_input_token_cost_priority": 2.5e-05,
-    "cache_read_input_token_cost_above_272k_tokens": 2e-06,
-    "cache_read_input_token_cost_above_272k_tokens_flex": 1e-06,
-    "cache_read_input_token_cost_above_272k_tokens_priority": 4e-06,
-    "cache_read_input_token_cost_batches": 5e-07,
-    "cache_read_input_token_cost_above_272k_tokens_batches": 1e-06,
-    "cache_creation_input_token_cost_batches": 6.25e-06,
-    "cache_creation_input_token_cost_above_272k_tokens_batches": 1.25e-05,
-    "cache_creation_input_token_cost_above_272k_tokens_ultrafast": 0.00015,
-    "cache_creation_input_token_cost_ultrafast": 7.5e-05,
-    "cache_read_input_token_cost_above_272k_tokens_ultrafast": 1.2e-05,
-    "cache_read_input_token_cost_flex": 5e-07,
-    "cache_read_input_token_cost_priority": 2e-06,
-    "cache_read_input_token_cost_ultrafast": 6e-06,
-    "input_cost_per_token_above_272k_tokens": 2e-05,
-    "input_cost_per_token_above_272k_tokens_flex": 1e-05,
-    "input_cost_per_token_above_272k_tokens_priority": 4e-05,
-    "input_cost_per_token_batches": 5e-06,
-    "input_cost_per_token_above_272k_tokens_batches": 1e-05,
-    "input_cost_per_token_above_272k_tokens_ultrafast": 0.00012,
-    "input_cost_per_token_flex": 5e-06,
-    "input_cost_per_token_priority": 2e-05,
-    "input_cost_per_token_ultrafast": 6e-05,
-    "litellm_provider": "openai",
-    "mode": "chat",
-    "output_cost_per_token_above_272k_tokens": 7.5e-05,
-    "output_cost_per_token_above_272k_tokens_flex": 3.75e-05,
-    "output_cost_per_token_above_272k_tokens_priority": 0.00015,
-    "output_cost_per_token_batches": 2.5e-05,
-    "output_cost_per_token_above_272k_tokens_batches": 3.75e-05,
-    "output_cost_per_token_above_272k_tokens_ultrafast": 0.00045,
-    "output_cost_per_token_flex": 2.5e-05,
-    "output_cost_per_token_priority": 0.0001,
-    "output_cost_per_token_ultrafast": 0.0003,
-    "reasoning_contexts": [
-      "auto",
-      "current_turn",
-      "all_turns"
-    ],
-    "reasoning_modes": [
-      "standard",
-      "pro"
-    ],
-    "regional_processing_uplift_multiplier_eu": 1.1,
-    "regional_processing_uplift_multiplier_us": 1.1,
-    "fedramp_uplift_multiplier": 1.1,
-    "search_context_cost_per_query": {
-      "search_context_size_high": 0.01,
-      "search_context_size_low": 0.01,
-      "search_context_size_medium": 0.01
-    },
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/v1/batch",
-      "/v1/responses"
-    ],
-    "supported_modalities": [
-      "text",
-      "image"
-    ],
-    "supported_output_modalities": [
-      "text"
-    ],
-    "supports_computer_use": true,
-    "supports_function_calling": true,
-    "supports_max_reasoning_effort": true,
-    "supports_minimal_reasoning_effort": false,
-    "supports_native_streaming": true,
-    "supports_none_reasoning_effort": false,
-    "supports_parallel_function_calling": true,
-    "supports_pdf_input": true,
-    "supports_prompt_cache_breakpoint": true,
-    "supports_prompt_caching": true,
-    "supports_reasoning": true,
-    "supports_response_schema": true,
-    "supports_system_messages": true,
-    "supports_tool_choice": true,
-    "supports_tool_search": true,
-    "supports_vision": true,
-    "supports_web_search": true,
-    "supports_xhigh_reasoning_effort": true
-  },
-  "variants": [
-    {
-      "id": "gpt-6-astra@codex",
-      "name": "GPT-6 Astra",
-      "providerKey": "codex",
-      "upstreamModelIds": [
-        "gpt-6-astra"
-      ],
-      "matches": {
-        "prefixes": [
-          "gpt-6-astra"
-        ]
-      },
-      "metadata": {},
-      "status": "unverified"
-    }
+ "id": "gpt-6-astra",
+ "name": "GPT-6 Astra",
+ "family": "gpt",
+ "status": "unverified",
+ "matches": {
+  "prefixes": [
+   "gpt-6-astra"
+  ],
+  "volatileSuffixes": true,
+  "aliases": [
+   "gpt-astra-latest"
   ]
+ },
+ "metadata": {
+  "max_input_tokens": 1050000,
+  "max_output_tokens": 128000,
+  "reasoning_effort_levels": [
+   "low",
+   "medium",
+   "high",
+   "xhigh",
+   "max"
+  ],
+  "input_cost_per_token": 1e-05,
+  "output_cost_per_token": 5e-05,
+  "cache_read_input_token_cost": 1e-06,
+  "cache_creation_input_token_cost": 1.25e-05,
+  "cache_creation_input_token_cost_above_12hr": 2.5e-05,
+  "cache_creation_input_token_cost_above_12hr_ultrafast": 0.00015,
+  "cache_creation_input_token_cost_above_12hr_batches": 1.25e-05,
+  "cache_creation_input_token_cost_above_12hr_above_272k_tokens": 5e-05,
+  "cache_creation_input_token_cost_above_12hr_above_272k_tokens_batches": 2.5e-05,
+  "cache_creation_input_token_cost_above_12hr_above_272k_tokens_flex": 2.5e-05,
+  "cache_creation_input_token_cost_above_12hr_above_272k_tokens_priority": 0.0001,
+  "cache_creation_input_token_cost_above_12hr_above_272k_tokens_ultrafast": 0.0003,
+  "cache_creation_input_token_cost_above_12hr_flex": 1.25e-05,
+  "cache_creation_input_token_cost_above_12hr_priority": 5e-05,
+  "cache_creation_input_token_cost_above_272k_tokens": 2.5e-05,
+  "cache_creation_input_token_cost_above_272k_tokens_flex": 1.25e-05,
+  "cache_creation_input_token_cost_above_272k_tokens_priority": 5e-05,
+  "cache_creation_input_token_cost_flex": 6.25e-06,
+  "cache_creation_input_token_cost_priority": 2.5e-05,
+  "cache_read_input_token_cost_above_272k_tokens": 2e-06,
+  "cache_read_input_token_cost_above_272k_tokens_flex": 1e-06,
+  "cache_read_input_token_cost_above_272k_tokens_priority": 4e-06,
+  "cache_read_input_token_cost_batches": 5e-07,
+  "cache_read_input_token_cost_above_272k_tokens_batches": 1e-06,
+  "cache_creation_input_token_cost_batches": 6.25e-06,
+  "cache_creation_input_token_cost_above_272k_tokens_batches": 1.25e-05,
+  "cache_creation_input_token_cost_above_272k_tokens_ultrafast": 0.00015,
+  "cache_creation_input_token_cost_ultrafast": 7.5e-05,
+  "cache_read_input_token_cost_above_272k_tokens_ultrafast": 1.2e-05,
+  "cache_read_input_token_cost_flex": 5e-07,
+  "cache_read_input_token_cost_priority": 2e-06,
+  "cache_read_input_token_cost_ultrafast": 6e-06,
+  "input_cost_per_token_above_272k_tokens": 2e-05,
+  "input_cost_per_token_above_272k_tokens_flex": 1e-05,
+  "input_cost_per_token_above_272k_tokens_priority": 4e-05,
+  "input_cost_per_token_batches": 5e-06,
+  "input_cost_per_token_above_272k_tokens_batches": 1e-05,
+  "input_cost_per_token_above_272k_tokens_ultrafast": 0.00012,
+  "input_cost_per_token_flex": 5e-06,
+  "input_cost_per_token_priority": 2e-05,
+  "input_cost_per_token_ultrafast": 6e-05,
+  "litellm_provider": "openai",
+  "mode": "chat",
+  "output_cost_per_token_above_272k_tokens": 7.5e-05,
+  "output_cost_per_token_above_272k_tokens_flex": 3.75e-05,
+  "output_cost_per_token_above_272k_tokens_priority": 0.00015,
+  "output_cost_per_token_batches": 2.5e-05,
+  "output_cost_per_token_above_272k_tokens_batches": 3.75e-05,
+  "output_cost_per_token_above_272k_tokens_ultrafast": 0.00045,
+  "output_cost_per_token_flex": 2.5e-05,
+  "output_cost_per_token_priority": 0.0001,
+  "output_cost_per_token_ultrafast": 0.0003,
+  "reasoning_contexts": [
+   "auto",
+   "current_turn",
+   "all_turns"
+  ],
+  "reasoning_modes": [
+   "standard",
+   "pro"
+  ],
+  "regional_processing_uplift_multiplier_eu": 1.1,
+  "regional_processing_uplift_multiplier_us": 1.1,
+  "fedramp_uplift_multiplier": 1.1,
+  "search_context_cost_per_query": {
+   "search_context_size_high": 0.01,
+   "search_context_size_low": 0.01,
+   "search_context_size_medium": 0.01
+  },
+  "supported_endpoints": [
+   "/v1/chat/completions",
+   "/v1/batch",
+   "/v1/responses"
+  ],
+  "supported_modalities": [
+   "text",
+   "image"
+  ],
+  "supported_output_modalities": [
+   "text"
+  ],
+  "supports_computer_use": true,
+  "supports_function_calling": true,
+  "supports_max_reasoning_effort": true,
+  "supports_minimal_reasoning_effort": false,
+  "supports_native_streaming": true,
+  "supports_none_reasoning_effort": false,
+  "supports_parallel_function_calling": true,
+  "supports_pdf_input": true,
+  "supports_prompt_cache_breakpoint": true,
+  "supports_prompt_caching": true,
+  "supports_reasoning": true,
+  "supports_response_schema": true,
+  "supports_system_messages": true,
+  "supports_tool_choice": true,
+  "supports_tool_search": true,
+  "supports_vision": true,
+  "supports_web_search": true,
+  "supports_xhigh_reasoning_effort": true
+ },
+ "variants": [
+  {
+   "id": "gpt-6-astra@codex",
+   "name": "GPT-6 Astra",
+   "providerKey": "codex",
+   "upstreamModelIds": [
+    "gpt-6-astra"
+   ],
+   "matches": {
+    "prefixes": [
+     "gpt-6-astra"
+    ]
+   },
+   "metadata": {},
+   "status": "unverified"
+  },
+  {
+   "id": "gpt-6-astra@devin",
+   "name": "Gpt 6 Astra",
+   "providerKey": "devin",
+   "upstreamModelIds": [
+    "gpt-6-astra-high",
+    "gpt-6-astra-low",
+    "gpt-6-astra-max",
+    "gpt-6-astra-medium",
+    "gpt-6-astra-xhigh"
+   ],
+   "metadata": {
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 128000,
+    "supports_vision": true
+   },
+   "status": "unverified"
+  },
+  {
+   "id": "gpt-6-astra-priority@devin",
+   "name": "Gpt 6 Astra Priority",
+   "providerKey": "devin",
+   "upstreamModelIds": [
+    "gpt-6-astra-high-priority",
+    "gpt-6-astra-low-priority",
+    "gpt-6-astra-max-priority",
+    "gpt-6-astra-medium-priority",
+    "gpt-6-astra-xhigh-priority"
+   ],
+   "metadata": {
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 128000,
+    "supports_vision": true
+   },
+   "status": "unverified"
+  }
+ ]
 }

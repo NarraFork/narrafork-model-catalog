@@ -1,0 +1,32 @@
+{
+ "id": "deepseek-v4-1-flash-1017",
+ "name": "DeepSeek V4.1 Flash (1017)",
+ "family": "deepseek",
+ "status": "unverified",
+ "metadata": {
+  "max_input_tokens": 1048576,
+  "max_output_tokens": 384000,
+  "mode": "chat",
+  "supports_function_calling": true,
+  "supports_vision": true,
+  "source": "NUG devin channel upstream model list (models_snapshot.json, devin models list 2026-11-05)",
+  "input_cost_per_token": 2.7e-07,
+  "output_cost_per_token": 1.1e-06,
+  "litellm_provider": "deepseek"
+ },
+ "variants": [
+  {
+   "id": "deepseek-v4-1-flash-1017@devin",
+   "name": "Deepseek V4 1 Flash 1017",
+   "providerKey": "devin",
+   "upstreamModelIds": [
+    "deepseek-v4-1-flash-1017-high",
+    "deepseek-v4-1-flash-1017-low",
+    "deepseek-v4-1-flash-1017-max",
+    "deepseek-v4-1-flash-1017-none"
+   ],
+   "metadata": {},
+   "status": "unverified"
+  }
+ ]
+}

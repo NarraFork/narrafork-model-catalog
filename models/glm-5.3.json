@@ -1,122 +1,137 @@
 {
-  "id": "glm-5.3",
-  "name": "GLM-5.3",
-  "family": "glm",
-  "status": "verified",
-  "sources": [
-    {
-      "label": "Zhipu GLM-5.3: text-only, 1M context (exact integer not stated); always-on reasoning with low/high/max, default max; streaming, function calling and context caching",
-      "url": "https://docs.bigmodel.cn/cn/guide/models/text/glm-5.3",
-      "verifiedAt": "2026-10-24T00:00:00Z"
-    }
+ "id": "glm-5.3",
+ "name": "GLM-5.3",
+ "family": "glm",
+ "status": "verified",
+ "sources": [
+  {
+   "label": "Zhipu GLM-5.3: text-only, 1M context (exact integer not stated); always-on reasoning with low/high/max, default max; streaming, function calling and context caching",
+   "url": "https://docs.bigmodel.cn/cn/guide/models/text/glm-5.3",
+   "verifiedAt": "2026-10-24T00:00:00Z"
+  }
+ ],
+ "metadata": {
+  "max_output_tokens": 131072,
+  "max_tokens": 131072,
+  "input_cost_per_token": 1.4e-06,
+  "cache_read_input_token_cost": 2.6e-07,
+  "output_cost_per_token": 4.4e-06,
+  "supported_modalities": [
+   "text"
   ],
+  "supports_reasoning": true,
+  "reasoning_effort_levels": [
+   "low",
+   "high",
+   "max"
+  ],
+  "default_reasoning_effort": "max",
+  "can_disable_reasoning": false,
+  "supports_none_reasoning_effort": false,
+  "supports_low_reasoning_effort": true,
+  "supports_max_reasoning_effort": true,
+  "supports_minimal_reasoning_effort": false,
+  "supports_xhigh_reasoning_effort": false,
+  "supports_function_calling": true,
+  "supports_native_streaming": true,
+  "supports_prompt_caching": true,
+  "max_input_tokens": 1000000,
+  "mode": "chat",
+  "supports_response_schema": true,
+  "supports_tool_choice": true,
+  "thinking_always_on": true,
   "metadata": {
-    "max_output_tokens": 131072,
-    "max_tokens": 131072,
-    "input_cost_per_token": 1.4e-06,
-    "cache_read_input_token_cost": 2.6e-07,
-    "output_cost_per_token": 4.4e-06,
-    "supported_modalities": [
-      "text"
-    ],
-    "supports_reasoning": true,
-    "reasoning_effort_levels": [
-      "low",
-      "high",
-      "max"
-    ],
-    "default_reasoning_effort": "max",
-    "can_disable_reasoning": false,
-    "supports_none_reasoning_effort": false,
-    "supports_low_reasoning_effort": true,
-    "supports_max_reasoning_effort": true,
-    "supports_minimal_reasoning_effort": false,
-    "supports_xhigh_reasoning_effort": false,
-    "supports_function_calling": true,
-    "supports_native_streaming": true,
-    "supports_prompt_caching": true,
-    "max_input_tokens": 1000000,
-    "mode": "chat",
-    "supports_response_schema": true,
-    "supports_tool_choice": true,
-    "thinking_always_on": true,
-    "metadata": {
-      "comment": "Official API list price checked 2026-10-27: input 8, output 28, cached input 2 CNY per million tokens; converted at 7.0 CNY/USD. Cache storage is temporarily free and is not encoded."
-    },
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/v1/responses",
-      "/v1/messages"
-    ],
-    "supported_output_modalities": [
-      "text"
-    ],
-    "supports_vision": false,
-    "supports_video_input": false
+   "comment": "Official API list price checked 2026-10-27: input 8, output 28, cached input 2 CNY per million tokens; converted at 7.0 CNY/USD. Cache storage is temporarily free and is not encoded."
   },
-  "variants": [
-    {
-      "id": "glm-5.3@streamlake",
-      "name": "GLM-5.3",
-      "providerKey": "streamlake",
-      "upstreamModelIds": [
-        "GLM-5.3"
-      ],
-      "status": "unverified",
-      "metadata": {
-        "max_input_tokens": 1048576,
-        "max_output_tokens": 128000,
-        "supports_assistant_prefill": true
-      }
-    },
-    {
-      "id": "glm-5.3@tencent",
-      "name": "glm-5.3",
-      "providerKey": "tencent",
-      "upstreamModelIds": [
-        "glm-5.3"
-      ],
-      "status": "unverified",
-      "metadata": {
-        "cache_creation_input_token_cost": 0.0,
-        "input_cost_per_token_cache_hit": 2.6e-07,
-        "max_input_tokens": 1000000,
-        "max_output_tokens": 128000,
-        "supported_endpoints": [
-          "/v1/chat/completions"
-        ],
-        "supports_system_messages": true
-      }
-    },
-    {
-      "id": "glm-5.3@novita",
-      "name": "zai-org/glm-5.3",
-      "providerKey": "novita",
-      "upstreamModelIds": [
-        "zai-org/glm-5.3"
-      ],
-      "status": "unverified",
-      "metadata": {
-        "max_input_tokens": 1048576,
-        "max_output_tokens": 131072
-      }
-    },
-    {
-      "id": "glm-5.3@opencode_go",
-      "name": "glm-5.3",
-      "providerKey": "opencode_go",
-      "upstreamModelIds": [
-        "glm-5.3"
-      ],
-      "status": "unverified",
-      "metadata": {
-        "supported_endpoints": [
-          "/v1/chat/completions"
-        ],
-        "max_output_tokens": 131072,
-        "max_input_tokens": 1000000
-      }
-    }
+  "supported_endpoints": [
+   "/v1/chat/completions",
+   "/v1/responses",
+   "/v1/messages"
   ],
-  "notes": "Official context is stated as 1M without an exact integer; any retained exact context value is separately attributed to pinned LiteLLM. File input is not a distinct catalog modality."
+  "supported_output_modalities": [
+   "text"
+  ],
+  "supports_vision": false,
+  "supports_video_input": false
+ },
+ "variants": [
+  {
+   "id": "glm-5.3@streamlake",
+   "name": "GLM-5.3",
+   "providerKey": "streamlake",
+   "upstreamModelIds": [
+    "GLM-5.3"
+   ],
+   "status": "unverified",
+   "metadata": {
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 128000,
+    "supports_assistant_prefill": true
+   }
+  },
+  {
+   "id": "glm-5.3@tencent",
+   "name": "glm-5.3",
+   "providerKey": "tencent",
+   "upstreamModelIds": [
+    "glm-5.3"
+   ],
+   "status": "unverified",
+   "metadata": {
+    "cache_creation_input_token_cost": 0.0,
+    "input_cost_per_token_cache_hit": 2.6e-07,
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 128000,
+    "supported_endpoints": [
+     "/v1/chat/completions"
+    ],
+    "supports_system_messages": true
+   }
+  },
+  {
+   "id": "glm-5.3@novita",
+   "name": "zai-org/glm-5.3",
+   "providerKey": "novita",
+   "upstreamModelIds": [
+    "zai-org/glm-5.3"
+   ],
+   "status": "unverified",
+   "metadata": {
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 131072
+   }
+  },
+  {
+   "id": "glm-5.3@opencode_go",
+   "name": "glm-5.3",
+   "providerKey": "opencode_go",
+   "upstreamModelIds": [
+    "glm-5.3"
+   ],
+   "status": "unverified",
+   "metadata": {
+    "supported_endpoints": [
+     "/v1/chat/completions"
+    ],
+    "max_output_tokens": 131072,
+    "max_input_tokens": 1000000
+   }
+  },
+  {
+   "id": "glm-5-3@devin",
+   "name": "Glm 5.3",
+   "providerKey": "devin",
+   "upstreamModelIds": [
+    "glm-5-3-high",
+    "glm-5-3-low",
+    "glm-5-3-max"
+   ],
+   "metadata": {
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 128000
+   },
+   "status": "unverified"
+  }
+ ],
+ "notes": "Official context is stated as 1M without an exact integer; any retained exact context value is separately attributed to pinned LiteLLM. File input is not a distinct catalog modality."
 }

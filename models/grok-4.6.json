@@ -1,60 +1,77 @@
 {
-  "id": "grok-4.6",
-  "name": "Grok 4.6",
-  "family": "grok",
-  "status": "unverified",
-  "metadata": {
-    "input_cost_per_token": 2e-06,
-    "output_cost_per_token": 6e-06,
-    "cache_read_input_token_cost": 5e-07,
-    "cache_read_input_token_cost_above_200k_tokens": 1e-06,
-    "input_cost_per_image_token": 2e-06,
-    "input_cost_per_token_above_200k_tokens": 4e-06,
-    "litellm_provider": "xai",
-    "max_input_tokens": 500000,
-    "max_output_tokens": 500000,
-    "mode": "chat",
-    "output_cost_per_token_above_200k_tokens": 1.2e-05,
-    "source": "https://api.x.ai/v1/language-models",
-    "supports_function_calling": true,
-    "supports_prompt_caching": true,
-    "supports_reasoning": true,
-    "supports_response_schema": true,
-    "supports_tool_choice": true,
-    "supports_vision": true,
-    "supports_web_search": true
+ "id": "grok-4.6",
+ "name": "Grok 4.6",
+ "family": "grok",
+ "status": "unverified",
+ "metadata": {
+  "input_cost_per_token": 2e-06,
+  "output_cost_per_token": 6e-06,
+  "cache_read_input_token_cost": 5e-07,
+  "cache_read_input_token_cost_above_200k_tokens": 1e-06,
+  "input_cost_per_image_token": 2e-06,
+  "input_cost_per_token_above_200k_tokens": 4e-06,
+  "litellm_provider": "xai",
+  "max_input_tokens": 500000,
+  "max_output_tokens": 500000,
+  "mode": "chat",
+  "output_cost_per_token_above_200k_tokens": 1.2e-05,
+  "source": "https://api.x.ai/v1/language-models",
+  "supports_function_calling": true,
+  "supports_prompt_caching": true,
+  "supports_reasoning": true,
+  "supports_response_schema": true,
+  "supports_tool_choice": true,
+  "supports_vision": true,
+  "supports_web_search": true
+ },
+ "variants": [
+  {
+   "id": "grok-4.6@cursor",
+   "name": "Cursor Grok 4.6",
+   "providerKey": "cursor",
+   "upstreamModelIds": [
+    "grok-4.6"
+   ],
+   "metadata": {},
+   "status": "unverified"
   },
-  "variants": [
-    {
-      "id": "grok-4.6@cursor",
-      "name": "Cursor Grok 4.6",
-      "providerKey": "cursor",
-      "upstreamModelIds": [
-        "grok-4.6"
-      ],
-      "metadata": {},
-      "status": "unverified"
-    },
-    {
-      "id": "grok-4.6@grok",
-      "name": "Cursor Grok 4.6",
-      "providerKey": "grok",
-      "upstreamModelIds": [
-        "grok-4.6"
-      ],
-      "metadata": {},
-      "status": "unverified"
-    },
-    {
-      "id": "grok-4.6@grokbot",
-      "name": "Cursor Grok 4.6",
-      "providerKey": "grokbot",
-      "upstreamModelIds": [
-        "grok-4.6"
-      ],
-      "metadata": {},
-      "status": "unverified"
-    }
-  ],
-  "notes": "Native xAI metadata is from the pinned LiteLLM registry; direct xAI documentation was unavailable during this audit. Registry output limits are not independently confirmed. Provider-specific pricing and controls, where verified, are recorded in nested variants."
+  {
+   "id": "grok-4.6@grok",
+   "name": "Cursor Grok 4.6",
+   "providerKey": "grok",
+   "upstreamModelIds": [
+    "grok-4.6"
+   ],
+   "metadata": {},
+   "status": "unverified"
+  },
+  {
+   "id": "grok-4.6@grokbot",
+   "name": "Cursor Grok 4.6",
+   "providerKey": "grokbot",
+   "upstreamModelIds": [
+    "grok-4.6"
+   ],
+   "metadata": {},
+   "status": "unverified"
+  },
+  {
+   "id": "grok-4-6@devin",
+   "name": "Grok 4.6",
+   "providerKey": "devin",
+   "upstreamModelIds": [
+    "grok-4-6-high",
+    "grok-4-6-low",
+    "grok-4-6-medium",
+    "grok-4-6-xhigh"
+   ],
+   "metadata": {
+    "max_input_tokens": 500000,
+    "max_output_tokens": 100000,
+    "supports_vision": true
+   },
+   "status": "unverified"
+  }
+ ],
+ "notes": "Native xAI metadata is from the pinned LiteLLM registry; direct xAI documentation was unavailable during this audit. Registry output limits are not independently confirmed. Provider-specific pricing and controls, where verified, are recorded in nested variants."
 }
