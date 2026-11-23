@@ -186,6 +186,21 @@
       ],
       "metadata": {},
       "status": "unverified"
+    },
+    {
+      "id": "gemini-3-1-pro@devin",
+      "name": "Gemini 3.1 Pro",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "gemini-3-1-pro-high",
+        "gemini-3-1-pro-low"
+      ],
+      "metadata": {
+        "max_input_tokens": 1048576,
+        "max_output_tokens": 65535,
+        "supports_vision": true
+      },
+      "status": "unverified"
     }
   ]
 }

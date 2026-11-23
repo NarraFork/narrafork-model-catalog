@@ -122,7 +122,44 @@
     "supports_tool_search": true,
     "supports_service_tier": true
   },
-  "variants": [],
+  "variants": [
+    {
+      "id": "gpt-6-1-terra@devin",
+      "name": "Gpt 6.1 Terra",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "gpt-6-1-terra-high",
+        "gpt-6-1-terra-low",
+        "gpt-6-1-terra-max",
+        "gpt-6-1-terra-medium",
+        "gpt-6-1-terra-xhigh"
+      ],
+      "metadata": {
+        "max_input_tokens": 1000000,
+        "max_output_tokens": 128000,
+        "supports_vision": true
+      },
+      "status": "unverified"
+    },
+    {
+      "id": "gpt-6-1-terra-priority@devin",
+      "name": "Gpt 6.1 Terra Priority",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "gpt-6-1-terra-high-priority",
+        "gpt-6-1-terra-low-priority",
+        "gpt-6-1-terra-max-priority",
+        "gpt-6-1-terra-medium-priority",
+        "gpt-6-1-terra-xhigh-priority"
+      ],
+      "metadata": {
+        "max_input_tokens": 1000000,
+        "max_output_tokens": 128000,
+        "supports_vision": true
+      },
+      "status": "unverified"
+    }
+  ],
   "matches": {
     "aliases": [
       "gpt-terra-latest"

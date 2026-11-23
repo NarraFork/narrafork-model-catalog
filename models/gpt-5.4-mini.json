@@ -94,6 +94,23 @@
       ],
       "metadata": {},
       "status": "unverified"
+    },
+    {
+      "id": "gpt-5-4-mini@devin",
+      "name": "Gpt 5.4 Mini",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "gpt-5-4-mini-high",
+        "gpt-5-4-mini-low",
+        "gpt-5-4-mini-medium",
+        "gpt-5-4-mini-xhigh"
+      ],
+      "metadata": {
+        "max_input_tokens": 400000,
+        "max_output_tokens": 128000,
+        "supports_vision": true
+      },
+      "status": "unverified"
     }
   ],
   "matches": {

@@ -152,6 +152,36 @@
         "max_output_tokens": 131072,
         "max_input_tokens": 1000000
       }
+    },
+    {
+      "id": "glm-5-2@devin",
+      "name": "Glm 5.2",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "glm-5-2",
+        "glm-5-2-max",
+        "glm-5-2-none"
+      ],
+      "metadata": {
+        "max_input_tokens": 200000,
+        "max_output_tokens": 128000
+      },
+      "status": "unverified"
+    },
+    {
+      "id": "glm-5-2-1m@devin",
+      "name": "Glm 5.2 1M",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "glm-5-2-1m",
+        "glm-5-2-max-1m",
+        "glm-5-2-none-1m"
+      ],
+      "metadata": {
+        "max_input_tokens": 1000000,
+        "max_output_tokens": 128000
+      },
+      "status": "unverified"
     }
   ],
   "sources": [

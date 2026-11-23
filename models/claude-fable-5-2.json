@@ -107,6 +107,20 @@
           "verifiedAt": "2026-11-16T09:20:54Z"
         }
       ]
+    },
+    {
+      "id": "claude-fable-5-2@devin",
+      "name": "Claude Fable 5.2",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "claude-fable-5-2"
+      ],
+      "metadata": {
+        "max_input_tokens": 1000000,
+        "max_output_tokens": 128000,
+        "supports_vision": true
+      },
+      "status": "unverified"
     }
   ],
   "sources": [

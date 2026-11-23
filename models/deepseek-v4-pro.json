@@ -212,6 +212,20 @@
         "max_output_tokens": 384000,
         "max_input_tokens": 1000000
       }
+    },
+    {
+      "id": "deepseek-v4-pro@devin",
+      "name": "Deepseek V4 Pro",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "deepseek-v4-pro-high",
+        "deepseek-v4-pro-max"
+      ],
+      "metadata": {
+        "max_input_tokens": 1048576,
+        "max_output_tokens": 384000
+      },
+      "status": "unverified"
     }
   ],
   "notes": "Token prices vary by UTC peak/off-peak schedule; conditional prices are *_peak / *_off_peak fields, not a universal native rate. Official shorthand context/output limits are not independently converted to integers. Peak: 01:00–04:00 and 06:00–10:00 UTC Monday–Friday excluding Chinese public holidays; all other hours off-peak. Conditional rates use *_peak / *_off_peak metadata, not distinct model routes."

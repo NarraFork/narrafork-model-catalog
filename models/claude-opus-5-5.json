@@ -163,6 +163,29 @@
       ],
       "status": "unverified",
       "metadata": {}
+    },
+    {
+      "id": "claude-opus-5-5@devin",
+      "name": "Claude Opus 5 5",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "claude-opus-5-5-high",
+        "claude-opus-5-5-high-fast",
+        "claude-opus-5-5-low",
+        "claude-opus-5-5-low-fast",
+        "claude-opus-5-5-max",
+        "claude-opus-5-5-max-fast",
+        "claude-opus-5-5-medium",
+        "claude-opus-5-5-medium-fast",
+        "claude-opus-5-5-xhigh",
+        "claude-opus-5-5-xhigh-fast"
+      ],
+      "metadata": {
+        "max_input_tokens": 1000000,
+        "max_output_tokens": 128000,
+        "supports_vision": true
+      },
+      "status": "unverified"
     }
   ]
 }

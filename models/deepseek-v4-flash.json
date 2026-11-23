@@ -275,6 +275,20 @@
         "cache_read_input_token_cost": 1.5e-08,
         "supports_vision": false
       }
+    },
+    {
+      "id": "deepseek-v4-flash@devin",
+      "name": "Deepseek V4 Flash",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "deepseek-v4-flash-high",
+        "deepseek-v4-flash-max"
+      ],
+      "metadata": {
+        "max_input_tokens": 1048576,
+        "max_output_tokens": 384000
+      },
+      "status": "unverified"
     }
   ]
 }

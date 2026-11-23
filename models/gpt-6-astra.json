@@ -137,6 +137,42 @@
       },
       "metadata": {},
       "status": "unverified"
+    },
+    {
+      "id": "gpt-6-astra@devin",
+      "name": "Gpt 6 Astra",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "gpt-6-astra-high",
+        "gpt-6-astra-low",
+        "gpt-6-astra-max",
+        "gpt-6-astra-medium",
+        "gpt-6-astra-xhigh"
+      ],
+      "metadata": {
+        "max_input_tokens": 1000000,
+        "max_output_tokens": 128000,
+        "supports_vision": true
+      },
+      "status": "unverified"
+    },
+    {
+      "id": "gpt-6-astra-priority@devin",
+      "name": "Gpt 6 Astra Priority",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "gpt-6-astra-high-priority",
+        "gpt-6-astra-low-priority",
+        "gpt-6-astra-max-priority",
+        "gpt-6-astra-medium-priority",
+        "gpt-6-astra-xhigh-priority"
+      ],
+      "metadata": {
+        "max_input_tokens": 1000000,
+        "max_output_tokens": 128000,
+        "supports_vision": true
+      },
+      "status": "unverified"
     }
   ]
 }

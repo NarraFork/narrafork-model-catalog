@@ -108,5 +108,44 @@
     "supports_prompt_cache_breakpoint": true,
     "supports_tool_search": true
   },
-  "variants": []
+  "variants": [
+    {
+      "id": "gpt-6-sol@devin",
+      "name": "Gpt 6 Sol",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "gpt-6-sol-high",
+        "gpt-6-sol-low",
+        "gpt-6-sol-max",
+        "gpt-6-sol-medium",
+        "gpt-6-sol-none",
+        "gpt-6-sol-xhigh"
+      ],
+      "metadata": {
+        "max_input_tokens": 1000000,
+        "max_output_tokens": 128000,
+        "supports_vision": true
+      },
+      "status": "unverified"
+    },
+    {
+      "id": "gpt-6-sol-priority@devin",
+      "name": "Gpt 6 Sol Priority",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "gpt-6-sol-high-priority",
+        "gpt-6-sol-low-priority",
+        "gpt-6-sol-max-priority",
+        "gpt-6-sol-medium-priority",
+        "gpt-6-sol-none-priority",
+        "gpt-6-sol-xhigh-priority"
+      ],
+      "metadata": {
+        "max_input_tokens": 1000000,
+        "max_output_tokens": 128000,
+        "supports_vision": true
+      },
+      "status": "unverified"
+    }
+  ]
 }
