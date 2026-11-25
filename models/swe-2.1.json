@@ -1,0 +1,18 @@
+{
+  "id": "swe-2.1",
+  "name": "SWE-2.1",
+  "family": "swe",
+  "status": "verified",
+  "metadata": {
+    "mode": "chat"
+  },
+  "variants": [],
+  "sources": [
+    {
+      "label": "Cognition SWE-2.1 official announcement",
+      "url": "https://cognition.ai/blog/swe-2-1",
+      "verifiedAt": "2026-11-25T01:21:17Z"
+    }
+  ],
+  "notes": "Cognition's software engineering model, trained with reinforcement learning on Kimi K3 and available in Devin Desktop, Cloud, and CLI. The announcement also describes SWE-2.1 Ultrafast and SWE-2.1 Cyber, but does not establish exact upstream model IDs, token prices, native context/output limits, modalities, or reasoning controls. No provider variants or aliases are assumed. The 250k-token evaluation context and 1M-token total across compactions are benchmark settings, not confirmed native limits. SWE-2 and Kimi K3 metadata must not be inherited. Temporary free or discounted product offers are not recorded as permanent token prices."
+}
