@@ -40,10 +40,12 @@ class ValidationTests(unittest.TestCase):
         with self.assertRaises(AssertionError):
             metadata({"reasoning_effort_levels": ["low"], "default_reasoning_effort": "high"})
 
-    def test_codex_ultra_effort_is_recognized_without_accepting_unknown_values(self):
-        metadata({"reasoning_effort_levels": ["low", "ultra"], "default_reasoning_effort": "ultra"})
-        with self.assertRaises(AssertionError):
-            metadata({"reasoning_effort_levels": ["unlimited"]})
+    def test_client_presets_and_unknown_values_are_not_model_efforts(self):
+        for effort in ("ultra", "unlimited"):
+            with self.subTest(effort=effort), self.assertRaisesRegex(AssertionError, "Invalid reasoning effort"):
+                metadata({"reasoning_effort_levels": ["low", effort]})
+            with self.subTest(effort=effort), self.assertRaisesRegex(AssertionError, "Invalid reasoning default"):
+                metadata({"default_reasoning_effort": effort})
 
     def test_non_reasoning_model_cannot_declare_efforts(self):
         with self.assertRaises(AssertionError):
@@ -157,6 +159,19 @@ class CatalogRegressionTests(unittest.TestCase):
             with self.subTest(model=model_id):
                 self.assertEqual(self.model(model_id)["id"], model_id)
 
+    def test_deepseek_time_based_prices_are_not_unconditional(self):
+        for model_id in (
+            "deepseek-flash", "deepseek-v4-flash", "deepseek-v4-flash-vision-exp", "deepseek-v4-pro",
+        ):
+            with self.subTest(model=model_id):
+                info = self.model(model_id)["metadata"]
+                for key in (
+                    "input_cost_per_token", "output_cost_per_token", "cache_read_input_token_cost",
+                ):
+                    self.assertNotIn(key, info)
+                    self.assertGreater(info[key + "_peak"], info[key + "_off_peak"])
+                    self.assertEqual(info[key + "_off_peak"], info["off_peak_pricing"][key])
+
     def test_gpt62_native_cards_have_sourced_limits_and_distinct_prices(self):
         for suffix, input_price, cached_price, output_price in (
             ("astra", 8e-6, 4e-7, 40e-6),
@@ -186,8 +201,8 @@ class CatalogRegressionTests(unittest.TestCase):
                 self.assertEqual(effective["context_window"], default_window)
                 self.assertEqual(effective["max_context_window"], 872000)
                 self.assertEqual(effective["default_reasoning_effort"], "low")
-                self.assertEqual(effective["reasoning_effort_levels"], ["low", "medium", "high", "xhigh", "max", "ultra"])
-                self.assertNotIn("ultra", card["metadata"].get("reasoning_effort_levels", []))
+                self.assertEqual(effective["reasoning_effort_levels"], ["low", "medium", "high", "xhigh", "max"])
+                self.assertNotIn("reasoning_effort_levels", card["metadata"])
                 self.assertEqual("audio" in effective["supported_modalities"], suffix == "sol")
                 self.assertNotIn("audio", card["metadata"]["supported_modalities"])
 

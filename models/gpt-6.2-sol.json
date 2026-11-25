@@ -404,8 +404,7 @@
           "medium",
           "high",
           "xhigh",
-          "max",
-          "ultra"
+          "max"
         ],
         "default_reasoning_effort": "low",
         "supports_audio_input": true
