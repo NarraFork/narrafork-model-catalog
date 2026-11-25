@@ -158,6 +158,23 @@
         "max_input_tokens": 1048576,
         "max_output_tokens": 65536
       }
+    },
+    {
+      "id": "gemini-3-6-flash@devin",
+      "name": "Gemini 3.6 Flash",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "gemini-3-6-flash-high",
+        "gemini-3-6-flash-low",
+        "gemini-3-6-flash-medium",
+        "gemini-3-6-flash-minimal"
+      ],
+      "metadata": {
+        "max_input_tokens": 1048576,
+        "max_output_tokens": 65535,
+        "supports_vision": true
+      },
+      "status": "unverified"
     }
   ]
 }

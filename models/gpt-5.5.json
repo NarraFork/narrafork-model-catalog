@@ -108,6 +108,42 @@
       ],
       "metadata": {},
       "status": "unverified"
+    },
+    {
+      "id": "gpt-5-5@devin",
+      "name": "Gpt 5.5",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "gpt-5-5-high",
+        "gpt-5-5-low",
+        "gpt-5-5-medium",
+        "gpt-5-5-none",
+        "gpt-5-5-xhigh"
+      ],
+      "metadata": {
+        "max_input_tokens": 272000,
+        "max_output_tokens": 128000,
+        "supports_vision": true
+      },
+      "status": "unverified"
+    },
+    {
+      "id": "gpt-5-5-priority@devin",
+      "name": "Gpt 5.5 Priority",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "gpt-5-5-high-priority",
+        "gpt-5-5-low-priority",
+        "gpt-5-5-medium-priority",
+        "gpt-5-5-none-priority",
+        "gpt-5-5-xhigh-priority"
+      ],
+      "metadata": {
+        "max_input_tokens": 272000,
+        "max_output_tokens": 128000,
+        "supports_vision": true
+      },
+      "status": "unverified"
     }
   ]
 }

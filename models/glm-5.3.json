@@ -116,6 +116,21 @@
         "max_output_tokens": 131072,
         "max_input_tokens": 1000000
       }
+    },
+    {
+      "id": "glm-5-3@devin",
+      "name": "Glm 5.3",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "glm-5-3-high",
+        "glm-5-3-low",
+        "glm-5-3-max"
+      ],
+      "metadata": {
+        "max_input_tokens": 1048576,
+        "max_output_tokens": 128000
+      },
+      "status": "unverified"
     }
   ],
   "notes": "Official context is stated as 1M without an exact integer; any retained exact context value is separately attributed to pinned LiteLLM. File input is not a distinct catalog modality."

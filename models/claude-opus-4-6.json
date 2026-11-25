@@ -109,6 +109,62 @@
       },
       "metadata": {},
       "status": "unverified"
+    },
+    {
+      "id": "claude-opus-4-6@devin",
+      "name": "Claude Opus 4 6",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "claude-opus-4-6"
+      ],
+      "metadata": {
+        "max_input_tokens": 200000,
+        "max_output_tokens": 128000,
+        "supports_vision": true
+      },
+      "status": "unverified"
+    },
+    {
+      "id": "claude-opus-4-6-thinking@devin",
+      "name": "Claude Opus 4 6 Thinking",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "claude-opus-4-6-thinking"
+      ],
+      "metadata": {
+        "max_input_tokens": 200000,
+        "max_output_tokens": 128000,
+        "supports_vision": true
+      },
+      "status": "unverified"
+    },
+    {
+      "id": "claude-opus-4-6-1m@devin",
+      "name": "Claude Opus 4 6 1M",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "claude-opus-4-6-1m"
+      ],
+      "metadata": {
+        "max_input_tokens": 1000000,
+        "max_output_tokens": 128000,
+        "supports_vision": true
+      },
+      "status": "unverified"
+    },
+    {
+      "id": "claude-opus-4-6-thinking-1m@devin",
+      "name": "Claude Opus 4 6 Thinking 1M",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "claude-opus-4-6-thinking-1m"
+      ],
+      "metadata": {
+        "max_input_tokens": 1000000,
+        "max_output_tokens": 128000,
+        "supports_vision": true
+      },
+      "status": "unverified"
     }
   ]
 }

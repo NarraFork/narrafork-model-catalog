@@ -143,6 +143,44 @@
         "max_input_tokens": 272000
       },
       "status": "unverified"
+    },
+    {
+      "id": "gpt-5-6-luna@devin",
+      "name": "Gpt 5.6 Luna",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "gpt-5-6-luna-high",
+        "gpt-5-6-luna-low",
+        "gpt-5-6-luna-max",
+        "gpt-5-6-luna-medium",
+        "gpt-5-6-luna-none",
+        "gpt-5-6-luna-xhigh"
+      ],
+      "metadata": {
+        "max_input_tokens": 1000000,
+        "max_output_tokens": 128000,
+        "supports_vision": true
+      },
+      "status": "unverified"
+    },
+    {
+      "id": "gpt-5-6-luna-priority@devin",
+      "name": "Gpt 5.6 Luna Priority",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "gpt-5-6-luna-high-priority",
+        "gpt-5-6-luna-low-priority",
+        "gpt-5-6-luna-max-priority",
+        "gpt-5-6-luna-medium-priority",
+        "gpt-5-6-luna-none-priority",
+        "gpt-5-6-luna-xhigh-priority"
+      ],
+      "metadata": {
+        "max_input_tokens": 1000000,
+        "max_output_tokens": 128000,
+        "supports_vision": true
+      },
+      "status": "unverified"
     }
   ]
 }

@@ -74,6 +74,40 @@
       ],
       "metadata": {},
       "status": "unverified"
+    },
+    {
+      "id": "gpt-5-3-codex@devin",
+      "name": "Gpt 5.3 Codex",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "gpt-5-3-codex-high",
+        "gpt-5-3-codex-low",
+        "gpt-5-3-codex-medium",
+        "gpt-5-3-codex-xhigh"
+      ],
+      "metadata": {
+        "max_input_tokens": 400000,
+        "max_output_tokens": 128000,
+        "supports_vision": true
+      },
+      "status": "unverified"
+    },
+    {
+      "id": "gpt-5-3-codex-priority@devin",
+      "name": "Gpt 5.3 Codex Priority",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "gpt-5-3-codex-high-priority",
+        "gpt-5-3-codex-low-priority",
+        "gpt-5-3-codex-medium-priority",
+        "gpt-5-3-codex-xhigh-priority"
+      ],
+      "metadata": {
+        "max_input_tokens": 400000,
+        "max_output_tokens": 128000,
+        "supports_vision": true
+      },
+      "status": "unverified"
     }
   ]
 }

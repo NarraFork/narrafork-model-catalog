@@ -124,6 +124,22 @@
         "max_output_tokens": 131072,
         "max_input_tokens": 1048576
       }
+    },
+    {
+      "id": "kimi-k3@devin",
+      "name": "Kimi K3",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "kimi-k3-high",
+        "kimi-k3-low",
+        "kimi-k3-max"
+      ],
+      "metadata": {
+        "max_input_tokens": 1048576,
+        "max_output_tokens": 131072,
+        "supports_vision": true
+      },
+      "status": "unverified"
     }
   ],
   "sources": [

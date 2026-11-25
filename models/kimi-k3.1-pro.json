@@ -114,6 +114,20 @@
         "max_output_tokens": 131072,
         "max_input_tokens": 1048576
       }
+    },
+    {
+      "id": "kimi-k3.1-pro@devin",
+      "name": "Kimi K3.1 Pro",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "kimi-k3-1-pro"
+      ],
+      "metadata": {
+        "max_input_tokens": 1048576,
+        "max_output_tokens": 131072,
+        "supports_vision": true
+      },
+      "status": "unverified"
     }
   ]
 }

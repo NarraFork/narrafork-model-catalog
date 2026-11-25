@@ -127,6 +127,23 @@
         "max_input_tokens": 1048576,
         "max_output_tokens": 65536
       }
+    },
+    {
+      "id": "gemini-3-5-flash@devin",
+      "name": "Gemini 3.5 Flash",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "gemini-3-5-flash-high",
+        "gemini-3-5-flash-low",
+        "gemini-3-5-flash-medium",
+        "gemini-3-5-flash-minimal"
+      ],
+      "metadata": {
+        "max_input_tokens": 1048576,
+        "max_output_tokens": 65535,
+        "supports_vision": true
+      },
+      "status": "unverified"
     }
   ]
 }

@@ -70,6 +70,20 @@
         "cache_read_input_token_cost": 1.5e-07,
         "supports_prompt_caching": true
       }
+    },
+    {
+      "id": "kimi-k2-6@devin",
+      "name": "Kimi K2.6",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "kimi-k2-6"
+      ],
+      "metadata": {
+        "max_input_tokens": 262144,
+        "max_output_tokens": 8192,
+        "supports_vision": true
+      },
+      "status": "unverified"
     }
   ],
   "sources": [

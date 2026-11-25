@@ -121,6 +121,48 @@
       ],
       "status": "unverified",
       "metadata": {}
+    },
+    {
+      "id": "gemini-4-carbon-low@antigravity",
+      "name": "Gemini 4 Carbon Low",
+      "providerKey": "antigravity",
+      "upstreamModelIds": [
+        "gemini-4-carbon-low"
+      ],
+      "metadata": {
+        "reasoning_effort_levels": [
+          "low"
+        ]
+      },
+      "status": "unverified"
+    },
+    {
+      "id": "gemini-4-carbon-medium@antigravity",
+      "name": "Gemini 4 Carbon Medium",
+      "providerKey": "antigravity",
+      "upstreamModelIds": [
+        "gemini-4-carbon-medium"
+      ],
+      "metadata": {
+        "reasoning_effort_levels": [
+          "medium"
+        ]
+      },
+      "status": "unverified"
+    },
+    {
+      "id": "gemini-4-carbon-high@antigravity",
+      "name": "Gemini 4 Carbon High",
+      "providerKey": "antigravity",
+      "upstreamModelIds": [
+        "gemini-4-carbon-high"
+      ],
+      "metadata": {
+        "reasoning_effort_levels": [
+          "high"
+        ]
+      },
+      "status": "unverified"
     }
   ]
 }

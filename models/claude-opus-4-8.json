@@ -150,6 +150,29 @@
       ],
       "status": "unverified",
       "metadata": {}
+    },
+    {
+      "id": "claude-opus-4-8@devin",
+      "name": "Claude Opus 4 8",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "claude-opus-4-8-high",
+        "claude-opus-4-8-high-fast",
+        "claude-opus-4-8-low",
+        "claude-opus-4-8-low-fast",
+        "claude-opus-4-8-max",
+        "claude-opus-4-8-max-fast",
+        "claude-opus-4-8-medium",
+        "claude-opus-4-8-medium-fast",
+        "claude-opus-4-8-xhigh",
+        "claude-opus-4-8-xhigh-fast"
+      ],
+      "metadata": {
+        "max_input_tokens": 1000000,
+        "max_output_tokens": 128000,
+        "supports_vision": true
+      },
+      "status": "unverified"
     }
   ]
 }

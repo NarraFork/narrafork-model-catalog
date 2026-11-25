@@ -99,6 +99,24 @@
       ],
       "status": "unverified",
       "metadata": {}
+    },
+    {
+      "id": "claude-opus-4-7@devin",
+      "name": "Claude Opus 4 7",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "claude-opus-4-7-high",
+        "claude-opus-4-7-low",
+        "claude-opus-4-7-max",
+        "claude-opus-4-7-medium",
+        "claude-opus-4-7-xhigh"
+      ],
+      "metadata": {
+        "max_input_tokens": 1000000,
+        "max_output_tokens": 128000,
+        "supports_vision": true
+      },
+      "status": "unverified"
     }
   ]
 }

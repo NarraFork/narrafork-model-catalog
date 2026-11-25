@@ -55,6 +55,22 @@
         "default_reasoning_effort": "high"
       },
       "status": "unverified"
+    },
+    {
+      "id": "grok-4-5@devin",
+      "name": "Grok 4.5",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "grok-4-5-high",
+        "grok-4-5-low",
+        "grok-4-5-medium"
+      ],
+      "metadata": {
+        "max_input_tokens": 500000,
+        "max_output_tokens": 100000,
+        "supports_vision": true
+      },
+      "status": "unverified"
     }
   ],
   "notes": "Native xAI metadata is from the pinned LiteLLM registry; direct xAI documentation was unavailable during this audit. Registry output limits are not independently confirmed. Provider-specific pricing and controls, where verified, are recorded in nested variants. The former unsourced global cache-read rate ($0.50/MTok) is retained for Cursor; xAI registry lists $0.30/MTok."

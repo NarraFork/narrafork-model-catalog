@@ -116,6 +116,64 @@
           "/v1/batch"
         ]
       }
+    },
+    {
+      "id": "gemini-4-argon@devin",
+      "name": "Gemini 4 Argon",
+      "providerKey": "devin",
+      "upstreamModelIds": [
+        "gemini-4-argon-high",
+        "gemini-4-argon-low",
+        "gemini-4-argon-medium"
+      ],
+      "metadata": {
+        "max_input_tokens": 1048576,
+        "max_output_tokens": 1000000,
+        "supports_vision": true
+      },
+      "status": "unverified"
+    },
+    {
+      "id": "gemini-4-argon-low@antigravity",
+      "name": "Gemini 4 Argon Low",
+      "providerKey": "antigravity",
+      "upstreamModelIds": [
+        "gemini-4-argon-low"
+      ],
+      "metadata": {
+        "reasoning_effort_levels": [
+          "low"
+        ]
+      },
+      "status": "unverified"
+    },
+    {
+      "id": "gemini-4-argon-medium@antigravity",
+      "name": "Gemini 4 Argon Medium",
+      "providerKey": "antigravity",
+      "upstreamModelIds": [
+        "gemini-4-argon-medium"
+      ],
+      "metadata": {
+        "reasoning_effort_levels": [
+          "medium"
+        ]
+      },
+      "status": "unverified"
+    },
+    {
+      "id": "gemini-4-argon-high@antigravity",
+      "name": "Gemini 4 Argon High",
+      "providerKey": "antigravity",
+      "upstreamModelIds": [
+        "gemini-4-argon-high"
+      ],
+      "metadata": {
+        "reasoning_effort_levels": [
+          "high"
+        ]
+      },
+      "status": "unverified"
     }
   ]
 }
