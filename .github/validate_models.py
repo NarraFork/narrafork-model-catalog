@@ -7,7 +7,7 @@ import pathlib
 import re
 from urllib.parse import urlsplit
 
-EFFORTS = {"none", "minimal", "low", "medium", "high", "xhigh", "max", "ultra"}
+EFFORTS = {"none", "minimal", "low", "medium", "high", "xhigh", "max"}
 MODALITIES = {"text", "image", "audio", "video"}
 
 
